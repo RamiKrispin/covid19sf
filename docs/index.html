@@ -19,7 +19,7 @@
 <![endif]-->
 </head>
 <body>
-    <div class="container template-home">
+    <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -57,9 +57,48 @@
 
       
       </header><div class="row">
-  <div class="contents col-md-9">
-More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+  <div class="col-md-9 contents">
+    
+
+    
+    
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+<div id="covid19sf" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#covid19sf" class="anchor"></a>covid19sf</h1></div>
+<!-- badges: start -->
+<!-- badges: end -->
+<p>The goal of covid19sf is to …</p>
+<div id="installation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h2>
+<p>You can install the released version of covid19sf from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages</a></span>(<span class="st">"covid19sf"</span>)</span></code></pre></div>
+<p>And the development version from <a href="https://github.com/">GitHub</a> with:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># install.packages("devtools")</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>devtools<span class="op">::</span><span class="kw"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"RamiKrispin/covid19sf"</span>)</span></code></pre></div>
+</div>
+<div id="example" class="section level2">
+<h2 class="hasAnchor">
+<a href="#example" class="anchor"></a>Example</h2>
+<p>This is a basic example which shows you how to solve a common problem:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(covid19sf)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="co">## basic example code</span></span></code></pre></div>
+<p>What is special about using <code>README.Rmd</code> instead of just <code>README.md</code>? You can include R chunks like so:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/summary">summary</a></span>(cars)</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co">#&gt;      speed           dist       </span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co">#&gt;  Min.   : 4.0   Min.   :  2.00  </span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co">#&gt;  1st Qu.:12.0   1st Qu.: 26.00  </span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co">#&gt;  Median :15.0   Median : 36.00  </span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#&gt;  Mean   :15.4   Mean   : 42.98  </span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co">#&gt;  3rd Qu.:19.0   3rd Qu.: 56.00  </span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="co">#&gt;  Max.   :25.0   Max.   :120.00</span></span></code></pre></div>
+<p>You’ll still need to render <code>README.Rmd</code> regularly, to keep <code>README.md</code> up-to-date.</p>
+<p>You can also embed plots, for example:</p>
+<p><img src="reference/figures/README-pressure-1.png" width="100%"></p>
+<p>In that case, don’t forget to commit and push the resulting figure files, so they display on GitHub!</p>
+</div>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -77,8 +116,11 @@ More about what it does (maybe more than one line)
 </ul>
 </div>
 
-  </div>
+
+      </div>
+
 </div>
+
 
       <footer><div class="copyright">
   <p>Developed by The package maintainer.</p>
