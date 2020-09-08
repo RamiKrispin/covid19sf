@@ -3,7 +3,7 @@
 \docType{data}
 \name{covid19sf_hospital}
 \alias{covid19sf_hospital}
-\title{San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition}
+\title{San Francisco COVID-19 Hospitalizations}
 \format{
 A data frame with 5 variables.
 \describe{
@@ -35,7 +35,6 @@ either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)
 data(covid19sf_hospital)
 
 head(covid19sf_hospital)
-
 }
 \keyword{COVID19}
 \keyword{datasets}

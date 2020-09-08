@@ -36,7 +36,7 @@
 
 
 
-#' San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition
+#' San Francisco COVID-19 Hospitalizations
 #'
 #' @description  Count of COVID+ patients admitted to the hospital.
 #' Patients who are hospitalized and test positive for COVID-19 may be admitted to an
@@ -60,6 +60,6 @@
 #' data(covid19sf_hospital)
 #'
 #' head(covid19sf_hospital)
-#'
+
 "covid19sf_hospital"
 
