@@ -17,7 +17,7 @@ tail(covid19sf_summary)
 str(covid19sf_summary)
 nrow(covid19sf_summary)
 usethis::use_data(covid19sf_summary, overwrite = TRUE)
-
+write.csv(covid19sf_summary, "csv/covid19sf_summary.csv", row.names = FALSE)
 
 # COVID-19 Hospitalizations
 # https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem
