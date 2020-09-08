@@ -21,16 +21,23 @@ write.csv(covid19sf_summary, "csv/covid19sf_summary.csv", row.names = FALSE)
 
 # COVID-19 Hospitalizations
 # https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem
-df2 <- read.csv("https://data.sfgov.org/resource/nxjg-bhem.csv", stringsAsFactors = FALSE) %>%
-dplyr::mutate(reportdate = lubridate::ymd_hms(reportdate,
-                                                            tz = "America/Los_Angeles"))
+covid19sf_hospital <- read.csv("https://data.sfgov.org/resource/nxjg-bhem.csv", stringsAsFactors = FALSE) %>%
+dplyr::mutate(reportdate = as.Date(lubridate::ymd_hms(reportdate,
+                                                            tz = "America/Los_Angeles")))
 
 
-table(df2$hospital)
-table(df2$dphcategory)
-table(df2$covidstatus)
+table(covid19sf_hospital$hospital)
+table(covid19sf_hospital$dphcategory)
+table(covid19sf_hospital$covidstatus)
 
-head(df2)
+table(covid19sf_hospital$dphcategory, covid19sf_hospital$covidstatus)
+
+head(covid19sf_hospital)
+tail(covid19sf_hospital)
+
+usethis::use_data(covid19sf_hospital, overwrite = TRUE)
+write.csv(covid19sf_hospital, "csv/covid19sf_hospital.csv", row.names = FALSE)
+
 
 # Covid-19 Tests
 # https://data.sfgov.org/COVID-19/Covid-19-Tests/nfpa-mg4g
