@@ -33,6 +33,8 @@ and case disposition
 \examples{
 data(covid19sf_summary)
 
+head(covid19sf_summary)
+
 # Case disposition summary
 table(covid19sf_summary$case_disposition)
 
