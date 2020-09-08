@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition — covid19sf_summary • covid19sf</title>
+<title>San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition — covid19sf_hospital • covid19sf</title>
 
 
 <!-- jquery -->
@@ -33,11 +33,12 @@
 
 
 
-<meta property="og:title" content="San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition — covid19sf_summary" />
-<meta property="og:description" content="This dataset represents the COVID-19 positive confirmed cases and deaths by day and transmission type.
-The transmission data are based on information reported from case interviews, laboratories, and providers.
-This data may not be immediately available for recently reported cases and
-data will change to reflect as information becomes available. More information about the data available here" />
+<meta property="og:title" content="San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition — covid19sf_hospital" />
+<meta property="og:description" content="Count of COVID+ patients admitted to the hospital.
+Patients who are hospitalized and test positive for COVID-19 may be admitted to an
+acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed.
+This data shows the daily total count of COVID+ patients in these two bed types,
+and the data reflects totals from all San Francisco Hospitals" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -101,67 +102,47 @@ data will change to reflect as information becomes available. More information a
     <div class="page-header">
     <h1>San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition</h1>
     
-    <div class="hidden name"><code>covid19sf_summary.Rd</code></div>
+    <div class="hidden name"><code>covid19sf_hospital.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This dataset represents the COVID-19 positive confirmed cases and deaths by day and transmission type.
-The transmission data are based on information reported from case interviews, laboratories, and providers.
-This data may not be immediately available for recently reported cases and
-data will change to reflect as information becomes available. More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Date-Transmission-and/tvq9-ec9w'>here</a></p>
+    <p>Count of COVID+ patients admitted to the hospital.
+Patients who are hospitalized and test positive for COVID-19 may be admitted to an
+acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed.
+This data shows the daily total count of COVID+ patients in these two bed types,
+and the data reflects totals from all San Francisco Hospitals</p>
     </div>
 
-    <pre class="usage"><span class='no'>covid19sf_summary</span></pre>
+    <pre class="usage"><span class='no'>covid19sf_hospital</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 5 variables.</p><dl class='dl-horizontal'>
-  <dt>specimen_collection_date</dt><dd><p>date which case was recorded in YYYY-MM-DD format.</p></dd>
-  <dt>case_disposition</dt><dd><p>The case disposition c("Confirmed", "Death)</p></dd>
-  <dt>transmission_category</dt><dd><p>The case transmission category c("Community", "From Contact", "Unknown")</p></dd>
-  <dt>case_count</dt><dd><p>Daily cases count</p></dd>
-  <dt>last_updated</dt><dd><p>The table last update time in POSIX format</p></dd>
+  <dt>reportdate</dt><dd><p>date which case was recorded in YYYY-MM-DD format.</p></dd>
+  <dt>hospital</dt><dd><p>The hospital which patients were admitted, currently it labeled under "All SF Hospitals"</p></dd>
+  <dt>dphcategory</dt><dd><p>The type of hospitalization bed, either an acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed</p></dd>
+  <dt>covidstatus</dt><dd><p>The patient diagnostic, either PUI (Patient Under Investigation) or COVID+ (positive case)</p></dd>
+  <dt>patientcount</dt><dd><p>Daily cases count</p></dd>
   </dl>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal <a href='https://datasf.org/opendata/'>website</a>.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>The dataset contains the daily summary of covid19 cases in San Francisco by transmission
-and case disposition</p>
+    <p>Each record represents how many people were hospitalized on the date recorded in
+either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>covid19sf_summary</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>covid19sf_hospital</span>)
 
-<span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/head'>head</a></span>(<span class='no'>covid19sf_summary</span>)</div><div class='output co'>#&gt;   specimen_collection_date case_disposition transmission_category case_count
-#&gt; 1               2020-03-03        Confirmed             Community          2
-#&gt; 2               2020-03-05        Confirmed             Community          1
-#&gt; 3               2020-03-05        Confirmed          From Contact          5
-#&gt; 4               2020-03-07        Confirmed          From Contact          5
-#&gt; 5               2020-03-08        Confirmed          From Contact          1
-#&gt; 6               2020-03-10        Confirmed          From Contact          2
-#&gt;          last_updated
-#&gt; 1 2020-09-06 15:19:27
-#&gt; 2 2020-09-06 15:19:27
-#&gt; 3 2020-09-06 15:19:27
-#&gt; 4 2020-09-06 15:19:27
-#&gt; 5 2020-09-06 15:19:27
-#&gt; 6 2020-09-06 15:19:27</div><div class='input'>
-<span class='co'># Case disposition summary</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/table'>table</a></span>(<span class='no'>covid19sf_summary</span>$<span class='no'>case_disposition</span>)</div><div class='output co'>#&gt; 
-#&gt; Confirmed     Death 
-#&gt;       465        76 </div><div class='input'>
-<span class='co'># Transmission category</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/table'>table</a></span>(<span class='no'>covid19sf_summary</span>$<span class='no'>transmission_category</span>)</div><div class='output co'>#&gt; 
-#&gt;    Community From Contact      Unknown 
-#&gt;          224          209          108 </div><div class='input'>
-<span class='co'># Summary of case disposition and transmission category</span>
-<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/table'>table</a></span>(<span class='no'>covid19sf_summary</span>$<span class='no'>case_disposition</span>,
-      <span class='no'>covid19sf_summary</span>$<span class='no'>transmission_category</span>)</div><div class='output co'>#&gt;            
-#&gt;             Community From Contact Unknown
-#&gt;   Confirmed       181          180     104
-#&gt;   Death            43           29       4</div><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/head'>head</a></span>(<span class='no'>covid19sf_hospital</span>)</div><div class='output co'>#&gt;   reportdate         hospital dphcategory covidstatus patientcount
+#&gt; 1 2020-03-23 All SF Hospitals    Med/Surg      COVID+           12
+#&gt; 2 2020-03-24 All SF Hospitals    Med/Surg      COVID+           20
+#&gt; 3 2020-03-25 All SF Hospitals    Med/Surg      COVID+           22
+#&gt; 4 2020-03-26 All SF Hospitals    Med/Surg      COVID+           19
+#&gt; 5 2020-03-27 All SF Hospitals    Med/Surg      COVID+           28
+#&gt; 6 2020-03-28 All SF Hospitals    Med/Surg      COVID+           27</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
