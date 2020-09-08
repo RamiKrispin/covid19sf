@@ -42,7 +42,7 @@
 #' Patients who are hospitalized and test positive for COVID-19 may be admitted to an
 #' acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed.
 #' This data shows the daily total count of COVID+ patients in these two bed types,
-#' and the data reflects totals from all San Francisco Hospitals
+#' and the data reflects totals from all San Francisco Hospitals. More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem}{here}
 #'
 #' @format A data frame with 5 variables.
 #' \describe{
@@ -53,7 +53,7 @@
 #'   \item{patientcount}{Daily cases count}
 #'   }
 #' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
-#' @keywords datasets summary COVID19
+#' @keywords datasets summary COVID19 hospital
 #' @details Each record represents how many people were hospitalized on the date recorded in
 #' either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)
 #' @examples
@@ -62,4 +62,36 @@
 #' head(covid19sf_hospital)
 
 "covid19sf_hospital"
+
+#' San Francisco COVID-19 Tests
+#'
+#' @description  Case information on COVID-19 Laboratory testing.
+#' This data includes a daily count of test results reported,
+#' and how many of those were positive, negative, and indeterminate.
+#' Reported tests include tests with a positive, negative or indeterminate result.
+#' Indeterminate results, which could not conclusively determine whether COVID-19 virus
+#' was present, are not included in the calculation of percent positive.
+#' Testing for the novel coronavirus is available through commercial, clinical,
+#' and hospital laboratories, as well as the SFDPH Public Health Laboratory. More information about the data available \href{https://data.sfgov.org/COVID-19/Covid-19-Tests/nfpa-mg4g}{here}
+#'
+#' @format A data frame with 7 variables.
+#' \describe{
+#'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
+#'   \item{tests}{Daily tests count}
+#'   \item{pos}{Number of positive cases}
+#'   \item{pct}{Percentage of positive cases}
+#'   \item{neg}{Number of negative cases}
+#'   \item{indeterminate}{Number of indeterminate cases}
+#'   \item{last_updated}{The table last update time in POSIX format}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 tests
+#' @details A daily COVID-19 testing results report
+#' @examples
+#' data(covid19sf_tests)
+#'
+#' head(covid19sf_tests)
+
+"covid19sf_tests"
+
 

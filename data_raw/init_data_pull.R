@@ -42,14 +42,18 @@ write.csv(covid19sf_hospital, "csv/covid19sf_hospital.csv", row.names = FALSE)
 # Covid-19 Tests
 # https://data.sfgov.org/COVID-19/Covid-19-Tests/nfpa-mg4g
 
-df3 <- read.csv("https://data.sfgov.org/resource/nfpa-mg4g.csv", stringsAsFactors = FALSE) %>%
-  dplyr::mutate(specimen_collection_date = lubridate::ymd_hms(specimen_collection_date,
-                                                              tz = "America/Los_Angeles"),
+covid19sf_tests <- read.csv("https://data.sfgov.org/resource/nfpa-mg4g.csv", stringsAsFactors = FALSE) %>%
+  dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
+                                                              tz = "America/Los_Angeles")),
                 last_updated = lubridate::ymd_hms(last_updated_at,
                                                   tz = "America/Los_Angeles")) %>%
   dplyr::select(-last_updated_at)
-head(df3)
-tail(df3)
+head(covid19sf_tests)
+tail(covid19sf_tests)
+str(covid19sf_tests)
+
+usethis::use_data(covid19sf_tests, overwrite = TRUE)
+write.csv(covid19sf_tests, "csv/covid19sf_tests.csv", row.names = FALSE)
 
 # COVID-19 Cases Summarized by Race and Ethnicity
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Race-and-Ethnicity/vqqm-nsqg

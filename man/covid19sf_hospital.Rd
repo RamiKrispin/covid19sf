@@ -25,7 +25,7 @@ Count of COVID+ patients admitted to the hospital.
 Patients who are hospitalized and test positive for COVID-19 may be admitted to an
 acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed.
 This data shows the daily total count of COVID+ patients in these two bed types,
-and the data reflects totals from all San Francisco Hospitals
+and the data reflects totals from all San Francisco Hospitals. More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem}{here}
 }
 \details{
 Each record represents how many people were hospitalized on the date recorded in
@@ -38,4 +38,5 @@ head(covid19sf_hospital)
 }
 \keyword{COVID19}
 \keyword{datasets}
+\keyword{hospital}
 \keyword{summary}
