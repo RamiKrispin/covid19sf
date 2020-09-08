@@ -5,15 +5,19 @@
 
 
 `%>%` <- magrittr::`%>%`
-df1 <- read.csv("https://data.sfgov.org/resource/tvq9-ec9w.csv", stringsAsFactors = FALSE) %>%
-  dplyr::mutate(specimen_collection_date = lubridate::ymd_hms(specimen_collection_date,
-                                                              tz = "America/Los_Angeles"),
+covid19sf_summary <- read.csv("https://data.sfgov.org/resource/tvq9-ec9w.csv", stringsAsFactors = FALSE) %>%
+  dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
+                                                              tz = "America/Los_Angeles")),
                 last_updated = lubridate::ymd_hms(last_updated_at,
                                                   tz = "America/Los_Angeles")) %>%
   dplyr::select(-last_updated_at)
 
-head(df1)
-str(df1)
+head(covid19sf_summary)
+tail(covid19sf_summary)
+str(covid19sf_summary)
+nrow(covid19sf_summary)
+usethis::use_data(covid19sf_summary, overwrite = TRUE)
+
 
 # COVID-19 Hospitalizations
 # https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem
