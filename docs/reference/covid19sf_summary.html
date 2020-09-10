@@ -117,7 +117,7 @@ data will change to reflect as information becomes available. More information a
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data frame with 5 variables.</p><dl class='dl-horizontal'>
-  <dt>specimen_collection_date</dt><dd><p>date which case was recorded in YYYY-MM-DD format.</p></dd>
+  <dt>specimen_collection_date</dt><dd><p>Date which case was recorded in YYYY-MM-DD format.</p></dd>
   <dt>case_disposition</dt><dd><p>The case disposition c("Confirmed", "Death)</p></dd>
   <dt>transmission_category</dt><dd><p>The case transmission category c("Community", "From Contact", "Unknown")</p></dd>
   <dt>case_count</dt><dd><p>Daily cases count</p></dd>
@@ -140,28 +140,28 @@ and case disposition</p>
 #&gt; 3               2020-03-05        Confirmed          From Contact          5
 #&gt; 4               2020-03-07        Confirmed          From Contact          5
 #&gt; 5               2020-03-08        Confirmed          From Contact          1
-#&gt; 6               2020-03-10        Confirmed          From Contact          2
+#&gt; 6               2020-03-10        Confirmed             Community          4
 #&gt;          last_updated
-#&gt; 1 2020-09-06 15:19:27
-#&gt; 2 2020-09-06 15:19:27
-#&gt; 3 2020-09-06 15:19:27
-#&gt; 4 2020-09-06 15:19:27
-#&gt; 5 2020-09-06 15:19:27
-#&gt; 6 2020-09-06 15:19:27</div><div class='input'>
+#&gt; 1 2020-09-08 15:20:01
+#&gt; 2 2020-09-08 15:20:01
+#&gt; 3 2020-09-08 15:20:01
+#&gt; 4 2020-09-08 15:20:01
+#&gt; 5 2020-09-08 15:20:01
+#&gt; 6 2020-09-08 15:20:01</div><div class='input'>
 <span class='co'># Case disposition summary</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/table'>table</a></span>(<span class='no'>covid19sf_summary</span>$<span class='no'>case_disposition</span>)</div><div class='output co'>#&gt; 
 #&gt; Confirmed     Death 
-#&gt;       465        76 </div><div class='input'>
+#&gt;       466        77 </div><div class='input'>
 <span class='co'># Transmission category</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/table'>table</a></span>(<span class='no'>covid19sf_summary</span>$<span class='no'>transmission_category</span>)</div><div class='output co'>#&gt; 
 #&gt;    Community From Contact      Unknown 
-#&gt;          224          209          108 </div><div class='input'>
+#&gt;          227          211          105 </div><div class='input'>
 <span class='co'># Summary of case disposition and transmission category</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/table'>table</a></span>(<span class='no'>covid19sf_summary</span>$<span class='no'>case_disposition</span>,
       <span class='no'>covid19sf_summary</span>$<span class='no'>transmission_category</span>)</div><div class='output co'>#&gt;            
 #&gt;             Community From Contact Unknown
-#&gt;   Confirmed       181          180     104
-#&gt;   Death            43           29       4</div><div class='input'>
+#&gt;   Confirmed       183          182     101
+#&gt;   Death            44           29       4</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">

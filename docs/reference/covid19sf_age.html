@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>San Francisco COVID-19 Tests — covid19sf_tests • covid19sf</title>
+<title>San Francisco COVID-19 Cases Summarized by Age Group — covid19sf_age • covid19sf</title>
 
 
 <!-- jquery -->
@@ -33,15 +33,14 @@
 
 
 
-<meta property="og:title" content="San Francisco COVID-19 Tests — covid19sf_tests" />
-<meta property="og:description" content="Case information on COVID-19 Laboratory testing.
-This data includes a daily count of test results reported,
-and how many of those were positive, negative, and indeterminate.
-Reported tests include tests with a positive, negative or indeterminate result.
-Indeterminate results, which could not conclusively determine whether COVID-19 virus
-was present, are not included in the calculation of percent positive.
-Testing for the novel coronavirus is available through commercial, clinical,
-and hospital laboratories, as well as the SFDPH Public Health Laboratory. More information about the data available here" />
+<meta property="og:title" content="San Francisco COVID-19 Cases Summarized by Age Group — covid19sf_age" />
+<meta property="og:description" content="This dataset represents the COVID-19 positive confirmed cases by age group.
+Demographic and transmission data are based on information reported from case interviews,
+laboratories, and providers.
+This data may not be immediately available for recently reported cases and
+data will change to reflect as information becomes available.
+Cumulative counts of 5 or fewer are excluded from the dataset.
+More information about the data available here" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -103,34 +102,31 @@ and hospital laboratories, as well as the SFDPH Public Health Laboratory. More i
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>San Francisco COVID-19 Tests</h1>
+    <h1>San Francisco COVID-19 Cases Summarized by Age Group</h1>
     
-    <div class="hidden name"><code>covid19sf_tests.Rd</code></div>
+    <div class="hidden name"><code>covid19sf_age.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Case information on COVID-19 Laboratory testing.
-This data includes a daily count of test results reported,
-and how many of those were positive, negative, and indeterminate.
-Reported tests include tests with a positive, negative or indeterminate result.
-Indeterminate results, which could not conclusively determine whether COVID-19 virus
-was present, are not included in the calculation of percent positive.
-Testing for the novel coronavirus is available through commercial, clinical,
-and hospital laboratories, as well as the SFDPH Public Health Laboratory. More information about the data available <a href='https://data.sfgov.org/COVID-19/Covid-19-Tests/nfpa-mg4g'>here</a></p>
+    <p>This dataset represents the COVID-19 positive confirmed cases by age group.
+Demographic and transmission data are based on information reported from case interviews,
+laboratories, and providers.
+This data may not be immediately available for recently reported cases and
+data will change to reflect as information becomes available.
+Cumulative counts of 5 or fewer are excluded from the dataset.
+More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Age-Group/sunc-2t3k'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='no'>covid19sf_tests</span></pre>
+    <pre class="usage"><span class='no'>covid19sf_age</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 7 variables.</p><dl class='dl-horizontal'>
+    <p>A data frame with 5 variables.</p><dl class='dl-horizontal'>
   <dt>specimen_collection_date</dt><dd><p>date which case was recorded in YYYY-MM-DD format.</p></dd>
-  <dt>tests</dt><dd><p>Daily tests count</p></dd>
-  <dt>pos</dt><dd><p>Number of positive cases</p></dd>
-  <dt>pct</dt><dd><p>Percentage of positive cases</p></dd>
-  <dt>neg</dt><dd><p>Number of negative cases</p></dd>
-  <dt>indeterminate</dt><dd><p>Number of indeterminate cases</p></dd>
+  <dt>age_group</dt><dd><p>case age group c("under 18", "18-30", "31-40", "41-50", "51-60", "71-80")</p></dd>
+  <dt>new_confirmed_cases</dt><dd><p>Daily new confirmed cases</p></dd>
+  <dt>cumulative_confirmed_cases</dt><dd><p>Cumulative numbero of confirmed cases</p></dd>
   <dt>last_updated</dt><dd><p>The table last update time in POSIX format</p></dd>
   </dl>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
@@ -138,25 +134,25 @@ and hospital laboratories, as well as the SFDPH Public Health Laboratory. More i
     <p>San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal <a href='https://datasf.org/opendata/'>website</a>.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>A daily COVID-19 testing results report</p>
+    <p>The dataset contains the daily summary of covid19 cases in San Francisco by age group</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>covid19sf_tests</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>covid19sf_age</span>)
 
-<span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/head'>head</a></span>(<span class='no'>covid19sf_tests</span>)</div><div class='output co'>#&gt;   specimen_collection_date tests pos       pct neg indeterminate
-#&gt; 1               2020-02-28     2   0 0.0000000   2             0
-#&gt; 2               2020-03-01     2   0 0.0000000   2             0
-#&gt; 3               2020-03-02     2   0 0.0000000   2             0
-#&gt; 4               2020-03-03     7   2 0.2857143   5             0
-#&gt; 5               2020-03-04    11   0 0.0000000  11             0
-#&gt; 6               2020-03-05    19   6 0.3157895  13             0
-#&gt;          last_updated
-#&gt; 1 2020-09-08 15:24:00
-#&gt; 2 2020-09-08 15:24:00
-#&gt; 3 2020-09-08 15:24:00
-#&gt; 4 2020-09-08 15:24:00
-#&gt; 5 2020-09-08 15:24:00
-#&gt; 6 2020-09-08 15:24:00</div></pre>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/head'>head</a></span>(<span class='no'>covid19sf_age</span>)</div><div class='output co'>#&gt;   specimen_collection_date age_group new_confirmed_cases
+#&gt; 1               2020-03-12     51-60                   2
+#&gt; 2               2020-03-13     51-60                   2
+#&gt; 3               2020-03-14     51-60                   1
+#&gt; 4               2020-03-15     51-60                   0
+#&gt; 5               2020-03-16     51-60                   8
+#&gt; 6               2020-03-17     51-60                   3
+#&gt;   cumulative_confirmed_cases        last_updated
+#&gt; 1                          6 2020-09-08 15:20:01
+#&gt; 2                          8 2020-09-08 15:20:01
+#&gt; 3                          9 2020-09-08 15:20:01
+#&gt; 4                          9 2020-09-08 15:20:01
+#&gt; 5                         17 2020-09-08 15:20:01
+#&gt; 6                         20 2020-09-08 15:20:01</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
