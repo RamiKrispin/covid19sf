@@ -74,16 +74,17 @@ write.csv(covid19sf_demo, "csv/covid19sf_demo.csv", row.names = FALSE)
 # COVID-19 Cases Summarized by Age Group
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Age-Group/sunc-2t3k
 
-df5 <- read.csv("https://data.sfgov.org/resource/sunc-2t3k.csv?$limit=2000", stringsAsFactors = FALSE) %>%
-  dplyr::mutate(specimen_collection_date = lubridate::ymd_hms(specimen_collection_date,
-                                                              tz = "America/Los_Angeles"),
+covid19sf_age <- read.csv("https://data.sfgov.org/resource/sunc-2t3k.csv?$limit=2000", stringsAsFactors = FALSE) %>%
+  dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
+                                                              tz = "America/Los_Angeles")),
                 last_updated = lubridate::ymd_hms(last_updated_at,
                                                   tz = "America/Los_Angeles")) %>%
   dplyr::select(-last_updated_at)
 
-head(df5)
-nrow(df5)
-
+head(covid19sf_age)
+nrow(covid19sf_age)
+usethis::use_data(covid19sf_age, overwrite = TRUE)
+write.csv(covid19sf_age, "csv/covid19sf_age.csv", row.names = FALSE)
 # COVID-19 Alternative Housing Sites
 # https://data.sfgov.org/COVID-19/COVID-19-Alternative-Housing-Sites/qu2c-7bqh
 

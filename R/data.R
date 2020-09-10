@@ -7,7 +7,7 @@
 #'
 #' @format A data frame with 5 variables.
 #' \describe{
-#'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
+#'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
 #'   \item{case_disposition}{The case disposition c("Confirmed", "Death)}
 #'   \item{transmission_category}{The case transmission category c("Community", "From Contact", "Unknown")}
 #'   \item{case_count}{Daily cases count}
@@ -106,9 +106,9 @@
 #'
 #' @format A data frame with 5 variables.
 #' \describe{
-#'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
+#'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
 #'   \item{race_ethnicity}{The cases race/ethnicity}
-#'   \item{new_confirmed_cases}{Number of daily confirmed cases}
+#'   \item{new_confirmed_cases}{Daily new confirmed cases}
 #'   \item{cumulative_confirmed_cases}{Cumulative confirmed cases}
 #'   \item{last_updated}{The table last update time in POSIX format}
 #'   }
@@ -121,3 +121,31 @@
 #' head(covid19sf_demo)
 #'
 "covid19sf_demo"
+
+#' San Francisco COVID-19 Cases Summarized by Age Group
+#'
+#' @description  This dataset represents the COVID-19 positive confirmed cases by age group.
+#' Demographic and transmission data are based on information reported from case interviews,
+#' laboratories, and providers.
+#' This data may not be immediately available for recently reported cases and
+#' data will change to reflect as information becomes available.
+#' Cumulative counts of 5 or fewer are excluded from the dataset.
+#' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Age-Group/sunc-2t3k}{here}
+#'
+#' @format A data frame with 5 variables.
+#' \describe{
+#'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
+#'   \item{age_group}{case age group c("under 18", "18-30", "31-40", "41-50", "51-60", "71-80")}
+#'   \item{new_confirmed_cases}{Daily new confirmed cases}
+#'   \item{cumulative_confirmed_cases}{Cumulative numbero of confirmed cases}
+#'   \item{last_updated}{The table last update time in POSIX format}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 age
+#' @details The dataset contains the daily summary of covid19 cases in San Francisco by age group
+#' @examples
+#' data(covid19sf_age)
+#'
+#' head(covid19sf_age)
+
+"covid19sf_age"

@@ -7,7 +7,7 @@
 \format{
 A data frame with 5 variables.
 \describe{
-  \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
+  \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
   \item{case_disposition}{The case disposition c("Confirmed", "Death)}
   \item{transmission_category}{The case transmission category c("Community", "From Contact", "Unknown")}
   \item{case_count}{Daily cases count}

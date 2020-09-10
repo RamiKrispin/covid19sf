@@ -7,9 +7,9 @@
 \format{
 A data frame with 5 variables.
 \describe{
-  \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
+  \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
   \item{race_ethnicity}{The cases race/ethnicity}
-  \item{new_confirmed_cases}{Number of daily confirmed cases}
+  \item{new_confirmed_cases}{Daily new confirmed cases}
   \item{cumulative_confirmed_cases}{Cumulative confirmed cases}
   \item{last_updated}{The table last update time in POSIX format}
   }
