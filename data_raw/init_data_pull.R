@@ -90,24 +90,31 @@ write.csv(covid19sf_age, "csv/covid19sf_age.csv", row.names = FALSE)
 
 
 
-df6 <- read.csv("https://data.sfgov.org/resource/qu2c-7bqh.csv", stringsAsFactors = FALSE) %>%
-  dplyr::mutate(date_updated = lubridate::ymd_hms(date_updated,
-                                                  tz = "America/Los_Angeles"))
+covid19sf_housing <- read.csv("https://data.sfgov.org/resource/qu2c-7bqh.csv", stringsAsFactors = FALSE) %>%
+  dplyr::mutate(date_updated = as.Date(lubridate::ymd_hms(date_updated,
+                                                  tz = "America/Los_Angeles")))
 
-head(df6)
-nrow(df6)
-
+head(covid19sf_housing)
+nrow(covid19sf_housing)
+usethis::use_data(covid19sf_housing, overwrite = TRUE)
+write.csv(covid19sf_housing, "csv/covid19sf_housing.csv", row.names = FALSE)
 # COVID-19 Cases and Deaths Summarized by Geography
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-and-Deaths-Summarized-by-Geography/tpyr-dvnc
 
 
+covid19sf_geo <- sf::st_read("https://data.sfgov.org/resource/tpyr-dvnc.geojson")
+str(covid19sf_geo)
+covid19sf_geo$count <- as.numeric(covid19sf_geo$count)
+covid19sf_geo$rate <- as.numeric(covid19sf_geo$rate)
+covid19sf_geo$deaths <- as.numeric(covid19sf_geo$deaths)
+covid19sf_geo$acs_population <- as.numeric(covid19sf_geo$acs_population)
+covid19sf_geo$id <- as.character(covid19sf_geo$id)
+covid19sf_geo$area_type <- as.character(covid19sf_geo$area_type)
+head(covid19sf_geo)
+mapview::mapview(covid19sf_geo, zcol = "count",legend = TRUE)
+usethis::use_data(covid19sf_geo, overwrite = TRUE)
+write.csv(covid19sf_geo, "csv/covid19sf_geo.csv", row.names = FALSE)
 
-df7 <- read.csv("https://data.sfgov.org/resource/tpyr-dvnc.csv", stringsAsFactors = FALSE) %>%
-  dplyr::mutate(last_updated = lubridate::ymd_hms(last_updated_at,
-                                                  tz = "America/Los_Angeles")) %>%
-  dplyr::select(-last_updated_at)
-
-head(df7)
 
 # COVID-19 Hospital Capacity
 # https://data.sfgov.org/COVID-19/COVID-19-Hospital-Capacity/rh24-ebzg
