@@ -203,5 +203,11 @@
 #'
 #' head(covid19sf_geo)
 #'
+#' library(mapview)
+#' # Ploting SF Covid19 map using base plot function
+#' plot(covid19sf_geo)
+#'
+#' # Plotting with mapview package
+#' mapview(covid19sf_geo, zcol = "count",legend = TRUE)
 
 "covid19sf_geo"

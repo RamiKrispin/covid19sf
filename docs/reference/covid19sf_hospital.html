@@ -10,21 +10,27 @@
 
 
 <!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- bootstrap-toc -->
+<link rel="stylesheet" href="../bootstrap-toc.css">
+<script src="../bootstrap-toc.js"></script>
 
 <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous" />
 
 <!-- clipboard.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 
-<!-- sticky kit -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+<!-- headroom.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
@@ -39,7 +45,6 @@ Patients who are hospitalized and test positive for COVID-19 may be admitted to 
 acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed.
 This data shows the daily total count of COVID+ patients in these two bed types,
 and the data reflects totals from all San Francisco Hospitals. More information about the data available here" />
-<meta name="twitter:card" content="summary" />
 
 
 
@@ -54,9 +59,10 @@ and the data reflects totals from all San Francisco Hospitals. More information 
 <![endif]-->
 
 
+
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -78,7 +84,7 @@ and the data reflects totals from all San Francisco Hospitals. More information 
       <ul class="nav navbar-nav">
         <li>
   <a href="../index.html">
-    <span class="fa fa-home fa-lg"></span>
+    <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -95,6 +101,7 @@ and the data reflects totals from all San Francisco Hospitals. More information 
 </div><!--/.navbar -->
 
       
+
       </header>
 
 <div class="row">
@@ -113,18 +120,20 @@ This data shows the daily total count of COVID+ patients in these two bed types,
 and the data reflects totals from all San Francisco Hospitals. More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='no'>covid19sf_hospital</span></pre>
+    <pre class="usage"><span class='kw'>covid19sf_hospital</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 5 variables.</p><dl class='dl-horizontal'>
+    <p>A data frame with 5 variables.</p><dl>
   <dt>reportdate</dt><dd><p>date which case was recorded in YYYY-MM-DD format.</p></dd>
   <dt>hospital</dt><dd><p>The hospital which patients were admitted, currently it labeled under "All SF Hospitals"</p></dd>
   <dt>dphcategory</dt><dd><p>The type of hospitalization bed, either an acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed</p></dd>
   <dt>covidstatus</dt><dd><p>The patient diagnostic, either PUI (Patient Under Investigation) or COVID+ (positive case)</p></dd>
   <dt>patientcount</dt><dd><p>Daily cases count</p></dd>
-  </dl>
+  
+</dl>
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal <a href='https://datasf.org/opendata/'>website</a>.</p>
@@ -134,9 +143,10 @@ and the data reflects totals from all San Francisco Hospitals. More information 
 either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>covid19sf_hospital</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_hospital</span>)
 
-<span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/head'>head</a></span>(<span class='no'>covid19sf_hospital</span>)</div><div class='output co'>#&gt;   reportdate         hospital dphcategory covidstatus patientcount
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_hospital</span>)
+</div><div class='output co'>#&gt;   reportdate         hospital dphcategory covidstatus patientcount
 #&gt; 1 2020-03-23 All SF Hospitals    Med/Surg      COVID+           12
 #&gt; 2 2020-03-24 All SF Hospitals    Med/Surg      COVID+           20
 #&gt; 3 2020-03-25 All SF Hospitals    Med/Surg      COVID+           22
@@ -144,17 +154,13 @@ either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)<
 #&gt; 5 2020-03-27 All SF Hospitals    Med/Surg      COVID+           28
 #&gt; 6 2020-03-28 All SF Hospitals    Med/Surg      COVID+           27</div></pre>
   </div>
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <h2>Contents</h2>
-    <ul class="nav nav-pills nav-stacked">
-      <li><a href="#format">Format</a></li>
-      <li><a href="#source">Source</a></li>
-      <li><a href="#details">Details</a></li>
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
+    <nav id="toc" data-toggle="toc" class="sticky-top">
+      <h2 data-toc-skip>Contents</h2>
+    </nav>
   </div>
 </div>
+
 
       <footer>
       <div class="copyright">
@@ -162,13 +168,16 @@ either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)<
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
+
       </footer>
    </div>
 
   
 
+
   </body>
 </html>
+
 
