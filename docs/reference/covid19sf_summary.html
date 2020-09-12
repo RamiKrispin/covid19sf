@@ -123,7 +123,7 @@ data will change to reflect as information becomes available. More information a
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 5 variables.</p><dl>
+    <p>An object class data frame with 5 variables</p><dl>
   <dt>specimen_collection_date</dt><dd><p>Date which case was recorded in YYYY-MM-DD format.</p></dd>
   <dt>case_disposition</dt><dd><p>The case disposition c("Confirmed", "Death)</p></dd>
   <dt>transmission_category</dt><dd><p>The case transmission category c("Community", "From Contact", "Unknown")</p></dd>
@@ -152,29 +152,29 @@ and case disposition</p>
 #&gt; 5               2020-03-08        Confirmed          From Contact          1
 #&gt; 6               2020-03-10        Confirmed          From Contact          2
 #&gt;          last_updated
-#&gt; 1 2020-09-10 15:19:40
-#&gt; 2 2020-09-10 15:19:40
-#&gt; 3 2020-09-10 15:19:40
-#&gt; 4 2020-09-10 15:19:40
-#&gt; 5 2020-09-10 15:19:40
-#&gt; 6 2020-09-10 15:19:40</div><div class='input'>
+#&gt; 1 2020-09-11 14:19:53
+#&gt; 2 2020-09-11 14:19:53
+#&gt; 3 2020-09-11 14:19:53
+#&gt; 4 2020-09-11 14:19:53
+#&gt; 5 2020-09-11 14:19:53
+#&gt; 6 2020-09-11 14:19:53</div><div class='input'>
 <span class='co'># Case disposition summary</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>)
 </div><div class='output co'>#&gt; 
 #&gt; Confirmed     Death 
-#&gt;       468        79 </div><div class='input'>
+#&gt;       471        80 </div><div class='input'>
 <span class='co'># Transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt; 
 #&gt;    Community From Contact      Unknown 
-#&gt;          231          213          103 </div><div class='input'>
+#&gt;          232          215          104 </div><div class='input'>
 <span class='co'># Summary of case disposition and transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>,
       <span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt;            
 #&gt;             Community From Contact Unknown
-#&gt;   Confirmed       185          184      99
-#&gt;   Death            46           29       4</div><div class='input'>
+#&gt;   Confirmed       186          185     100
+#&gt;   Death            46           30       4</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
