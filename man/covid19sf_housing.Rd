@@ -14,7 +14,7 @@ An object class data frame with 8 variables
   \item{units_occupied}{Number of units occupied per site}
   \item{total_units}{Total number of units available}
   \item{population_covid_status}{The population covid status, c("COVID Negative/Unknown", "COVID Positive", "Post-COVID")}
-  \item{date_updated}{Date which data was updated in YYYY-MM-DD format.)}
+  \item{date_updated}{Date which data was updated in YYYY-MM-DD format)}
   }
 
 An object class data frame with 8 variables
@@ -26,7 +26,7 @@ An object class data frame with 8 variables
   \item{units_occupied}{Number of units occupied per site}
   \item{total_units}{Total number of units available}
   \item{population_covid_status}{The population covid status, c("COVID Negative/Unknown", "COVID Positive", "Post-COVID")}
-  \item{date_updated}{Date which data was updated in YYYY-MM-DD format.)}
+  \item{date_updated}{Date which data was updated in YYYY-MM-DD format.}
   }
 }
 \source{

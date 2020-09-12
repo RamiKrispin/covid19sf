@@ -13,11 +13,24 @@ An object class data frame with 5 variables
   \item{covidstatus}{The patient diagnostic, either PUI (Patient Under Investigation) or COVID+ (positive case)}
   \item{patientcount}{Daily cases count}
   }
+
+An object class data frame with 5 variables
+\describe{
+  \item{hospital}{The hospital name, currently a single categorical variable, c("All SF Acute Hospitals")}
+  \item{date}{Date which the data was recorded in YYYY-MM-DD format}
+  \item{bed_type}{The bed type, c("Intensive Care Surge", "Acute Care", "Acute Care Surge", "Intensive Care") }
+  \item{status}{The bed category status, c("Available", "COVID-19 (Confirmed & Suspected)", "Other Patients")}
+  \item{count}{The bed count}
+  }
 }
 \source{
 San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+
+San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
 }
 \usage{
+covid19sf_hospital
+
 covid19sf_hospital
 }
 \description{
@@ -26,17 +39,29 @@ Patients who are hospitalized and test positive for COVID-19 may be admitted to 
 acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed.
 This data shows the daily total count of COVID+ patients in these two bed types,
 and the data reflects totals from all San Francisco Hospitals. More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem}{here}
+
+Data on daily hospital bed use and available capacity at San Francisco
+acute care hospitals from April 2020 onward.
+Long Term Care facilities (like Laguna Honda and Kentfield) are not included
+in this data as acute care patients cannot be admitted to these facilities.
+More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospital-Capacity/rh24-ebzg}{here}
 }
 \details{
 Each record represents how many people were hospitalized on the date recorded in
 either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)
+
+The dataset contains a summary of San Francisco hospital bed status
 }
 \examples{
 data(covid19sf_hospital)
 
 head(covid19sf_hospital)
+data(covid19sf_hospital)
+
+head(covid19sf_hospital)
 }
 \keyword{COVID19}
+\keyword{bed}
 \keyword{datasets}
 \keyword{hospital}
 \keyword{summary}

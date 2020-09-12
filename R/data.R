@@ -165,7 +165,7 @@
 #'   \item{units_occupied}{Number of units occupied per site}
 #'   \item{total_units}{Total number of units available}
 #'   \item{population_covid_status}{The population covid status, c("COVID Negative/Unknown", "COVID Positive", "Post-COVID")}
-#'   \item{date_updated}{Date which data was updated in YYYY-MM-DD format.)}
+#'   \item{date_updated}{Date which data was updated in YYYY-MM-DD format)}
 #'   }
 #' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
 #' @keywords datasets summary COVID19 housing
@@ -227,7 +227,7 @@
 #'   \item{units_occupied}{Number of units occupied per site}
 #'   \item{total_units}{Total number of units available}
 #'   \item{population_covid_status}{The population covid status, c("COVID Negative/Unknown", "COVID Positive", "Post-COVID")}
-#'   \item{date_updated}{Date which data was updated in YYYY-MM-DD format.)}
+#'   \item{date_updated}{Date which data was updated in YYYY-MM-DD format.}
 #'   }
 #' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
 #' @keywords datasets summary COVID19 housing
@@ -250,28 +250,18 @@
 #'
 #' @format An object class data frame with 5 variables
 #' \describe{
-#'   \item{rate}{The rate of cases in the area, calculated as (count/acs_population) * 10000 which is a rate per 10,000 residents}
-#'   \item{count}{The count of cases in the area}
-#'   \item{deaths}{The number of cases in the area }
-#'   \item{last_updated_at}{Last update of the data in POSIXc forecast)}
-#'   \item{id}{area id}
-#'   \item{area_type}{Area type}
-#'   \item{acs_population}{The population from the latest 5-year estimates from the American Community Survey (2014-2018))}
-#'   \item{geometry}{The area polygon data)}
+#'   \item{hospital}{The hospital name, currently a single categorical variable, c("All SF Acute Hospitals")}
+#'   \item{date}{Date which the data was recorded in YYYY-MM-DD format}
+#'   \item{bed_type}{The bed type, c("Intensive Care Surge", "Acute Care", "Acute Care Surge", "Intensive Care") }
+#'   \item{status}{The bed category status, c("Available", "COVID-19 (Confirmed & Suspected)", "Other Patients")}
+#'   \item{count}{The bed count}
 #'   }
 #' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
-#' @keywords datasets summary COVID19 geo map
-#' @details The dataset contains a summary of covid19 cases in San Francisco by geographic area
+#' @keywords datasets summary COVID19 hospital bed
+#' @details The dataset contains a summary of San Francisco hospital bed status
 #' @examples
-#' data(covid19sf_geo)
+#' data(covid19sf_hospital)
 #'
-#' head(covid19sf_geo)
-#'
-#' library(mapview)
-#' # Ploting SF Covid19 map using base plot function
-#' plot(covid19sf_geo)
-#'
-#' # Plotting with mapview package
-#' mapview(covid19sf_geo, zcol = "count",legend = TRUE)
+#' head(covid19sf_hospital)
 
-"covid19sf_geo"
+"covid19sf_hospital"
