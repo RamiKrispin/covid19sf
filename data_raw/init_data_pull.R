@@ -131,22 +131,27 @@ usethis::use_data(covid19sf_hospital, overwrite = TRUE)
 write.csv(covid19sf_hospital, "csv/covid19sf_hospital.csv", row.names = FALSE)
 # COVID-19 Testing Locations
 # https://data.sfgov.org/COVID-19/COVID-19-Testing-Locations/dtit-7gp4
+covid19sf_test_loc <- sf::st_read("https://data.sfgov.org/resource/dtit-7gp4.geojson")
+mapview::mapview(covid19sf_test_loc, zcol = "name", legend = FALSE)
+covid19sf_test_loc <- read.csv("https://data.sfgov.org/resource/dtit-7gp4.csv", stringsAsFactors = FALSE)
 
-df9 <- read.csv("https://data.sfgov.org/resource/dtit-7gp4.csv", stringsAsFactors = FALSE)
-
-head(df9)
+head(covid19sf_test_loc)
 
 # COVID-19 Cases Summarized by Gender
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Gender/nhy6-gqam
 
-df10 <- read.csv("https://data.sfgov.org/resource/nhy6-gqam.csv", stringsAsFactors = FALSE) %>%
+covid19sf_gender <- read.csv("https://data.sfgov.org/resource/nhy6-gqam.csv", stringsAsFactors = FALSE) %>%
   dplyr::mutate(specimen_collection_date = lubridate::ymd_hms(specimen_collection_date,
                                                               tz = "America/Los_Angeles"),
                 last_updated = lubridate::ymd_hms(last_updated_at,
                                                   tz = "America/Los_Angeles")) %>%
   dplyr::select(-last_updated_at)
 
-head(df10)
+head(covid19sf_gender)
+nrow(covid19sf_gender)
+
+usethis::use_data(covid19sf_gender, overwrite = TRUE)
+write.csv(covid19sf_gender, "csv/covid19sf_gender.csv", row.names = FALSE)
 
 # COVID-19 Cases Summarized by Homelessness Status
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Homelessness-Status/b45x-2crv
