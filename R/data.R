@@ -150,7 +150,6 @@
 
 "covid19sf_age"
 
-
 #' San Francisco COVID-19 Alternative Housing Sites
 #'
 #' @description  This dataset includes aggregate data on the type, status, population served,
@@ -178,3 +177,31 @@
 
 "covid19sf_housing"
 
+#' San Francisco COVID-19 Cases and Deaths Summarized by Geography
+#'
+#' @description  Medical provider confirmed COVID-19 cases and confirmed COVID-19 related deaths
+#' in San Francisco, CA aggregated by several different geographic areas and normalized by
+#' 2018 American Community Survey (ACS) 5-year estimates for population data to calculate rate per 10,000 residents.
+#' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-and-Deaths-Summarized-by-Geography/tpyr-dvnc}{here}
+#'
+#' @format An object class sf and data frame with 8 variables.
+#' \describe{
+#'   \item{rate}{The rate of cases in the area, calculated as (count/acs_population) * 10000 which is a rate per 10,000 residents}
+#'   \item{count}{The count of cases in the area}
+#'   \item{deaths}{The number of cases in the area }
+#'   \item{last_updated_at}{Last update of the data in POSIXc forecast)}
+#'   \item{id}{area id}
+#'   \item{area_type}{Area type}
+#'   \item{acs_population}{The population from the latest 5-year estimates from the American Community Survey (2014-2018))}
+#'   \item{geometry}{The area polygon data)}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 geo map
+#' @details The dataset contains a summary of covid19 cases in San Francisco by geographic area
+#' @examples
+#' data(covid19sf_geo)
+#'
+#' head(covid19sf_geo)
+#'
+
+"covid19sf_geo"

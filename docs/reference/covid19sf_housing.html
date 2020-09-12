@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition — covid19sf_demo • covid19sf</title>
+<title>San Francisco COVID-19 Alternative Housing Sites — covid19sf_housing • covid19sf</title>
 
 
 <!-- jquery -->
@@ -33,13 +33,9 @@
 
 
 
-<meta property="og:title" content="San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition — covid19sf_demo" />
-<meta property="og:description" content="This dataset represents the COVID-19 positive confirmed cases by
-race and ethnicity. Demographic data are based on information
-reported from case interviews, laboratories, and providers.
-This data may not be immediately available for recently reported cases and data will
-change to reflect as information becomes available.
-Cumulative counts of 5 or fewer are excluded from the dataset.
+<meta property="og:title" content="San Francisco COVID-19 Alternative Housing Sites — covid19sf_housing" />
+<meta property="og:description" content="This dataset includes aggregate data on the type, status, population served,
+and individuals placed at each alternative housing site under contract with HSA.
 More information about the data available here" />
 <meta name="twitter:card" content="summary" />
 
@@ -102,58 +98,56 @@ More information about the data available here" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition</h1>
+    <h1>San Francisco COVID-19 Alternative Housing Sites</h1>
     
-    <div class="hidden name"><code>covid19sf_demo.Rd</code></div>
+    <div class="hidden name"><code>covid19sf_housing.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This dataset represents the COVID-19 positive confirmed cases by
-race and ethnicity. Demographic data are based on information
-reported from case interviews, laboratories, and providers.
-This data may not be immediately available for recently reported cases and data will
-change to reflect as information becomes available.
-Cumulative counts of 5 or fewer are excluded from the dataset.
-More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Race-and-Ethnicity/vqqm-nsqg'>here</a></p>
+    <p>This dataset includes aggregate data on the type, status, population served,
+and individuals placed at each alternative housing site under contract with HSA.
+More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Alternative-Housing-Sites/qu2c-7bqh'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='no'>covid19sf_demo</span></pre>
+    <pre class="usage"><span class='no'>covid19sf_housing</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 5 variables.</p><dl class='dl-horizontal'>
-  <dt>specimen_collection_date</dt><dd><p>Date which case was recorded in YYYY-MM-DD format.</p></dd>
-  <dt>race_ethnicity</dt><dd><p>The cases race/ethnicity</p></dd>
-  <dt>new_confirmed_cases</dt><dd><p>Daily new confirmed cases</p></dd>
-  <dt>cumulative_confirmed_cases</dt><dd><p>Cumulative confirmed cases</p></dd>
-  <dt>last_updated</dt><dd><p>The table last update time in POSIX format</p></dd>
+    <p>A data frame with 8 variables.</p><dl class='dl-horizontal'>
+  <dt>site_id</dt><dd><p>Site ID</p></dd>
+  <dt>status</dt><dd><p>The site status, c("Active", "In Preparation")</p></dd>
+  <dt>facility_type</dt><dd><p>The facility type, c("Hotel", "Safe Sleep", "Congregate", "RV")</p></dd>
+  <dt>site_type</dt><dd><p>The site type, c(""SIP: COVID-Negative/Unknown", "I/Q", "SS: COVID-Negative/Unknown", "SIP: Post-COVID")</p></dd>
+  <dt>units_occupied</dt><dd><p>Number of units occupied per site</p></dd>
+  <dt>total_units</dt><dd><p>Total number of units available</p></dd>
+  <dt>population_covid_status</dt><dd><p>The population covid status, c("COVID Negative/Unknown", "COVID Positive", "Post-COVID")</p></dd>
+  <dt>date_updated</dt><dd><p>Date which data was updated in YYYY-MM-DD format.)</p></dd>
   </dl>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal <a href='https://datasf.org/opendata/'>website</a>.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>The dataset contains the daily summary of covid19 cases in San Francisco by race/ethnicity group</p>
+    <p>The dataset contains a summary of covid19 housing site in San Francisco by site, facility and covid19 status</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>covid19sf_demo</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>covid19sf_housing</span>)
 
-<span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/head'>head</a></span>(<span class='no'>covid19sf_demo</span>)</div><div class='output co'>#&gt;   specimen_collection_date race_ethnicity new_confirmed_cases
-#&gt; 1               2020-03-05        Unknown                   4
-#&gt; 2               2020-03-06        Unknown                   0
-#&gt; 3               2020-05-25          Asian                   0
-#&gt; 4               2020-03-29          White                   0
-#&gt; 5               2020-08-14        Unknown                   5
-#&gt; 6               2020-03-23          Asian                   2
-#&gt;   cumulative_confirmed_cases        last_updated
-#&gt; 1                          5 2020-08-25 15:18:34
-#&gt; 2                          5 2020-08-25 15:18:34
-#&gt; 3                        320 2020-09-10 15:19:40
-#&gt; 4                        126 2020-09-10 15:19:40
-#&gt; 5                       1138 2020-09-10 15:19:40
-#&gt; 6                         37 2020-09-10 15:19:40</div><div class='input'>
-</div></pre>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/head'>head</a></span>(<span class='no'>covid19sf_housing</span>)</div><div class='output co'>#&gt;   site_id status facility_type                   site_type units_occupied
+#&gt; 1     1.0 Active         Hotel SIP: COVID-Negative/Unknown             44
+#&gt; 2     2.0 Active         Hotel SIP: COVID-Negative/Unknown            131
+#&gt; 3     4.0 Active         Hotel SIP: COVID-Negative/Unknown            107
+#&gt; 4     5.0 Active         Hotel SIP: COVID-Negative/Unknown             58
+#&gt; 5     6.0 Active         Hotel SIP: COVID-Negative/Unknown             26
+#&gt; 6     7.0 Active         Hotel SIP: COVID-Negative/Unknown             59
+#&gt;   total_units population_covid_status date_updated
+#&gt; 1          59  COVID Negative/Unknown   2020-09-11
+#&gt; 2         142  COVID Negative/Unknown   2020-09-11
+#&gt; 3         116  COVID Negative/Unknown   2020-09-11
+#&gt; 4          63  COVID Negative/Unknown   2020-09-11
+#&gt; 5          31  COVID Negative/Unknown   2020-09-11
+#&gt; 6          68  COVID Negative/Unknown   2020-09-11</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
