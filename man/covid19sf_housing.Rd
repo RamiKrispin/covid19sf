@@ -16,51 +16,25 @@ An object class data frame with 8 variables
   \item{population_covid_status}{The population covid status, c("COVID Negative/Unknown", "COVID Positive", "Post-COVID")}
   \item{date_updated}{Date which data was updated in YYYY-MM-DD format)}
   }
-
-An object class data frame with 8 variables
-\describe{
-  \item{site_id}{Site ID}
-  \item{status}{The site status, c("Active", "In Preparation")}
-  \item{facility_type}{The facility type, c("Hotel", "Safe Sleep", "Congregate", "RV") }
-  \item{site_type}{The site type, c(""SIP: COVID-Negative/Unknown", "I/Q", "SS: COVID-Negative/Unknown", "SIP: Post-COVID") }
-  \item{units_occupied}{Number of units occupied per site}
-  \item{total_units}{Total number of units available}
-  \item{population_covid_status}{The population covid status, c("COVID Negative/Unknown", "COVID Positive", "Post-COVID")}
-  \item{date_updated}{Date which data was updated in YYYY-MM-DD format.}
-  }
 }
 \source{
 San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
-
-San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
 }
 \usage{
-covid19sf_housing
-
 covid19sf_housing
 }
 \description{
 This dataset includes aggregate data on the type, status, population served,
 and individuals placed at each alternative housing site under contract with HSA.
 More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Alternative-Housing-Sites/qu2c-7bqh}{here}
-
-This dataset includes aggregate data on the type, status, population served,
-and individuals placed at each alternative housing site under contract with HSA.
-More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Alternative-Housing-Sites/qu2c-7bqh}{here}
 }
 \details{
-The dataset contains a summary of covid19 housing site in San Francisco by site, facility and covid19 status
-
 The dataset contains a summary of covid19 housing site in San Francisco by site, facility and covid19 status
 }
 \examples{
 data(covid19sf_housing)
 
 head(covid19sf_housing)
-data(covid19sf_housing)
-
-head(covid19sf_housing)
-
 }
 \keyword{COVID19}
 \keyword{datasets}

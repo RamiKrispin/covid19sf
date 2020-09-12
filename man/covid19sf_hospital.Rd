@@ -3,17 +3,8 @@
 \docType{data}
 \name{covid19sf_hospital}
 \alias{covid19sf_hospital}
-\title{San Francisco COVID-19 Hospitalizations}
+\title{San Francisco COVID-19 Hospital Capacity}
 \format{
-An object class data frame with 5 variables
-\describe{
-  \item{reportdate}{date which case was recorded in YYYY-MM-DD format.}
-  \item{hospital}{The hospital which patients were admitted, currently it labeled under "All SF Hospitals" }
-  \item{dphcategory}{The type of hospitalization bed, either an acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed}
-  \item{covidstatus}{The patient diagnostic, either PUI (Patient Under Investigation) or COVID+ (positive case)}
-  \item{patientcount}{Daily cases count}
-  }
-
 An object class data frame with 5 variables
 \describe{
   \item{hospital}{The hospital name, currently a single categorical variable, c("All SF Acute Hospitals")}
@@ -25,21 +16,11 @@ An object class data frame with 5 variables
 }
 \source{
 San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
-
-San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
 }
 \usage{
 covid19sf_hospital
-
-covid19sf_hospital
 }
 \description{
-Count of COVID+ patients admitted to the hospital.
-Patients who are hospitalized and test positive for COVID-19 may be admitted to an
-acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed.
-This data shows the daily total count of COVID+ patients in these two bed types,
-and the data reflects totals from all San Francisco Hospitals. More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem}{here}
-
 Data on daily hospital bed use and available capacity at San Francisco
 acute care hospitals from April 2020 onward.
 Long Term Care facilities (like Laguna Honda and Kentfield) are not included
@@ -47,15 +28,9 @@ in this data as acute care patients cannot be admitted to these facilities.
 More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospital-Capacity/rh24-ebzg}{here}
 }
 \details{
-Each record represents how many people were hospitalized on the date recorded in
-either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)
-
 The dataset contains a summary of San Francisco hospital bed status
 }
 \examples{
-data(covid19sf_hospital)
-
-head(covid19sf_hospital)
 data(covid19sf_hospital)
 
 head(covid19sf_hospital)

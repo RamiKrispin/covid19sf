@@ -57,11 +57,11 @@
 #' @details Each record represents how many people were hospitalized on the date recorded in
 #' either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)
 #' @examples
-#' data(covid19sf_hospital)
+#' data(covid19sf_hospitalizations)
 #'
-#' head(covid19sf_hospital)
+#' head(covid19sf_hospitalizations)
 
-"covid19sf_hospital"
+"covid19sf_hospitalizations"
 
 #' San Francisco COVID-19 Tests
 #'

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>San Francisco COVID-19 Hospitalizations — covid19sf_hospital • covid19sf</title>
+<title>San Francisco COVID-19 Hospital Capacity — covid19sf_hospital • covid19sf</title>
 
 
 <!-- jquery -->
@@ -39,13 +39,8 @@
 
 
 
-<meta property="og:title" content="San Francisco COVID-19 Hospitalizations — covid19sf_hospital" />
-<meta property="og:description" content="Count of COVID+ patients admitted to the hospital.
-Patients who are hospitalized and test positive for COVID-19 may be admitted to an
-acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed.
-This data shows the daily total count of COVID+ patients in these two bed types,
-and the data reflects totals from all San Francisco Hospitals. More information about the data available here
-Data on daily hospital bed use and available capacity at San Francisco
+<meta property="og:title" content="San Francisco COVID-19 Hospital Capacity — covid19sf_hospital" />
+<meta property="og:description" content="Data on daily hospital bed use and available capacity at San Francisco
 acute care hospitals from April 2020 onward.
 Long Term Care facilities (like Laguna Honda and Kentfield) are not included
 in this data as acute care patients cannot be admitted to these facilities.
@@ -112,41 +107,25 @@ More information about the data available here" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>San Francisco COVID-19 Hospitalizations</h1>
+    <h1>San Francisco COVID-19 Hospital Capacity</h1>
     
     <div class="hidden name"><code>covid19sf_hospital.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Count of COVID+ patients admitted to the hospital.
-Patients who are hospitalized and test positive for COVID-19 may be admitted to an
-acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed.
-This data shows the daily total count of COVID+ patients in these two bed types,
-and the data reflects totals from all San Francisco Hospitals. More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem'>here</a></p>
-<p>Data on daily hospital bed use and available capacity at San Francisco
+    <p>Data on daily hospital bed use and available capacity at San Francisco
 acute care hospitals from April 2020 onward.
 Long Term Care facilities (like Laguna Honda and Kentfield) are not included
 in this data as acute care patients cannot be admitted to these facilities.
 More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Hospital-Capacity/rh24-ebzg'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='kw'>covid19sf_hospital</span>
-
-<span class='kw'>covid19sf_hospital</span></pre>
+    <pre class="usage"><span class='kw'>covid19sf_hospital</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>An object class data frame with 5 variables</p><dl>
-  <dt>reportdate</dt><dd><p>date which case was recorded in YYYY-MM-DD format.</p></dd>
-  <dt>hospital</dt><dd><p>The hospital which patients were admitted, currently it labeled under "All SF Hospitals"</p></dd>
-  <dt>dphcategory</dt><dd><p>The type of hospitalization bed, either an acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed</p></dd>
-  <dt>covidstatus</dt><dd><p>The patient diagnostic, either PUI (Patient Under Investigation) or COVID+ (positive case)</p></dd>
-  <dt>patientcount</dt><dd><p>Daily cases count</p></dd>
-  
-</dl>
-
-<p>An object class data frame with 5 variables</p><dl>
   <dt>hospital</dt><dd><p>The hospital name, currently a single categorical variable, c("All SF Acute Hospitals")</p></dd>
   <dt>date</dt><dd><p>Date which the data was recorded in YYYY-MM-DD format</p></dd>
   <dt>bed_type</dt><dd><p>The bed type, c("Intensive Care Surge", "Acute Care", "Acute Care Surge", "Intensive Care")</p></dd>
@@ -158,31 +137,12 @@ More information about the data available <a href='https://data.sfgov.org/COVID-
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal <a href='https://datasf.org/opendata/'>website</a>.</p>
-<p>San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal <a href='https://datasf.org/opendata/'>website</a>.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Each record represents how many people were hospitalized on the date recorded in
-either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)</p>
-<p>The dataset contains a summary of San Francisco hospital bed status</p>
+    <p>The dataset contains a summary of San Francisco hospital bed status</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_hospital</span>)
-
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_hospital</span>)
-</div><div class='output co'>#&gt;                 hospital       date             bed_type
-#&gt; 1 All SF Acute Hospitals 2020-07-22 Intensive Care Surge
-#&gt; 2 All SF Acute Hospitals 2020-07-22           Acute Care
-#&gt; 3 All SF Acute Hospitals 2020-07-22     Acute Care Surge
-#&gt; 4 All SF Acute Hospitals 2020-07-22       Intensive Care
-#&gt; 5 All SF Acute Hospitals 2020-07-22       Intensive Care
-#&gt; 6 All SF Acute Hospitals 2020-07-22       Intensive Care
-#&gt;                             status count
-#&gt; 1                        Available   309
-#&gt; 2                        Available   326
-#&gt; 3                        Available   406
-#&gt; 4                        Available    79
-#&gt; 5 COVID-19 (Confirmed &amp; Suspected)    33
-#&gt; 6                   Other Patients   174</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_hospital</span>)
 
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_hospital</span>)
 </div><div class='output co'>#&gt;                 hospital       date             bed_type
