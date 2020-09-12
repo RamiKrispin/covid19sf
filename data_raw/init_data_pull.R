@@ -166,5 +166,3 @@ df11 <- read.csv("https://data.sfgov.org/resource/b45x-2crv.csv", stringsAsFacto
 head(df11)
 
 
-
-https://data.sfgov.org/resource/b45x-2crv.csv
