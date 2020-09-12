@@ -266,3 +266,30 @@
 #
 "covid19sf_gender"
 
+#' San Francisco COVID-19 Cases Summarized by Homelessness Status
+#'
+#' @description  This dataset represents the COVID-19 positive confirmed cases by homelessness.
+#'  Demographic and transmission data are based on information reported from case
+#'  interviews, laboratories, and providers.
+#'  This data may not be immediately available for recently reported cases
+#'  and data will change to reflect as information becomes available.
+#'  Cumulative counts of 5 or fewer are excluded from the dataset.
+#'  More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Homelessness-Status/b45x-2crv}{here}
+#'
+#' @format An object class data frame with 5 variables
+#' \describe{
+#'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
+#'   \item{homelessness_status}{The homelessness status, a signle category variable c("Homeless")}
+#'   \item{new_confirmed_cases}{Total cases confirmed cases per date}
+#'   \item{cumulative_confirmed_cases}{Cumulative confirmed cases}
+#'   \item{last_updated}{The table last update time in POSIX format}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 homeless
+#' @details The dataset contains the daily summary of covid19 cases in San Francisco by homelessness status
+#' @examples
+#' data(covid19sf_homeless)
+#'
+#' head(covid19sf_homeless)
+#
+"covid19sf_homeless"

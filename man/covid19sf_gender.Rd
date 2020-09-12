@@ -26,7 +26,7 @@ Demographic and transmission data are based on information reported from case in
 laboratories, and providers. This data may not be immediately available for recently reported
 cases and data will change to reflect as information becomes available.
 Cumulative counts of 5 or fewer are excluded from the dataset.
- More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Date-Transmission-and/tvq9-ec9w}{here}
+ More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Gender/nhy6-gqam}{here}
 }
 \details{
 The dataset contains the daily summary of covid19 cases in San Francisco by gender
