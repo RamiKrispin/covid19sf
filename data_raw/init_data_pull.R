@@ -120,13 +120,15 @@ write.csv(covid19sf_geo, "csv/covid19sf_geo.csv", row.names = FALSE)
 # https://data.sfgov.org/COVID-19/COVID-19-Hospital-Capacity/rh24-ebzg
 
 
-df8 <- read.csv("https://data.sfgov.org/resource/rh24-ebzg.csv?$limit=2000", stringsAsFactors = FALSE) %>%
-  dplyr::mutate(date = as.Date(lubridate::ymd_hms(date,
-                                                              tz = "America/Los_Angeles")))
+covid19sf_hospital <- read.csv("https://data.sfgov.org/resource/rh24-ebzg.csv?$limit=2000", stringsAsFactors = FALSE) %>%
+  dplyr::mutate(date = as.Date(as.Date(lubridate::ymd_hms(date,
+                                                              tz = "America/Los_Angeles"))))
 
-head(df8)
-tail(df8)
+head(covid19sf_hospital)
+tail(covid19sf_hospital)
 
+usethis::use_data(covid19sf_hospital, overwrite = TRUE)
+write.csv(covid19sf_hospital, "csv/covid19sf_hospital.csv", row.names = FALSE)
 # COVID-19 Testing Locations
 # https://data.sfgov.org/COVID-19/COVID-19-Testing-Locations/dtit-7gp4
 

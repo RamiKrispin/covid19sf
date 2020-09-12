@@ -5,7 +5,7 @@
 #' This data may not be immediately available for recently reported cases and
 #' data will change to reflect as information becomes available. More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Date-Transmission-and/tvq9-ec9w}{here}
 #'
-#' @format A data frame with 5 variables.
+#' @format An object class data frame with 5 variables
 #' \describe{
 #'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
 #'   \item{case_disposition}{The case disposition c("Confirmed", "Death)}
@@ -44,7 +44,7 @@
 #' This data shows the daily total count of COVID+ patients in these two bed types,
 #' and the data reflects totals from all San Francisco Hospitals. More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem}{here}
 #'
-#' @format A data frame with 5 variables.
+#' @format An object class data frame with 5 variables
 #' \describe{
 #'   \item{reportdate}{date which case was recorded in YYYY-MM-DD format.}
 #'   \item{hospital}{The hospital which patients were admitted, currently it labeled under "All SF Hospitals" }
@@ -74,7 +74,7 @@
 #' Testing for the novel coronavirus is available through commercial, clinical,
 #' and hospital laboratories, as well as the SFDPH Public Health Laboratory. More information about the data available \href{https://data.sfgov.org/COVID-19/Covid-19-Tests/nfpa-mg4g}{here}
 #'
-#' @format A data frame with 7 variables.
+#' @format An object class data frame with 7 variables
 #' \describe{
 #'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
 #'   \item{tests}{Daily tests count}
@@ -104,7 +104,7 @@
 #' Cumulative counts of 5 or fewer are excluded from the dataset.
 #' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Race-and-Ethnicity/vqqm-nsqg}{here}
 #'
-#' @format A data frame with 5 variables.
+#' @format An object class data frame with 5 variables
 #' \describe{
 #'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
 #'   \item{race_ethnicity}{The cases race/ethnicity}
@@ -132,7 +132,7 @@
 #' Cumulative counts of 5 or fewer are excluded from the dataset.
 #' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Age-Group/sunc-2t3k}{here}
 #'
-#' @format A data frame with 5 variables.
+#' @format An object class data frame with 5 variables
 #' \describe{
 #'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
 #'   \item{age_group}{case age group c("under 18", "18-30", "31-40", "41-50", "51-60", "71-80")}
@@ -156,7 +156,7 @@
 #' and individuals placed at each alternative housing site under contract with HSA.
 #' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Alternative-Housing-Sites/qu2c-7bqh}{here}
 #'
-#' @format A data frame with 8 variables.
+#' @format An object class data frame with 8 variables
 #' \describe{
 #'   \item{site_id}{Site ID}
 #'   \item{status}{The site status, c("Active", "In Preparation")}
@@ -185,6 +185,70 @@
 #' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-and-Deaths-Summarized-by-Geography/tpyr-dvnc}{here}
 #'
 #' @format An object class sf and data frame with 8 variables.
+#' \describe{
+#'   \item{rate}{The rate of cases in the area, calculated as (count/acs_population) * 10000 which is a rate per 10,000 residents}
+#'   \item{count}{The count of cases in the area}
+#'   \item{deaths}{The number of cases in the area }
+#'   \item{last_updated_at}{Last update of the data in POSIXc forecast)}
+#'   \item{id}{area id}
+#'   \item{area_type}{Area type}
+#'   \item{acs_population}{The population from the latest 5-year estimates from the American Community Survey (2014-2018))}
+#'   \item{geometry}{The area polygon data)}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 geo map
+#' @details The dataset contains a summary of covid19 cases in San Francisco by geographic area
+#' @examples
+#' data(covid19sf_geo)
+#'
+#' head(covid19sf_geo)
+#'
+#' library(mapview)
+#' # Ploting SF Covid19 map using base plot function
+#' plot(covid19sf_geo)
+#'
+#' # Plotting with mapview package
+#' mapview(covid19sf_geo, zcol = "count",legend = TRUE)
+
+"covid19sf_geo"
+
+#' San Francisco COVID-19 Alternative Housing Sites
+#'
+#' @description  This dataset includes aggregate data on the type, status, population served,
+#' and individuals placed at each alternative housing site under contract with HSA.
+#' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Alternative-Housing-Sites/qu2c-7bqh}{here}
+#'
+#' @format An object class data frame with 8 variables
+#' \describe{
+#'   \item{site_id}{Site ID}
+#'   \item{status}{The site status, c("Active", "In Preparation")}
+#'   \item{facility_type}{The facility type, c("Hotel", "Safe Sleep", "Congregate", "RV") }
+#'   \item{site_type}{The site type, c(""SIP: COVID-Negative/Unknown", "I/Q", "SS: COVID-Negative/Unknown", "SIP: Post-COVID") }
+#'   \item{units_occupied}{Number of units occupied per site}
+#'   \item{total_units}{Total number of units available}
+#'   \item{population_covid_status}{The population covid status, c("COVID Negative/Unknown", "COVID Positive", "Post-COVID")}
+#'   \item{date_updated}{Date which data was updated in YYYY-MM-DD format.)}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 housing
+#' @details The dataset contains a summary of covid19 housing site in San Francisco by site, facility and covid19 status
+#' @examples
+#' data(covid19sf_housing)
+#'
+#' head(covid19sf_housing)
+#'
+
+"covid19sf_housing"
+
+#' San Francisco COVID-19 Hospital Capacity
+#'
+#' @description  Data on daily hospital bed use and available capacity at San Francisco
+#' acute care hospitals from April 2020 onward.
+#' Long Term Care facilities (like Laguna Honda and Kentfield) are not included
+#' in this data as acute care patients cannot be admitted to these facilities.
+#' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospital-Capacity/rh24-ebzg}{here}
+#'
+#' @format An object class data frame with 5 variables
 #' \describe{
 #'   \item{rate}{The rate of cases in the area, calculated as (count/acs_population) * 10000 which is a rate per 10,000 residents}
 #'   \item{count}{The count of cases in the area}

@@ -5,7 +5,7 @@
 \alias{covid19sf_hospital}
 \title{San Francisco COVID-19 Hospitalizations}
 \format{
-A data frame with 5 variables.
+An object class data frame with 5 variables
 \describe{
   \item{reportdate}{date which case was recorded in YYYY-MM-DD format.}
   \item{hospital}{The hospital which patients were admitted, currently it labeled under "All SF Hospitals" }
