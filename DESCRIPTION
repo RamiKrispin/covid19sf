@@ -6,8 +6,7 @@ Authors@R: person(given = "Rami",
                   email = "rami.krispin@gmail.com",
                   role = c("aut", "cre"))
 Maintainer: Rami Krispin <rami.krispin@gmail.com>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: Provides a verity of summary tables of the Covid19 cases in San Francisco. Data source: San Francisco, Department of Public Health - Population Health Division <https://datasf.org/opendata/>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -21,3 +20,5 @@ Suggests:
     rmarkdown
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
+URL: https://github.com/RamiKrispin/covid19sf
+BugReports: https://github.com/RamiKrispin/covid19sf/issues
