@@ -3,5 +3,7 @@
 ^LICENSE\.md$
 ^data_raw$
 ^docs$
+^docker$
+^.github$
 ^csv$
 ^README\.Rmd$
