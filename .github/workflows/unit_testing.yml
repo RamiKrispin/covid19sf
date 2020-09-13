@@ -1,0 +1,17 @@
+on: [push, pull_request]
+
+name: build
+
+jobs:
+  R-CMD-check:
+    name: R CMD check
+    runs-on: ubuntu-18.04
+    container: 
+        image:  rkrispin/covid19sf:dev
+    steps:
+       - name: checkout_repo
+         uses: actions/checkout@v2
+       - name: Install dependencies
+         run: Rscript -e "remotes::install_deps(dependencies = TRUE)"
+       - name: Check
+         run: Rscript -e "rcmdcheck::rcmdcheck(args = '--no-manual', error_on = 'error')"
