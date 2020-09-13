@@ -5,7 +5,7 @@
 #' This data may not be immediately available for recently reported cases and
 #' data will change to reflect as information becomes available. More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Date-Transmission-and/tvq9-ec9w}{here}
 #'
-#' @format An object class data frame with 5 variables
+#' @format An object class data.frame with 5 variables
 #' \describe{
 #'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
 #'   \item{case_disposition}{The case disposition c("Confirmed", "Death)}
@@ -44,7 +44,7 @@
 #' This data shows the daily total count of COVID+ patients in these two bed types,
 #' and the data reflects totals from all San Francisco Hospitals. More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem}{here}
 #'
-#' @format An object class data frame with 5 variables
+#' @format An object class data.frame with 5 variables
 #' \describe{
 #'   \item{reportdate}{date which case was recorded in YYYY-MM-DD format.}
 #'   \item{hospital}{The hospital which patients were admitted, currently it labeled under "All SF Hospitals" }
@@ -74,7 +74,7 @@
 #' Testing for the novel coronavirus is available through commercial, clinical,
 #' and hospital laboratories, as well as the SFDPH Public Health Laboratory. More information about the data available \href{https://data.sfgov.org/COVID-19/Covid-19-Tests/nfpa-mg4g}{here}
 #'
-#' @format An object class data frame with 7 variables
+#' @format An object class data.frame with 7 variables
 #' \describe{
 #'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
 #'   \item{tests}{Daily tests count}
@@ -104,7 +104,7 @@
 #' Cumulative counts of 5 or fewer are excluded from the dataset.
 #' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Race-and-Ethnicity/vqqm-nsqg}{here}
 #'
-#' @format An object class data frame with 5 variables
+#' @format An object class data.frame with 5 variables
 #' \describe{
 #'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
 #'   \item{race_ethnicity}{The cases race/ethnicity}
@@ -132,7 +132,7 @@
 #' Cumulative counts of 5 or fewer are excluded from the dataset.
 #' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Age-Group/sunc-2t3k}{here}
 #'
-#' @format An object class data frame with 5 variables
+#' @format An object class data.frame with 5 variables
 #' \describe{
 #'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
 #'   \item{age_group}{case age group c("under 18", "18-30", "31-40", "41-50", "51-60", "71-80")}
@@ -156,7 +156,7 @@
 #' and individuals placed at each alternative housing site under contract with HSA.
 #' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Alternative-Housing-Sites/qu2c-7bqh}{here}
 #'
-#' @format An object class data frame with 8 variables
+#' @format An object class data.frame with 8 variables
 #' \describe{
 #'   \item{site_id}{Site ID}
 #'   \item{status}{The site status, c("Active", "In Preparation")}
@@ -184,7 +184,7 @@
 #' 2018 American Community Survey (ACS) 5-year estimates for population data to calculate rate per 10,000 residents.
 #' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-and-Deaths-Summarized-by-Geography/tpyr-dvnc}{here}
 #'
-#' @format An object class sf and data frame with 8 variables.
+#' @format An object class sf and data.frame with 8 variables.
 #' \describe{
 #'   \item{rate}{The rate of cases in the area, calculated as (count/acs_population) * 10000 which is a rate per 10,000 residents}
 #'   \item{count}{The count of cases in the area}
@@ -221,7 +221,7 @@
 #' in this data as acute care patients cannot be admitted to these facilities.
 #' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Hospital-Capacity/rh24-ebzg}{here}
 #'
-#' @format An object class data frame with 5 variables
+#' @format An object class data.frame with 5 variables
 #' \describe{
 #'   \item{hospital}{The hospital name, currently a single categorical variable, c("All SF Acute Hospitals")}
 #'   \item{date}{Date which the data was recorded in YYYY-MM-DD format}
@@ -248,7 +248,7 @@
 #' Cumulative counts of 5 or fewer are excluded from the dataset.
 #'  More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Gender/nhy6-gqam}{here}
 #'
-#' @format An object class data frame with 5 variables
+#' @format An object class data.frame with 5 variables
 #' \describe{
 #'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
 #'   \item{gender}{The cases gender c( "Female", "Male", "Trans Female", "Unknown")}
@@ -276,7 +276,7 @@
 #'  Cumulative counts of 5 or fewer are excluded from the dataset.
 #'  More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Homelessness-Status/b45x-2crv}{here}
 #'
-#' @format An object class data frame with 5 variables
+#' @format An object class data.frame with 5 variables
 #' \describe{
 #'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
 #'   \item{homelessness_status}{The homelessness status, a signle category variable c("Homeless")}
@@ -293,3 +293,48 @@
 #' head(covid19sf_homeless)
 #
 "covid19sf_homeless"
+
+#' San Francisco COVID-19 Testing Locations
+#'
+#' @description  A list of testing locations including address and coordinates for mapping.
+#'  More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Testing-Locations/dtit-7gp4}{here}
+#'
+#' @format An object class sf and data.frame with 17 variables
+#' \describe{
+#'   \item{id}{Location ID}
+#'   \item{medical_home}{Medical home}
+#'   \item{name}{The medical name}
+#'   \item{address}{The medical address}
+#'   \item{phone_number}{The medical phone number}
+#'   \item{phone_number_formatted}{The medical phone number formatted}
+#'   \item{testing_hours}{The medical testing hours}
+#'   \item{popup_or_permanent}{The medical testing type, c("Permanent", "Pop-Up" )}
+#'   \item{location_type}{The medical location type, c("Private", "Public" )}
+#'   \item{eligibility}{Eligibility information for accessing testing at this location}
+#'   \item{cta_text}{The call to action used for the web map}
+#'   \item{cta_link}{The call to action link for the button on the web map}
+#'   \item{sample_collection_method}{The method for collecting samples at the lab}
+#'   \item{lap}{The lab name}
+#'   \item{latitude}{The medical latitude point}
+#'   \item{longitude}{The medical longitude point}
+#'   \item{geometry}{The medical geometry details}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 testing medical
+#' @details The dataset contains the San Francisco testing location information
+#' @examples
+#' data(covid19sf_test_loc)
+#'
+#' head(covid19sf_test_loc)
+#'
+#' library(mapview)
+#'
+#' plot(covid19sf_test_loc[, c("name", "geometry")])
+#'
+#' mapview(covid19sf_test_loc, zcol = "name", legend = FALSE)
+"covid19sf_test_loc"
+
+
+
+
+

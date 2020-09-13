@@ -131,13 +131,15 @@ usethis::use_data(covid19sf_hospital, overwrite = TRUE)
 write.csv(covid19sf_hospital, "csv/covid19sf_hospital.csv", row.names = FALSE)
 # COVID-19 Testing Locations
 # https://data.sfgov.org/COVID-19/COVID-19-Testing-Locations/dtit-7gp4
-covid19sf_test_loc <- sf::st_read("https://data.sfgov.org/resource/dtit-7gp4.geojson")  %>%
+covid19sf_test_loc <- sf::st_read("https://data.sfgov.org/resource/dtit-7gp4.geojson",
+                                  stringsAsFactors = FALSE)  %>%
   dplyr::select(id, medical_home, name,address, phone_number, phone_number_formatted,
                 testing_hours, popup_or_permanent, location_type, eligibility,
                 cta_text, cta_link, sample_collection_method, lab,
                 latitude, longitude, geometry)
 
-mapview::mapview(covid19sf_test_loc1, zcol = "name", legend = FALSE)
+
+mapview::mapview(covid19sf_test_loc, zcol = "name", legend = FALSE)
 
 head(covid19sf_test_loc)
 View(covid19sf_test_loc)
