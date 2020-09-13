@@ -5,7 +5,7 @@
 \alias{covid19sf_tests}
 \title{San Francisco COVID-19 Tests}
 \format{
-An object class data frame with 7 variables
+An object class data.frame with 7 variables
 \describe{
   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
   \item{tests}{Daily tests count}

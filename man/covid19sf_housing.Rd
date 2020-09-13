@@ -5,7 +5,7 @@
 \alias{covid19sf_housing}
 \title{San Francisco COVID-19 Alternative Housing Sites}
 \format{
-An object class data frame with 8 variables
+An object class data.frame with 8 variables
 \describe{
   \item{site_id}{Site ID}
   \item{status}{The site status, c("Active", "In Preparation")}

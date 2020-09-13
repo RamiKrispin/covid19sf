@@ -5,7 +5,7 @@
 \alias{covid19sf_geo}
 \title{San Francisco COVID-19 Cases and Deaths Summarized by Geography}
 \format{
-An object class sf and data frame with 8 variables.
+An object class sf and data.frame with 8 variables.
 \describe{
   \item{rate}{The rate of cases in the area, calculated as (count/acs_population) * 10000 which is a rate per 10,000 residents}
   \item{count}{The count of cases in the area}

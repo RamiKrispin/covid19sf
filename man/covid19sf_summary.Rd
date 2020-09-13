@@ -5,7 +5,7 @@
 \alias{covid19sf_summary}
 \title{San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition}
 \format{
-An object class data frame with 5 variables
+An object class data.frame with 5 variables
 \describe{
   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
   \item{case_disposition}{The case disposition c("Confirmed", "Death)}

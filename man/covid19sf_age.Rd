@@ -5,7 +5,7 @@
 \alias{covid19sf_age}
 \title{San Francisco COVID-19 Cases Summarized by Age Group}
 \format{
-An object class data frame with 5 variables
+An object class data.frame with 5 variables
 \describe{
   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
   \item{age_group}{case age group c("under 18", "18-30", "31-40", "41-50", "51-60", "71-80")}

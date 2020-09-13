@@ -5,7 +5,7 @@
 \alias{covid19sf_gender}
 \title{San Francisco COVID-19 Cases Summarized by Gender}
 \format{
-An object class data frame with 5 variables
+An object class data.frame with 5 variables
 \describe{
   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
   \item{gender}{The cases gender c( "Female", "Male", "Trans Female", "Unknown")}
