@@ -5,8 +5,8 @@
 
 <!-- badges: start -->
 
-[![build](https://github.com/RamiKrispin/covid19sf/workflows/build/badge.svg?branch=master)](https://github.com/RamiKrispin/covid19sf/actions?query=workflow%3Abuild)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/coronavirus)](https://cran.r-project.org/package=covid19sf)
+[![build](https://github.com/RamiKrispin/covid19sf/workflows/build/badge.svg)](https://github.com/RamiKrispin/covid19sf/actions)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/covid19sf)](https://cran.r-project.org/package=covid19sf)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
