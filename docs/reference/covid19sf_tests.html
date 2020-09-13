@@ -79,7 +79,7 @@ and hospital laboratories, as well as the SFDPH Public Health Laboratory. More i
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">covid19sf</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
       </span>
     </div>
 
@@ -126,12 +126,12 @@ Testing for the novel coronavirus is available through commercial, clinical,
 and hospital laboratories, as well as the SFDPH Public Health Laboratory. More information about the data available <a href='https://data.sfgov.org/COVID-19/Covid-19-Tests/nfpa-mg4g'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='kw'>covid19sf_tests</span></pre>
+    <pre class="usage"><span class='no'>covid19sf_tests</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object class data.frame with 7 variables</p><dl>
+    <p>An object class data.frame with 7 variables</p><dl'>
   <dt>specimen_collection_date</dt><dd><p>date which case was recorded in YYYY-MM-DD format.</p></dd>
   <dt>tests</dt><dd><p>Daily tests count</p></dd>
   <dt>pos</dt><dd><p>Number of positive cases</p></dd>
@@ -150,10 +150,9 @@ and hospital laboratories, as well as the SFDPH Public Health Laboratory. More i
     <p>A daily COVID-19 testing results report</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_tests</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>covid19sf_tests</span>)
 
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_tests</span>)
-</div><div class='output co'>#&gt;   specimen_collection_date tests pos       pct neg indeterminate
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>covid19sf_tests</span>)</div><div class='output co'>#&gt;   specimen_collection_date tests pos       pct neg indeterminate
 #&gt; 1               2020-02-28     2   0 0.0000000   2             0
 #&gt; 2               2020-03-01     2   0 0.0000000   2             0
 #&gt; 3               2020-03-02     2   0 0.0000000   2             0
@@ -178,11 +177,11 @@ and hospital laboratories, as well as the SFDPH Public Health Laboratory. More i
 
       <footer>
       <div class="copyright">
-  <p>Developed by The package maintainer.</p>
+  <p>Developed by Rami Krispin.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

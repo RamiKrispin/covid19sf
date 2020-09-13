@@ -78,7 +78,7 @@ More information about the data available here" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">covid19sf</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
       </span>
     </div>
 
@@ -124,12 +124,12 @@ Cumulative counts of 5 or fewer are excluded from the dataset.
 More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Race-and-Ethnicity/vqqm-nsqg'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='kw'>covid19sf_demo</span></pre>
+    <pre class="usage"><span class='no'>covid19sf_demo</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object class data.frame with 5 variables</p><dl>
+    <p>An object class data.frame with 5 variables</p><dl'>
   <dt>specimen_collection_date</dt><dd><p>Date which case was recorded in YYYY-MM-DD format.</p></dd>
   <dt>race_ethnicity</dt><dd><p>The cases race/ethnicity</p></dd>
   <dt>new_confirmed_cases</dt><dd><p>Daily new confirmed cases</p></dd>
@@ -146,10 +146,9 @@ More information about the data available <a href='https://data.sfgov.org/COVID-
     <p>The dataset contains the daily summary of covid19 cases in San Francisco by race/ethnicity group</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_demo</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>covid19sf_demo</span>)
 
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_demo</span>)
-</div><div class='output co'>#&gt;   specimen_collection_date race_ethnicity new_confirmed_cases
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>covid19sf_demo</span>)</div><div class='output co'>#&gt;   specimen_collection_date race_ethnicity new_confirmed_cases
 #&gt; 1               2020-05-10          Asian                   0
 #&gt; 2               2020-05-16          Asian                   4
 #&gt; 3               2020-05-17          Asian                   1
@@ -175,11 +174,11 @@ More information about the data available <a href='https://data.sfgov.org/COVID-
 
       <footer>
       <div class="copyright">
-  <p>Developed by The package maintainer.</p>
+  <p>Developed by Rami Krispin.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

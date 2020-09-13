@@ -35,23 +35,14 @@ San Francisco. The package includes the following datasets:
 
 ## Installation
 
-You can install the released version of covid19sf from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("covid19sf")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
 ``` r
 # install.packages("devtools")
 devtools::install_github("RamiKrispin/covid19sf")
 ```
 
-## Example
+## Usage
 
-This is a basic example which shows you how to solve a common problem:
+WIP…
 
 ``` r
 library(covid19sf)

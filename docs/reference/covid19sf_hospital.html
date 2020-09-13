@@ -76,7 +76,7 @@ More information about the data available here" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">covid19sf</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
       </span>
     </div>
 
@@ -120,12 +120,12 @@ in this data as acute care patients cannot be admitted to these facilities.
 More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Hospital-Capacity/rh24-ebzg'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='kw'>covid19sf_hospital</span></pre>
+    <pre class="usage"><span class='no'>covid19sf_hospital</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object class data.frame with 5 variables</p><dl>
+    <p>An object class data.frame with 5 variables</p><dl'>
   <dt>hospital</dt><dd><p>The hospital name, currently a single categorical variable, c("All SF Acute Hospitals")</p></dd>
   <dt>date</dt><dd><p>Date which the data was recorded in YYYY-MM-DD format</p></dd>
   <dt>bed_type</dt><dd><p>The bed type, c("Intensive Care Surge", "Acute Care", "Acute Care Surge", "Intensive Care")</p></dd>
@@ -142,10 +142,9 @@ More information about the data available <a href='https://data.sfgov.org/COVID-
     <p>The dataset contains a summary of San Francisco hospital bed status</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_hospital</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>covid19sf_hospital</span>)
 
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_hospital</span>)
-</div><div class='output co'>#&gt;                 hospital       date             bed_type
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>covid19sf_hospital</span>)</div><div class='output co'>#&gt;                 hospital       date             bed_type
 #&gt; 1 All SF Acute Hospitals 2020-07-22 Intensive Care Surge
 #&gt; 2 All SF Acute Hospitals 2020-07-22           Acute Care
 #&gt; 3 All SF Acute Hospitals 2020-07-22     Acute Care Surge
@@ -170,11 +169,11 @@ More information about the data available <a href='https://data.sfgov.org/COVID-
 
       <footer>
       <div class="copyright">
-  <p>Developed by The package maintainer.</p>
+  <p>Developed by Rami Krispin.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>

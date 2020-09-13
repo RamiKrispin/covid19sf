@@ -76,7 +76,7 @@ and the data reflects totals from all San Francisco Hospitals. More information 
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">covid19sf</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
       </span>
     </div>
 
@@ -120,12 +120,12 @@ This data shows the daily total count of COVID+ patients in these two bed types,
 and the data reflects totals from all San Francisco Hospitals. More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='kw'>covid19sf_hospitalizations</span></pre>
+    <pre class="usage"><span class='no'>covid19sf_hospitalizations</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object class data.frame with 5 variables</p><dl>
+    <p>An object class data.frame with 5 variables</p><dl'>
   <dt>reportdate</dt><dd><p>date which case was recorded in YYYY-MM-DD format.</p></dd>
   <dt>hospital</dt><dd><p>The hospital which patients were admitted, currently it labeled under "All SF Hospitals"</p></dd>
   <dt>dphcategory</dt><dd><p>The type of hospitalization bed, either an acute care bed (a regular hospital bed), or an intensive care unit (ICU) bed</p></dd>
@@ -143,10 +143,9 @@ and the data reflects totals from all San Francisco Hospitals. More information 
 either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_hospitalizations</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>covid19sf_hospitalizations</span>)
 
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_hospitalizations</span>)
-</div><div class='output co'>#&gt;   reportdate         hospital dphcategory covidstatus patientcount
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>covid19sf_hospitalizations</span>)</div><div class='output co'>#&gt;   reportdate         hospital dphcategory covidstatus patientcount
 #&gt; 1 2020-03-23 All SF Hospitals    Med/Surg      COVID+           12
 #&gt; 2 2020-03-24 All SF Hospitals    Med/Surg      COVID+           20
 #&gt; 3 2020-03-25 All SF Hospitals    Med/Surg      COVID+           22
@@ -164,11 +163,11 @@ either an ICU bed or acute care bed (shown as Med/Surg under DPHCategory field)<
 
       <footer>
       <div class="copyright">
-  <p>Developed by The package maintainer.</p>
+  <p>Developed by Rami Krispin.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
 </div>
 
       </footer>
