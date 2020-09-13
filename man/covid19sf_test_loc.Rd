@@ -46,7 +46,6 @@ head(covid19sf_test_loc)
 
 library(mapview)
 
-plot(covid19sf_test_loc[, c("name", "geometry")])
 
 mapview(covid19sf_test_loc, zcol = "name", legend = FALSE)
 }
