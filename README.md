@@ -5,9 +5,33 @@
 
 <!-- badges: start -->
 
+[![build](https://github.com/RamiKrispin/covid19sf/workflows/build/badge.svg?branch=master)](https://github.com/RamiKrispin/covid19sf/actions?query=workflow%3Abuild)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/coronavirus)](https://cran.r-project.org/package=covid19sf)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub
+commit](https://img.shields.io/github/last-commit/RamiKrispin/covid19sf)](https://github.com/RamiKrispin/covid19sf/commit/master)
 <!-- badges: end -->
 
-The goal of covid19sf is to …
+The covid19sf package provides a daily summary of the covid19 cases in
+San Francisco. The package includes the following datasets:
+
+  - `covid19sf_age` - Cases summarized by age group
+  - `covid19sf_demo` - Cases summarized by date, transmission and case
+    disposition
+  - `covid19sf_gender` - Confirmed cases summarized by gender
+  - `covid19sf_geo` - Confirmed cases and deaths summarized by geography
+  - `covid19sf_homeless` - Confirmed cases by homelessness
+  - `covid19sf_hospital` - Hospital capacity data
+  - `covid19sf_hospitalizations` - Hospitalizations data
+  - `covid19sf_housing` - Alternative housing sites
+  - `covid19sf_summary` - Cases summarized by date, transmission and
+    case disposition
+  - `covid19sf_test_loc` - Testing locations
+  - `covid19sf_tests` - Daily number of tests
+
+<a href='https://ramikrispin.github.io/covid19sf/index.html/'><img src='man/figures/map.png' align="right"  /></a>
 
 ## Installation
 
@@ -33,27 +57,3 @@ This is a basic example which shows you how to solve a common problem:
 library(covid19sf)
 ## basic example code
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
