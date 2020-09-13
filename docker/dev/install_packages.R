@@ -16,7 +16,10 @@ pkg_list <- c("dplyr",
               "sp",
               "rgeos",
               "mapview",
+              "leaflet",
               "ggplot2",
+              "remotes",
+              "rcmdcheck",
               "viridisLite")
 
 
