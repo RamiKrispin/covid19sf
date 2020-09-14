@@ -44,10 +44,6 @@ data(covid19sf_test_loc)
 
 head(covid19sf_test_loc)
 
-library(mapview)
-
-
-mapview(covid19sf_test_loc, zcol = "name", legend = FALSE)
 }
 \keyword{COVID19}
 \keyword{datasets}
