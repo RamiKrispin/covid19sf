@@ -170,8 +170,8 @@ write.csv(covid19sf_gender, "csv/covid19sf_gender.csv", row.names = FALSE)
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Homelessness-Status/b45x-2crv
 
 covid19sf_homeless <- read.csv("https://data.sfgov.org/resource/b45x-2crv.csv", stringsAsFactors = FALSE) %>%
-  dplyr::mutate(specimen_collection_date = lubridate::ymd_hms(specimen_collection_date,
-                                                              tz = "America/Los_Angeles"),
+  dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
+                                                              tz = "America/Los_Angeles")),
                 last_updated = lubridate::ymd_hms(last_updated_at,
                                                   tz = "America/Los_Angeles")) %>%
   dplyr::select(-last_updated_at)

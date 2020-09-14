@@ -20,6 +20,10 @@ test_that(desc = "Test the data dimension", {
   expect_equal(base::nrow(covid19sf_geo) == 264, TRUE)
   expect_equal(base::ncol(covid19sf_geo) == 8, TRUE)
 
+  expect_equal(base::nrow(covid19sf_homeless) > 165, TRUE)
+  expect_equal(base::ncol(covid19sf_homeless) == 5, TRUE)
+
+
 })
 
 
@@ -50,6 +54,10 @@ test_that(desc = "Test dates/times variable", {
   expect_equal(base::all(c("sf", "data.frame") %in% base::class(covid19sf_geo)), TRUE)
   expect_equal(base::all(c("POSIXct", "POSIXt") %in% base::class(covid19sf_geo$last_updated)), TRUE)
 
+  expect_equal(base::class(covid19sf_homeless$specimen_collection_date) == "Date", TRUE)
+  expect_equal(base::all(c("POSIXct", "POSIXt") %in% base::class(covid19sf_homeless$last_updated)), TRUE)
+  expect_equal(base::min(covid19sf_homeless$specimen_collection_date) == as.Date("2020-03-31"), TRUE)
+
 })
 
 
@@ -74,5 +82,8 @@ test_that(desc = "Missing values", {
   expect_equal(base::any(base::is.na(covid19sf_gender$cumulative_confirmed_cases)), FALSE)
 
   expect_equal(base::length(base::which(base::is.na(covid19sf_geo$count))), 16)
+
+  expect_equal(base::any(base::is.na(covid19sf_homeless$new_confirmed_cases)), FALSE)
+  expect_equal(base::any(base::is.na(covid19sf_homeless$cumulative_confirmed_cases)), FALSE)
 
 })
