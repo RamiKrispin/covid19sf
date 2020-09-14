@@ -129,12 +129,12 @@ Cumulative counts of 5 or fewer are excluded from the dataset.
 More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Age-Group/sunc-2t3k'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='no'>covid19sf_age</span></pre>
+    <pre class="usage"><span class='kw'>covid19sf_age</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object class data.frame with 5 variables</p><dl'>
+    <p>An object class data.frame with 5 variables</p><dl>
   <dt>specimen_collection_date</dt><dd><p>date which case was recorded in YYYY-MM-DD format.</p></dd>
   <dt>age_group</dt><dd><p>case age group c("under 18", "18-30", "31-40", "41-50", "51-60", "71-80")</p></dd>
   <dt>new_confirmed_cases</dt><dd><p>Daily new confirmed cases</p></dd>
@@ -151,9 +151,10 @@ More information about the data available <a href='https://data.sfgov.org/COVID-
     <p>The dataset contains the daily summary of covid19 cases in San Francisco by age group</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='no'>covid19sf_age</span>)
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_age</span>)
 
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='no'>covid19sf_age</span>)</div><div class='output co'>#&gt;   specimen_collection_date age_group new_confirmed_cases
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_age</span>)
+</div><div class='output co'>#&gt;   specimen_collection_date age_group new_confirmed_cases
 #&gt; 1               2020-03-12     51-60                   2
 #&gt; 2               2020-03-13     51-60                   2
 #&gt; 3               2020-03-14     51-60                   1
@@ -161,12 +162,12 @@ More information about the data available <a href='https://data.sfgov.org/COVID-
 #&gt; 5               2020-03-16     51-60                   8
 #&gt; 6               2020-03-17     51-60                   3
 #&gt;   cumulative_confirmed_cases        last_updated
-#&gt; 1                          6 2020-09-11 14:19:53
-#&gt; 2                          8 2020-09-11 14:19:53
-#&gt; 3                          9 2020-09-11 14:19:53
-#&gt; 4                          9 2020-09-11 14:19:53
-#&gt; 5                         17 2020-09-11 14:19:53
-#&gt; 6                         20 2020-09-11 14:19:53</div></pre>
+#&gt; 1                          6 2020-09-12 14:19:25
+#&gt; 2                          8 2020-09-12 14:19:25
+#&gt; 3                          9 2020-09-12 14:19:25
+#&gt; 4                          9 2020-09-12 14:19:25
+#&gt; 5                         17 2020-09-12 14:19:25
+#&gt; 6                         20 2020-09-12 14:19:25</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -182,7 +183,7 @@ More information about the data available <a href='https://data.sfgov.org/COVID-
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
