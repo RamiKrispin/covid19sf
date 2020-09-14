@@ -189,7 +189,7 @@
 #'   \item{rate}{The rate of cases in the area, calculated as (count/acs_population) * 10000 which is a rate per 10,000 residents}
 #'   \item{count}{The count of cases in the area}
 #'   \item{deaths}{The number of cases in the area }
-#'   \item{last_updated_at}{Last update of the data in POSIXc forecast)}
+#'   \item{last_updated}{Last update of the data in POSIXc forecast)}
 #'   \item{id}{area id}
 #'   \item{area_type}{Area type}
 #'   \item{acs_population}{The population from the latest 5-year estimates from the American Community Survey (2014-2018))}
