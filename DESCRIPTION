@@ -13,7 +13,8 @@ LazyData: true
 Depends: 
     R (>= 2.10)
 Imports:
-    mapview
+    mapview,
+    sf
 Suggests: 
     testthat,
     knitr,
