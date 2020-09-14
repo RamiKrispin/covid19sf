@@ -102,7 +102,8 @@ write.csv(covid19sf_housing, "csv/covid19sf_housing.csv", row.names = FALSE)
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-and-Deaths-Summarized-by-Geography/tpyr-dvnc
 
 
-covid19sf_geo <- sf::st_read("https://data.sfgov.org/resource/tpyr-dvnc.geojson")
+covid19sf_geo <- sf::st_read("https://data.sfgov.org/resource/tpyr-dvnc.geojson") %>%
+  dplyr::select(area_type, id, count, rate, deaths, acs_population, last_updated_at, geometry)
 str(covid19sf_geo)
 covid19sf_geo$count <- as.numeric(covid19sf_geo$count)
 covid19sf_geo$rate <- as.numeric(covid19sf_geo$rate)
@@ -112,6 +113,7 @@ covid19sf_geo$id <- as.character(covid19sf_geo$id)
 covid19sf_geo$area_type <- as.character(covid19sf_geo$area_type)
 head(covid19sf_geo)
 mapview::mapview(covid19sf_geo, zcol = "count",legend = TRUE)
+plot(covid19sf_geo[, c("count", "geometry")])
 usethis::use_data(covid19sf_geo, overwrite = TRUE)
 write.csv(covid19sf_geo, "csv/covid19sf_geo.csv", row.names = FALSE)
 
