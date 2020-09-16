@@ -31,6 +31,10 @@ San Francisco. The package includes the following datasets:
   - `covid19sf_test_loc` - Testing locations
   - `covid19sf_tests` - Daily number of tests
 
+Data soucre: San Francisco, Department of Public Health - Population
+Health Division through the San Francisco [Opne Data protal
+website](https://datasf.org/opendata/)
+
 <a href='https://ramikrispin.github.io/covid19sf/index.html/'><img src='man/figures/map.png' align="right"  /></a>
 
 ## Installation
