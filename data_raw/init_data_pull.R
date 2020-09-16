@@ -115,7 +115,7 @@ head(covid19sf_geo)
 mapview::mapview(covid19sf_geo, zcol = "count",legend = TRUE)
 plot(covid19sf_geo[, c("count", "geometry")])
 usethis::use_data(covid19sf_geo, overwrite = TRUE)
-write.csv(covid19sf_geo, "csv/covid19sf_geo.csv", row.names = FALSE)
+sf::write_sf(covid19sf_geo, "csv/covid19sf_geo.geojson")
 
 
 # COVID-19 Hospital Capacity
