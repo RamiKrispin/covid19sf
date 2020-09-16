@@ -166,6 +166,7 @@ data_refresh <- function(){
 
     covid19sf_housing <- read.csv("https://data.sfgov.org/resource/qu2c-7bqh.csv", stringsAsFactors = FALSE) %>%
       dplyr::mutate(date_updated = as.Date(lubridate::ymd_hms(date_updated,
+                                                              quiet = TRUE,
                                                               tz = "America/Los_Angeles")))
 
 
@@ -182,12 +183,14 @@ data_refresh <- function(){
       cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
     }
 
-    # covid19sf_geo
+    # covid19sf_geo ----
 
     cat(paste0("\033[4;", 36, "m","covid19sf_geo dataset","\033[0m","\n"))
     cat("Checking for updates...\n")
 
-    covid19sf_geo <- sf::st_read("https://data.sfgov.org/resource/tpyr-dvnc.geojson") %>%
+    covid19sf_geo <- sf::st_read("https://data.sfgov.org/resource/tpyr-dvnc.geojson",
+                                 stringsAsFactors = FALSE,
+                                 quiet = TRUE) %>%
       dplyr::select(area_type, id, count, rate, deaths, acs_population, last_updated = last_updated_at, geometry)
 
     covid19sf_geo$count <- as.numeric(covid19sf_geo$count)
@@ -198,7 +201,8 @@ data_refresh <- function(){
     covid19sf_geo$area_type <- as.character(covid19sf_geo$area_type)
 
     geo_csv <- sf::st_read("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_geo.geojson",
-                           stringsAsFactors = FALSE)
+                           stringsAsFactors = FALSE,
+                           quiet = TRUE)
 
 
     if(max(as.Date(covid19sf_geo$last_updated)) > max(as.Date(geo_csv$last_updated)) ||
@@ -211,6 +215,31 @@ data_refresh <- function(){
       cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
     }
 
+
+    # covid19sf_hospital ----
+
+    cat(paste0("\033[4;", 36, "m","covid19sf_hospital dataset","\033[0m","\n"))
+    cat("Checking for updates...\n")
+
+    covid19sf_hospital <- read.csv("https://data.sfgov.org/resource/rh24-ebzg.csv?$limit=2000", stringsAsFactors = FALSE) %>%
+      dplyr::mutate(date = as.Date(lubridate::ymd_hms(date,
+                                                      tz = "America/Los_Angeles")))
+
+    hospital_csv <- read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_hospital.csv", stringsAsFactors = FALSE) %>%
+      dplyr::mutate(date = as.Date(date, z = "America/Los_Angeles"))
+
+
+
+
+    if(max(covid19sf_hospital$date) > max(hospital_csv$date) ||
+       nrow(covid19sf_hospital) > nrow(hospital_csv)){
+      cat(paste0("\033[0;", 42, "m","Updates are available, saving the changes","\033[0m","\n"))
+
+      usethis::use_data(covid19sf_hospital, overwrite = TRUE)
+      write.csv(covid19sf_hospital, "csv/covid19sf_hospital.csv", row.names = FALSE)
+    } else{
+      cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
+    }
 
     return(invisible(NULL))
 }

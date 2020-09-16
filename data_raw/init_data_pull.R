@@ -148,8 +148,7 @@ View(covid19sf_test_loc)
 
 
 usethis::use_data(covid19sf_test_loc, overwrite = TRUE)
-write.csv(covid19sf_test_loc, "csv/covid19sf_test_loc.csv", row.names = FALSE)
-
+sf::write_sf(covid19sf_test_loc, "csv/covid19sf_test_loc.geojson")
 # COVID-19 Cases Summarized by Gender
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Gender/nhy6-gqam
 
