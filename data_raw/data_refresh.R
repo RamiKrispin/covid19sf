@@ -159,7 +159,7 @@ data_refresh <- function(){
       cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
     }
 
-    # covid19sf_housing
+    # covid19sf_housing ----
 
     cat(paste0("\033[4;", 36, "m","covid19sf_housing dataset","\033[0m","\n"))
     cat("Checking for updates...\n")
@@ -253,13 +253,83 @@ data_refresh <- function(){
       dplyr::select(id, medical_home, name,address, phone_number, phone_number_formatted,
                     testing_hours, popup_or_permanent, location_type, eligibility,
                     cta_text, cta_link, sample_collection_method, lab,
-                    latitude, longitude, geometry)  %>% dplyr::arrange(id)
+                    latitude, longitude, geometry)
 
       cat(paste0("\033[0;", 42, "m","Updates are available, saving the changes","\033[0m","\n"))
 
       usethis::use_data(covid19sf_test_loc, overwrite = TRUE)
       sf::write_sf(covid19sf_test_loc, "csv/covid19sf_test_loc.geojson")
 
+      # covid19sf_gender ----
+
+      cat(paste0("\033[4;", 36, "m","covid19sf_gender dataset","\033[0m","\n"))
+      cat("Checking for updates...\n")
+
+
+
+      covid19sf_gender <- read.csv("https://data.sfgov.org/resource/nhy6-gqam.csv", stringsAsFactors = FALSE) %>%
+        dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
+                                                                            tz = "America/Los_Angeles")),
+                      last_updated = lubridate::ymd_hms(last_updated_at,
+                                                        tz = "America/Los_Angeles")) %>%
+        dplyr::select(-last_updated_at)
+
+
+
+      gender_csv <- read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_gender.csv", stringsAsFactors = FALSE) %>%
+        dplyr::mutate(specimen_collection_date = as.Date(specimen_collection_date,
+                                                         tz = "America/Los_Angeles"),
+                      last_updated = lubridate::ymd_hms(last_updated,
+                                                        tz = "America/Los_Angeles"))
+
+
+
+
+      if(max(covid19sf_gender$specimen_collection_date) > max(gender_csv$specimen_collection_date) ||
+         nrow(covid19sf_gender) > nrow(gender_csv)){
+        cat(paste0("\033[0;", 42, "m","Updates are available, saving the changes","\033[0m","\n"))
+
+        usethis::use_data(covid19sf_gender, overwrite = TRUE)
+        write.csv(covid19sf_gender, "csv/covid19sf_gender.csv", row.names = FALSE)
+      } else{
+        cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
+      }
+
+
+      # covid19sf_homeless ----
+
+      cat(paste0("\033[4;", 36, "m","covid19sf_homeless dataset","\033[0m","\n"))
+      cat("Checking for updates...\n")
+
+
+
+      covid19sf_homeless <- read.csv("https://data.sfgov.org/resource/b45x-2crv.csv", stringsAsFactors = FALSE) %>%
+        dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
+                                                                            tz = "America/Los_Angeles")),
+                      last_updated = lubridate::ymd_hms(last_updated_at,
+                                                        tz = "America/Los_Angeles")) %>%
+        dplyr::select(-last_updated_at)
+
+
+
+      homeless_csv <- read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_homeless.csv", stringsAsFactors = FALSE) %>%
+        dplyr::mutate(specimen_collection_date = as.Date(specimen_collection_date,
+                                                         tz = "America/Los_Angeles"),
+                      last_updated = lubridate::ymd_hms(last_updated,
+                                                        tz = "America/Los_Angeles"))
+
+
+
+
+      if(max(covid19sf_homeless$specimen_collection_date) > max(homeless_csv$specimen_collection_date) ||
+         nrow(covid19sf_homeless) > nrow(homeless_csv)){
+        cat(paste0("\033[0;", 42, "m","Updates are available, saving the changes","\033[0m","\n"))
+
+        usethis::use_data(covid19sf_homeless, overwrite = TRUE)
+        write.csv(covid19sf_homeless, "csv/covid19sf_homeless.csv", row.names = FALSE)
+      } else{
+        cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
+      }
 
 
     return(invisible(NULL))
