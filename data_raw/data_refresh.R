@@ -241,6 +241,27 @@ data_refresh <- function(){
       cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
     }
 
+
+    # covid19sf_test_loc ----
+
+    cat(paste0("\033[4;", 36, "m","covid19sf_test_loc dataset","\033[0m","\n"))
+    cat("Checking for updates...\n")
+
+    covid19sf_test_loc <- sf::st_read("https://data.sfgov.org/resource/dtit-7gp4.geojson",
+                                      stringsAsFactors = FALSE,
+                                      quiet = TRUE)  %>%
+      dplyr::select(id, medical_home, name,address, phone_number, phone_number_formatted,
+                    testing_hours, popup_or_permanent, location_type, eligibility,
+                    cta_text, cta_link, sample_collection_method, lab,
+                    latitude, longitude, geometry)  %>% dplyr::arrange(id)
+
+      cat(paste0("\033[0;", 42, "m","Updates are available, saving the changes","\033[0m","\n"))
+
+      usethis::use_data(covid19sf_test_loc, overwrite = TRUE)
+      sf::write_sf(covid19sf_test_loc, "csv/covid19sf_test_loc.geojson")
+
+
+
     return(invisible(NULL))
 }
 
