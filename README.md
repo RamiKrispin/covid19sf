@@ -73,26 +73,29 @@ head(covid19sf_age)
 #> 6               2020-03-17     51-60                   3                         20 2020-09-12 14:19:25
 ```
 
+The following box-plot shows the distribution of the positive cases by
+age group:
+
 ``` r
+library(plotly)
+
 covid19sf_age$age_group <- factor(covid19sf_age$age_group, 
                                   levels = c("under 18",  "18-30", 
                                              "31-40", "41-50",
                                              "51-60", "61-70",
                                              "71-80","81+"))
-```
 
-``` r
-
-library(plotly)
-
-plotly::plot_ly(covid19sf_age, 
-                color = ~ age_group, 
-                y = ~ new_confirmed_cases, 
-                boxpoints = "all", 
-                jitter = 0.3,
-                pointpos = -1.8,
-                type = "box" ) %>%
-  layout(legend = list(x = 0.9, y = 0.9))
+plot_ly(covid19sf_age, 
+        color = ~ age_group, 
+        y = ~ new_confirmed_cases, 
+        boxpoints = "all", 
+        jitter = 0.3,
+        pointpos = -1.8,
+        type = "box" ) %>%
+layout(title = "Case Dist. by Age Group",
+       yaxis = list(title = "Number of Cases"),
+       xaxis = list(title = "Source: San Francisco Department of Public Health"),
+       legend = list(x = 0.9, y = 0.9))
 ```
 
 <img src="man/figures/age_dist1.png" width="100%" />
@@ -111,7 +114,41 @@ covid19sf_age %>%
           hoverinfo = 'text',
           text = ~paste("Age Group:", age_group, "<br>",
                         "Total:", cumulative_confirmed_cases)) %>%
-  layout(title = "Total Cases Distribution by Age Group")
+  layout(title = paste("Total Cases Distribution by Age Group as of ", ~ max(specimen_collection_date)))
 ```
 
 <img src="man/figures/age_dist2.png" width="70%" />
+
+### Tests results distribution
+
+``` r
+data(covid19sf_tests)
+
+head(covid19sf_tests)
+#>   specimen_collection_date tests pos        pct neg indeterminate        last_updated
+#> 1               2020-02-28     2   0 0.00000000   2             0 2020-09-12 14:24:00
+#> 2               2020-03-01     2   0 0.00000000   2             0 2020-09-12 14:24:00
+#> 3               2020-03-02     2   0 0.00000000   2             0 2020-09-12 14:24:00
+#> 4               2020-03-03     7   2 0.28571429   5             0 2020-09-12 14:24:00
+#> 5               2020-03-04    11   0 0.00000000  11             0 2020-09-12 14:24:00
+#> 6               2020-03-05    19   6 0.31578947  13             0 2020-09-12 14:24:00
+```
+
+``` r
+covid19sf_tests %>%
+plotly::plot_ly(x = ~ specimen_collection_date,
+                y = ~ pos,
+                name = "Positive",
+                type = 'scatter', 
+                mode = 'none', 
+                stackgroup = 'one',
+                fillcolor = "red") %>%
+  plotly::add_trace(y = ~ neg, name = "Negative", fillcolor = "green") %>%
+  plotly::add_trace(y = ~ indeterminate, name = "Indeterminate", fillcolor = "gray") %>%
+  plotly::layout(title = "Tests Results Distribution",
+                 yaxis = list(title = "Tests Count"),
+                 xaxis = list(title = "Source: San Francisco Department of Public Health"),
+                 legend = list(x = 0.1, y = 0.9))
+```
+
+<img src="man/figures/test_dist.png" width="100%" />
