@@ -46,9 +46,72 @@ devtools::install_github("RamiKrispin/covid19sf")
 
 ## Usage
 
-WIP…
+The **ccovid19sf** package provides different views for the covid19
+cases in San Francisco. That includes case distribution by age, gender,
+race, etc. The following examples demonstrate some of the data use
+cases.
 
 ``` r
 library(covid19sf)
-## basic example code
 ```
+
+### Cases distribution by age
+
+The covid19sf\_age provides a daily summary of the cumulative positive
+cases by age group:
+
+``` r
+data(covid19sf_age)
+
+head(covid19sf_age)
+#>   specimen_collection_date age_group new_confirmed_cases cumulative_confirmed_cases        last_updated
+#> 1               2020-03-12     51-60                   2                          6 2020-09-12 14:19:25
+#> 2               2020-03-13     51-60                   2                          8 2020-09-12 14:19:25
+#> 3               2020-03-14     51-60                   1                          9 2020-09-12 14:19:25
+#> 4               2020-03-15     51-60                   0                          9 2020-09-12 14:19:25
+#> 5               2020-03-16     51-60                   8                         17 2020-09-12 14:19:25
+#> 6               2020-03-17     51-60                   3                         20 2020-09-12 14:19:25
+```
+
+``` r
+covid19sf_age$age_group <- factor(covid19sf_age$age_group, 
+                                  levels = c("under 18",  "18-30", 
+                                             "31-40", "41-50",
+                                             "51-60", "61-70",
+                                             "71-80","81+"))
+```
+
+``` r
+
+library(plotly)
+
+plotly::plot_ly(covid19sf_age, 
+                color = ~ age_group, 
+                y = ~ new_confirmed_cases, 
+                boxpoints = "all", 
+                jitter = 0.3,
+                pointpos = -1.8,
+                type = "box" ) %>%
+  layout(legend = list(x = 0.9, y = 0.9))
+```
+
+<img src="man/figures/age_dist1.png" width="100%" />
+
+``` r
+library(dplyr)
+library(plotly)
+covid19sf_age %>% 
+  filter(specimen_collection_date == max(specimen_collection_date)) %>%
+  plot_ly(values = ~ cumulative_confirmed_cases, 
+          labels = ~ age_group, 
+          type = "pie",
+          textposition = 'inside',
+          textinfo = 'label+percent',
+          insidetextfont = list(color = '#FFFFFF'),
+          hoverinfo = 'text',
+          text = ~paste("Age Group:", age_group, "<br>",
+                        "Total:", cumulative_confirmed_cases)) %>%
+  layout(title = "Total Cases Distribution by Age Group")
+```
+
+<img src="man/figures/age_dist2.png" width="70%" />
