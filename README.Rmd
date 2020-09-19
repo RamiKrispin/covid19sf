@@ -116,14 +116,14 @@ p1 <- plotly::plot_ly(covid19sf_age,
          xaxis = list(title = "Source: San Francisco Department of Public Health"),
          legend = list(x = 0.9, y = 0.9))
 
-orca(p1, "man/figures/age_dist1.png")
+orca(p1, "man/figures/age_dist1.png", width = 8 * 96, height = 5 * 96)
 ```
 
 
 <img src="man/figures/age_dist1.png" width="100%" />
 
 
-
+Here is the overall distribution of cases by age group as of `r max(covid19sf_age$specimen_collection_date)`:
 
 
 ``` r
@@ -140,8 +140,10 @@ covid19sf_age %>%
           hoverinfo = 'text',
           text = ~paste("Age Group:", age_group, "<br>",
                         "Total:", cumulative_confirmed_cases)) %>%
-  layout(title = paste("Total Cases Distribution by Age Group as of ", ~ max(specimen_collection_date)))
+   layout(title = "Total Cases Distribution by Age Group")
 ```
+
+
 
 ```{r include=FALSE}
 library(dplyr)
@@ -157,9 +159,9 @@ p <- covid19sf_age %>%
           hoverinfo = 'text',
           text = ~paste("Age Group:", age_group, "<br>",
                         "Total:", cumulative_confirmed_cases)) %>%
-  layout(title = paste("Total Cases Distribution by Age Group as of ",max(covid19sf_age$specimen_collection_date)))
+  layout(title = "Total Cases Distribution by Age Group")
 
-orca(p, "man/figures/age_dist2.png")
+orca(p, "man/figures/age_dist2.png", width = 5 * 96, height = 5 * 96)
 ```
 
 
@@ -167,7 +169,7 @@ orca(p, "man/figures/age_dist2.png")
 
 ### Tests results distribution
 
-
+The covid19sf_tests provides a daily summary of the daily number of tests and their results (positive, negative, and indeterminate):
 
 
 ```{r}
@@ -176,7 +178,7 @@ data(covid19sf_tests)
 head(covid19sf_tests)
 ```
 
-
+The plot below shows the daily distribution of the results of the tests:
 
 ```r
 covid19sf_tests %>%
@@ -213,9 +215,60 @@ p <- covid19sf_tests %>%
                  xaxis = list(title = "Source: San Francisco Department of Public Health"),
                  legend = list(x = 0.1, y = 0.9))
 
-orca(p, "man/figures/test_dist.png")
+orca(p, "man/figures/test_dist.png", width = 8 * 96, height = 5 * 96)
 ```
 
 
 <img src="man/figures/test_dist.png" width="100%" />
+
+### Cases distribution by race ethnicity
+
+
+The covid19sf_demp dataset provides a daily summary of the covid19 positive cases by race and ethnicity:
+
+```{r}
+data(covid19sf_demo)
+
+head(covid19sf_demo)
+```
+
+Below is a plot of the cumulative positive cases by race and ethnicity:
+
+
+``` r
+covid19sf_demo %>%
+  dplyr::arrange(specimen_collection_date) %>%
+plotly::plot_ly(x = ~ specimen_collection_date, 
+                y = ~ cumulative_confirmed_cases, 
+                # name = 'Cases', 
+                type = 'scatter', 
+                mode = 'none', 
+                color = ~race_ethnicity,
+                stackgroup = 'one') %>%
+  layout(title = "Total Cases Dist. by Race and Ethnicity",
+          legend = list(x = 0.1, y = 0.9),
+         yaxis = list(title = "Number of Cases", tickformat = ".0f"),
+         xaxis = list(title = "Source: San Francisco Department of Public Health"))
+```
+
+
+```{r include=FALSE}
+p <- covid19sf_demo %>%
+  dplyr::arrange(specimen_collection_date) %>%
+plotly::plot_ly(x = ~ specimen_collection_date, 
+                y = ~ cumulative_confirmed_cases, 
+                # name = 'Cases', 
+                type = 'scatter', 
+                mode = 'none', 
+                color = ~race_ethnicity,
+                stackgroup = 'one') %>%
+  layout(title = "Total Cases Dist. by Race and Ethnicity",
+          legend = list(x = 0.1, y = 0.9),
+         yaxis = list(title = "Number of Cases", tickformat = ".0f"),
+         xaxis = list(title = "Source: San Francisco Department of Public Health"))
+orca(p, "man/figures/demo_dist.png", width = 8 * 96, height = 5 * 96)
+```
+
+
+<img src="man/figures/demo_dist.png" width="100%" />
 

@@ -100,6 +100,8 @@ layout(title = "Case Dist. by Age Group",
 
 <img src="man/figures/age_dist1.png" width="100%" />
 
+Here is the overall distribution of cases by age group as of 2020-09-11:
+
 ``` r
 library(dplyr)
 library(plotly)
@@ -114,12 +116,15 @@ covid19sf_age %>%
           hoverinfo = 'text',
           text = ~paste("Age Group:", age_group, "<br>",
                         "Total:", cumulative_confirmed_cases)) %>%
-  layout(title = paste("Total Cases Distribution by Age Group as of ", ~ max(specimen_collection_date)))
+   layout(title = "Total Cases Distribution by Age Group")
 ```
 
 <img src="man/figures/age_dist2.png" width="70%" />
 
 ### Tests results distribution
+
+The covid19sf\_tests provides a daily summary of the daily number of
+tests and their results (positive, negative, and indeterminate):
 
 ``` r
 data(covid19sf_tests)
@@ -133,6 +138,8 @@ head(covid19sf_tests)
 #> 5               2020-03-04    11   0 0.00000000  11             0 2020-09-12 14:24:00
 #> 6               2020-03-05    19   6 0.31578947  13             0 2020-09-12 14:24:00
 ```
+
+The plot below shows the daily distribution of the results of the tests:
 
 ``` r
 covid19sf_tests %>%
@@ -152,3 +159,41 @@ plotly::plot_ly(x = ~ specimen_collection_date,
 ```
 
 <img src="man/figures/test_dist.png" width="100%" />
+
+### Cases distribution by race ethnicity
+
+The covid19sf\_demp dataset provides a daily summary of the covid19
+positive cases by race and ethnicity:
+
+``` r
+data(covid19sf_demo)
+
+head(covid19sf_demo)
+#>   specimen_collection_date race_ethnicity new_confirmed_cases cumulative_confirmed_cases        last_updated
+#> 1               2020-09-11          Asian                   0                       1186 2020-09-12 14:19:25
+#> 2               2020-05-14          Asian                   3                        292 2020-09-12 14:19:25
+#> 3               2020-04-07          Asian                   8                        136 2020-09-12 14:19:25
+#> 4               2020-05-15          Asian                   4                        296 2020-09-12 14:19:25
+#> 5               2020-05-16          Asian                   4                        300 2020-09-12 14:19:25
+#> 6               2020-05-17          Asian                   1                        301 2020-09-12 14:19:25
+```
+
+Below is a plot of the cumulative positive cases by race and ethnicity:
+
+``` r
+covid19sf_demo %>%
+  dplyr::arrange(specimen_collection_date) %>%
+plotly::plot_ly(x = ~ specimen_collection_date, 
+                y = ~ cumulative_confirmed_cases, 
+                # name = 'Cases', 
+                type = 'scatter', 
+                mode = 'none', 
+                color = ~race_ethnicity,
+                stackgroup = 'one') %>%
+  layout(title = "Total Cases Dist. by Race and Ethnicity",
+          legend = list(x = 0.1, y = 0.9),
+         yaxis = list(title = "Number of Cases", tickformat = ".0f"),
+         xaxis = list(title = "Source: San Francisco Department of Public Health"))
+```
+
+<img src="man/figures/demo_dist.png" width="100%" />
