@@ -151,35 +151,35 @@ and case disposition</p>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_summary</span>)
 </div><div class='output co'>#&gt;   specimen_collection_date case_disposition transmission_category case_count
 #&gt; 1               2020-03-03        Confirmed             Community          2
-#&gt; 2               2020-03-05        Confirmed             Community          1
-#&gt; 3               2020-03-05        Confirmed          From Contact          5
+#&gt; 2               2020-03-05        Confirmed          From Contact          5
+#&gt; 3               2020-03-05        Confirmed             Community          1
 #&gt; 4               2020-03-07        Confirmed          From Contact          5
 #&gt; 5               2020-03-08        Confirmed          From Contact          1
 #&gt; 6               2020-03-10        Confirmed          From Contact          2
 #&gt;          last_updated
-#&gt; 1 2020-09-12 14:19:25
-#&gt; 2 2020-09-12 14:19:25
-#&gt; 3 2020-09-12 14:19:25
-#&gt; 4 2020-09-12 14:19:25
-#&gt; 5 2020-09-12 14:19:25
-#&gt; 6 2020-09-12 14:19:25</div><div class='input'>
+#&gt; 1 2020-09-17 14:19:56
+#&gt; 2 2020-09-17 14:19:56
+#&gt; 3 2020-09-17 14:19:56
+#&gt; 4 2020-09-17 14:19:56
+#&gt; 5 2020-09-17 14:19:56
+#&gt; 6 2020-09-17 14:19:56</div><div class='input'>
 <span class='co'># Case disposition summary</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>)
 </div><div class='output co'>#&gt; 
 #&gt; Confirmed     Death 
-#&gt;       472        80 </div><div class='input'>
+#&gt;       482        85 </div><div class='input'>
 <span class='co'># Transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt; 
 #&gt;    Community From Contact      Unknown 
-#&gt;          232          217          103 </div><div class='input'>
+#&gt;          238          226          103 </div><div class='input'>
 <span class='co'># Summary of case disposition and transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>,
       <span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt;            
 #&gt;             Community From Contact Unknown
-#&gt;   Confirmed       187          186      99
-#&gt;   Death            45           31       4</div><div class='input'>
+#&gt;   Confirmed       192          191      99
+#&gt;   Death            46           35       4</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
