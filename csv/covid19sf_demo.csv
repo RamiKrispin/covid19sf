@@ -1,1635 +1,1644 @@
 "specimen_collection_date","race_ethnicity","new_confirmed_cases","cumulative_confirmed_cases","last_updated"
-2020-04-09,"Asian",6,146,2020-09-20 14:20:04
-2020-07-29,"Asian",15,711,2020-09-20 14:20:04
-2020-08-06,"Asian",9,801,2020-09-20 14:20:04
-2020-08-09,"Asian",3,819,2020-09-20 14:20:04
-2020-04-10,"Asian",9,155,2020-09-20 14:20:04
-2020-04-29,"Asian",9,246,2020-09-20 14:20:04
-2020-04-30,"Asian",6,252,2020-09-20 14:20:04
-2020-05-01,"Asian",4,256,2020-09-20 14:20:04
-2020-05-02,"Asian",4,260,2020-09-20 14:20:04
-2020-05-03,"Asian",2,262,2020-09-20 14:20:04
-2020-08-07,"Asian",11,812,2020-09-20 14:20:04
-2020-05-04,"Asian",1,263,2020-09-20 14:20:04
-2020-05-05,"Asian",2,265,2020-09-20 14:20:04
-2020-05-06,"Asian",4,269,2020-09-20 14:20:04
-2020-08-12,"Asian",9,847,2020-09-20 14:20:04
-2020-05-07,"Asian",1,270,2020-09-20 14:20:04
-2020-06-27,"Asian",2,441,2020-09-20 14:20:04
-2020-05-08,"Asian",2,272,2020-09-20 14:20:04
-2020-05-09,"Asian",1,273,2020-09-20 14:20:04
-2020-05-10,"Asian",0,273,2020-09-20 14:20:04
-2020-05-11,"Asian",3,276,2020-09-20 14:20:04
-2020-08-11,"Asian",7,838,2020-09-20 14:20:04
-2020-05-12,"Asian",11,287,2020-09-20 14:20:04
-2020-05-13,"Asian",2,289,2020-09-20 14:20:04
-2020-05-14,"Asian",3,292,2020-09-20 14:20:04
-2020-05-15,"Asian",4,296,2020-09-20 14:20:04
-2020-05-16,"Asian",4,300,2020-09-20 14:20:04
-2020-05-17,"Asian",1,301,2020-09-20 14:20:04
-2020-05-18,"Asian",4,305,2020-09-20 14:20:04
-2020-05-19,"Asian",0,305,2020-09-20 14:20:04
-2020-08-08,"Asian",4,816,2020-09-20 14:20:04
-2020-05-20,"Asian",3,308,2020-09-20 14:20:04
-2020-05-21,"Asian",8,316,2020-09-20 14:20:04
-2020-05-22,"Asian",0,316,2020-09-20 14:20:04
-2020-05-23,"Asian",3,319,2020-09-20 14:20:04
-2020-05-24,"Asian",1,320,2020-09-20 14:20:04
-2020-07-30,"Asian",17,728,2020-09-20 14:20:04
-2020-07-31,"Asian",20,748,2020-09-20 14:20:04
-2020-08-01,"Asian",11,759,2020-09-20 14:20:04
-2020-08-02,"Asian",7,766,2020-09-20 14:20:04
-2020-08-03,"Asian",6,772,2020-09-20 14:20:04
-2020-08-04,"Asian",7,779,2020-09-20 14:20:04
-2020-08-05,"Asian",13,792,2020-09-20 14:20:04
-2020-05-26,"Asian",3,323,2020-09-20 14:20:04
-2020-05-27,"Asian",5,328,2020-09-20 14:20:04
-2020-05-28,"Asian",3,331,2020-09-20 14:20:04
-2020-05-29,"Asian",1,332,2020-09-20 14:20:04
-2020-05-30,"Asian",3,335,2020-09-20 14:20:04
-2020-05-31,"Asian",5,340,2020-09-20 14:20:04
-2020-06-01,"Asian",5,345,2020-09-20 14:20:04
-2020-06-02,"Asian",3,348,2020-09-20 14:20:04
-2020-06-03,"Asian",2,350,2020-09-20 14:20:04
-2020-06-04,"Asian",4,354,2020-09-20 14:20:04
-2020-06-05,"Asian",2,356,2020-09-20 14:20:04
-2020-06-06,"Asian",2,358,2020-09-20 14:20:04
-2020-06-07,"Asian",0,358,2020-09-20 14:20:04
-2020-06-08,"Asian",5,363,2020-09-20 14:20:04
-2020-06-09,"Asian",4,367,2020-09-20 14:20:04
-2020-06-10,"Asian",3,370,2020-09-20 14:20:04
-2020-06-11,"Asian",2,372,2020-09-20 14:20:04
-2020-06-12,"Asian",1,373,2020-09-20 14:20:04
-2020-06-13,"Asian",3,376,2020-09-20 14:20:04
-2020-06-14,"Asian",1,377,2020-09-20 14:20:04
-2020-06-15,"Asian",0,377,2020-09-20 14:20:04
-2020-06-16,"Asian",3,380,2020-09-20 14:20:04
-2020-06-17,"Asian",2,382,2020-09-20 14:20:04
-2020-06-18,"Asian",5,387,2020-09-20 14:20:04
-2020-06-19,"Asian",2,389,2020-09-20 14:20:04
-2020-06-20,"Asian",7,396,2020-09-20 14:20:04
-2020-06-21,"Asian",3,399,2020-09-20 14:20:04
-2020-06-22,"Asian",7,406,2020-09-20 14:20:04
-2020-06-23,"Asian",11,417,2020-09-20 14:20:04
-2020-06-24,"Asian",6,423,2020-09-20 14:20:04
-2020-06-25,"Asian",9,432,2020-09-20 14:20:04
-2020-06-26,"Asian",7,439,2020-09-20 14:20:04
-2020-08-13,"Asian",8,855,2020-09-20 14:20:04
-2020-06-28,"Asian",5,446,2020-09-20 14:20:04
-2020-06-29,"Asian",11,457,2020-09-20 14:20:04
-2020-06-30,"Asian",15,472,2020-09-20 14:20:04
-2020-07-01,"Asian",7,479,2020-09-20 14:20:04
-2020-07-02,"Asian",7,486,2020-09-20 14:20:04
-2020-07-03,"Asian",7,493,2020-09-20 14:20:04
-2020-07-04,"Asian",0,493,2020-09-20 14:20:04
-2020-07-05,"Asian",6,499,2020-09-20 14:20:04
-2020-07-06,"Asian",12,511,2020-09-20 14:20:04
-2020-07-07,"Asian",7,518,2020-09-20 14:20:04
-2020-07-08,"Asian",9,527,2020-09-20 14:20:04
-2020-07-09,"Asian",10,537,2020-09-20 14:20:04
-2020-07-10,"Asian",6,543,2020-09-20 14:20:04
-2020-07-11,"Asian",5,548,2020-09-20 14:20:04
-2020-07-12,"Asian",8,556,2020-09-20 14:20:04
-2020-07-13,"Asian",8,564,2020-09-20 14:20:04
-2020-07-14,"Asian",16,580,2020-09-20 14:20:04
-2020-07-15,"Asian",13,593,2020-09-20 14:20:04
-2020-07-16,"Asian",8,601,2020-09-20 14:20:04
-2020-07-17,"Asian",10,611,2020-09-20 14:20:04
-2020-07-18,"Asian",6,617,2020-09-20 14:20:04
-2020-07-19,"Asian",4,621,2020-09-20 14:20:04
-2020-07-20,"Asian",11,632,2020-09-20 14:20:04
-2020-07-21,"Asian",12,644,2020-09-20 14:20:04
-2020-07-22,"Asian",11,655,2020-09-20 14:20:04
-2020-07-23,"Asian",10,665,2020-09-20 14:20:04
-2020-07-24,"Asian",9,674,2020-09-20 14:20:04
-2020-07-25,"Asian",5,679,2020-09-20 14:20:04
-2020-07-26,"Asian",5,684,2020-09-20 14:20:04
-2020-07-27,"Asian",8,692,2020-09-20 14:20:04
-2020-07-28,"Asian",4,696,2020-09-20 14:20:04
-2020-08-14,"Asian",22,877,2020-09-20 14:20:04
-2020-08-15,"Asian",16,893,2020-09-20 14:20:04
-2020-08-17,"Asian",8,909,2020-09-20 14:20:04
-2020-04-07,"Asian",8,136,2020-09-20 14:20:04
-2020-08-10,"Asian",12,831,2020-09-20 14:20:04
-2020-08-16,"Asian",8,901,2020-09-20 14:20:04
-2020-08-18,"Asian",13,922,2020-09-20 14:20:04
-2020-08-19,"Asian",12,934,2020-09-20 14:20:04
-2020-08-20,"Asian",12,946,2020-09-20 14:20:04
-2020-08-21,"Asian",15,961,2020-09-20 14:20:04
-2020-08-22,"Asian",10,971,2020-09-20 14:20:04
-2020-08-23,"Asian",8,979,2020-09-20 14:20:04
-2020-08-24,"Asian",11,990,2020-09-20 14:20:04
-2020-08-25,"Asian",10,1000,2020-09-20 14:20:04
-2020-08-26,"Asian",17,1017,2020-09-20 14:20:04
-2020-08-27,"Asian",17,1034,2020-09-20 14:20:04
-2020-08-28,"Asian",9,1043,2020-09-20 14:20:04
-2020-08-29,"Asian",8,1051,2020-09-20 14:20:04
-2020-08-30,"Asian",4,1055,2020-09-20 14:20:04
-2020-08-31,"Asian",16,1071,2020-09-20 14:20:04
-2020-09-01,"Asian",12,1083,2020-09-20 14:20:04
-2020-09-02,"Asian",28,1111,2020-09-20 14:20:04
-2020-09-03,"Asian",16,1127,2020-09-20 14:20:04
-2020-09-04,"Asian",8,1135,2020-09-20 14:20:04
-2020-09-05,"Asian",8,1143,2020-09-20 14:20:04
-2020-09-06,"Asian",6,1149,2020-09-20 14:20:04
-2020-09-07,"Asian",11,1160,2020-09-20 14:20:04
-2020-09-08,"Asian",13,1173,2020-09-20 14:20:04
-2020-09-09,"Asian",21,1194,2020-09-20 14:20:04
-2020-09-10,"Asian",11,1205,2020-09-20 14:20:04
-2020-09-11,"Asian",31,1236,2020-09-20 14:20:04
-2020-09-12,"Asian",7,1243,2020-09-20 14:20:04
-2020-09-14,"Asian",14,1260,2020-09-20 14:20:04
-2020-09-15,"Asian",15,1275,2020-09-20 14:20:04
-2020-09-16,"Asian",6,1281,2020-09-20 14:20:04
-2020-09-17,"Asian",7,1288,2020-09-20 14:20:04
-2020-09-18,"Asian",4,1292,2020-09-20 14:20:04
-2020-09-19,"Asian",0,1292,2020-09-20 14:20:04
-2020-04-01,"Native Hawaiian or Other Pacific Islander",3,7,2020-09-20 14:20:04
-2020-04-02,"Native Hawaiian or Other Pacific Islander",0,7,2020-09-20 14:20:04
-2020-04-03,"Native Hawaiian or Other Pacific Islander",0,7,2020-09-20 14:20:04
-2020-04-04,"Native Hawaiian or Other Pacific Islander",0,7,2020-09-20 14:20:04
-2020-04-05,"Native Hawaiian or Other Pacific Islander",0,7,2020-09-20 14:20:04
-2020-04-06,"Native Hawaiian or Other Pacific Islander",1,8,2020-09-20 14:20:04
-2020-04-07,"Native Hawaiian or Other Pacific Islander",1,9,2020-09-20 14:20:04
-2020-04-08,"Native Hawaiian or Other Pacific Islander",1,10,2020-09-20 14:20:04
-2020-04-09,"Native Hawaiian or Other Pacific Islander",1,11,2020-09-20 14:20:04
-2020-04-10,"Native Hawaiian or Other Pacific Islander",0,11,2020-09-20 14:20:04
-2020-04-11,"Native Hawaiian or Other Pacific Islander",0,11,2020-09-20 14:20:04
-2020-04-14,"Native Hawaiian or Other Pacific Islander",2,16,2020-09-20 14:20:04
-2020-04-15,"Native Hawaiian or Other Pacific Islander",0,16,2020-09-20 14:20:04
-2020-04-16,"Native Hawaiian or Other Pacific Islander",1,17,2020-09-20 14:20:04
-2020-04-17,"Native Hawaiian or Other Pacific Islander",0,17,2020-09-20 14:20:04
-2020-04-18,"Native Hawaiian or Other Pacific Islander",0,17,2020-09-20 14:20:04
-2020-04-19,"Native Hawaiian or Other Pacific Islander",0,17,2020-09-20 14:20:04
-2020-04-12,"Native Hawaiian or Other Pacific Islander",2,13,2020-09-20 14:20:04
-2020-04-13,"Native Hawaiian or Other Pacific Islander",1,14,2020-09-20 14:20:04
-2020-04-20,"Native Hawaiian or Other Pacific Islander",2,19,2020-09-20 14:20:04
-2020-04-21,"Native Hawaiian or Other Pacific Islander",0,19,2020-09-20 14:20:04
-2020-04-22,"Native Hawaiian or Other Pacific Islander",2,21,2020-09-20 14:20:04
-2020-04-23,"Native Hawaiian or Other Pacific Islander",2,23,2020-09-20 14:20:04
-2020-04-24,"Native Hawaiian or Other Pacific Islander",2,25,2020-09-20 14:20:04
-2020-04-25,"Native Hawaiian or Other Pacific Islander",0,25,2020-09-20 14:20:04
-2020-04-26,"Native Hawaiian or Other Pacific Islander",0,25,2020-09-20 14:20:04
-2020-04-27,"Native Hawaiian or Other Pacific Islander",1,26,2020-09-20 14:20:04
-2020-04-28,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-04-29,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-04-30,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-01,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-02,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-03,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-04,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-05,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-06,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-07,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-08,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-09,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-10,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-20 14:20:04
-2020-05-11,"Native Hawaiian or Other Pacific Islander",1,27,2020-09-20 14:20:04
-2020-05-12,"Native Hawaiian or Other Pacific Islander",0,27,2020-09-20 14:20:04
-2020-05-13,"Native Hawaiian or Other Pacific Islander",1,28,2020-09-20 14:20:04
-2020-05-14,"Native Hawaiian or Other Pacific Islander",1,29,2020-09-20 14:20:04
-2020-05-15,"Native Hawaiian or Other Pacific Islander",1,30,2020-09-20 14:20:04
-2020-05-16,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-20 14:20:04
-2020-05-17,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-20 14:20:04
-2020-05-18,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-20 14:20:04
-2020-05-19,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-20 14:20:04
-2020-05-20,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-20 14:20:04
-2020-05-21,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-20 14:20:04
-2020-05-22,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-20 14:20:04
-2020-05-23,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-20 14:20:04
-2020-05-24,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-20 14:20:04
-2020-05-25,"Native Hawaiian or Other Pacific Islander",1,31,2020-09-20 14:20:04
-2020-05-26,"Native Hawaiian or Other Pacific Islander",0,31,2020-09-20 14:20:04
-2020-05-27,"Native Hawaiian or Other Pacific Islander",0,31,2020-09-20 14:20:04
-2020-05-28,"Native Hawaiian or Other Pacific Islander",0,31,2020-09-20 14:20:04
-2020-05-29,"Native Hawaiian or Other Pacific Islander",1,32,2020-09-20 14:20:04
-2020-05-30,"Native Hawaiian or Other Pacific Islander",0,32,2020-09-20 14:20:04
-2020-05-31,"Native Hawaiian or Other Pacific Islander",0,32,2020-09-20 14:20:04
-2020-06-01,"Native Hawaiian or Other Pacific Islander",1,33,2020-09-20 14:20:04
-2020-06-02,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-20 14:20:04
-2020-06-03,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-20 14:20:04
-2020-06-04,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-20 14:20:04
-2020-06-05,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-20 14:20:04
-2020-06-06,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-20 14:20:04
-2020-06-07,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-20 14:20:04
-2020-06-08,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-20 14:20:04
-2020-06-09,"Native Hawaiian or Other Pacific Islander",1,34,2020-09-20 14:20:04
-2020-06-10,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-20 14:20:04
-2020-06-11,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-20 14:20:04
-2020-06-12,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-20 14:20:04
-2020-06-13,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-20 14:20:04
-2020-06-14,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-20 14:20:04
-2020-06-15,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-20 14:20:04
-2020-06-16,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-20 14:20:04
-2020-06-17,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-20 14:20:04
-2020-06-18,"Native Hawaiian or Other Pacific Islander",1,35,2020-09-20 14:20:04
-2020-06-19,"Native Hawaiian or Other Pacific Islander",0,35,2020-09-20 14:20:04
-2020-06-20,"Native Hawaiian or Other Pacific Islander",0,35,2020-09-20 14:20:04
-2020-06-21,"Native Hawaiian or Other Pacific Islander",1,36,2020-09-20 14:20:04
-2020-06-22,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-20 14:20:04
-2020-06-23,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-20 14:20:04
-2020-06-24,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-20 14:20:04
-2020-06-25,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-20 14:20:04
-2020-06-26,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-20 14:20:04
-2020-06-27,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-20 14:20:04
-2020-06-28,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-20 14:20:04
-2020-06-29,"Native Hawaiian or Other Pacific Islander",1,37,2020-09-20 14:20:04
-2020-06-30,"Native Hawaiian or Other Pacific Islander",1,38,2020-09-20 14:20:04
-2020-07-01,"Native Hawaiian or Other Pacific Islander",1,39,2020-09-20 14:20:04
-2020-07-04,"Native Hawaiian or Other Pacific Islander",0,40,2020-09-20 14:20:04
-2020-07-05,"Native Hawaiian or Other Pacific Islander",2,42,2020-09-20 14:20:04
-2020-07-06,"Native Hawaiian or Other Pacific Islander",0,42,2020-09-20 14:20:04
-2020-07-07,"Native Hawaiian or Other Pacific Islander",0,42,2020-09-20 14:20:04
-2020-07-08,"Native Hawaiian or Other Pacific Islander",2,44,2020-09-20 14:20:04
-2020-07-09,"Native Hawaiian or Other Pacific Islander",2,46,2020-09-20 14:20:04
+2020-05-09,"White",0,341,2020-09-21 14:20:28
+2020-04-14,"Asian",9,181,2020-09-21 14:20:28
+2020-03-14,"Asian",2,8,2020-09-21 14:20:28
+2020-03-16,"Asian",7,17,2020-09-21 14:20:28
+2020-04-15,"Asian",7,188,2020-09-21 14:20:28
+2020-04-16,"Asian",3,191,2020-09-21 14:20:28
+2020-04-17,"Asian",8,199,2020-09-21 14:20:28
+2020-04-18,"Asian",0,199,2020-09-21 14:20:28
+2020-04-19,"Asian",1,200,2020-09-21 14:20:28
+2020-04-20,"Asian",4,204,2020-09-21 14:20:28
+2020-04-21,"Asian",5,209,2020-09-21 14:20:28
+2020-04-22,"Asian",4,213,2020-09-21 14:20:28
+2020-04-23,"Asian",5,218,2020-09-21 14:20:28
+2020-04-24,"Asian",4,222,2020-09-21 14:20:28
+2020-04-25,"Asian",5,227,2020-09-21 14:20:28
+2020-04-26,"Asian",3,230,2020-09-21 14:20:28
+2020-04-27,"Asian",2,232,2020-09-21 14:20:28
+2020-04-28,"Asian",5,237,2020-09-21 14:20:28
+2020-04-29,"Asian",9,246,2020-09-21 14:20:28
+2020-04-30,"Asian",6,252,2020-09-21 14:20:28
+2020-05-01,"Asian",4,256,2020-09-21 14:20:28
+2020-05-02,"Asian",4,260,2020-09-21 14:20:28
+2020-05-03,"Asian",2,262,2020-09-21 14:20:28
+2020-05-04,"Asian",1,263,2020-09-21 14:20:28
+2020-05-05,"Asian",2,265,2020-09-21 14:20:28
+2020-05-06,"Asian",4,269,2020-09-21 14:20:28
+2020-05-07,"Asian",1,270,2020-09-21 14:20:28
+2020-05-08,"Asian",2,272,2020-09-21 14:20:28
+2020-05-09,"Asian",1,273,2020-09-21 14:20:28
+2020-05-10,"Asian",0,273,2020-09-21 14:20:28
+2020-05-11,"Asian",3,276,2020-09-21 14:20:28
+2020-05-12,"Asian",11,287,2020-09-21 14:20:28
+2020-05-13,"Asian",2,289,2020-09-21 14:20:28
+2020-05-14,"Asian",3,292,2020-09-21 14:20:28
+2020-05-15,"Asian",4,296,2020-09-21 14:20:28
+2020-05-16,"Asian",4,300,2020-09-21 14:20:28
+2020-05-17,"Asian",1,301,2020-09-21 14:20:28
+2020-05-18,"Asian",4,305,2020-09-21 14:20:28
+2020-05-19,"Asian",0,305,2020-09-21 14:20:28
+2020-05-20,"Asian",3,308,2020-09-21 14:20:28
+2020-05-21,"Asian",8,316,2020-09-21 14:20:28
+2020-05-22,"Asian",0,316,2020-09-21 14:20:28
+2020-05-23,"Asian",3,319,2020-09-21 14:20:28
+2020-05-24,"Asian",1,320,2020-09-21 14:20:28
+2020-05-25,"Asian",0,320,2020-09-21 14:20:28
+2020-05-26,"Asian",3,323,2020-09-21 14:20:28
+2020-05-27,"Asian",5,328,2020-09-21 14:20:28
+2020-05-28,"Asian",3,331,2020-09-21 14:20:28
+2020-05-29,"Asian",1,332,2020-09-21 14:20:28
+2020-05-30,"Asian",3,335,2020-09-21 14:20:28
+2020-05-31,"Asian",5,340,2020-09-21 14:20:28
+2020-06-01,"Asian",5,345,2020-09-21 14:20:28
+2020-06-02,"Asian",3,348,2020-09-21 14:20:28
+2020-06-03,"Asian",2,350,2020-09-21 14:20:28
+2020-06-04,"Asian",4,354,2020-09-21 14:20:28
+2020-06-05,"Asian",2,356,2020-09-21 14:20:28
+2020-06-06,"Asian",2,358,2020-09-21 14:20:28
+2020-06-07,"Asian",0,358,2020-09-21 14:20:28
+2020-06-08,"Asian",5,363,2020-09-21 14:20:28
+2020-06-09,"Asian",4,367,2020-09-21 14:20:28
+2020-06-10,"Asian",3,370,2020-09-21 14:20:28
+2020-06-11,"Asian",2,372,2020-09-21 14:20:28
+2020-06-12,"Asian",1,373,2020-09-21 14:20:28
+2020-06-13,"Asian",3,376,2020-09-21 14:20:28
+2020-06-14,"Asian",1,377,2020-09-21 14:20:28
+2020-06-16,"Asian",3,380,2020-09-21 14:20:28
+2020-06-17,"Asian",2,382,2020-09-21 14:20:28
+2020-06-18,"Asian",5,387,2020-09-21 14:20:28
+2020-06-19,"Asian",2,389,2020-09-21 14:20:28
+2020-06-20,"Asian",7,396,2020-09-21 14:20:28
+2020-06-21,"Asian",3,399,2020-09-21 14:20:28
+2020-06-22,"Asian",7,406,2020-09-21 14:20:28
+2020-06-23,"Asian",11,417,2020-09-21 14:20:28
+2020-06-24,"Asian",6,423,2020-09-21 14:20:28
+2020-06-25,"Asian",9,432,2020-09-21 14:20:28
+2020-06-26,"Asian",7,439,2020-09-21 14:20:28
+2020-06-27,"Asian",2,441,2020-09-21 14:20:28
+2020-06-28,"Asian",5,446,2020-09-21 14:20:28
+2020-06-29,"Asian",11,457,2020-09-21 14:20:28
+2020-06-30,"Asian",15,472,2020-09-21 14:20:28
+2020-07-01,"Asian",7,479,2020-09-21 14:20:28
+2020-07-02,"Asian",7,486,2020-09-21 14:20:28
+2020-07-03,"Asian",7,493,2020-09-21 14:20:28
+2020-07-04,"Asian",0,493,2020-09-21 14:20:28
+2020-07-05,"Asian",6,499,2020-09-21 14:20:28
+2020-07-06,"Asian",12,511,2020-09-21 14:20:28
+2020-07-07,"Asian",7,518,2020-09-21 14:20:28
+2020-07-08,"Asian",9,527,2020-09-21 14:20:28
+2020-07-09,"Asian",10,537,2020-09-21 14:20:28
+2020-07-10,"Asian",6,543,2020-09-21 14:20:28
+2020-07-11,"Asian",5,548,2020-09-21 14:20:28
+2020-07-12,"Asian",8,556,2020-09-21 14:20:28
+2020-07-13,"Asian",8,564,2020-09-21 14:20:28
+2020-07-14,"Asian",16,580,2020-09-21 14:20:28
+2020-07-15,"Asian",13,593,2020-09-21 14:20:28
+2020-07-16,"Asian",8,601,2020-09-21 14:20:28
+2020-07-17,"Asian",10,611,2020-09-21 14:20:28
+2020-07-18,"Asian",6,617,2020-09-21 14:20:28
+2020-07-19,"Asian",4,621,2020-09-21 14:20:28
+2020-07-20,"Asian",11,632,2020-09-21 14:20:28
+2020-07-21,"Asian",12,644,2020-09-21 14:20:28
+2020-07-22,"Asian",11,655,2020-09-21 14:20:28
+2020-07-23,"Asian",10,665,2020-09-21 14:20:28
+2020-07-24,"Asian",9,674,2020-09-21 14:20:28
+2020-07-25,"Asian",5,679,2020-09-21 14:20:28
+2020-07-26,"Asian",5,684,2020-09-21 14:20:28
+2020-07-27,"Asian",8,692,2020-09-21 14:20:28
+2020-07-28,"Asian",4,696,2020-09-21 14:20:28
+2020-07-29,"Asian",15,711,2020-09-21 14:20:28
+2020-07-30,"Asian",17,728,2020-09-21 14:20:28
+2020-07-31,"Asian",20,748,2020-09-21 14:20:28
+2020-08-01,"Asian",11,759,2020-09-21 14:20:28
+2020-08-02,"Asian",7,766,2020-09-21 14:20:28
+2020-08-03,"Asian",6,772,2020-09-21 14:20:28
+2020-08-04,"Asian",7,779,2020-09-21 14:20:28
+2020-08-05,"Asian",13,792,2020-09-21 14:20:28
+2020-08-06,"Asian",9,801,2020-09-21 14:20:28
+2020-08-07,"Asian",11,812,2020-09-21 14:20:28
+2020-08-08,"Asian",4,816,2020-09-21 14:20:28
+2020-08-09,"Asian",3,819,2020-09-21 14:20:28
+2020-08-11,"Asian",7,838,2020-09-21 14:20:28
+2020-08-12,"Asian",9,847,2020-09-21 14:20:28
+2020-08-13,"Asian",8,855,2020-09-21 14:20:28
+2020-08-14,"Asian",22,877,2020-09-21 14:20:28
+2020-08-15,"Asian",16,893,2020-09-21 14:20:28
+2020-08-16,"Asian",8,901,2020-09-21 14:20:28
+2020-08-17,"Asian",8,909,2020-09-21 14:20:28
+2020-08-18,"Asian",13,922,2020-09-21 14:20:28
+2020-08-20,"Asian",12,946,2020-09-21 14:20:28
+2020-08-21,"Asian",15,961,2020-09-21 14:20:28
+2020-08-22,"Asian",10,971,2020-09-21 14:20:28
+2020-08-23,"Asian",8,979,2020-09-21 14:20:28
+2020-08-24,"Asian",11,990,2020-09-21 14:20:28
+2020-08-25,"Asian",10,1000,2020-09-21 14:20:28
+2020-08-26,"Asian",17,1017,2020-09-21 14:20:28
+2020-08-27,"Asian",17,1034,2020-09-21 14:20:28
+2020-08-28,"Asian",9,1043,2020-09-21 14:20:28
+2020-08-29,"Asian",8,1051,2020-09-21 14:20:28
+2020-08-30,"Asian",4,1055,2020-09-21 14:20:28
+2020-08-31,"Asian",16,1071,2020-09-21 14:20:28
+2020-09-01,"Asian",12,1083,2020-09-21 14:20:28
+2020-09-02,"Asian",28,1111,2020-09-21 14:20:28
+2020-09-03,"Asian",16,1127,2020-09-21 14:20:28
+2020-09-04,"Asian",8,1135,2020-09-21 14:20:28
+2020-09-05,"Asian",8,1143,2020-09-21 14:20:28
+2020-09-06,"Asian",6,1149,2020-09-21 14:20:28
+2020-09-07,"Asian",11,1160,2020-09-21 14:20:28
+2020-09-08,"Asian",13,1173,2020-09-21 14:20:28
+2020-09-09,"Asian",21,1194,2020-09-21 14:20:28
+2020-09-10,"Asian",11,1205,2020-09-21 14:20:28
+2020-09-11,"Asian",31,1236,2020-09-21 14:20:28
+2020-09-12,"Asian",7,1243,2020-09-21 14:20:28
+2020-09-13,"Asian",3,1246,2020-09-21 14:20:28
+2020-09-14,"Asian",14,1260,2020-09-21 14:20:28
+2020-09-15,"Asian",16,1276,2020-09-21 14:20:28
+2020-09-16,"Asian",6,1282,2020-09-21 14:20:28
+2020-09-17,"Asian",7,1289,2020-09-21 14:20:28
+2020-09-18,"Asian",9,1298,2020-09-21 14:20:28
+2020-09-19,"Asian",1,1299,2020-09-21 14:20:28
+2020-09-20,"Asian",0,1299,2020-09-21 14:20:28
+2020-04-01,"Native Hawaiian or Other Pacific Islander",3,7,2020-09-21 14:20:28
+2020-04-02,"Native Hawaiian or Other Pacific Islander",0,7,2020-09-21 14:20:28
+2020-04-03,"Native Hawaiian or Other Pacific Islander",0,7,2020-09-21 14:20:28
+2020-04-04,"Native Hawaiian or Other Pacific Islander",0,7,2020-09-21 14:20:28
+2020-04-05,"Native Hawaiian or Other Pacific Islander",0,7,2020-09-21 14:20:28
+2020-04-06,"Native Hawaiian or Other Pacific Islander",1,8,2020-09-21 14:20:28
+2020-04-07,"Native Hawaiian or Other Pacific Islander",1,9,2020-09-21 14:20:28
+2020-04-08,"Native Hawaiian or Other Pacific Islander",1,10,2020-09-21 14:20:28
+2020-04-09,"Native Hawaiian or Other Pacific Islander",1,11,2020-09-21 14:20:28
+2020-04-10,"Native Hawaiian or Other Pacific Islander",0,11,2020-09-21 14:20:28
+2020-04-11,"Native Hawaiian or Other Pacific Islander",0,11,2020-09-21 14:20:28
+2020-04-12,"Native Hawaiian or Other Pacific Islander",2,13,2020-09-21 14:20:28
+2020-04-13,"Native Hawaiian or Other Pacific Islander",1,14,2020-09-21 14:20:28
+2020-04-14,"Native Hawaiian or Other Pacific Islander",2,16,2020-09-21 14:20:28
+2020-04-15,"Native Hawaiian or Other Pacific Islander",0,16,2020-09-21 14:20:28
+2020-04-16,"Native Hawaiian or Other Pacific Islander",1,17,2020-09-21 14:20:28
+2020-04-17,"Native Hawaiian or Other Pacific Islander",0,17,2020-09-21 14:20:28
+2020-04-18,"Native Hawaiian or Other Pacific Islander",0,17,2020-09-21 14:20:28
+2020-04-19,"Native Hawaiian or Other Pacific Islander",0,17,2020-09-21 14:20:28
+2020-04-20,"Native Hawaiian or Other Pacific Islander",2,19,2020-09-21 14:20:28
+2020-04-21,"Native Hawaiian or Other Pacific Islander",0,19,2020-09-21 14:20:28
+2020-04-22,"Native Hawaiian or Other Pacific Islander",2,21,2020-09-21 14:20:28
+2020-04-23,"Native Hawaiian or Other Pacific Islander",2,23,2020-09-21 14:20:28
+2020-04-24,"Native Hawaiian or Other Pacific Islander",2,25,2020-09-21 14:20:28
+2020-04-25,"Native Hawaiian or Other Pacific Islander",0,25,2020-09-21 14:20:28
+2020-04-26,"Native Hawaiian or Other Pacific Islander",0,25,2020-09-21 14:20:28
+2020-04-27,"Native Hawaiian or Other Pacific Islander",1,26,2020-09-21 14:20:28
+2020-04-28,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-04-29,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-04-30,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-01,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-02,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-03,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-04,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-05,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-06,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-07,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-08,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-09,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-10,"Native Hawaiian or Other Pacific Islander",0,26,2020-09-21 14:20:28
+2020-05-11,"Native Hawaiian or Other Pacific Islander",1,27,2020-09-21 14:20:28
+2020-05-12,"Native Hawaiian or Other Pacific Islander",0,27,2020-09-21 14:20:28
+2020-05-13,"Native Hawaiian or Other Pacific Islander",1,28,2020-09-21 14:20:28
+2020-05-14,"Native Hawaiian or Other Pacific Islander",1,29,2020-09-21 14:20:28
+2020-05-15,"Native Hawaiian or Other Pacific Islander",1,30,2020-09-21 14:20:28
+2020-05-16,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-21 14:20:28
+2020-05-17,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-21 14:20:28
+2020-05-18,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-21 14:20:28
+2020-05-19,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-21 14:20:28
+2020-05-20,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-21 14:20:28
+2020-05-21,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-21 14:20:28
+2020-05-22,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-21 14:20:28
+2020-05-23,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-21 14:20:28
+2020-05-24,"Native Hawaiian or Other Pacific Islander",0,30,2020-09-21 14:20:28
+2020-05-25,"Native Hawaiian or Other Pacific Islander",1,31,2020-09-21 14:20:28
+2020-05-26,"Native Hawaiian or Other Pacific Islander",0,31,2020-09-21 14:20:28
+2020-05-27,"Native Hawaiian or Other Pacific Islander",0,31,2020-09-21 14:20:28
+2020-05-28,"Native Hawaiian or Other Pacific Islander",0,31,2020-09-21 14:20:28
+2020-05-29,"Native Hawaiian or Other Pacific Islander",1,32,2020-09-21 14:20:28
+2020-05-30,"Native Hawaiian or Other Pacific Islander",0,32,2020-09-21 14:20:28
+2020-05-31,"Native Hawaiian or Other Pacific Islander",0,32,2020-09-21 14:20:28
+2020-06-01,"Native Hawaiian or Other Pacific Islander",1,33,2020-09-21 14:20:28
+2020-06-02,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-21 14:20:28
+2020-06-03,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-21 14:20:28
+2020-06-04,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-21 14:20:28
+2020-06-05,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-21 14:20:28
+2020-06-06,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-21 14:20:28
+2020-06-07,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-21 14:20:28
+2020-06-08,"Native Hawaiian or Other Pacific Islander",0,33,2020-09-21 14:20:28
+2020-06-09,"Native Hawaiian or Other Pacific Islander",1,34,2020-09-21 14:20:28
+2020-06-10,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-21 14:20:28
+2020-06-11,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-21 14:20:28
+2020-06-12,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-21 14:20:28
+2020-06-13,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-21 14:20:28
+2020-06-14,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-21 14:20:28
+2020-06-15,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-21 14:20:28
+2020-06-16,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-21 14:20:28
+2020-06-17,"Native Hawaiian or Other Pacific Islander",0,34,2020-09-21 14:20:28
+2020-06-18,"Native Hawaiian or Other Pacific Islander",1,35,2020-09-21 14:20:28
+2020-06-19,"Native Hawaiian or Other Pacific Islander",0,35,2020-09-21 14:20:28
+2020-06-20,"Native Hawaiian or Other Pacific Islander",0,35,2020-09-21 14:20:28
+2020-06-21,"Native Hawaiian or Other Pacific Islander",1,36,2020-09-21 14:20:28
+2020-06-22,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-21 14:20:28
+2020-06-23,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-21 14:20:28
+2020-06-24,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-21 14:20:28
+2020-06-25,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-21 14:20:28
+2020-06-26,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-21 14:20:28
+2020-06-27,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-21 14:20:28
+2020-06-28,"Native Hawaiian or Other Pacific Islander",0,36,2020-09-21 14:20:28
+2020-06-29,"Native Hawaiian or Other Pacific Islander",1,37,2020-09-21 14:20:28
+2020-06-30,"Native Hawaiian or Other Pacific Islander",1,38,2020-09-21 14:20:28
+2020-07-01,"Native Hawaiian or Other Pacific Islander",1,39,2020-09-21 14:20:28
+2020-07-02,"Native Hawaiian or Other Pacific Islander",1,40,2020-09-21 14:20:28
+2020-07-03,"Native Hawaiian or Other Pacific Islander",0,40,2020-09-21 14:20:28
+2020-07-04,"Native Hawaiian or Other Pacific Islander",0,40,2020-09-21 14:20:28
+2020-07-05,"Native Hawaiian or Other Pacific Islander",2,42,2020-09-21 14:20:28
+2020-07-06,"Native Hawaiian or Other Pacific Islander",0,42,2020-09-21 14:20:28
+2020-07-07,"Native Hawaiian or Other Pacific Islander",0,42,2020-09-21 14:20:28
+2020-07-08,"Native Hawaiian or Other Pacific Islander",2,44,2020-09-21 14:20:28
+2020-07-11,"Native Hawaiian or Other Pacific Islander",3,49,2020-09-21 14:20:28
+2020-07-12,"Native Hawaiian or Other Pacific Islander",0,49,2020-09-21 14:20:28
+2020-07-13,"Native Hawaiian or Other Pacific Islander",1,50,2020-09-21 14:20:28
+2020-07-14,"Native Hawaiian or Other Pacific Islander",1,51,2020-09-21 14:20:28
+2020-07-15,"Native Hawaiian or Other Pacific Islander",3,54,2020-09-21 14:20:28
+2020-07-16,"Native Hawaiian or Other Pacific Islander",3,57,2020-09-21 14:20:28
+2020-07-17,"Native Hawaiian or Other Pacific Islander",0,57,2020-09-21 14:20:28
+2020-07-18,"Native Hawaiian or Other Pacific Islander",0,57,2020-09-21 14:20:28
+2020-07-19,"Native Hawaiian or Other Pacific Islander",0,57,2020-09-21 14:20:28
+2020-07-20,"Native Hawaiian or Other Pacific Islander",4,61,2020-09-21 14:20:28
+2020-07-21,"Native Hawaiian or Other Pacific Islander",1,62,2020-09-21 14:20:28
+2020-07-22,"Native Hawaiian or Other Pacific Islander",6,68,2020-09-21 14:20:28
+2020-07-23,"Native Hawaiian or Other Pacific Islander",3,71,2020-09-21 14:20:28
+2020-07-24,"Native Hawaiian or Other Pacific Islander",2,73,2020-09-21 14:20:28
+2020-07-25,"Native Hawaiian or Other Pacific Islander",3,76,2020-09-21 14:20:28
+2020-07-26,"Native Hawaiian or Other Pacific Islander",0,76,2020-09-21 14:20:28
+2020-07-27,"Native Hawaiian or Other Pacific Islander",2,78,2020-09-21 14:20:28
+2020-07-28,"Native Hawaiian or Other Pacific Islander",5,83,2020-09-21 14:20:28
+2020-07-29,"Native Hawaiian or Other Pacific Islander",1,84,2020-09-21 14:20:28
+2020-07-30,"Native Hawaiian or Other Pacific Islander",1,85,2020-09-21 14:20:28
+2020-07-31,"Native Hawaiian or Other Pacific Islander",1,86,2020-09-21 14:20:28
+2020-08-01,"Native Hawaiian or Other Pacific Islander",1,87,2020-09-21 14:20:28
+2020-08-02,"Native Hawaiian or Other Pacific Islander",4,91,2020-09-21 14:20:28
+2020-08-03,"Native Hawaiian or Other Pacific Islander",0,91,2020-09-21 14:20:28
+2020-08-04,"Native Hawaiian or Other Pacific Islander",0,91,2020-09-21 14:20:28
+2020-08-05,"Native Hawaiian or Other Pacific Islander",4,95,2020-09-21 14:20:28
+2020-08-06,"Native Hawaiian or Other Pacific Islander",0,95,2020-09-21 14:20:28
+2020-08-07,"Native Hawaiian or Other Pacific Islander",2,97,2020-09-21 14:20:28
+2020-08-08,"Native Hawaiian or Other Pacific Islander",0,97,2020-09-21 14:20:28
+2020-08-09,"Native Hawaiian or Other Pacific Islander",0,97,2020-09-21 14:20:28
+2020-08-10,"Native Hawaiian or Other Pacific Islander",1,98,2020-09-21 14:20:28
+2020-08-11,"Native Hawaiian or Other Pacific Islander",3,101,2020-09-21 14:20:28
+2020-08-12,"Native Hawaiian or Other Pacific Islander",5,106,2020-09-21 14:20:28
+2020-08-13,"Native Hawaiian or Other Pacific Islander",3,109,2020-09-21 14:20:28
+2020-08-14,"Native Hawaiian or Other Pacific Islander",0,109,2020-09-21 14:20:28
+2020-08-15,"Native Hawaiian or Other Pacific Islander",1,110,2020-09-21 14:20:28
+2020-08-16,"Native Hawaiian or Other Pacific Islander",1,111,2020-09-21 14:20:28
+2020-08-17,"Native Hawaiian or Other Pacific Islander",5,116,2020-09-21 14:20:28
+2020-08-18,"Native Hawaiian or Other Pacific Islander",2,118,2020-09-21 14:20:28
+2020-08-19,"Native Hawaiian or Other Pacific Islander",2,120,2020-09-21 14:20:28
+2020-08-20,"Native Hawaiian or Other Pacific Islander",1,121,2020-09-21 14:20:28
+2020-08-21,"Native Hawaiian or Other Pacific Islander",7,128,2020-09-21 14:20:28
+2020-08-22,"Native Hawaiian or Other Pacific Islander",0,128,2020-09-21 14:20:28
+2020-08-23,"Native Hawaiian or Other Pacific Islander",1,129,2020-09-21 14:20:28
+2020-08-24,"Native Hawaiian or Other Pacific Islander",0,129,2020-09-21 14:20:28
+2020-08-25,"Native Hawaiian or Other Pacific Islander",2,131,2020-09-21 14:20:28
+2020-08-26,"Native Hawaiian or Other Pacific Islander",0,131,2020-09-21 14:20:28
+2020-08-27,"Native Hawaiian or Other Pacific Islander",0,131,2020-09-21 14:20:28
+2020-08-28,"Native Hawaiian or Other Pacific Islander",0,131,2020-09-21 14:20:28
+2020-08-29,"Native Hawaiian or Other Pacific Islander",2,133,2020-09-21 14:20:28
+2020-09-03,"Native Hawaiian or Other Pacific Islander",2,141,2020-09-21 14:20:28
+2020-09-04,"Native Hawaiian or Other Pacific Islander",0,141,2020-09-21 14:20:28
+2020-09-05,"Native Hawaiian or Other Pacific Islander",0,141,2020-09-21 14:20:28
+2020-09-06,"Native Hawaiian or Other Pacific Islander",1,142,2020-09-21 14:20:28
+2020-09-07,"Native Hawaiian or Other Pacific Islander",1,143,2020-09-21 14:20:28
+2020-09-08,"Native Hawaiian or Other Pacific Islander",1,144,2020-09-21 14:20:28
+2020-09-09,"Native Hawaiian or Other Pacific Islander",3,147,2020-09-21 14:20:28
+2020-09-10,"Native Hawaiian or Other Pacific Islander",1,148,2020-09-21 14:20:28
+2020-09-11,"Native Hawaiian or Other Pacific Islander",0,148,2020-09-21 14:20:28
+2020-09-12,"Native Hawaiian or Other Pacific Islander",0,148,2020-09-21 14:20:28
+2020-09-13,"Native Hawaiian or Other Pacific Islander",0,148,2020-09-21 14:20:28
+2020-09-14,"Native Hawaiian or Other Pacific Islander",0,148,2020-09-21 14:20:28
+2020-09-15,"Native Hawaiian or Other Pacific Islander",1,149,2020-09-21 14:20:28
+2020-09-16,"Native Hawaiian or Other Pacific Islander",1,150,2020-09-21 14:20:28
+2020-09-17,"Native Hawaiian or Other Pacific Islander",1,151,2020-09-21 14:20:28
+2020-09-18,"Native Hawaiian or Other Pacific Islander",0,151,2020-09-21 14:20:28
+2020-09-19,"Native Hawaiian or Other Pacific Islander",0,151,2020-09-21 14:20:28
+2020-09-20,"Native Hawaiian or Other Pacific Islander",0,151,2020-09-21 14:20:28
+2020-03-15,"White",6,17,2020-09-21 14:20:28
+2020-03-16,"White",19,36,2020-09-21 14:20:28
+2020-03-17,"White",10,46,2020-09-21 14:20:28
+2020-03-18,"White",6,52,2020-09-21 14:20:28
+2020-03-19,"White",8,60,2020-09-21 14:20:28
+2020-03-20,"White",7,67,2020-09-21 14:20:28
+2020-03-21,"White",5,72,2020-09-21 14:20:28
+2020-03-22,"White",6,78,2020-09-21 14:20:28
+2020-03-23,"White",8,86,2020-09-21 14:20:28
+2020-03-24,"White",12,98,2020-09-21 14:20:28
+2020-03-25,"White",9,107,2020-09-21 14:20:28
+2020-03-26,"White",10,117,2020-09-21 14:20:28
+2020-03-27,"White",7,124,2020-09-21 14:20:28
+2020-03-28,"White",4,128,2020-09-21 14:20:28
+2020-03-30,"White",7,135,2020-09-21 14:20:28
+2020-03-31,"White",14,149,2020-09-21 14:20:28
+2020-04-01,"White",5,154,2020-09-21 14:20:28
+2020-04-02,"White",7,161,2020-09-21 14:20:28
+2020-04-03,"White",5,166,2020-09-21 14:20:28
+2020-04-04,"White",3,169,2020-09-21 14:20:28
+2020-04-05,"White",2,171,2020-09-21 14:20:28
+2020-04-06,"White",10,181,2020-09-21 14:20:28
+2020-04-07,"White",6,187,2020-09-21 14:20:28
+2020-04-08,"White",21,208,2020-09-21 14:20:28
+2020-04-09,"White",19,227,2020-09-21 14:20:28
+2020-04-10,"White",3,230,2020-09-21 14:20:28
+2020-04-11,"White",2,232,2020-09-21 14:20:28
+2020-04-12,"White",2,234,2020-09-21 14:20:28
+2020-04-13,"White",3,237,2020-09-21 14:20:28
+2020-04-14,"White",4,241,2020-09-21 14:20:28
+2020-04-15,"White",3,244,2020-09-21 14:20:28
+2020-04-16,"White",5,249,2020-09-21 14:20:28
+2020-04-17,"White",4,253,2020-09-21 14:20:28
+2020-04-18,"White",5,258,2020-09-21 14:20:28
+2020-04-19,"White",1,259,2020-09-21 14:20:28
+2020-04-20,"White",4,263,2020-09-21 14:20:28
+2020-04-21,"White",1,264,2020-09-21 14:20:28
+2020-04-22,"White",2,266,2020-09-21 14:20:28
+2020-04-23,"White",9,275,2020-09-21 14:20:28
+2020-04-24,"White",9,284,2020-09-21 14:20:28
+2020-04-25,"White",4,288,2020-09-21 14:20:28
+2020-04-26,"White",1,289,2020-09-21 14:20:28
+2020-04-27,"White",5,294,2020-09-21 14:20:28
+2020-04-28,"White",6,300,2020-09-21 14:20:28
+2020-04-29,"White",8,308,2020-09-21 14:20:28
+2020-04-30,"White",4,312,2020-09-21 14:20:28
+2020-05-01,"White",5,317,2020-09-21 14:20:28
+2020-05-02,"White",1,318,2020-09-21 14:20:28
+2020-05-03,"White",1,319,2020-09-21 14:20:28
+2020-05-04,"White",4,323,2020-09-21 14:20:28
+2020-05-05,"White",3,326,2020-09-21 14:20:28
+2020-05-06,"White",2,328,2020-09-21 14:20:28
+2020-05-07,"White",10,338,2020-09-21 14:20:28
+2020-05-08,"White",3,341,2020-09-21 14:20:28
+2020-05-10,"White",1,342,2020-09-21 14:20:28
+2020-05-11,"White",4,346,2020-09-21 14:20:28
+2020-05-12,"White",7,353,2020-09-21 14:20:28
+2020-05-13,"White",4,357,2020-09-21 14:20:28
+2020-05-14,"White",4,361,2020-09-21 14:20:28
+2020-05-15,"White",5,366,2020-09-21 14:20:28
+2020-05-16,"White",2,368,2020-09-21 14:20:28
+2020-05-17,"White",0,368,2020-09-21 14:20:28
+2020-05-18,"White",3,371,2020-09-21 14:20:28
+2020-05-19,"White",1,372,2020-09-21 14:20:28
+2020-05-20,"White",6,378,2020-09-21 14:20:28
+2020-05-21,"White",3,381,2020-09-21 14:20:28
+2020-05-22,"White",4,385,2020-09-21 14:20:28
+2020-05-23,"White",1,386,2020-09-21 14:20:28
+2020-05-24,"White",1,387,2020-09-21 14:20:28
+2020-05-25,"White",1,388,2020-09-21 14:20:28
+2020-05-26,"White",4,392,2020-09-21 14:20:28
+2020-05-27,"White",3,395,2020-09-21 14:20:28
+2020-05-28,"White",1,396,2020-09-21 14:20:28
+2020-05-29,"White",1,397,2020-09-21 14:20:28
+2020-05-30,"White",3,400,2020-09-21 14:20:28
+2020-05-31,"White",1,401,2020-09-21 14:20:28
+2020-06-01,"White",4,405,2020-09-21 14:20:28
+2020-06-02,"White",2,407,2020-09-21 14:20:28
+2020-06-03,"White",7,414,2020-09-21 14:20:28
+2020-06-04,"White",4,418,2020-09-21 14:20:28
+2020-06-05,"White",4,422,2020-09-21 14:20:28
+2020-06-06,"White",2,424,2020-09-21 14:20:28
+2020-06-07,"White",2,426,2020-09-21 14:20:28
+2020-06-08,"White",7,433,2020-09-21 14:20:28
+2020-06-09,"White",4,437,2020-09-21 14:20:28
+2020-06-10,"White",4,441,2020-09-21 14:20:28
+2020-06-11,"White",2,443,2020-09-21 14:20:28
+2020-06-12,"White",8,451,2020-09-21 14:20:28
+2020-06-13,"White",3,454,2020-09-21 14:20:28
+2020-06-14,"White",4,458,2020-09-21 14:20:28
+2020-06-15,"White",5,463,2020-09-21 14:20:28
+2020-06-16,"White",9,472,2020-09-21 14:20:28
+2020-06-17,"White",13,485,2020-09-21 14:20:28
+2020-06-18,"White",12,497,2020-09-21 14:20:28
+2020-06-19,"White",10,507,2020-09-21 14:20:28
+2020-06-20,"White",6,513,2020-09-21 14:20:28
+2020-06-21,"White",2,515,2020-09-21 14:20:28
+2020-06-22,"White",37,552,2020-09-21 14:20:28
+2020-06-23,"White",16,568,2020-09-21 14:20:28
+2020-06-24,"White",3,571,2020-09-21 14:20:28
+2020-06-25,"White",8,579,2020-09-21 14:20:28
+2020-06-26,"White",7,586,2020-09-21 14:20:28
+2020-06-27,"White",11,597,2020-09-21 14:20:28
+2020-06-28,"White",5,602,2020-09-21 14:20:28
+2020-06-29,"White",11,613,2020-09-21 14:20:28
+2020-06-30,"White",19,632,2020-09-21 14:20:28
+2020-07-01,"White",13,645,2020-09-21 14:20:28
+2020-07-02,"White",24,669,2020-09-21 14:20:28
+2020-07-03,"White",11,680,2020-09-21 14:20:28
+2020-07-04,"White",11,691,2020-09-21 14:20:28
+2020-07-05,"White",9,700,2020-09-21 14:20:28
+2020-07-06,"White",14,714,2020-09-21 14:20:28
+2020-07-07,"White",25,739,2020-09-21 14:20:28
+2020-07-08,"White",18,757,2020-09-21 14:20:28
+2020-07-09,"White",23,780,2020-09-21 14:20:28
+2020-07-10,"White",23,803,2020-09-21 14:20:28
+2020-07-11,"White",13,816,2020-09-21 14:20:28
+2020-07-12,"White",12,828,2020-09-21 14:20:28
+2020-07-13,"White",15,843,2020-09-21 14:20:28
+2020-07-14,"White",39,882,2020-09-21 14:20:28
+2020-07-15,"White",21,903,2020-09-21 14:20:28
+2020-07-16,"White",16,919,2020-09-21 14:20:28
+2020-07-17,"White",20,939,2020-09-21 14:20:28
+2020-07-18,"White",12,951,2020-09-21 14:20:28
+2020-07-19,"White",12,963,2020-09-21 14:20:28
+2020-07-20,"White",22,985,2020-09-21 14:20:28
+2020-07-21,"White",18,1003,2020-09-21 14:20:28
+2020-07-22,"White",19,1022,2020-09-21 14:20:28
+2020-07-23,"White",13,1035,2020-09-21 14:20:28
+2020-07-24,"White",23,1058,2020-09-21 14:20:28
+2020-07-25,"White",9,1067,2020-09-21 14:20:28
+2020-07-26,"White",8,1075,2020-09-21 14:20:28
+2020-07-27,"White",15,1090,2020-09-21 14:20:28
+2020-07-28,"White",12,1102,2020-09-21 14:20:28
+2020-07-29,"White",16,1118,2020-09-21 14:20:28
+2020-07-30,"White",18,1136,2020-09-21 14:20:28
+2020-07-31,"White",10,1146,2020-09-21 14:20:28
+2020-08-01,"White",9,1155,2020-09-21 14:20:28
+2020-08-02,"White",5,1160,2020-09-21 14:20:28
+2020-08-03,"White",9,1169,2020-09-21 14:20:28
+2020-08-04,"White",11,1180,2020-09-21 14:20:28
+2020-08-05,"White",6,1186,2020-09-21 14:20:28
+2020-08-06,"White",14,1200,2020-09-21 14:20:28
+2020-08-07,"White",12,1212,2020-09-21 14:20:28
+2020-08-08,"White",6,1218,2020-09-21 14:20:28
+2020-08-09,"White",5,1223,2020-09-21 14:20:28
+2020-08-10,"White",17,1240,2020-09-21 14:20:28
+2020-08-11,"White",10,1250,2020-09-21 14:20:28
+2020-08-12,"White",12,1262,2020-09-21 14:20:28
+2020-08-13,"White",19,1281,2020-09-21 14:20:28
+2020-08-14,"White",8,1289,2020-09-21 14:20:28
+2020-08-15,"White",6,1295,2020-09-21 14:20:28
+2020-08-16,"White",2,1297,2020-09-21 14:20:28
+2020-08-17,"White",8,1305,2020-09-21 14:20:28
+2020-08-18,"White",9,1314,2020-09-21 14:20:28
+2020-08-19,"White",7,1321,2020-09-21 14:20:28
+2020-08-20,"White",10,1331,2020-09-21 14:20:28
+2020-08-21,"White",10,1341,2020-09-21 14:20:28
+2020-08-23,"White",3,1351,2020-09-21 14:20:28
+2020-08-24,"White",11,1362,2020-09-21 14:20:28
+2020-08-25,"White",15,1377,2020-09-21 14:20:28
+2020-08-26,"White",9,1386,2020-09-21 14:20:28
+2020-08-27,"White",10,1396,2020-09-21 14:20:28
+2020-08-28,"White",14,1410,2020-09-21 14:20:28
+2020-08-29,"White",6,1416,2020-09-21 14:20:28
+2020-08-30,"White",8,1424,2020-09-21 14:20:28
+2020-08-31,"White",7,1431,2020-09-21 14:20:28
+2020-09-01,"White",15,1446,2020-09-21 14:20:28
+2020-09-02,"White",10,1456,2020-09-21 14:20:28
+2020-09-03,"White",11,1467,2020-09-21 14:20:28
+2020-09-04,"White",5,1472,2020-09-21 14:20:28
+2020-09-05,"White",5,1477,2020-09-21 14:20:28
+2020-09-06,"White",2,1479,2020-09-21 14:20:28
+2020-09-07,"White",10,1489,2020-09-21 14:20:28
+2020-09-08,"White",11,1500,2020-09-21 14:20:28
+2020-09-09,"White",10,1510,2020-09-21 14:20:28
+2020-09-10,"White",11,1521,2020-09-21 14:20:28
+2020-09-11,"White",13,1534,2020-09-21 14:20:28
+2020-09-12,"White",7,1541,2020-09-21 14:20:28
+2020-09-13,"White",5,1546,2020-09-21 14:20:28
+2020-09-14,"White",14,1560,2020-09-21 14:20:28
+2020-09-15,"White",18,1578,2020-09-21 14:20:28
+2020-09-16,"White",6,1584,2020-09-21 14:20:28
+2020-09-17,"White",7,1591,2020-09-21 14:20:28
+2020-09-18,"White",17,1608,2020-09-21 14:20:28
+2020-09-20,"White",0,1612,2020-09-21 14:20:28
+2020-03-07,"Unknown",4,8,2020-09-21 14:20:28
+2020-03-08,"Unknown",0,8,2020-09-21 14:20:28
+2020-03-09,"Unknown",0,8,2020-09-21 14:20:28
+2020-03-10,"Unknown",3,11,2020-09-21 14:20:28
+2020-03-11,"Unknown",3,14,2020-09-21 14:20:28
+2020-03-12,"Unknown",3,17,2020-09-21 14:20:28
+2020-03-13,"Unknown",6,23,2020-09-21 14:20:28
+2020-03-14,"Unknown",1,24,2020-09-21 14:20:28
+2020-03-15,"Unknown",1,25,2020-09-21 14:20:28
+2020-03-16,"Unknown",9,34,2020-09-21 14:20:28
+2020-03-17,"Unknown",8,42,2020-09-21 14:20:28
+2020-03-18,"Unknown",4,46,2020-09-21 14:20:28
+2020-03-19,"Unknown",3,49,2020-09-21 14:20:28
+2020-03-20,"Unknown",8,57,2020-09-21 14:20:28
+2020-03-21,"Unknown",3,60,2020-09-21 14:20:28
+2020-03-22,"Unknown",6,66,2020-09-21 14:20:28
+2020-03-23,"Unknown",5,71,2020-09-21 14:20:28
+2020-03-24,"Unknown",3,74,2020-09-21 14:20:28
+2020-03-25,"Unknown",7,81,2020-09-21 14:20:28
+2020-03-26,"Unknown",6,87,2020-09-21 14:20:28
+2020-03-27,"Unknown",2,89,2020-09-21 14:20:28
+2020-03-28,"Unknown",4,93,2020-09-21 14:20:28
+2020-03-29,"Unknown",0,93,2020-09-21 14:20:28
+2020-03-30,"Unknown",6,99,2020-09-21 14:20:28
+2020-03-31,"Unknown",9,108,2020-09-21 14:20:28
+2020-04-01,"Unknown",9,117,2020-09-21 14:20:28
+2020-04-02,"Unknown",3,120,2020-09-21 14:20:28
+2020-04-03,"Unknown",3,123,2020-09-21 14:20:28
+2020-04-04,"Unknown",2,125,2020-09-21 14:20:28
+2020-04-05,"Unknown",7,132,2020-09-21 14:20:28
+2020-04-06,"Unknown",18,150,2020-09-21 14:20:28
+2020-04-07,"Unknown",7,157,2020-09-21 14:20:28
+2020-04-08,"Unknown",8,165,2020-09-21 14:20:28
+2020-04-10,"Unknown",1,182,2020-09-21 14:20:28
+2020-04-11,"Unknown",4,186,2020-09-21 14:20:28
+2020-04-12,"Unknown",3,189,2020-09-21 14:20:28
+2020-04-13,"Unknown",2,191,2020-09-21 14:20:28
+2020-04-14,"Unknown",6,197,2020-09-21 14:20:28
+2020-04-15,"Unknown",22,219,2020-09-21 14:20:28
+2020-04-16,"Unknown",5,224,2020-09-21 14:20:28
+2020-04-17,"Unknown",8,232,2020-09-21 14:20:28
+2020-04-18,"Unknown",1,233,2020-09-21 14:20:28
+2020-04-19,"Unknown",11,244,2020-09-21 14:20:28
+2020-04-20,"Unknown",4,248,2020-09-21 14:20:28
+2020-04-21,"Unknown",4,252,2020-09-21 14:20:28
+2020-04-22,"Unknown",3,255,2020-09-21 14:20:28
+2020-04-23,"Unknown",3,258,2020-09-21 14:20:28
+2020-04-24,"Unknown",2,260,2020-09-21 14:20:28
+2020-04-25,"Unknown",13,273,2020-09-21 14:20:28
+2020-04-26,"Unknown",4,277,2020-09-21 14:20:28
+2020-04-27,"Unknown",4,281,2020-09-21 14:20:28
+2020-04-28,"Unknown",8,289,2020-09-21 14:20:28
+2020-03-17,"Asian",3,20,2020-09-21 14:20:28
+2020-04-29,"Unknown",4,293,2020-09-21 14:20:28
+2020-04-30,"Unknown",3,296,2020-09-21 14:20:28
+2020-05-01,"Unknown",3,299,2020-09-21 14:20:28
+2020-05-02,"Unknown",7,306,2020-09-21 14:20:28
+2020-05-03,"Unknown",1,307,2020-09-21 14:20:28
+2020-05-04,"Unknown",1,308,2020-09-21 14:20:28
+2020-05-05,"Unknown",3,311,2020-09-21 14:20:28
+2020-05-06,"Unknown",6,317,2020-09-21 14:20:28
+2020-05-07,"Unknown",2,319,2020-09-21 14:20:28
+2020-05-08,"Unknown",0,319,2020-09-21 14:20:28
+2020-05-09,"Unknown",1,320,2020-09-21 14:20:28
+2020-05-10,"Unknown",0,320,2020-09-21 14:20:28
+2020-05-11,"Unknown",2,322,2020-09-21 14:20:28
+2020-05-12,"Unknown",14,336,2020-09-21 14:20:28
+2020-05-13,"Unknown",2,338,2020-09-21 14:20:28
+2020-05-14,"Unknown",2,340,2020-09-21 14:20:28
+2020-05-15,"Unknown",5,345,2020-09-21 14:20:28
+2020-05-16,"Unknown",0,345,2020-09-21 14:20:28
+2020-05-17,"Unknown",0,345,2020-09-21 14:20:28
+2020-05-18,"Unknown",5,350,2020-09-21 14:20:28
+2020-05-19,"Unknown",2,352,2020-09-21 14:20:28
+2020-05-20,"Unknown",3,355,2020-09-21 14:20:28
+2020-05-21,"Unknown",0,355,2020-09-21 14:20:28
+2020-05-22,"Unknown",2,357,2020-09-21 14:20:28
+2020-05-23,"Unknown",4,361,2020-09-21 14:20:28
+2020-05-24,"Unknown",3,364,2020-09-21 14:20:28
+2020-05-25,"Unknown",0,364,2020-09-21 14:20:28
+2020-05-26,"Unknown",4,368,2020-09-21 14:20:28
+2020-05-27,"Unknown",3,371,2020-09-21 14:20:28
+2020-05-28,"Unknown",3,374,2020-09-21 14:20:28
+2020-05-29,"Unknown",3,377,2020-09-21 14:20:28
+2020-05-30,"Unknown",2,379,2020-09-21 14:20:28
+2020-05-31,"Unknown",4,383,2020-09-21 14:20:28
+2020-06-01,"Unknown",1,384,2020-09-21 14:20:28
+2020-06-02,"Unknown",8,392,2020-09-21 14:20:28
+2020-06-03,"Unknown",2,394,2020-09-21 14:20:28
+2020-06-04,"Unknown",5,399,2020-09-21 14:20:28
+2020-06-05,"Unknown",6,405,2020-09-21 14:20:28
+2020-06-06,"Unknown",1,406,2020-09-21 14:20:28
+2020-06-07,"Unknown",2,408,2020-09-21 14:20:28
+2020-06-08,"Unknown",1,409,2020-09-21 14:20:28
+2020-06-09,"Unknown",2,411,2020-09-21 14:20:28
+2020-06-11,"Unknown",3,416,2020-09-21 14:20:28
+2020-06-12,"Unknown",2,418,2020-09-21 14:20:28
+2020-06-13,"Unknown",1,419,2020-09-21 14:20:28
+2020-06-14,"Unknown",3,422,2020-09-21 14:20:28
+2020-06-15,"Unknown",2,424,2020-09-21 14:20:28
+2020-06-16,"Unknown",4,428,2020-09-21 14:20:28
+2020-06-17,"Unknown",0,428,2020-09-21 14:20:28
+2020-06-18,"Unknown",3,431,2020-09-21 14:20:28
+2020-06-19,"Unknown",6,437,2020-09-21 14:20:28
+2020-06-20,"Unknown",2,439,2020-09-21 14:20:28
+2020-06-21,"Unknown",1,440,2020-09-21 14:20:28
+2020-06-22,"Unknown",4,444,2020-09-21 14:20:28
+2020-06-23,"Unknown",4,448,2020-09-21 14:20:28
+2020-06-24,"Unknown",7,455,2020-09-21 14:20:28
+2020-06-25,"Unknown",10,465,2020-09-21 14:20:28
+2020-06-26,"Unknown",4,469,2020-09-21 14:20:28
+2020-06-27,"Unknown",1,470,2020-09-21 14:20:28
+2020-06-28,"Unknown",5,475,2020-09-21 14:20:28
+2020-06-29,"Unknown",7,482,2020-09-21 14:20:28
+2020-06-30,"Unknown",5,487,2020-09-21 14:20:28
+2020-07-01,"Unknown",11,498,2020-09-21 14:20:28
+2020-03-19,"Asian",3,23,2020-09-21 14:20:28
+2020-07-02,"Unknown",9,507,2020-09-21 14:20:28
+2020-07-03,"Unknown",38,545,2020-09-21 14:20:28
+2020-07-04,"Unknown",5,550,2020-09-21 14:20:28
+2020-07-05,"Unknown",8,558,2020-09-21 14:20:28
+2020-07-06,"Unknown",9,567,2020-09-21 14:20:28
+2020-07-07,"Unknown",17,584,2020-09-21 14:20:28
+2020-07-08,"Unknown",19,603,2020-09-21 14:20:28
+2020-07-09,"Unknown",17,620,2020-09-21 14:20:28
+2020-07-10,"Unknown",26,646,2020-09-21 14:20:28
+2020-07-11,"Unknown",5,651,2020-09-21 14:20:28
+2020-07-12,"Unknown",12,663,2020-09-21 14:20:28
+2020-07-13,"Unknown",22,685,2020-09-21 14:20:28
+2020-07-14,"Unknown",34,719,2020-09-21 14:20:28
+2020-07-15,"Unknown",25,744,2020-09-21 14:20:28
+2020-07-16,"Unknown",25,769,2020-09-21 14:20:28
+2020-07-17,"Unknown",30,799,2020-09-21 14:20:28
+2020-07-18,"Unknown",7,806,2020-09-21 14:20:28
+2020-07-19,"Unknown",7,813,2020-09-21 14:20:28
+2020-07-20,"Unknown",27,840,2020-09-21 14:20:28
+2020-07-21,"Unknown",23,863,2020-09-21 14:20:28
+2020-07-22,"Unknown",17,880,2020-09-21 14:20:28
+2020-07-23,"Unknown",21,901,2020-09-21 14:20:28
+2020-07-24,"Unknown",18,919,2020-09-21 14:20:28
+2020-07-25,"Unknown",12,931,2020-09-21 14:20:28
+2020-07-26,"Unknown",4,935,2020-09-21 14:20:28
+2020-07-27,"Unknown",8,943,2020-09-21 14:20:28
+2020-07-28,"Unknown",6,949,2020-09-21 14:20:28
+2020-07-29,"Unknown",19,968,2020-09-21 14:20:28
+2020-07-30,"Unknown",12,980,2020-09-21 14:20:28
+2020-07-31,"Unknown",11,991,2020-09-21 14:20:28
+2020-08-01,"Unknown",12,1003,2020-09-21 14:20:28
+2020-08-02,"Unknown",6,1009,2020-09-21 14:20:28
+2020-08-03,"Unknown",14,1023,2020-09-21 14:20:28
+2020-08-04,"Unknown",10,1033,2020-09-21 14:20:28
+2020-08-05,"Unknown",10,1043,2020-09-21 14:20:28
+2020-08-06,"Unknown",13,1056,2020-09-21 14:20:28
+2020-08-07,"Unknown",9,1065,2020-09-21 14:20:28
+2020-08-08,"Unknown",7,1072,2020-09-21 14:20:28
+2020-08-09,"Unknown",8,1080,2020-09-21 14:20:28
+2020-08-10,"Unknown",10,1090,2020-09-21 14:20:28
+2020-08-12,"Unknown",13,1115,2020-09-21 14:20:28
+2020-08-28,"Unknown",9,1237,2020-09-21 14:20:28
+2020-08-29,"Unknown",7,1244,2020-09-21 14:20:28
+2020-08-30,"Unknown",2,1246,2020-09-21 14:20:28
+2020-08-31,"Unknown",14,1260,2020-09-21 14:20:28
+2020-09-01,"Unknown",9,1269,2020-09-21 14:20:28
+2020-09-02,"Unknown",7,1276,2020-09-21 14:20:28
+2020-09-03,"Unknown",16,1292,2020-09-21 14:20:28
+2020-09-04,"Unknown",14,1306,2020-09-21 14:20:28
+2020-09-05,"Unknown",4,1310,2020-09-21 14:20:28
+2020-09-06,"Unknown",6,1316,2020-09-21 14:20:28
+2020-09-07,"Unknown",5,1321,2020-09-21 14:20:28
+2020-09-08,"Unknown",11,1332,2020-09-21 14:20:28
+2020-09-09,"Unknown",7,1339,2020-09-21 14:20:28
+2020-09-10,"Unknown",0,1339,2020-09-21 14:20:28
+2020-09-11,"Unknown",8,1347,2020-09-21 14:20:28
+2020-09-12,"Unknown",6,1353,2020-09-21 14:20:28
+2020-09-13,"Unknown",3,1356,2020-09-21 14:20:28
+2020-09-14,"Unknown",11,1367,2020-09-21 14:20:28
+2020-09-15,"Unknown",13,1380,2020-09-21 14:20:28
+2020-09-16,"Unknown",12,1392,2020-09-21 14:20:28
+2020-09-17,"Unknown",8,1400,2020-09-21 14:20:28
+2020-09-18,"Unknown",14,1414,2020-09-21 14:20:28
+2020-03-31,"Asian",11,93,2020-09-21 14:20:28
+2020-09-19,"Unknown",1,1415,2020-09-21 14:20:28
+2020-09-20,"Unknown",0,1415,2020-09-21 14:20:28
+2020-03-07,"Hispanic or Latino/a, all races",1,5,2020-09-21 14:20:28
+2020-03-08,"Hispanic or Latino/a, all races",1,6,2020-09-21 14:20:28
+2020-03-09,"Hispanic or Latino/a, all races",0,6,2020-09-21 14:20:28
+2020-03-10,"Hispanic or Latino/a, all races",1,7,2020-09-21 14:20:28
+2020-03-11,"Hispanic or Latino/a, all races",3,10,2020-09-21 14:20:28
+2020-03-12,"Hispanic or Latino/a, all races",0,10,2020-09-21 14:20:28
+2020-03-13,"Hispanic or Latino/a, all races",2,12,2020-09-21 14:20:28
+2020-03-14,"Hispanic or Latino/a, all races",1,13,2020-09-21 14:20:28
+2020-03-15,"Hispanic or Latino/a, all races",1,14,2020-09-21 14:20:28
+2020-03-16,"Hispanic or Latino/a, all races",4,18,2020-09-21 14:20:28
+2020-03-17,"Hispanic or Latino/a, all races",4,22,2020-09-21 14:20:28
+2020-03-18,"Hispanic or Latino/a, all races",10,32,2020-09-21 14:20:28
+2020-03-19,"Hispanic or Latino/a, all races",2,34,2020-09-21 14:20:28
+2020-03-20,"Hispanic or Latino/a, all races",11,45,2020-09-21 14:20:28
+2020-03-21,"Hispanic or Latino/a, all races",6,51,2020-09-21 14:20:28
+2020-03-22,"Hispanic or Latino/a, all races",5,56,2020-09-21 14:20:28
+2020-03-23,"Hispanic or Latino/a, all races",13,69,2020-09-21 14:20:28
+2020-03-24,"Hispanic or Latino/a, all races",14,83,2020-09-21 14:20:28
+2020-03-25,"Hispanic or Latino/a, all races",13,96,2020-09-21 14:20:28
+2020-03-26,"Hispanic or Latino/a, all races",15,111,2020-09-21 14:20:28
+2020-03-27,"Hispanic or Latino/a, all races",10,121,2020-09-21 14:20:28
+2020-03-28,"Hispanic or Latino/a, all races",5,126,2020-09-21 14:20:28
+2020-03-29,"Hispanic or Latino/a, all races",6,132,2020-09-21 14:20:28
+2020-03-30,"Hispanic or Latino/a, all races",18,150,2020-09-21 14:20:28
+2020-03-31,"Hispanic or Latino/a, all races",17,167,2020-09-21 14:20:28
+2020-04-01,"Hispanic or Latino/a, all races",9,176,2020-09-21 14:20:28
+2020-04-03,"Hispanic or Latino/a, all races",8,198,2020-09-21 14:20:28
+2020-04-04,"Hispanic or Latino/a, all races",8,206,2020-09-21 14:20:28
+2020-04-05,"Hispanic or Latino/a, all races",16,222,2020-09-21 14:20:28
+2020-04-06,"Hispanic or Latino/a, all races",18,240,2020-09-21 14:20:28
+2020-04-07,"Hispanic or Latino/a, all races",30,270,2020-09-21 14:20:28
+2020-04-08,"Hispanic or Latino/a, all races",21,291,2020-09-21 14:20:28
+2020-04-09,"Hispanic or Latino/a, all races",23,314,2020-09-21 14:20:28
+2020-04-10,"Hispanic or Latino/a, all races",12,326,2020-09-21 14:20:28
+2020-04-11,"Hispanic or Latino/a, all races",5,331,2020-09-21 14:20:28
+2020-04-12,"Hispanic or Latino/a, all races",6,337,2020-09-21 14:20:28
+2020-04-13,"Hispanic or Latino/a, all races",15,352,2020-09-21 14:20:28
+2020-04-14,"Hispanic or Latino/a, all races",20,372,2020-09-21 14:20:28
+2020-04-15,"Hispanic or Latino/a, all races",18,390,2020-09-21 14:20:28
+2020-04-16,"Hispanic or Latino/a, all races",18,408,2020-09-21 14:20:28
+2020-04-17,"Hispanic or Latino/a, all races",22,430,2020-09-21 14:20:28
+2020-04-18,"Hispanic or Latino/a, all races",8,438,2020-09-21 14:20:28
+2020-04-19,"Hispanic or Latino/a, all races",18,456,2020-09-21 14:20:28
+2020-04-20,"Hispanic or Latino/a, all races",23,479,2020-09-21 14:20:28
+2020-04-01,"Asian",8,101,2020-09-21 14:20:28
+2020-04-21,"Hispanic or Latino/a, all races",19,498,2020-09-21 14:20:28
+2020-04-22,"Hispanic or Latino/a, all races",19,517,2020-09-21 14:20:28
+2020-04-23,"Hispanic or Latino/a, all races",21,538,2020-09-21 14:20:28
+2020-04-24,"Hispanic or Latino/a, all races",18,556,2020-09-21 14:20:28
+2020-04-28,"Hispanic or Latino/a, all races",52,670,2020-09-21 14:20:28
+2020-04-29,"Hispanic or Latino/a, all races",24,694,2020-09-21 14:20:28
+2020-04-30,"Hispanic or Latino/a, all races",23,717,2020-09-21 14:20:28
+2020-05-01,"Hispanic or Latino/a, all races",21,738,2020-09-21 14:20:28
+2020-05-02,"Hispanic or Latino/a, all races",31,769,2020-09-21 14:20:28
+2020-05-03,"Hispanic or Latino/a, all races",9,778,2020-09-21 14:20:28
+2020-05-04,"Hispanic or Latino/a, all races",35,813,2020-09-21 14:20:28
+2020-05-05,"Hispanic or Latino/a, all races",34,847,2020-09-21 14:20:28
+2020-05-06,"Hispanic or Latino/a, all races",28,875,2020-09-21 14:20:28
+2020-05-07,"Hispanic or Latino/a, all races",16,891,2020-09-21 14:20:28
+2020-05-08,"Hispanic or Latino/a, all races",21,912,2020-09-21 14:20:28
+2020-05-09,"Hispanic or Latino/a, all races",5,917,2020-09-21 14:20:28
+2020-05-10,"Hispanic or Latino/a, all races",4,921,2020-09-21 14:20:28
+2020-05-11,"Hispanic or Latino/a, all races",17,938,2020-09-21 14:20:28
+2020-05-12,"Hispanic or Latino/a, all races",17,955,2020-09-21 14:20:28
+2020-05-13,"Hispanic or Latino/a, all races",23,978,2020-09-21 14:20:28
+2020-05-14,"Hispanic or Latino/a, all races",22,1000,2020-09-21 14:20:28
+2020-05-15,"Hispanic or Latino/a, all races",16,1016,2020-09-21 14:20:28
+2020-05-16,"Hispanic or Latino/a, all races",2,1018,2020-09-21 14:20:28
+2020-05-17,"Hispanic or Latino/a, all races",9,1027,2020-09-21 14:20:28
+2020-05-18,"Hispanic or Latino/a, all races",29,1056,2020-09-21 14:20:28
+2020-05-19,"Hispanic or Latino/a, all races",21,1077,2020-09-21 14:20:28
+2020-05-20,"Hispanic or Latino/a, all races",22,1099,2020-09-21 14:20:28
+2020-05-21,"Hispanic or Latino/a, all races",12,1111,2020-09-21 14:20:28
+2020-05-22,"Hispanic or Latino/a, all races",26,1137,2020-09-21 14:20:28
+2020-05-23,"Hispanic or Latino/a, all races",8,1145,2020-09-21 14:20:28
+2020-05-24,"Hispanic or Latino/a, all races",5,1150,2020-09-21 14:20:28
+2020-05-25,"Hispanic or Latino/a, all races",7,1157,2020-09-21 14:20:28
+2020-05-26,"Hispanic or Latino/a, all races",34,1191,2020-09-21 14:20:28
+2020-05-27,"Hispanic or Latino/a, all races",20,1211,2020-09-21 14:20:28
+2020-05-28,"Hispanic or Latino/a, all races",17,1228,2020-09-21 14:20:28
+2020-05-29,"Hispanic or Latino/a, all races",21,1249,2020-09-21 14:20:28
+2020-05-30,"Hispanic or Latino/a, all races",13,1262,2020-09-21 14:20:28
+2020-05-31,"Hispanic or Latino/a, all races",16,1278,2020-09-21 14:20:28
+2020-06-01,"Hispanic or Latino/a, all races",25,1303,2020-09-21 14:20:28
+2020-06-02,"Hispanic or Latino/a, all races",29,1332,2020-09-21 14:20:28
+2020-06-03,"Hispanic or Latino/a, all races",15,1347,2020-09-21 14:20:28
+2020-06-04,"Hispanic or Latino/a, all races",22,1369,2020-09-21 14:20:28
+2020-06-05,"Hispanic or Latino/a, all races",16,1385,2020-09-21 14:20:28
+2020-06-06,"Hispanic or Latino/a, all races",11,1396,2020-09-21 14:20:28
+2020-06-07,"Hispanic or Latino/a, all races",11,1407,2020-09-21 14:20:28
+2020-06-08,"Hispanic or Latino/a, all races",22,1429,2020-09-21 14:20:28
+2020-06-09,"Hispanic or Latino/a, all races",20,1449,2020-09-21 14:20:28
+2020-06-10,"Hispanic or Latino/a, all races",6,1455,2020-09-21 14:20:28
+2020-06-11,"Hispanic or Latino/a, all races",11,1466,2020-09-21 14:20:28
+2020-06-12,"Hispanic or Latino/a, all races",15,1481,2020-09-21 14:20:28
+2020-06-13,"Hispanic or Latino/a, all races",11,1492,2020-09-21 14:20:28
+2020-06-14,"Hispanic or Latino/a, all races",7,1499,2020-09-21 14:20:28
+2020-06-15,"Hispanic or Latino/a, all races",28,1527,2020-09-21 14:20:28
+2020-06-16,"Hispanic or Latino/a, all races",32,1559,2020-09-21 14:20:28
+2020-06-17,"Hispanic or Latino/a, all races",34,1593,2020-09-21 14:20:28
+2020-06-18,"Hispanic or Latino/a, all races",19,1612,2020-09-21 14:20:28
+2020-06-19,"Hispanic or Latino/a, all races",20,1632,2020-09-21 14:20:28
+2020-06-20,"Hispanic or Latino/a, all races",24,1656,2020-09-21 14:20:28
+2020-06-21,"Hispanic or Latino/a, all races",24,1680,2020-09-21 14:20:28
+2020-06-22,"Hispanic or Latino/a, all races",44,1724,2020-09-21 14:20:28
+2020-06-23,"Hispanic or Latino/a, all races",34,1758,2020-09-21 14:20:28
+2020-06-24,"Hispanic or Latino/a, all races",35,1793,2020-09-21 14:20:28
+2020-06-25,"Hispanic or Latino/a, all races",29,1822,2020-09-21 14:20:28
+2020-06-26,"Hispanic or Latino/a, all races",45,1867,2020-09-21 14:20:28
+2020-06-27,"Hispanic or Latino/a, all races",28,1895,2020-09-21 14:20:28
+2020-06-28,"Hispanic or Latino/a, all races",18,1913,2020-09-21 14:20:28
+2020-06-29,"Hispanic or Latino/a, all races",39,1952,2020-09-21 14:20:28
+2020-06-30,"Hispanic or Latino/a, all races",47,1999,2020-09-21 14:20:28
+2020-07-01,"Hispanic or Latino/a, all races",37,2036,2020-09-21 14:20:28
+2020-07-02,"Hispanic or Latino/a, all races",39,2075,2020-09-21 14:20:28
+2020-07-03,"Hispanic or Latino/a, all races",26,2101,2020-09-21 14:20:28
+2020-07-04,"Hispanic or Latino/a, all races",9,2110,2020-09-21 14:20:28
+2020-07-05,"Hispanic or Latino/a, all races",22,2132,2020-09-21 14:20:28
+2020-07-06,"Hispanic or Latino/a, all races",46,2178,2020-09-21 14:20:28
+2020-07-07,"Hispanic or Latino/a, all races",34,2212,2020-09-21 14:20:28
+2020-07-08,"Hispanic or Latino/a, all races",61,2273,2020-09-21 14:20:28
+2020-07-09,"Hispanic or Latino/a, all races",45,2318,2020-09-21 14:20:28
+2020-07-10,"Hispanic or Latino/a, all races",66,2384,2020-09-21 14:20:28
+2020-07-11,"Hispanic or Latino/a, all races",33,2417,2020-09-21 14:20:28
+2020-07-12,"Hispanic or Latino/a, all races",32,2449,2020-09-21 14:20:28
+2020-07-13,"Hispanic or Latino/a, all races",81,2530,2020-09-21 14:20:28
+2020-07-14,"Hispanic or Latino/a, all races",61,2591,2020-09-21 14:20:28
+2020-07-15,"Hispanic or Latino/a, all races",75,2666,2020-09-21 14:20:28
+2020-07-16,"Hispanic or Latino/a, all races",82,2748,2020-09-21 14:20:28
+2020-07-17,"Hispanic or Latino/a, all races",62,2810,2020-09-21 14:20:28
+2020-07-18,"Hispanic or Latino/a, all races",38,2848,2020-09-21 14:20:28
+2020-07-19,"Hispanic or Latino/a, all races",45,2893,2020-09-21 14:20:28
+2020-07-20,"Hispanic or Latino/a, all races",71,2964,2020-09-21 14:20:28
+2020-07-21,"Hispanic or Latino/a, all races",67,3031,2020-09-21 14:20:28
+2020-07-22,"Hispanic or Latino/a, all races",60,3091,2020-09-21 14:20:28
+2020-07-23,"Hispanic or Latino/a, all races",61,3152,2020-09-21 14:20:28
+2020-07-24,"Hispanic or Latino/a, all races",60,3212,2020-09-21 14:20:28
+2020-07-25,"Hispanic or Latino/a, all races",42,3254,2020-09-21 14:20:28
+2020-07-26,"Hispanic or Latino/a, all races",37,3291,2020-09-21 14:20:28
+2020-07-27,"Hispanic or Latino/a, all races",53,3344,2020-09-21 14:20:28
+2020-07-28,"Hispanic or Latino/a, all races",63,3407,2020-09-21 14:20:28
+2020-07-29,"Hispanic or Latino/a, all races",73,3480,2020-09-21 14:20:28
+2020-07-30,"Hispanic or Latino/a, all races",70,3550,2020-09-21 14:20:28
+2020-07-31,"Hispanic or Latino/a, all races",60,3610,2020-09-21 14:20:28
+2020-08-01,"Hispanic or Latino/a, all races",26,3636,2020-09-21 14:20:28
+2020-08-02,"Hispanic or Latino/a, all races",20,3656,2020-09-21 14:20:28
+2020-08-03,"Hispanic or Latino/a, all races",60,3716,2020-09-21 14:20:28
+2020-08-04,"Hispanic or Latino/a, all races",52,3768,2020-09-21 14:20:28
+2020-08-05,"Hispanic or Latino/a, all races",80,3848,2020-09-21 14:20:28
+2020-08-06,"Hispanic or Latino/a, all races",58,3906,2020-09-21 14:20:28
+2020-08-07,"Hispanic or Latino/a, all races",82,3988,2020-09-21 14:20:28
+2020-08-08,"Hispanic or Latino/a, all races",34,4022,2020-09-21 14:20:28
+2020-08-09,"Hispanic or Latino/a, all races",39,4061,2020-09-21 14:20:28
+2020-08-10,"Hispanic or Latino/a, all races",53,4114,2020-09-21 14:20:28
+2020-08-11,"Hispanic or Latino/a, all races",66,4180,2020-09-21 14:20:28
+2020-08-12,"Hispanic or Latino/a, all races",83,4263,2020-09-21 14:20:28
+2020-08-13,"Hispanic or Latino/a, all races",57,4320,2020-09-21 14:20:28
+2020-08-14,"Hispanic or Latino/a, all races",62,4382,2020-09-21 14:20:28
+2020-08-15,"Hispanic or Latino/a, all races",27,4409,2020-09-21 14:20:28
+2020-08-16,"Hispanic or Latino/a, all races",14,4423,2020-09-21 14:20:28
+2020-08-17,"Hispanic or Latino/a, all races",44,4467,2020-09-21 14:20:28
+2020-08-18,"Hispanic or Latino/a, all races",39,4506,2020-09-21 14:20:28
+2020-08-19,"Hispanic or Latino/a, all races",59,4565,2020-09-21 14:20:28
+2020-08-20,"Hispanic or Latino/a, all races",37,4602,2020-09-21 14:20:28
+2020-08-21,"Hispanic or Latino/a, all races",35,4637,2020-09-21 14:20:28
+2020-08-22,"Hispanic or Latino/a, all races",21,4658,2020-09-21 14:20:28
+2020-08-23,"Hispanic or Latino/a, all races",25,4683,2020-09-21 14:20:28
+2020-08-24,"Hispanic or Latino/a, all races",57,4740,2020-09-21 14:20:28
+2020-08-25,"Hispanic or Latino/a, all races",30,4770,2020-09-21 14:20:28
+2020-08-26,"Hispanic or Latino/a, all races",50,4820,2020-09-21 14:20:28
+2020-08-27,"Hispanic or Latino/a, all races",56,4876,2020-09-21 14:20:28
+2020-08-28,"Hispanic or Latino/a, all races",30,4906,2020-09-21 14:20:28
+2020-08-29,"Hispanic or Latino/a, all races",20,4926,2020-09-21 14:20:28
+2020-08-30,"Hispanic or Latino/a, all races",15,4941,2020-09-21 14:20:28
+2020-08-31,"Hispanic or Latino/a, all races",38,4979,2020-09-21 14:20:28
+2020-09-01,"Hispanic or Latino/a, all races",37,5016,2020-09-21 14:20:28
+2020-09-02,"Hispanic or Latino/a, all races",31,5047,2020-09-21 14:20:28
+2020-09-03,"Hispanic or Latino/a, all races",36,5083,2020-09-21 14:20:28
+2020-09-04,"Hispanic or Latino/a, all races",40,5123,2020-09-21 14:20:28
+2020-09-05,"Hispanic or Latino/a, all races",17,5140,2020-09-21 14:20:28
+2020-09-06,"Hispanic or Latino/a, all races",8,5148,2020-09-21 14:20:28
+2020-09-07,"Hispanic or Latino/a, all races",15,5163,2020-09-21 14:20:28
+2020-09-08,"Hispanic or Latino/a, all races",27,5190,2020-09-21 14:20:28
+2020-09-09,"Hispanic or Latino/a, all races",24,5214,2020-09-21 14:20:28
+2020-09-10,"Hispanic or Latino/a, all races",23,5237,2020-09-21 14:20:28
+2020-09-11,"Hispanic or Latino/a, all races",33,5270,2020-09-21 14:20:28
+2020-09-12,"Hispanic or Latino/a, all races",22,5292,2020-09-21 14:20:28
+2020-09-13,"Hispanic or Latino/a, all races",8,5300,2020-09-21 14:20:28
+2020-09-14,"Hispanic or Latino/a, all races",48,5348,2020-09-21 14:20:28
+2020-09-15,"Hispanic or Latino/a, all races",27,5375,2020-09-21 14:20:28
+2020-09-16,"Hispanic or Latino/a, all races",35,5410,2020-09-21 14:20:28
+2020-09-17,"Hispanic or Latino/a, all races",19,5429,2020-09-21 14:20:28
+2020-09-18,"Hispanic or Latino/a, all races",20,5449,2020-09-21 14:20:28
+2020-09-19,"Hispanic or Latino/a, all races",5,5454,2020-09-21 14:20:28
+2020-09-20,"Hispanic or Latino/a, all races",0,5454,2020-09-21 14:20:28
+2020-04-07,"Multi-racial",1,5,2020-09-21 14:20:28
+2020-04-08,"Multi-racial",2,7,2020-09-21 14:20:28
+2020-04-09,"Multi-racial",2,9,2020-09-21 14:20:28
+2020-04-10,"Multi-racial",0,9,2020-09-21 14:20:28
+2020-04-11,"Multi-racial",1,10,2020-09-21 14:20:28
+2020-04-12,"Multi-racial",0,10,2020-09-21 14:20:28
+2020-04-13,"Multi-racial",0,10,2020-09-21 14:20:28
+2020-04-14,"Multi-racial",0,10,2020-09-21 14:20:28
+2020-04-15,"Multi-racial",1,11,2020-09-21 14:20:28
+2020-04-16,"Multi-racial",0,11,2020-09-21 14:20:28
+2020-04-17,"Multi-racial",0,11,2020-09-21 14:20:28
+2020-04-18,"Multi-racial",0,11,2020-09-21 14:20:28
+2020-04-19,"Multi-racial",0,11,2020-09-21 14:20:28
+2020-04-20,"Multi-racial",1,12,2020-09-21 14:20:28
+2020-04-21,"Multi-racial",0,12,2020-09-21 14:20:28
+2020-04-22,"Multi-racial",0,12,2020-09-21 14:20:28
+2020-04-23,"Multi-racial",1,13,2020-09-21 14:20:28
+2020-04-24,"Multi-racial",0,13,2020-09-21 14:20:28
+2020-04-25,"Multi-racial",0,13,2020-09-21 14:20:28
+2020-04-26,"Multi-racial",2,15,2020-09-21 14:20:28
+2020-04-27,"Multi-racial",1,16,2020-09-21 14:20:28
+2020-04-28,"Multi-racial",1,17,2020-09-21 14:20:28
+2020-04-29,"Multi-racial",2,19,2020-09-21 14:20:28
+2020-04-30,"Multi-racial",0,19,2020-09-21 14:20:28
+2020-05-01,"Multi-racial",1,20,2020-09-21 14:20:28
+2020-05-02,"Multi-racial",1,21,2020-09-21 14:20:28
+2020-05-03,"Multi-racial",0,21,2020-09-21 14:20:28
+2020-05-04,"Multi-racial",0,21,2020-09-21 14:20:28
+2020-05-05,"Multi-racial",0,21,2020-09-21 14:20:28
+2020-05-06,"Multi-racial",0,21,2020-09-21 14:20:28
+2020-05-07,"Multi-racial",0,21,2020-09-21 14:20:28
+2020-05-08,"Multi-racial",0,21,2020-09-21 14:20:28
+2020-05-09,"Multi-racial",0,21,2020-09-21 14:20:28
+2020-05-10,"Multi-racial",0,21,2020-09-21 14:20:28
+2020-05-11,"Multi-racial",0,21,2020-09-21 14:20:28
+2020-05-12,"Multi-racial",1,22,2020-09-21 14:20:28
+2020-05-13,"Multi-racial",0,22,2020-09-21 14:20:28
+2020-05-14,"Multi-racial",1,23,2020-09-21 14:20:28
+2020-05-15,"Multi-racial",0,23,2020-09-21 14:20:28
+2020-05-16,"Multi-racial",0,23,2020-09-21 14:20:28
+2020-05-17,"Multi-racial",0,23,2020-09-21 14:20:28
+2020-05-18,"Multi-racial",1,24,2020-09-21 14:20:28
+2020-05-19,"Multi-racial",3,27,2020-09-21 14:20:28
+2020-05-20,"Multi-racial",1,28,2020-09-21 14:20:28
+2020-05-21,"Multi-racial",1,29,2020-09-21 14:20:28
+2020-05-22,"Multi-racial",0,29,2020-09-21 14:20:28
+2020-05-23,"Multi-racial",0,29,2020-09-21 14:20:28
+2020-05-24,"Multi-racial",0,29,2020-09-21 14:20:28
+2020-05-25,"Multi-racial",0,29,2020-09-21 14:20:28
+2020-05-26,"Multi-racial",2,31,2020-09-21 14:20:28
+2020-05-27,"Multi-racial",0,31,2020-09-21 14:20:28
+2020-05-28,"Multi-racial",0,31,2020-09-21 14:20:28
+2020-05-29,"Multi-racial",2,33,2020-09-21 14:20:28
+2020-05-30,"Multi-racial",0,33,2020-09-21 14:20:28
+2020-05-31,"Multi-racial",0,33,2020-09-21 14:20:28
+2020-06-01,"Multi-racial",2,35,2020-09-21 14:20:28
+2020-06-02,"Multi-racial",2,37,2020-09-21 14:20:28
+2020-06-03,"Multi-racial",0,37,2020-09-21 14:20:28
+2020-06-04,"Multi-racial",0,37,2020-09-21 14:20:28
+2020-06-05,"Multi-racial",0,37,2020-09-21 14:20:28
+2020-06-06,"Multi-racial",0,37,2020-09-21 14:20:28
+2020-06-07,"Multi-racial",1,38,2020-09-21 14:20:28
+2020-06-08,"Multi-racial",0,38,2020-09-21 14:20:28
+2020-06-09,"Multi-racial",0,38,2020-09-21 14:20:28
+2020-06-10,"Multi-racial",0,38,2020-09-21 14:20:28
+2020-06-11,"Multi-racial",3,41,2020-09-21 14:20:28
+2020-06-12,"Multi-racial",1,42,2020-09-21 14:20:28
+2020-06-13,"Multi-racial",2,44,2020-09-21 14:20:28
+2020-06-14,"Multi-racial",0,44,2020-09-21 14:20:28
+2020-06-15,"Multi-racial",0,44,2020-09-21 14:20:28
+2020-06-16,"Multi-racial",0,44,2020-09-21 14:20:28
+2020-06-17,"Multi-racial",0,44,2020-09-21 14:20:28
+2020-06-18,"Multi-racial",1,45,2020-09-21 14:20:28
+2020-06-19,"Multi-racial",0,45,2020-09-21 14:20:28
+2020-06-20,"Multi-racial",0,45,2020-09-21 14:20:28
+2020-06-21,"Multi-racial",0,45,2020-09-21 14:20:28
+2020-06-22,"Multi-racial",7,52,2020-09-21 14:20:28
+2020-06-23,"Multi-racial",2,54,2020-09-21 14:20:28
+2020-06-24,"Multi-racial",4,58,2020-09-21 14:20:28
+2020-06-25,"Multi-racial",2,60,2020-09-21 14:20:28
+2020-06-26,"Multi-racial",2,62,2020-09-21 14:20:28
+2020-06-27,"Multi-racial",0,62,2020-09-21 14:20:28
+2020-06-28,"Multi-racial",0,62,2020-09-21 14:20:28
+2020-06-29,"Multi-racial",1,63,2020-09-21 14:20:28
+2020-06-30,"Multi-racial",4,67,2020-09-21 14:20:28
+2020-07-01,"Multi-racial",4,71,2020-09-21 14:20:28
+2020-07-02,"Multi-racial",11,82,2020-09-21 14:20:28
+2020-07-03,"Multi-racial",1,83,2020-09-21 14:20:28
+2020-07-04,"Multi-racial",0,83,2020-09-21 14:20:28
+2020-07-08,"Multi-racial",2,90,2020-09-21 14:20:28
+2020-07-09,"Multi-racial",0,90,2020-09-21 14:20:28
+2020-07-10,"Multi-racial",0,90,2020-09-21 14:20:28
+2020-07-11,"Multi-racial",2,92,2020-09-21 14:20:28
+2020-07-12,"Multi-racial",0,92,2020-09-21 14:20:28
+2020-07-13,"Multi-racial",5,97,2020-09-21 14:20:28
+2020-07-14,"Multi-racial",2,99,2020-09-21 14:20:28
+2020-07-15,"Multi-racial",4,103,2020-09-21 14:20:28
+2020-07-16,"Multi-racial",3,106,2020-09-21 14:20:28
+2020-07-17,"Multi-racial",4,110,2020-09-21 14:20:28
+2020-07-18,"Multi-racial",5,115,2020-09-21 14:20:28
+2020-07-19,"Multi-racial",1,116,2020-09-21 14:20:28
+2020-07-20,"Multi-racial",3,119,2020-09-21 14:20:28
+2020-07-21,"Multi-racial",0,119,2020-09-21 14:20:28
+2020-07-22,"Multi-racial",5,124,2020-09-21 14:20:28
+2020-07-23,"Multi-racial",2,126,2020-09-21 14:20:28
+2020-07-24,"Multi-racial",1,127,2020-09-21 14:20:28
+2020-07-25,"Multi-racial",1,128,2020-09-21 14:20:28
+2020-07-26,"Multi-racial",2,130,2020-09-21 14:20:28
+2020-07-27,"Multi-racial",3,133,2020-09-21 14:20:28
+2020-07-28,"Multi-racial",1,134,2020-09-21 14:20:28
+2020-07-29,"Multi-racial",7,141,2020-09-21 14:20:28
+2020-07-30,"Multi-racial",3,144,2020-09-21 14:20:28
+2020-07-31,"Multi-racial",6,150,2020-09-21 14:20:28
+2020-08-01,"Multi-racial",1,151,2020-09-21 14:20:28
+2020-08-02,"Multi-racial",1,152,2020-09-21 14:20:28
+2020-08-03,"Multi-racial",1,153,2020-09-21 14:20:28
+2020-08-04,"Multi-racial",0,153,2020-09-21 14:20:28
+2020-08-05,"Multi-racial",1,154,2020-09-21 14:20:28
+2020-08-06,"Multi-racial",0,154,2020-09-21 14:20:28
+2020-08-07,"Multi-racial",6,160,2020-09-21 14:20:28
+2020-08-08,"Multi-racial",2,162,2020-09-21 14:20:28
+2020-08-09,"Multi-racial",2,164,2020-09-21 14:20:28
+2020-08-10,"Multi-racial",6,170,2020-09-21 14:20:28
+2020-08-11,"Multi-racial",4,174,2020-09-21 14:20:28
+2020-08-12,"Multi-racial",3,177,2020-09-21 14:20:28
+2020-08-13,"Multi-racial",4,181,2020-09-21 14:20:28
+2020-08-14,"Multi-racial",3,184,2020-09-21 14:20:28
+2020-08-15,"Multi-racial",4,188,2020-09-21 14:20:28
+2020-08-31,"Multi-racial",0,214,2020-09-21 14:20:28
+2020-09-01,"Multi-racial",0,214,2020-09-21 14:20:28
+2020-09-02,"Multi-racial",3,217,2020-09-21 14:20:28
+2020-09-03,"Multi-racial",3,220,2020-09-21 14:20:28
+2020-09-04,"Multi-racial",4,224,2020-09-21 14:20:28
+2020-09-05,"Multi-racial",0,224,2020-09-21 14:20:28
+2020-09-06,"Multi-racial",0,224,2020-09-21 14:20:28
+2020-09-07,"Multi-racial",1,225,2020-09-21 14:20:28
+2020-09-08,"Multi-racial",4,229,2020-09-21 14:20:28
+2020-09-09,"Multi-racial",1,230,2020-09-21 14:20:28
+2020-09-10,"Multi-racial",1,231,2020-09-21 14:20:28
+2020-09-11,"Multi-racial",1,232,2020-09-21 14:20:28
+2020-09-12,"Multi-racial",0,232,2020-09-21 14:20:28
+2020-09-13,"Multi-racial",0,232,2020-09-21 14:20:28
+2020-09-14,"Multi-racial",4,236,2020-09-21 14:20:28
+2020-09-15,"Multi-racial",2,238,2020-09-21 14:20:28
+2020-09-16,"Multi-racial",1,239,2020-09-21 14:20:28
+2020-09-17,"Multi-racial",1,240,2020-09-21 14:20:28
+2020-09-18,"Multi-racial",2,242,2020-09-21 14:20:28
+2020-09-19,"Multi-racial",0,242,2020-09-21 14:20:28
+2020-09-20,"Multi-racial",0,242,2020-09-21 14:20:28
+2020-03-19,"Other",1,5,2020-09-21 14:20:28
+2020-03-20,"Other",0,5,2020-09-21 14:20:28
+2020-03-21,"Other",0,5,2020-09-21 14:20:28
+2020-03-22,"Other",1,6,2020-09-21 14:20:28
+2020-03-23,"Other",2,8,2020-09-21 14:20:28
+2020-03-24,"Other",3,11,2020-09-21 14:20:28
+2020-03-25,"Other",0,11,2020-09-21 14:20:28
+2020-03-26,"Other",2,13,2020-09-21 14:20:28
+2020-03-27,"Other",2,15,2020-09-21 14:20:28
+2020-03-28,"Other",0,15,2020-09-21 14:20:28
+2020-03-29,"Other",0,15,2020-09-21 14:20:28
+2020-03-30,"Other",1,16,2020-09-21 14:20:28
+2020-03-31,"Other",1,17,2020-09-21 14:20:28
+2020-04-01,"Other",1,18,2020-09-21 14:20:28
+2020-04-02,"Other",1,19,2020-09-21 14:20:28
+2020-04-03,"Other",3,22,2020-09-21 14:20:28
+2020-04-04,"Other",1,23,2020-09-21 14:20:28
+2020-04-05,"Other",0,23,2020-09-21 14:20:28
+2020-04-06,"Other",0,23,2020-09-21 14:20:28
+2020-04-07,"Other",0,23,2020-09-21 14:20:28
+2020-04-08,"Other",0,23,2020-09-21 14:20:28
+2020-04-09,"Other",0,23,2020-09-21 14:20:28
+2020-04-10,"Other",0,23,2020-09-21 14:20:28
+2020-04-11,"Other",0,23,2020-09-21 14:20:28
+2020-04-12,"Other",0,23,2020-09-21 14:20:28
+2020-04-13,"Other",0,23,2020-09-21 14:20:28
+2020-04-14,"Other",0,23,2020-09-21 14:20:28
+2020-04-15,"Other",0,23,2020-09-21 14:20:28
+2020-04-16,"Other",0,23,2020-09-21 14:20:28
+2020-04-17,"Other",0,23,2020-09-21 14:20:28
+2020-04-18,"Other",0,23,2020-09-21 14:20:28
+2020-04-19,"Other",0,23,2020-09-21 14:20:28
+2020-04-20,"Other",0,23,2020-09-21 14:20:28
+2020-04-21,"Other",0,23,2020-09-21 14:20:28
+2020-04-22,"Other",0,23,2020-09-21 14:20:28
+2020-04-23,"Other",0,23,2020-09-21 14:20:28
+2020-04-24,"Other",0,23,2020-09-21 14:20:28
+2020-04-25,"Other",0,23,2020-09-21 14:20:28
+2020-04-26,"Other",0,23,2020-09-21 14:20:28
+2020-04-27,"Other",0,23,2020-09-21 14:20:28
+2020-04-28,"Other",0,23,2020-09-21 14:20:28
+2020-04-29,"Other",0,23,2020-09-21 14:20:28
+2020-04-30,"Other",0,23,2020-09-21 14:20:28
+2020-05-01,"Other",0,23,2020-09-21 14:20:28
+2020-05-02,"Other",0,23,2020-09-21 14:20:28
+2020-05-03,"Other",0,23,2020-09-21 14:20:28
+2020-05-04,"Other",0,23,2020-09-21 14:20:28
+2020-05-05,"Other",0,23,2020-09-21 14:20:28
+2020-05-06,"Other",0,23,2020-09-21 14:20:28
+2020-05-07,"Other",0,23,2020-09-21 14:20:28
+2020-05-08,"Other",0,23,2020-09-21 14:20:28
+2020-05-09,"Other",0,23,2020-09-21 14:20:28
+2020-05-10,"Other",0,23,2020-09-21 14:20:28
+2020-05-11,"Other",0,23,2020-09-21 14:20:28
+2020-05-12,"Other",0,23,2020-09-21 14:20:28
+2020-05-13,"Other",0,23,2020-09-21 14:20:28
+2020-05-14,"Other",0,23,2020-09-21 14:20:28
+2020-05-15,"Other",0,23,2020-09-21 14:20:28
+2020-05-16,"Other",0,23,2020-09-21 14:20:28
+2020-05-17,"Other",0,23,2020-09-21 14:20:28
+2020-05-18,"Other",0,23,2020-09-21 14:20:28
+2020-05-19,"Other",0,23,2020-09-21 14:20:28
+2020-05-20,"Other",0,23,2020-09-21 14:20:28
+2020-05-21,"Other",0,23,2020-09-21 14:20:28
+2020-05-22,"Other",0,23,2020-09-21 14:20:28
+2020-05-23,"Other",0,23,2020-09-21 14:20:28
+2020-05-24,"Other",0,23,2020-09-21 14:20:28
+2020-05-25,"Other",0,23,2020-09-21 14:20:28
+2020-05-26,"Other",0,23,2020-09-21 14:20:28
+2020-05-27,"Other",0,23,2020-09-21 14:20:28
+2020-05-28,"Other",0,23,2020-09-21 14:20:28
+2020-05-29,"Other",0,23,2020-09-21 14:20:28
+2020-05-30,"Other",0,23,2020-09-21 14:20:28
+2020-05-31,"Other",0,23,2020-09-21 14:20:28
+2020-06-01,"Other",0,23,2020-09-21 14:20:28
+2020-06-02,"Other",0,23,2020-09-21 14:20:28
+2020-06-03,"Other",0,23,2020-09-21 14:20:28
+2020-06-04,"Other",0,23,2020-09-21 14:20:28
+2020-06-05,"Other",0,23,2020-09-21 14:20:28
+2020-06-06,"Other",0,23,2020-09-21 14:20:28
+2020-06-07,"Other",0,23,2020-09-21 14:20:28
+2020-06-08,"Other",0,23,2020-09-21 14:20:28
+2020-06-09,"Other",0,23,2020-09-21 14:20:28
+2020-06-10,"Other",0,23,2020-09-21 14:20:28
+2020-06-11,"Other",0,23,2020-09-21 14:20:28
+2020-06-12,"Other",0,23,2020-09-21 14:20:28
+2020-06-13,"Other",0,23,2020-09-21 14:20:28
+2020-06-14,"Other",0,23,2020-09-21 14:20:28
+2020-06-15,"Other",0,23,2020-09-21 14:20:28
+2020-06-16,"Other",0,23,2020-09-21 14:20:28
+2020-06-17,"Other",0,23,2020-09-21 14:20:28
+2020-06-18,"Other",0,23,2020-09-21 14:20:28
+2020-06-19,"Other",0,23,2020-09-21 14:20:28
+2020-06-20,"Other",0,23,2020-09-21 14:20:28
+2020-06-21,"Other",0,23,2020-09-21 14:20:28
+2020-06-22,"Other",0,23,2020-09-21 14:20:28
+2020-06-23,"Other",0,23,2020-09-21 14:20:28
+2020-06-24,"Other",0,23,2020-09-21 14:20:28
+2020-06-25,"Other",0,23,2020-09-21 14:20:28
+2020-06-26,"Other",0,23,2020-09-21 14:20:28
+2020-06-27,"Other",0,23,2020-09-21 14:20:28
+2020-06-28,"Other",0,23,2020-09-21 14:20:28
+2020-06-29,"Other",0,23,2020-09-21 14:20:28
+2020-06-30,"Other",0,23,2020-09-21 14:20:28
+2020-07-01,"Other",0,23,2020-09-21 14:20:28
+2020-07-02,"Other",0,23,2020-09-21 14:20:28
+2020-07-03,"Other",0,23,2020-09-21 14:20:28
+2020-07-04,"Other",0,23,2020-09-21 14:20:28
+2020-07-05,"Other",0,23,2020-09-21 14:20:28
+2020-07-06,"Other",0,23,2020-09-21 14:20:28
+2020-07-07,"Other",0,23,2020-09-21 14:20:28
+2020-07-08,"Other",0,23,2020-09-21 14:20:28
+2020-07-09,"Other",0,23,2020-09-21 14:20:28
+2020-07-10,"Other",0,23,2020-09-21 14:20:28
+2020-07-11,"Other",0,23,2020-09-21 14:20:28
+2020-07-12,"Other",0,23,2020-09-21 14:20:28
+2020-07-13,"Other",0,23,2020-09-21 14:20:28
+2020-07-14,"Other",0,23,2020-09-21 14:20:28
+2020-07-15,"Other",0,23,2020-09-21 14:20:28
+2020-07-16,"Other",0,23,2020-09-21 14:20:28
+2020-07-17,"Other",0,23,2020-09-21 14:20:28
+2020-07-18,"Other",0,23,2020-09-21 14:20:28
+2020-07-19,"Other",0,23,2020-09-21 14:20:28
+2020-07-20,"Other",0,23,2020-09-21 14:20:28
+2020-07-21,"Other",0,23,2020-09-21 14:20:28
+2020-07-22,"Other",0,23,2020-09-21 14:20:28
+2020-07-23,"Other",0,23,2020-09-21 14:20:28
+2020-07-24,"Other",0,23,2020-09-21 14:20:28
+2020-07-25,"Other",0,23,2020-09-21 14:20:28
+2020-07-27,"Other",0,23,2020-09-21 14:20:28
+2020-07-28,"Other",0,23,2020-09-21 14:20:28
+2020-07-29,"Other",0,23,2020-09-21 14:20:28
+2020-07-30,"Other",0,23,2020-09-21 14:20:28
+2020-07-31,"Other",0,23,2020-09-21 14:20:28
+2020-08-13,"Other",0,23,2020-09-21 14:20:28
+2020-08-14,"Other",0,23,2020-09-21 14:20:28
+2020-08-15,"Other",0,23,2020-09-21 14:20:28
+2020-08-16,"Other",0,23,2020-09-21 14:20:28
+2020-08-17,"Other",0,23,2020-09-21 14:20:28
+2020-08-18,"Other",0,23,2020-09-21 14:20:28
+2020-08-19,"Other",0,23,2020-09-21 14:20:28
+2020-08-20,"Other",0,23,2020-09-21 14:20:28
+2020-08-21,"Other",0,23,2020-09-21 14:20:28
+2020-08-22,"Other",0,23,2020-09-21 14:20:28
+2020-08-23,"Other",0,23,2020-09-21 14:20:28
+2020-08-24,"Other",0,23,2020-09-21 14:20:28
+2020-08-25,"Other",0,23,2020-09-21 14:20:28
+2020-08-26,"Other",0,23,2020-09-21 14:20:28
+2020-08-27,"Other",0,23,2020-09-21 14:20:28
+2020-08-28,"Other",0,23,2020-09-21 14:20:28
+2020-08-29,"Other",0,23,2020-09-21 14:20:28
+2020-08-30,"Other",0,23,2020-09-21 14:20:28
+2020-08-31,"Other",0,23,2020-09-21 14:20:28
+2020-09-01,"Other",0,23,2020-09-21 14:20:28
+2020-09-02,"Other",0,23,2020-09-21 14:20:28
+2020-09-03,"Other",0,23,2020-09-21 14:20:28
+2020-09-04,"Other",0,23,2020-09-21 14:20:28
+2020-09-05,"Other",0,23,2020-09-21 14:20:28
+2020-09-06,"Other",0,23,2020-09-21 14:20:28
+2020-09-07,"Other",0,23,2020-09-21 14:20:28
+2020-09-08,"Other",0,23,2020-09-21 14:20:28
+2020-09-09,"Other",0,23,2020-09-21 14:20:28
+2020-09-10,"Other",0,23,2020-09-21 14:20:28
+2020-09-11,"Other",0,23,2020-09-21 14:20:28
+2020-09-12,"Other",0,23,2020-09-21 14:20:28
+2020-09-13,"Other",0,23,2020-09-21 14:20:28
+2020-09-14,"Other",0,23,2020-09-21 14:20:28
+2020-09-15,"Other",0,23,2020-09-21 14:20:28
+2020-09-16,"Other",0,23,2020-09-21 14:20:28
+2020-09-17,"Other",0,23,2020-09-21 14:20:28
+2020-09-18,"Other",0,23,2020-09-21 14:20:28
+2020-09-19,"Other",0,23,2020-09-21 14:20:28
+2020-09-20,"Other",0,23,2020-09-21 14:20:28
+2020-04-25,"Native American",4,6,2020-09-21 14:20:28
+2020-04-26,"Native American",0,6,2020-09-21 14:20:28
+2020-04-27,"Native American",0,6,2020-09-21 14:20:28
+2020-04-28,"Native American",0,6,2020-09-21 14:20:28
+2020-04-29,"Native American",1,7,2020-09-21 14:20:28
+2020-04-30,"Native American",0,7,2020-09-21 14:20:28
+2020-05-01,"Native American",0,7,2020-09-21 14:20:28
+2020-05-02,"Native American",1,8,2020-09-21 14:20:28
+2020-05-03,"Native American",0,8,2020-09-21 14:20:28
+2020-05-04,"Native American",1,9,2020-09-21 14:20:28
+2020-05-05,"Native American",0,9,2020-09-21 14:20:28
+2020-05-06,"Native American",0,9,2020-09-21 14:20:28
+2020-05-07,"Native American",0,9,2020-09-21 14:20:28
+2020-05-08,"Native American",0,9,2020-09-21 14:20:28
+2020-05-09,"Native American",0,9,2020-09-21 14:20:28
+2020-05-10,"Native American",0,9,2020-09-21 14:20:28
+2020-05-11,"Native American",0,9,2020-09-21 14:20:28
+2020-05-12,"Native American",0,9,2020-09-21 14:20:28
+2020-05-13,"Native American",0,9,2020-09-21 14:20:28
+2020-05-14,"Native American",1,10,2020-09-21 14:20:28
+2020-05-15,"Native American",0,10,2020-09-21 14:20:28
+2020-05-16,"Native American",0,10,2020-09-21 14:20:28
+2020-05-17,"Native American",0,10,2020-09-21 14:20:28
+2020-05-18,"Native American",1,11,2020-09-21 14:20:28
+2020-05-19,"Native American",0,11,2020-09-21 14:20:28
+2020-05-20,"Native American",0,11,2020-09-21 14:20:28
+2020-05-21,"Native American",0,11,2020-09-21 14:20:28
+2020-05-22,"Native American",0,11,2020-09-21 14:20:28
+2020-05-23,"Native American",0,11,2020-09-21 14:20:28
+2020-05-24,"Native American",0,11,2020-09-21 14:20:28
+2020-05-25,"Native American",0,11,2020-09-21 14:20:28
+2020-05-26,"Native American",0,11,2020-09-21 14:20:28
+2020-05-27,"Native American",0,11,2020-09-21 14:20:28
+2020-05-28,"Native American",0,11,2020-09-21 14:20:28
+2020-05-29,"Native American",0,11,2020-09-21 14:20:28
+2020-05-30,"Native American",0,11,2020-09-21 14:20:28
+2020-05-31,"Native American",0,11,2020-09-21 14:20:28
+2020-06-01,"Native American",0,11,2020-09-21 14:20:28
+2020-06-02,"Native American",0,11,2020-09-21 14:20:28
+2020-06-03,"Native American",1,12,2020-09-21 14:20:28
+2020-06-04,"Native American",0,12,2020-09-21 14:20:28
+2020-06-05,"Native American",0,12,2020-09-21 14:20:28
+2020-06-06,"Native American",0,12,2020-09-21 14:20:28
+2020-06-07,"Native American",0,12,2020-09-21 14:20:28
+2020-03-18,"Asian",0,20,2020-09-21 14:20:28
+2020-06-08,"Native American",0,12,2020-09-21 14:20:28
+2020-06-09,"Native American",1,13,2020-09-21 14:20:28
+2020-06-10,"Native American",0,13,2020-09-21 14:20:28
+2020-06-11,"Native American",1,14,2020-09-21 14:20:28
+2020-06-12,"Native American",0,14,2020-09-21 14:20:28
+2020-06-13,"Native American",0,14,2020-09-21 14:20:28
+2020-06-14,"Native American",0,14,2020-09-21 14:20:28
+2020-06-15,"Native American",0,14,2020-09-21 14:20:28
+2020-06-16,"Native American",0,14,2020-09-21 14:20:28
+2020-06-17,"Native American",0,14,2020-09-21 14:20:28
+2020-06-18,"Native American",0,14,2020-09-21 14:20:28
+2020-06-19,"Native American",1,15,2020-09-21 14:20:28
+2020-06-20,"Native American",0,15,2020-09-21 14:20:28
+2020-06-21,"Native American",0,15,2020-09-21 14:20:28
+2020-06-22,"Native American",1,16,2020-09-21 14:20:28
+2020-06-23,"Native American",0,16,2020-09-21 14:20:28
+2020-06-24,"Native American",0,16,2020-09-21 14:20:28
+2020-06-25,"Native American",0,16,2020-09-21 14:20:28
+2020-06-26,"Native American",0,16,2020-09-21 14:20:28
+2020-06-27,"Native American",0,16,2020-09-21 14:20:28
+2020-06-28,"Native American",1,17,2020-09-21 14:20:28
+2020-06-29,"Native American",0,17,2020-09-21 14:20:28
+2020-06-30,"Native American",0,17,2020-09-21 14:20:28
+2020-07-01,"Native American",1,18,2020-09-21 14:20:28
+2020-07-02,"Native American",0,18,2020-09-21 14:20:28
+2020-07-03,"Native American",1,19,2020-09-21 14:20:28
+2020-07-04,"Native American",0,19,2020-09-21 14:20:28
+2020-07-05,"Native American",0,19,2020-09-21 14:20:28
+2020-07-06,"Native American",0,19,2020-09-21 14:20:28
+2020-07-07,"Native American",0,19,2020-09-21 14:20:28
+2020-07-08,"Native American",0,19,2020-09-21 14:20:28
+2020-07-09,"Native American",1,20,2020-09-21 14:20:28
+2020-07-10,"Native American",0,20,2020-09-21 14:20:28
+2020-07-11,"Native American",0,20,2020-09-21 14:20:28
+2020-07-12,"Native American",0,20,2020-09-21 14:20:28
+2020-07-13,"Native American",0,20,2020-09-21 14:20:28
+2020-07-14,"Native American",0,20,2020-09-21 14:20:28
+2020-07-15,"Native American",2,22,2020-09-21 14:20:28
+2020-07-16,"Native American",0,22,2020-09-21 14:20:28
+2020-07-17,"Native American",0,22,2020-09-21 14:20:28
+2020-07-18,"Native American",0,22,2020-09-21 14:20:28
+2020-07-19,"Native American",0,22,2020-09-21 14:20:28
+2020-07-20,"Native American",0,22,2020-09-21 14:20:28
+2020-07-21,"Native American",0,22,2020-09-21 14:20:28
+2020-07-22,"Native American",0,22,2020-09-21 14:20:28
+2020-07-23,"Native American",1,23,2020-09-21 14:20:28
+2020-07-24,"Native American",0,23,2020-09-21 14:20:28
+2020-07-25,"Native American",1,24,2020-09-21 14:20:28
+2020-07-26,"Native American",0,24,2020-09-21 14:20:28
+2020-07-27,"Native American",0,24,2020-09-21 14:20:28
+2020-07-28,"Native American",1,25,2020-09-21 14:20:28
+2020-07-29,"Native American",0,25,2020-09-21 14:20:28
+2020-07-30,"Native American",0,25,2020-09-21 14:20:28
+2020-07-31,"Native American",0,25,2020-09-21 14:20:28
+2020-08-01,"Native American",0,25,2020-09-21 14:20:28
+2020-08-02,"Native American",0,25,2020-09-21 14:20:28
+2020-08-03,"Native American",0,25,2020-09-21 14:20:28
+2020-08-04,"Native American",0,25,2020-09-21 14:20:28
+2020-08-05,"Native American",1,26,2020-09-21 14:20:28
+2020-08-06,"Native American",0,26,2020-09-21 14:20:28
+2020-08-07,"Native American",3,29,2020-09-21 14:20:28
+2020-08-08,"Native American",1,30,2020-09-21 14:20:28
+2020-08-09,"Native American",1,31,2020-09-21 14:20:28
+2020-08-10,"Native American",0,31,2020-09-21 14:20:28
+2020-08-11,"Native American",0,31,2020-09-21 14:20:28
+2020-08-12,"Native American",0,31,2020-09-21 14:20:28
+2020-08-13,"Native American",0,31,2020-09-21 14:20:28
+2020-08-14,"Native American",1,32,2020-09-21 14:20:28
+2020-08-15,"Native American",0,32,2020-09-21 14:20:28
+2020-08-16,"Native American",0,32,2020-09-21 14:20:28
+2020-08-17,"Native American",0,32,2020-09-21 14:20:28
+2020-08-18,"Native American",0,32,2020-09-21 14:20:28
+2020-08-19,"Native American",0,32,2020-09-21 14:20:28
+2020-08-20,"Native American",0,32,2020-09-21 14:20:28
+2020-08-21,"Native American",0,32,2020-09-21 14:20:28
+2020-08-22,"Native American",0,32,2020-09-21 14:20:28
+2020-08-23,"Native American",0,32,2020-09-21 14:20:28
+2020-08-24,"Native American",0,32,2020-09-21 14:20:28
+2020-08-25,"Native American",0,32,2020-09-21 14:20:28
+2020-08-26,"Native American",0,32,2020-09-21 14:20:28
+2020-08-27,"Native American",0,32,2020-09-21 14:20:28
+2020-08-28,"Native American",0,32,2020-09-21 14:20:28
+2020-08-29,"Native American",0,32,2020-09-21 14:20:28
+2020-08-30,"Native American",0,32,2020-09-21 14:20:28
+2020-08-31,"Native American",0,32,2020-09-21 14:20:28
+2020-09-01,"Native American",0,32,2020-09-21 14:20:28
+2020-09-02,"Native American",0,32,2020-09-21 14:20:28
+2020-09-03,"Native American",1,33,2020-09-21 14:20:28
+2020-09-04,"Native American",0,33,2020-09-21 14:20:28
+2020-09-05,"Native American",0,33,2020-09-21 14:20:28
+2020-09-06,"Native American",0,33,2020-09-21 14:20:28
+2020-09-07,"Native American",0,33,2020-09-21 14:20:28
+2020-09-09,"Native American",0,33,2020-09-21 14:20:28
+2020-09-10,"Native American",0,33,2020-09-21 14:20:28
+2020-09-11,"Native American",0,33,2020-09-21 14:20:28
+2020-09-12,"Native American",0,33,2020-09-21 14:20:28
+2020-09-19,"Native American",0,33,2020-09-21 14:20:28
+2020-09-20,"Native American",0,33,2020-09-21 14:20:28
+2020-03-19,"Black or African American",2,6,2020-09-21 14:20:28
+2020-03-20,"Black or African American",3,9,2020-09-21 14:20:28
+2020-03-21,"Black or African American",1,10,2020-09-21 14:20:28
+2020-03-22,"Black or African American",3,13,2020-09-21 14:20:28
+2020-03-23,"Black or African American",3,16,2020-09-21 14:20:28
+2020-03-24,"Black or African American",2,18,2020-09-21 14:20:28
+2020-03-25,"Black or African American",4,22,2020-09-21 14:20:28
+2020-03-26,"Black or African American",4,26,2020-09-21 14:20:28
+2020-03-27,"Black or African American",2,28,2020-09-21 14:20:28
+2020-03-28,"Black or African American",2,30,2020-09-21 14:20:28
+2020-03-29,"Black or African American",1,31,2020-09-21 14:20:28
+2020-03-30,"Black or African American",0,31,2020-09-21 14:20:28
+2020-03-31,"Black or African American",1,32,2020-09-21 14:20:28
+2020-04-02,"Asian",7,108,2020-09-21 14:20:28
+2020-04-03,"Asian",7,115,2020-09-21 14:20:28
+2020-04-04,"Asian",0,115,2020-09-21 14:20:28
+2020-04-05,"Asian",8,123,2020-09-21 14:20:28
+2020-04-06,"Asian",5,128,2020-09-21 14:20:28
+2020-04-07,"Asian",8,136,2020-09-21 14:20:28
+2020-04-08,"Asian",4,140,2020-09-21 14:20:28
+2020-04-09,"Asian",6,146,2020-09-21 14:20:28
+2020-04-10,"Asian",9,155,2020-09-21 14:20:28
+2020-04-11,"Asian",5,160,2020-09-21 14:20:28
+2020-04-12,"Asian",3,163,2020-09-21 14:20:28
+2020-04-01,"Black or African American",4,36,2020-09-21 14:20:28
+2020-04-02,"Black or African American",0,36,2020-09-21 14:20:28
+2020-04-03,"Black or African American",0,36,2020-09-21 14:20:28
+2020-04-04,"Black or African American",0,36,2020-09-21 14:20:28
+2020-04-05,"Black or African American",2,38,2020-09-21 14:20:28
+2020-04-06,"Black or African American",0,38,2020-09-21 14:20:28
+2020-04-07,"Black or African American",4,42,2020-09-21 14:20:28
+2020-04-08,"Black or African American",9,51,2020-09-21 14:20:28
+2020-04-09,"Black or African American",9,60,2020-09-21 14:20:28
+2020-04-10,"Black or African American",1,61,2020-09-21 14:20:28
+2020-04-11,"Black or African American",6,67,2020-09-21 14:20:28
+2020-04-12,"Black or African American",2,69,2020-09-21 14:20:28
+2020-04-13,"Black or African American",2,71,2020-09-21 14:20:28
+2020-04-14,"Black or African American",4,75,2020-09-21 14:20:28
+2020-04-15,"Black or African American",1,76,2020-09-21 14:20:28
+2020-04-16,"Black or African American",0,76,2020-09-21 14:20:28
+2020-04-17,"Black or African American",2,78,2020-09-21 14:20:28
+2020-04-18,"Black or African American",0,78,2020-09-21 14:20:28
+2020-04-19,"Black or African American",1,79,2020-09-21 14:20:28
+2020-04-20,"Black or African American",1,80,2020-09-21 14:20:28
+2020-04-21,"Black or African American",1,81,2020-09-21 14:20:28
+2020-04-22,"Black or African American",2,83,2020-09-21 14:20:28
+2020-04-23,"Black or African American",3,86,2020-09-21 14:20:28
+2020-04-24,"Black or African American",0,86,2020-09-21 14:20:28
+2020-04-25,"Black or African American",2,88,2020-09-21 14:20:28
+2020-04-26,"Black or African American",2,90,2020-09-21 14:20:28
+2020-04-27,"Black or African American",4,94,2020-09-21 14:20:28
+2020-04-28,"Black or African American",0,94,2020-09-21 14:20:28
+2020-04-29,"Black or African American",1,95,2020-09-21 14:20:28
+2020-04-30,"Black or African American",2,97,2020-09-21 14:20:28
+2020-05-02,"Black or African American",0,97,2020-09-21 14:20:28
+2020-05-03,"Black or African American",0,97,2020-09-21 14:20:28
+2020-05-04,"Black or African American",2,99,2020-09-21 14:20:28
+2020-03-22,"Asian",3,35,2020-09-21 14:20:28
+2020-04-13,"Asian",9,172,2020-09-21 14:20:28
+2020-05-05,"Black or African American",1,100,2020-09-21 14:20:28
+2020-05-06,"Black or African American",3,103,2020-09-21 14:20:28
+2020-05-07,"Black or African American",0,103,2020-09-21 14:20:28
+2020-05-08,"Black or African American",2,105,2020-09-21 14:20:28
+2020-05-09,"Black or African American",1,106,2020-09-21 14:20:28
+2020-05-10,"Black or African American",0,106,2020-09-21 14:20:28
+2020-05-11,"Black or African American",2,108,2020-09-21 14:20:28
+2020-05-12,"Black or African American",2,110,2020-09-21 14:20:28
+2020-05-13,"Black or African American",1,111,2020-09-21 14:20:28
+2020-05-14,"Black or African American",0,111,2020-09-21 14:20:28
+2020-05-15,"Black or African American",3,114,2020-09-21 14:20:28
+2020-05-16,"Black or African American",0,114,2020-09-21 14:20:28
+2020-05-17,"Black or African American",0,114,2020-09-21 14:20:28
+2020-05-18,"Black or African American",1,115,2020-09-21 14:20:28
+2020-05-19,"Black or African American",4,119,2020-09-21 14:20:28
+2020-05-20,"Black or African American",7,126,2020-09-21 14:20:28
+2020-05-21,"Black or African American",0,126,2020-09-21 14:20:28
+2020-05-22,"Black or African American",1,127,2020-09-21 14:20:28
+2020-05-23,"Black or African American",1,128,2020-09-21 14:20:28
+2020-05-24,"Black or African American",1,129,2020-09-21 14:20:28
+2020-05-25,"Black or African American",0,129,2020-09-21 14:20:28
+2020-05-26,"Black or African American",0,129,2020-09-21 14:20:28
+2020-05-27,"Black or African American",3,132,2020-09-21 14:20:28
+2020-05-28,"Black or African American",0,132,2020-09-21 14:20:28
+2020-05-29,"Black or African American",0,132,2020-09-21 14:20:28
+2020-05-30,"Black or African American",1,133,2020-09-21 14:20:28
+2020-05-31,"Black or African American",0,133,2020-09-21 14:20:28
+2020-06-01,"Black or African American",0,133,2020-09-21 14:20:28
+2020-06-02,"Black or African American",1,134,2020-09-21 14:20:28
+2020-06-03,"Black or African American",0,134,2020-09-21 14:20:28
+2020-06-04,"Black or African American",2,136,2020-09-21 14:20:28
+2020-06-05,"Black or African American",2,138,2020-09-21 14:20:28
+2020-06-06,"Black or African American",1,139,2020-09-21 14:20:28
+2020-06-07,"Black or African American",1,140,2020-09-21 14:20:28
+2020-06-08,"Black or African American",1,141,2020-09-21 14:20:28
+2020-06-09,"Black or African American",1,142,2020-09-21 14:20:28
+2020-06-10,"Black or African American",1,143,2020-09-21 14:20:28
+2020-06-11,"Black or African American",0,143,2020-09-21 14:20:28
+2020-06-12,"Black or African American",0,143,2020-09-21 14:20:28
+2020-06-13,"Black or African American",0,143,2020-09-21 14:20:28
+2020-06-14,"Black or African American",0,143,2020-09-21 14:20:28
+2020-06-15,"Black or African American",0,143,2020-09-21 14:20:28
+2020-06-16,"Black or African American",0,143,2020-09-21 14:20:28
+2020-06-17,"Black or African American",2,145,2020-09-21 14:20:28
+2020-06-18,"Black or African American",4,149,2020-09-21 14:20:28
+2020-06-19,"Black or African American",4,153,2020-09-21 14:20:28
+2020-06-20,"Black or African American",2,155,2020-09-21 14:20:28
+2020-06-21,"Black or African American",1,156,2020-09-21 14:20:28
+2020-06-22,"Black or African American",6,162,2020-09-21 14:20:28
+2020-06-23,"Black or African American",10,172,2020-09-21 14:20:28
+2020-06-24,"Black or African American",5,177,2020-09-21 14:20:28
+2020-06-25,"Black or African American",7,184,2020-09-21 14:20:28
+2020-06-26,"Black or African American",5,189,2020-09-21 14:20:28
+2020-06-27,"Black or African American",10,199,2020-09-21 14:20:28
+2020-06-28,"Black or African American",2,201,2020-09-21 14:20:28
+2020-06-29,"Black or African American",2,203,2020-09-21 14:20:28
+2020-06-30,"Black or African American",6,209,2020-09-21 14:20:28
+2020-07-01,"Black or African American",5,214,2020-09-21 14:20:28
+2020-07-02,"Black or African American",11,225,2020-09-21 14:20:28
+2020-07-03,"Black or African American",2,227,2020-09-21 14:20:28
+2020-07-04,"Black or African American",2,229,2020-09-21 14:20:28
+2020-07-05,"Black or African American",3,232,2020-09-21 14:20:28
+2020-07-06,"Black or African American",4,236,2020-09-21 14:20:28
+2020-07-07,"Black or African American",11,247,2020-09-21 14:20:28
+2020-07-08,"Black or African American",4,251,2020-09-21 14:20:28
+2020-07-09,"Black or African American",8,259,2020-09-21 14:20:28
+2020-07-10,"Black or African American",6,265,2020-09-21 14:20:28
+2020-07-14,"Black or African American",9,286,2020-09-21 14:20:28
+2020-07-15,"Black or African American",9,295,2020-09-21 14:20:28
+2020-07-16,"Black or African American",10,305,2020-09-21 14:20:28
+2020-07-17,"Black or African American",26,331,2020-09-21 14:20:28
+2020-07-18,"Black or African American",9,340,2020-09-21 14:20:28
+2020-07-19,"Black or African American",4,344,2020-09-21 14:20:28
+2020-07-20,"Black or African American",7,351,2020-09-21 14:20:28
+2020-07-21,"Black or African American",6,357,2020-09-21 14:20:28
+2020-07-22,"Black or African American",9,366,2020-09-21 14:20:28
+2020-07-23,"Black or African American",11,377,2020-09-21 14:20:28
+2020-07-24,"Black or African American",6,383,2020-09-21 14:20:28
+2020-07-25,"Black or African American",6,389,2020-09-21 14:20:28
+2020-07-26,"Black or African American",4,393,2020-09-21 14:20:28
+2020-07-27,"Black or African American",3,396,2020-09-21 14:20:28
+2020-07-28,"Black or African American",6,402,2020-09-21 14:20:28
+2020-07-29,"Black or African American",6,408,2020-09-21 14:20:28
+2020-07-30,"Black or African American",3,411,2020-09-21 14:20:28
+2020-07-31,"Black or African American",5,416,2020-09-21 14:20:28
+2020-08-01,"Black or African American",7,423,2020-09-21 14:20:28
+2020-08-02,"Black or African American",2,425,2020-09-21 14:20:28
+2020-08-03,"Black or African American",13,438,2020-09-21 14:20:28
+2020-08-04,"Black or African American",3,441,2020-09-21 14:20:28
+2020-08-14,"Black or African American",6,498,2020-09-21 14:20:28
+2020-08-15,"Black or African American",3,501,2020-09-21 14:20:28
+2020-08-16,"Black or African American",4,505,2020-09-21 14:20:28
+2020-08-17,"Black or African American",6,511,2020-09-21 14:20:28
+2020-09-02,"Black or African American",1,577,2020-09-21 14:20:28
 2020-03-05,"Unknown",4,5,2020-08-25 15:18:34
 2020-03-06,"Unknown",0,5,2020-08-25 15:18:34
-2020-07-02,"Native Hawaiian or Other Pacific Islander",1,40,2020-09-20 14:20:04
-2020-07-03,"Native Hawaiian or Other Pacific Islander",0,40,2020-09-20 14:20:04
-2020-07-10,"Native Hawaiian or Other Pacific Islander",0,46,2020-09-20 14:20:04
-2020-07-11,"Native Hawaiian or Other Pacific Islander",3,49,2020-09-20 14:20:04
-2020-07-12,"Native Hawaiian or Other Pacific Islander",0,49,2020-09-20 14:20:04
-2020-07-13,"Native Hawaiian or Other Pacific Islander",1,50,2020-09-20 14:20:04
-2020-07-14,"Native Hawaiian or Other Pacific Islander",1,51,2020-09-20 14:20:04
-2020-07-15,"Native Hawaiian or Other Pacific Islander",3,54,2020-09-20 14:20:04
-2020-07-16,"Native Hawaiian or Other Pacific Islander",3,57,2020-09-20 14:20:04
-2020-07-17,"Native Hawaiian or Other Pacific Islander",0,57,2020-09-20 14:20:04
-2020-07-18,"Native Hawaiian or Other Pacific Islander",0,57,2020-09-20 14:20:04
-2020-07-19,"Native Hawaiian or Other Pacific Islander",0,57,2020-09-20 14:20:04
-2020-07-20,"Native Hawaiian or Other Pacific Islander",4,61,2020-09-20 14:20:04
-2020-07-21,"Native Hawaiian or Other Pacific Islander",1,62,2020-09-20 14:20:04
-2020-07-22,"Native Hawaiian or Other Pacific Islander",6,68,2020-09-20 14:20:04
-2020-07-23,"Native Hawaiian or Other Pacific Islander",3,71,2020-09-20 14:20:04
-2020-07-24,"Native Hawaiian or Other Pacific Islander",2,73,2020-09-20 14:20:04
-2020-07-25,"Native Hawaiian or Other Pacific Islander",3,76,2020-09-20 14:20:04
-2020-07-26,"Native Hawaiian or Other Pacific Islander",0,76,2020-09-20 14:20:04
-2020-07-27,"Native Hawaiian or Other Pacific Islander",2,78,2020-09-20 14:20:04
-2020-07-28,"Native Hawaiian or Other Pacific Islander",5,83,2020-09-20 14:20:04
-2020-07-29,"Native Hawaiian or Other Pacific Islander",1,84,2020-09-20 14:20:04
-2020-07-30,"Native Hawaiian or Other Pacific Islander",1,85,2020-09-20 14:20:04
-2020-07-31,"Native Hawaiian or Other Pacific Islander",1,86,2020-09-20 14:20:04
-2020-08-01,"Native Hawaiian or Other Pacific Islander",1,87,2020-09-20 14:20:04
-2020-08-02,"Native Hawaiian or Other Pacific Islander",4,91,2020-09-20 14:20:04
-2020-08-03,"Native Hawaiian or Other Pacific Islander",0,91,2020-09-20 14:20:04
-2020-08-04,"Native Hawaiian or Other Pacific Islander",0,91,2020-09-20 14:20:04
-2020-08-05,"Native Hawaiian or Other Pacific Islander",4,95,2020-09-20 14:20:04
-2020-08-06,"Native Hawaiian or Other Pacific Islander",0,95,2020-09-20 14:20:04
-2020-08-07,"Native Hawaiian or Other Pacific Islander",2,97,2020-09-20 14:20:04
-2020-08-08,"Native Hawaiian or Other Pacific Islander",0,97,2020-09-20 14:20:04
-2020-08-09,"Native Hawaiian or Other Pacific Islander",0,97,2020-09-20 14:20:04
-2020-08-10,"Native Hawaiian or Other Pacific Islander",1,98,2020-09-20 14:20:04
-2020-08-11,"Native Hawaiian or Other Pacific Islander",3,101,2020-09-20 14:20:04
-2020-08-12,"Native Hawaiian or Other Pacific Islander",5,106,2020-09-20 14:20:04
-2020-08-13,"Native Hawaiian or Other Pacific Islander",3,109,2020-09-20 14:20:04
-2020-08-14,"Native Hawaiian or Other Pacific Islander",0,109,2020-09-20 14:20:04
-2020-08-15,"Native Hawaiian or Other Pacific Islander",1,110,2020-09-20 14:20:04
-2020-08-16,"Native Hawaiian or Other Pacific Islander",1,111,2020-09-20 14:20:04
-2020-08-17,"Native Hawaiian or Other Pacific Islander",5,116,2020-09-20 14:20:04
-2020-08-18,"Native Hawaiian or Other Pacific Islander",2,118,2020-09-20 14:20:04
-2020-08-19,"Native Hawaiian or Other Pacific Islander",2,120,2020-09-20 14:20:04
-2020-08-20,"Native Hawaiian or Other Pacific Islander",1,121,2020-09-20 14:20:04
-2020-08-21,"Native Hawaiian or Other Pacific Islander",7,128,2020-09-20 14:20:04
-2020-08-22,"Native Hawaiian or Other Pacific Islander",0,128,2020-09-20 14:20:04
-2020-08-23,"Native Hawaiian or Other Pacific Islander",1,129,2020-09-20 14:20:04
-2020-08-24,"Native Hawaiian or Other Pacific Islander",0,129,2020-09-20 14:20:04
-2020-08-25,"Native Hawaiian or Other Pacific Islander",2,131,2020-09-20 14:20:04
-2020-08-26,"Native Hawaiian or Other Pacific Islander",0,131,2020-09-20 14:20:04
-2020-08-27,"Native Hawaiian or Other Pacific Islander",0,131,2020-09-20 14:20:04
-2020-08-28,"Native Hawaiian or Other Pacific Islander",0,131,2020-09-20 14:20:04
-2020-08-29,"Native Hawaiian or Other Pacific Islander",2,133,2020-09-20 14:20:04
-2020-08-30,"Native Hawaiian or Other Pacific Islander",1,134,2020-09-20 14:20:04
-2020-08-31,"Native Hawaiian or Other Pacific Islander",1,135,2020-09-20 14:20:04
-2020-09-01,"Native Hawaiian or Other Pacific Islander",2,137,2020-09-20 14:20:04
-2020-09-02,"Native Hawaiian or Other Pacific Islander",2,139,2020-09-20 14:20:04
-2020-09-03,"Native Hawaiian or Other Pacific Islander",2,141,2020-09-20 14:20:04
-2020-09-04,"Native Hawaiian or Other Pacific Islander",0,141,2020-09-20 14:20:04
-2020-09-05,"Native Hawaiian or Other Pacific Islander",0,141,2020-09-20 14:20:04
-2020-09-06,"Native Hawaiian or Other Pacific Islander",1,142,2020-09-20 14:20:04
-2020-09-07,"Native Hawaiian or Other Pacific Islander",1,143,2020-09-20 14:20:04
-2020-09-08,"Native Hawaiian or Other Pacific Islander",1,144,2020-09-20 14:20:04
-2020-09-09,"Native Hawaiian or Other Pacific Islander",3,147,2020-09-20 14:20:04
-2020-09-10,"Native Hawaiian or Other Pacific Islander",1,148,2020-09-20 14:20:04
-2020-09-11,"Native Hawaiian or Other Pacific Islander",0,148,2020-09-20 14:20:04
-2020-09-12,"Native Hawaiian or Other Pacific Islander",0,148,2020-09-20 14:20:04
-2020-09-13,"Native Hawaiian or Other Pacific Islander",0,148,2020-09-20 14:20:04
-2020-09-14,"Native Hawaiian or Other Pacific Islander",0,148,2020-09-20 14:20:04
-2020-09-15,"Native Hawaiian or Other Pacific Islander",1,149,2020-09-20 14:20:04
-2020-09-16,"Native Hawaiian or Other Pacific Islander",1,150,2020-09-20 14:20:04
-2020-09-17,"Native Hawaiian or Other Pacific Islander",1,151,2020-09-20 14:20:04
-2020-09-18,"Native Hawaiian or Other Pacific Islander",0,151,2020-09-20 14:20:04
-2020-09-19,"Native Hawaiian or Other Pacific Islander",0,151,2020-09-20 14:20:04
-2020-03-13,"White",2,6,2020-09-20 14:20:04
-2020-03-14,"White",5,11,2020-09-20 14:20:04
-2020-03-15,"White",6,17,2020-09-20 14:20:04
-2020-03-16,"White",19,36,2020-09-20 14:20:04
-2020-03-17,"White",10,46,2020-09-20 14:20:04
-2020-03-18,"White",6,52,2020-09-20 14:20:04
-2020-03-19,"White",8,60,2020-09-20 14:20:04
-2020-03-20,"White",7,67,2020-09-20 14:20:04
-2020-03-21,"White",5,72,2020-09-20 14:20:04
-2020-03-22,"White",6,78,2020-09-20 14:20:04
-2020-03-23,"White",8,86,2020-09-20 14:20:04
-2020-03-24,"White",12,98,2020-09-20 14:20:04
-2020-03-25,"White",9,107,2020-09-20 14:20:04
-2020-03-26,"White",10,117,2020-09-20 14:20:04
-2020-03-27,"White",7,124,2020-09-20 14:20:04
-2020-03-28,"White",4,128,2020-09-20 14:20:04
-2020-03-30,"White",7,135,2020-09-20 14:20:04
-2020-03-31,"White",14,149,2020-09-20 14:20:04
-2020-04-01,"White",5,154,2020-09-20 14:20:04
-2020-04-02,"White",7,161,2020-09-20 14:20:04
-2020-04-03,"White",5,166,2020-09-20 14:20:04
-2020-04-04,"White",3,169,2020-09-20 14:20:04
-2020-04-05,"White",2,171,2020-09-20 14:20:04
-2020-04-06,"White",10,181,2020-09-20 14:20:04
-2020-04-07,"White",6,187,2020-09-20 14:20:04
-2020-04-08,"White",21,208,2020-09-20 14:20:04
-2020-04-09,"White",19,227,2020-09-20 14:20:04
-2020-04-10,"White",3,230,2020-09-20 14:20:04
-2020-04-11,"White",2,232,2020-09-20 14:20:04
-2020-04-12,"White",2,234,2020-09-20 14:20:04
-2020-04-13,"White",3,237,2020-09-20 14:20:04
-2020-04-14,"White",4,241,2020-09-20 14:20:04
-2020-04-15,"White",3,244,2020-09-20 14:20:04
-2020-04-16,"White",5,249,2020-09-20 14:20:04
-2020-04-17,"White",4,253,2020-09-20 14:20:04
-2020-04-18,"White",5,258,2020-09-20 14:20:04
-2020-04-19,"White",1,259,2020-09-20 14:20:04
-2020-04-20,"White",4,263,2020-09-20 14:20:04
-2020-04-21,"White",1,264,2020-09-20 14:20:04
-2020-04-22,"White",2,266,2020-09-20 14:20:04
-2020-04-23,"White",9,275,2020-09-20 14:20:04
-2020-04-24,"White",9,284,2020-09-20 14:20:04
-2020-04-25,"White",4,288,2020-09-20 14:20:04
-2020-04-26,"White",1,289,2020-09-20 14:20:04
-2020-04-27,"White",5,294,2020-09-20 14:20:04
-2020-04-28,"White",6,300,2020-09-20 14:20:04
-2020-04-29,"White",8,308,2020-09-20 14:20:04
-2020-04-30,"White",4,312,2020-09-20 14:20:04
-2020-05-01,"White",5,317,2020-09-20 14:20:04
-2020-05-02,"White",1,318,2020-09-20 14:20:04
-2020-05-03,"White",1,319,2020-09-20 14:20:04
-2020-05-04,"White",4,323,2020-09-20 14:20:04
-2020-05-05,"White",3,326,2020-09-20 14:20:04
-2020-05-06,"White",2,328,2020-09-20 14:20:04
-2020-05-07,"White",10,338,2020-09-20 14:20:04
-2020-05-08,"White",3,341,2020-09-20 14:20:04
-2020-05-09,"White",0,341,2020-09-20 14:20:04
-2020-05-10,"White",1,342,2020-09-20 14:20:04
-2020-05-11,"White",4,346,2020-09-20 14:20:04
-2020-05-12,"White",7,353,2020-09-20 14:20:04
-2020-05-13,"White",4,357,2020-09-20 14:20:04
-2020-05-14,"White",4,361,2020-09-20 14:20:04
-2020-05-15,"White",5,366,2020-09-20 14:20:04
-2020-05-16,"White",2,368,2020-09-20 14:20:04
-2020-05-17,"White",0,368,2020-09-20 14:20:04
-2020-05-18,"White",3,371,2020-09-20 14:20:04
-2020-05-19,"White",1,372,2020-09-20 14:20:04
-2020-05-20,"White",6,378,2020-09-20 14:20:04
-2020-05-21,"White",3,381,2020-09-20 14:20:04
-2020-05-22,"White",4,385,2020-09-20 14:20:04
-2020-05-23,"White",1,386,2020-09-20 14:20:04
-2020-05-24,"White",1,387,2020-09-20 14:20:04
-2020-05-25,"White",1,388,2020-09-20 14:20:04
-2020-05-26,"White",4,392,2020-09-20 14:20:04
-2020-05-27,"White",3,395,2020-09-20 14:20:04
-2020-05-28,"White",1,396,2020-09-20 14:20:04
-2020-05-29,"White",1,397,2020-09-20 14:20:04
-2020-05-30,"White",3,400,2020-09-20 14:20:04
-2020-05-31,"White",1,401,2020-09-20 14:20:04
-2020-06-01,"White",4,405,2020-09-20 14:20:04
-2020-06-02,"White",2,407,2020-09-20 14:20:04
-2020-06-03,"White",7,414,2020-09-20 14:20:04
-2020-06-04,"White",4,418,2020-09-20 14:20:04
-2020-06-05,"White",4,422,2020-09-20 14:20:04
-2020-06-06,"White",2,424,2020-09-20 14:20:04
-2020-06-07,"White",2,426,2020-09-20 14:20:04
-2020-06-08,"White",7,433,2020-09-20 14:20:04
-2020-06-09,"White",4,437,2020-09-20 14:20:04
-2020-06-10,"White",4,441,2020-09-20 14:20:04
-2020-06-11,"White",2,443,2020-09-20 14:20:04
-2020-06-12,"White",8,451,2020-09-20 14:20:04
-2020-06-13,"White",3,454,2020-09-20 14:20:04
-2020-06-14,"White",4,458,2020-09-20 14:20:04
-2020-06-15,"White",5,463,2020-09-20 14:20:04
-2020-06-16,"White",9,472,2020-09-20 14:20:04
-2020-06-17,"White",13,485,2020-09-20 14:20:04
-2020-06-18,"White",12,497,2020-09-20 14:20:04
-2020-06-19,"White",10,507,2020-09-20 14:20:04
-2020-06-20,"White",6,513,2020-09-20 14:20:04
-2020-06-21,"White",2,515,2020-09-20 14:20:04
-2020-06-22,"White",37,552,2020-09-20 14:20:04
-2020-06-23,"White",16,568,2020-09-20 14:20:04
-2020-06-24,"White",3,571,2020-09-20 14:20:04
-2020-06-25,"White",8,579,2020-09-20 14:20:04
-2020-06-26,"White",7,586,2020-09-20 14:20:04
-2020-06-27,"White",11,597,2020-09-20 14:20:04
-2020-06-28,"White",5,602,2020-09-20 14:20:04
-2020-06-29,"White",11,613,2020-09-20 14:20:04
-2020-06-30,"White",19,632,2020-09-20 14:20:04
-2020-07-01,"White",13,645,2020-09-20 14:20:04
-2020-07-02,"White",24,669,2020-09-20 14:20:04
-2020-07-03,"White",11,680,2020-09-20 14:20:04
-2020-07-04,"White",11,691,2020-09-20 14:20:04
-2020-07-05,"White",9,700,2020-09-20 14:20:04
-2020-07-06,"White",14,714,2020-09-20 14:20:04
-2020-07-07,"White",25,739,2020-09-20 14:20:04
-2020-07-08,"White",18,757,2020-09-20 14:20:04
-2020-07-09,"White",23,780,2020-09-20 14:20:04
-2020-07-10,"White",23,803,2020-09-20 14:20:04
-2020-07-11,"White",13,816,2020-09-20 14:20:04
-2020-07-12,"White",12,828,2020-09-20 14:20:04
-2020-07-13,"White",15,843,2020-09-20 14:20:04
-2020-07-14,"White",39,882,2020-09-20 14:20:04
-2020-07-15,"White",21,903,2020-09-20 14:20:04
-2020-07-16,"White",16,919,2020-09-20 14:20:04
-2020-07-17,"White",20,939,2020-09-20 14:20:04
-2020-07-18,"White",12,951,2020-09-20 14:20:04
-2020-07-19,"White",12,963,2020-09-20 14:20:04
-2020-07-21,"White",18,1003,2020-09-20 14:20:04
-2020-07-22,"White",19,1022,2020-09-20 14:20:04
-2020-07-23,"White",13,1035,2020-09-20 14:20:04
-2020-07-24,"White",23,1058,2020-09-20 14:20:04
-2020-07-25,"White",9,1067,2020-09-20 14:20:04
-2020-07-26,"White",8,1075,2020-09-20 14:20:04
-2020-07-27,"White",15,1090,2020-09-20 14:20:04
-2020-07-28,"White",12,1102,2020-09-20 14:20:04
-2020-07-29,"White",16,1118,2020-09-20 14:20:04
-2020-07-30,"White",18,1136,2020-09-20 14:20:04
-2020-07-31,"White",10,1146,2020-09-20 14:20:04
-2020-08-01,"White",9,1155,2020-09-20 14:20:04
-2020-08-02,"White",5,1160,2020-09-20 14:20:04
-2020-08-03,"White",9,1169,2020-09-20 14:20:04
-2020-08-04,"White",11,1180,2020-09-20 14:20:04
-2020-08-05,"White",6,1186,2020-09-20 14:20:04
-2020-08-06,"White",14,1200,2020-09-20 14:20:04
-2020-08-07,"White",12,1212,2020-09-20 14:20:04
-2020-08-08,"White",6,1218,2020-09-20 14:20:04
-2020-08-09,"White",5,1223,2020-09-20 14:20:04
-2020-08-10,"White",17,1240,2020-09-20 14:20:04
-2020-08-11,"White",10,1250,2020-09-20 14:20:04
-2020-08-12,"White",12,1262,2020-09-20 14:20:04
-2020-08-13,"White",19,1281,2020-09-20 14:20:04
-2020-08-14,"White",8,1289,2020-09-20 14:20:04
-2020-08-15,"White",6,1295,2020-09-20 14:20:04
-2020-08-16,"White",2,1297,2020-09-20 14:20:04
-2020-08-17,"White",8,1305,2020-09-20 14:20:04
-2020-08-18,"White",9,1314,2020-09-20 14:20:04
-2020-08-19,"White",7,1321,2020-09-20 14:20:04
-2020-08-20,"White",10,1331,2020-09-20 14:20:04
-2020-08-21,"White",10,1341,2020-09-20 14:20:04
-2020-08-22,"White",7,1348,2020-09-20 14:20:04
-2020-08-23,"White",3,1351,2020-09-20 14:20:04
-2020-08-24,"White",11,1362,2020-09-20 14:20:04
-2020-08-25,"White",15,1377,2020-09-20 14:20:04
-2020-08-26,"White",9,1386,2020-09-20 14:20:04
-2020-08-27,"White",10,1396,2020-09-20 14:20:04
-2020-08-28,"White",14,1410,2020-09-20 14:20:04
-2020-08-29,"White",6,1416,2020-09-20 14:20:04
-2020-08-30,"White",8,1424,2020-09-20 14:20:04
-2020-08-31,"White",7,1431,2020-09-20 14:20:04
-2020-09-01,"White",15,1446,2020-09-20 14:20:04
-2020-09-02,"White",10,1456,2020-09-20 14:20:04
-2020-09-03,"White",11,1467,2020-09-20 14:20:04
-2020-09-04,"White",5,1472,2020-09-20 14:20:04
-2020-09-05,"White",5,1477,2020-09-20 14:20:04
-2020-09-06,"White",2,1479,2020-09-20 14:20:04
-2020-09-07,"White",10,1489,2020-09-20 14:20:04
-2020-09-08,"White",11,1500,2020-09-20 14:20:04
-2020-09-09,"White",10,1510,2020-09-20 14:20:04
-2020-09-10,"White",11,1521,2020-09-20 14:20:04
-2020-09-11,"White",13,1534,2020-09-20 14:20:04
-2020-09-12,"White",7,1541,2020-09-20 14:20:04
-2020-09-13,"White",5,1546,2020-09-20 14:20:04
-2020-09-14,"White",12,1558,2020-09-20 14:20:04
-2020-09-15,"White",18,1576,2020-09-20 14:20:04
-2020-09-16,"White",6,1582,2020-09-20 14:20:04
-2020-09-17,"White",6,1588,2020-09-20 14:20:04
-2020-09-18,"White",9,1597,2020-09-20 14:20:04
-2020-09-19,"White",0,1597,2020-09-20 14:20:04
-2020-03-07,"Unknown",4,8,2020-09-20 14:20:04
-2020-03-08,"Unknown",0,8,2020-09-20 14:20:04
-2020-03-09,"Unknown",0,8,2020-09-20 14:20:04
-2020-03-10,"Unknown",3,11,2020-09-20 14:20:04
-2020-03-11,"Unknown",3,14,2020-09-20 14:20:04
-2020-03-12,"Unknown",3,17,2020-09-20 14:20:04
-2020-03-13,"Unknown",6,23,2020-09-20 14:20:04
-2020-03-14,"Unknown",1,24,2020-09-20 14:20:04
-2020-03-15,"Unknown",1,25,2020-09-20 14:20:04
-2020-03-16,"Unknown",9,34,2020-09-20 14:20:04
-2020-03-17,"Unknown",8,42,2020-09-20 14:20:04
-2020-03-18,"Unknown",4,46,2020-09-20 14:20:04
-2020-03-19,"Unknown",3,49,2020-09-20 14:20:04
-2020-03-20,"Unknown",8,57,2020-09-20 14:20:04
-2020-03-21,"Unknown",3,60,2020-09-20 14:20:04
-2020-03-22,"Unknown",6,66,2020-09-20 14:20:04
-2020-03-23,"Unknown",5,71,2020-09-20 14:20:04
-2020-03-24,"Unknown",3,74,2020-09-20 14:20:04
-2020-03-25,"Unknown",7,81,2020-09-20 14:20:04
-2020-03-26,"Unknown",6,87,2020-09-20 14:20:04
-2020-03-27,"Unknown",2,89,2020-09-20 14:20:04
-2020-03-28,"Unknown",4,93,2020-09-20 14:20:04
-2020-03-29,"Unknown",0,93,2020-09-20 14:20:04
-2020-03-30,"Unknown",6,99,2020-09-20 14:20:04
-2020-03-31,"Unknown",9,108,2020-09-20 14:20:04
-2020-04-01,"Unknown",9,117,2020-09-20 14:20:04
-2020-04-02,"Unknown",3,120,2020-09-20 14:20:04
-2020-04-03,"Unknown",3,123,2020-09-20 14:20:04
-2020-04-04,"Unknown",2,125,2020-09-20 14:20:04
-2020-04-05,"Unknown",7,132,2020-09-20 14:20:04
-2020-04-06,"Unknown",18,150,2020-09-20 14:20:04
-2020-04-07,"Unknown",7,157,2020-09-20 14:20:04
-2020-04-08,"Unknown",8,165,2020-09-20 14:20:04
-2020-04-09,"Unknown",16,181,2020-09-20 14:20:04
-2020-04-10,"Unknown",1,182,2020-09-20 14:20:04
-2020-04-11,"Unknown",4,186,2020-09-20 14:20:04
-2020-04-12,"Unknown",3,189,2020-09-20 14:20:04
-2020-04-13,"Unknown",2,191,2020-09-20 14:20:04
-2020-04-14,"Unknown",6,197,2020-09-20 14:20:04
-2020-04-15,"Unknown",22,219,2020-09-20 14:20:04
-2020-04-16,"Unknown",5,224,2020-09-20 14:20:04
-2020-04-17,"Unknown",8,232,2020-09-20 14:20:04
-2020-04-18,"Unknown",1,233,2020-09-20 14:20:04
-2020-04-19,"Unknown",11,244,2020-09-20 14:20:04
-2020-04-20,"Unknown",4,248,2020-09-20 14:20:04
-2020-04-21,"Unknown",4,252,2020-09-20 14:20:04
-2020-04-22,"Unknown",3,255,2020-09-20 14:20:04
-2020-04-23,"Unknown",3,258,2020-09-20 14:20:04
-2020-04-24,"Unknown",2,260,2020-09-20 14:20:04
-2020-04-25,"Unknown",13,273,2020-09-20 14:20:04
-2020-04-26,"Unknown",4,277,2020-09-20 14:20:04
-2020-04-27,"Unknown",4,281,2020-09-20 14:20:04
-2020-04-28,"Unknown",8,289,2020-09-20 14:20:04
-2020-04-29,"Unknown",4,293,2020-09-20 14:20:04
-2020-04-30,"Unknown",3,296,2020-09-20 14:20:04
-2020-05-01,"Unknown",3,299,2020-09-20 14:20:04
-2020-05-02,"Unknown",7,306,2020-09-20 14:20:04
-2020-05-03,"Unknown",1,307,2020-09-20 14:20:04
-2020-05-04,"Unknown",1,308,2020-09-20 14:20:04
-2020-05-05,"Unknown",3,311,2020-09-20 14:20:04
-2020-05-06,"Unknown",6,317,2020-09-20 14:20:04
-2020-05-07,"Unknown",2,319,2020-09-20 14:20:04
-2020-05-08,"Unknown",0,319,2020-09-20 14:20:04
-2020-05-09,"Unknown",1,320,2020-09-20 14:20:04
-2020-05-10,"Unknown",0,320,2020-09-20 14:20:04
-2020-05-11,"Unknown",2,322,2020-09-20 14:20:04
-2020-05-12,"Unknown",14,336,2020-09-20 14:20:04
-2020-05-13,"Unknown",2,338,2020-09-20 14:20:04
-2020-05-14,"Unknown",2,340,2020-09-20 14:20:04
-2020-05-15,"Unknown",5,345,2020-09-20 14:20:04
-2020-05-16,"Unknown",0,345,2020-09-20 14:20:04
-2020-05-17,"Unknown",0,345,2020-09-20 14:20:04
-2020-05-18,"Unknown",5,350,2020-09-20 14:20:04
-2020-05-19,"Unknown",2,352,2020-09-20 14:20:04
-2020-05-20,"Unknown",3,355,2020-09-20 14:20:04
-2020-05-21,"Unknown",0,355,2020-09-20 14:20:04
-2020-05-22,"Unknown",2,357,2020-09-20 14:20:04
-2020-05-23,"Unknown",4,361,2020-09-20 14:20:04
-2020-05-24,"Unknown",3,364,2020-09-20 14:20:04
-2020-05-25,"Unknown",0,364,2020-09-20 14:20:04
-2020-05-26,"Unknown",4,368,2020-09-20 14:20:04
-2020-05-27,"Unknown",3,371,2020-09-20 14:20:04
-2020-05-28,"Unknown",3,374,2020-09-20 14:20:04
-2020-05-29,"Unknown",3,377,2020-09-20 14:20:04
-2020-05-30,"Unknown",2,379,2020-09-20 14:20:04
-2020-05-31,"Unknown",4,383,2020-09-20 14:20:04
-2020-06-01,"Unknown",1,384,2020-09-20 14:20:04
-2020-06-02,"Unknown",8,392,2020-09-20 14:20:04
-2020-06-03,"Unknown",2,394,2020-09-20 14:20:04
-2020-06-04,"Unknown",5,399,2020-09-20 14:20:04
-2020-06-05,"Unknown",6,405,2020-09-20 14:20:04
-2020-06-06,"Unknown",1,406,2020-09-20 14:20:04
-2020-06-07,"Unknown",2,408,2020-09-20 14:20:04
-2020-06-08,"Unknown",1,409,2020-09-20 14:20:04
-2020-06-09,"Unknown",2,411,2020-09-20 14:20:04
-2020-06-10,"Unknown",2,413,2020-09-20 14:20:04
-2020-06-11,"Unknown",3,416,2020-09-20 14:20:04
-2020-06-12,"Unknown",2,418,2020-09-20 14:20:04
-2020-06-13,"Unknown",1,419,2020-09-20 14:20:04
-2020-06-14,"Unknown",3,422,2020-09-20 14:20:04
-2020-06-15,"Unknown",2,424,2020-09-20 14:20:04
-2020-06-16,"Unknown",4,428,2020-09-20 14:20:04
-2020-06-17,"Unknown",0,428,2020-09-20 14:20:04
-2020-06-18,"Unknown",3,431,2020-09-20 14:20:04
-2020-06-19,"Unknown",6,437,2020-09-20 14:20:04
-2020-06-20,"Unknown",2,439,2020-09-20 14:20:04
-2020-06-21,"Unknown",1,440,2020-09-20 14:20:04
-2020-06-22,"Unknown",4,444,2020-09-20 14:20:04
-2020-06-23,"Unknown",4,448,2020-09-20 14:20:04
-2020-06-24,"Unknown",7,455,2020-09-20 14:20:04
-2020-06-25,"Unknown",10,465,2020-09-20 14:20:04
-2020-06-26,"Unknown",4,469,2020-09-20 14:20:04
-2020-06-27,"Unknown",1,470,2020-09-20 14:20:04
-2020-06-28,"Unknown",5,475,2020-09-20 14:20:04
-2020-06-29,"Unknown",7,482,2020-09-20 14:20:04
-2020-06-30,"Unknown",5,487,2020-09-20 14:20:04
-2020-07-01,"Unknown",11,498,2020-09-20 14:20:04
-2020-07-02,"Unknown",9,507,2020-09-20 14:20:04
-2020-07-03,"Unknown",38,545,2020-09-20 14:20:04
-2020-07-04,"Unknown",5,550,2020-09-20 14:20:04
-2020-07-05,"Unknown",8,558,2020-09-20 14:20:04
-2020-07-06,"Unknown",9,567,2020-09-20 14:20:04
-2020-07-07,"Unknown",17,584,2020-09-20 14:20:04
-2020-07-08,"Unknown",19,603,2020-09-20 14:20:04
-2020-07-09,"Unknown",17,620,2020-09-20 14:20:04
-2020-07-10,"Unknown",26,646,2020-09-20 14:20:04
-2020-07-11,"Unknown",5,651,2020-09-20 14:20:04
-2020-07-12,"Unknown",12,663,2020-09-20 14:20:04
-2020-07-13,"Unknown",22,685,2020-09-20 14:20:04
-2020-07-14,"Unknown",34,719,2020-09-20 14:20:04
-2020-07-16,"Unknown",25,769,2020-09-20 14:20:04
-2020-07-17,"Unknown",30,799,2020-09-20 14:20:04
-2020-07-18,"Unknown",6,805,2020-09-20 14:20:04
-2020-07-19,"Unknown",7,812,2020-09-20 14:20:04
-2020-07-20,"Unknown",27,839,2020-09-20 14:20:04
-2020-07-21,"Unknown",23,862,2020-09-20 14:20:04
-2020-07-22,"Unknown",17,879,2020-09-20 14:20:04
-2020-07-23,"Unknown",21,900,2020-09-20 14:20:04
-2020-07-24,"Unknown",18,918,2020-09-20 14:20:04
-2020-07-25,"Unknown",12,930,2020-09-20 14:20:04
-2020-07-26,"Unknown",4,934,2020-09-20 14:20:04
-2020-07-27,"Unknown",8,942,2020-09-20 14:20:04
-2020-07-30,"Unknown",12,979,2020-09-20 14:20:04
-2020-07-31,"Unknown",11,990,2020-09-20 14:20:04
-2020-08-01,"Unknown",12,1002,2020-09-20 14:20:04
-2020-08-02,"Unknown",6,1008,2020-09-20 14:20:04
-2020-07-28,"Unknown",6,948,2020-09-20 14:20:04
-2020-07-29,"Unknown",19,967,2020-09-20 14:20:04
-2020-08-03,"Unknown",14,1022,2020-09-20 14:20:04
-2020-08-04,"Unknown",10,1032,2020-09-20 14:20:04
-2020-08-05,"Unknown",10,1042,2020-09-20 14:20:04
-2020-08-06,"Unknown",13,1055,2020-09-20 14:20:04
-2020-08-07,"Unknown",9,1064,2020-09-20 14:20:04
-2020-08-08,"Unknown",7,1071,2020-09-20 14:20:04
-2020-08-09,"Unknown",8,1079,2020-09-20 14:20:04
-2020-08-10,"Unknown",10,1089,2020-09-20 14:20:04
-2020-08-11,"Unknown",12,1101,2020-09-20 14:20:04
-2020-08-12,"Unknown",13,1114,2020-09-20 14:20:04
-2020-08-13,"Unknown",7,1121,2020-09-20 14:20:04
-2020-08-15,"Unknown",9,1135,2020-09-20 14:20:04
-2020-08-16,"Unknown",8,1143,2020-09-20 14:20:04
-2020-08-17,"Unknown",8,1151,2020-09-20 14:20:04
-2020-08-18,"Unknown",11,1162,2020-09-20 14:20:04
-2020-08-19,"Unknown",6,1168,2020-09-20 14:20:04
-2020-08-20,"Unknown",11,1179,2020-09-20 14:20:04
-2020-08-21,"Unknown",6,1185,2020-09-20 14:20:04
-2020-08-22,"Unknown",1,1186,2020-09-20 14:20:04
-2020-08-23,"Unknown",3,1189,2020-09-20 14:20:04
-2020-08-24,"Unknown",8,1197,2020-09-20 14:20:04
-2020-08-25,"Unknown",15,1212,2020-09-20 14:20:04
-2020-08-26,"Unknown",7,1219,2020-09-20 14:20:04
-2020-08-27,"Unknown",8,1227,2020-09-20 14:20:04
-2020-08-28,"Unknown",9,1236,2020-09-20 14:20:04
-2020-08-29,"Unknown",7,1243,2020-09-20 14:20:04
-2020-08-30,"Unknown",2,1245,2020-09-20 14:20:04
-2020-08-31,"Unknown",13,1258,2020-09-20 14:20:04
-2020-09-01,"Unknown",9,1267,2020-09-20 14:20:04
-2020-09-02,"Unknown",7,1274,2020-09-20 14:20:04
-2020-09-03,"Unknown",16,1290,2020-09-20 14:20:04
-2020-09-04,"Unknown",14,1304,2020-09-20 14:20:04
-2020-09-05,"Unknown",4,1308,2020-09-20 14:20:04
-2020-09-06,"Unknown",6,1314,2020-09-20 14:20:04
-2020-09-07,"Unknown",5,1319,2020-09-20 14:20:04
-2020-09-08,"Unknown",11,1330,2020-09-20 14:20:04
-2020-09-09,"Unknown",7,1337,2020-09-20 14:20:04
-2020-09-10,"Unknown",0,1337,2020-09-20 14:20:04
-2020-09-11,"Unknown",8,1345,2020-09-20 14:20:04
-2020-09-12,"Unknown",6,1351,2020-09-20 14:20:04
-2020-09-13,"Unknown",3,1354,2020-09-20 14:20:04
-2020-09-14,"Unknown",12,1366,2020-09-20 14:20:04
-2020-09-15,"Unknown",13,1379,2020-09-20 14:20:04
-2020-09-16,"Unknown",9,1388,2020-09-20 14:20:04
-2020-09-17,"Unknown",9,1397,2020-09-20 14:20:04
-2020-09-18,"Unknown",2,1399,2020-09-20 14:20:04
-2020-09-19,"Unknown",0,1399,2020-09-20 14:20:04
-2020-03-07,"Hispanic or Latino/a, all races",1,5,2020-09-20 14:20:04
-2020-03-08,"Hispanic or Latino/a, all races",1,6,2020-09-20 14:20:04
-2020-03-09,"Hispanic or Latino/a, all races",0,6,2020-09-20 14:20:04
-2020-03-10,"Hispanic or Latino/a, all races",1,7,2020-09-20 14:20:04
-2020-03-11,"Hispanic or Latino/a, all races",3,10,2020-09-20 14:20:04
-2020-03-12,"Hispanic or Latino/a, all races",0,10,2020-09-20 14:20:04
-2020-03-13,"Hispanic or Latino/a, all races",2,12,2020-09-20 14:20:04
-2020-03-14,"Hispanic or Latino/a, all races",1,13,2020-09-20 14:20:04
-2020-03-15,"Hispanic or Latino/a, all races",1,14,2020-09-20 14:20:04
-2020-04-08,"Asian",4,140,2020-09-20 14:20:04
-2020-03-16,"Hispanic or Latino/a, all races",4,18,2020-09-20 14:20:04
-2020-03-17,"Hispanic or Latino/a, all races",4,22,2020-09-20 14:20:04
-2020-03-18,"Hispanic or Latino/a, all races",10,32,2020-09-20 14:20:04
-2020-03-19,"Hispanic or Latino/a, all races",2,34,2020-09-20 14:20:04
-2020-03-20,"Hispanic or Latino/a, all races",11,45,2020-09-20 14:20:04
-2020-03-21,"Hispanic or Latino/a, all races",6,51,2020-09-20 14:20:04
-2020-03-22,"Hispanic or Latino/a, all races",5,56,2020-09-20 14:20:04
-2020-03-23,"Hispanic or Latino/a, all races",13,69,2020-09-20 14:20:04
-2020-03-24,"Hispanic or Latino/a, all races",14,83,2020-09-20 14:20:04
-2020-03-25,"Hispanic or Latino/a, all races",13,96,2020-09-20 14:20:04
-2020-03-26,"Hispanic or Latino/a, all races",15,111,2020-09-20 14:20:04
-2020-03-27,"Hispanic or Latino/a, all races",10,121,2020-09-20 14:20:04
-2020-03-28,"Hispanic or Latino/a, all races",5,126,2020-09-20 14:20:04
-2020-03-29,"Hispanic or Latino/a, all races",6,132,2020-09-20 14:20:04
-2020-03-30,"Hispanic or Latino/a, all races",18,150,2020-09-20 14:20:04
-2020-03-31,"Hispanic or Latino/a, all races",17,167,2020-09-20 14:20:04
-2020-04-01,"Hispanic or Latino/a, all races",9,176,2020-09-20 14:20:04
-2020-04-02,"Hispanic or Latino/a, all races",14,190,2020-09-20 14:20:04
-2020-04-03,"Hispanic or Latino/a, all races",8,198,2020-09-20 14:20:04
-2020-04-04,"Hispanic or Latino/a, all races",8,206,2020-09-20 14:20:04
-2020-04-05,"Hispanic or Latino/a, all races",16,222,2020-09-20 14:20:04
-2020-04-06,"Hispanic or Latino/a, all races",18,240,2020-09-20 14:20:04
-2020-04-07,"Hispanic or Latino/a, all races",30,270,2020-09-20 14:20:04
-2020-04-08,"Hispanic or Latino/a, all races",21,291,2020-09-20 14:20:04
-2020-04-09,"Hispanic or Latino/a, all races",23,314,2020-09-20 14:20:04
-2020-04-10,"Hispanic or Latino/a, all races",12,326,2020-09-20 14:20:04
-2020-04-11,"Hispanic or Latino/a, all races",5,331,2020-09-20 14:20:04
-2020-04-12,"Hispanic or Latino/a, all races",6,337,2020-09-20 14:20:04
-2020-04-13,"Hispanic or Latino/a, all races",15,352,2020-09-20 14:20:04
-2020-04-14,"Hispanic or Latino/a, all races",20,372,2020-09-20 14:20:04
-2020-04-15,"Hispanic or Latino/a, all races",18,390,2020-09-20 14:20:04
-2020-04-16,"Hispanic or Latino/a, all races",18,408,2020-09-20 14:20:04
-2020-04-17,"Hispanic or Latino/a, all races",22,430,2020-09-20 14:20:04
-2020-04-18,"Hispanic or Latino/a, all races",8,438,2020-09-20 14:20:04
-2020-04-19,"Hispanic or Latino/a, all races",18,456,2020-09-20 14:20:04
-2020-04-20,"Hispanic or Latino/a, all races",23,479,2020-09-20 14:20:04
-2020-04-21,"Hispanic or Latino/a, all races",19,498,2020-09-20 14:20:04
-2020-04-22,"Hispanic or Latino/a, all races",19,517,2020-09-20 14:20:04
-2020-04-23,"Hispanic or Latino/a, all races",21,538,2020-09-20 14:20:04
-2020-04-24,"Hispanic or Latino/a, all races",18,556,2020-09-20 14:20:04
-2020-04-25,"Hispanic or Latino/a, all races",23,579,2020-09-20 14:20:04
-2020-04-26,"Hispanic or Latino/a, all races",20,599,2020-09-20 14:20:04
-2020-04-27,"Hispanic or Latino/a, all races",19,618,2020-09-20 14:20:04
-2020-04-28,"Hispanic or Latino/a, all races",52,670,2020-09-20 14:20:04
-2020-04-29,"Hispanic or Latino/a, all races",24,694,2020-09-20 14:20:04
-2020-04-30,"Hispanic or Latino/a, all races",23,717,2020-09-20 14:20:04
-2020-05-01,"Hispanic or Latino/a, all races",21,738,2020-09-20 14:20:04
-2020-05-02,"Hispanic or Latino/a, all races",31,769,2020-09-20 14:20:04
-2020-05-03,"Hispanic or Latino/a, all races",9,778,2020-09-20 14:20:04
-2020-05-04,"Hispanic or Latino/a, all races",35,813,2020-09-20 14:20:04
-2020-05-05,"Hispanic or Latino/a, all races",34,847,2020-09-20 14:20:04
-2020-05-06,"Hispanic or Latino/a, all races",28,875,2020-09-20 14:20:04
-2020-05-07,"Hispanic or Latino/a, all races",16,891,2020-09-20 14:20:04
-2020-05-08,"Hispanic or Latino/a, all races",21,912,2020-09-20 14:20:04
-2020-05-09,"Hispanic or Latino/a, all races",5,917,2020-09-20 14:20:04
-2020-05-10,"Hispanic or Latino/a, all races",4,921,2020-09-20 14:20:04
-2020-05-11,"Hispanic or Latino/a, all races",17,938,2020-09-20 14:20:04
-2020-05-12,"Hispanic or Latino/a, all races",17,955,2020-09-20 14:20:04
-2020-05-13,"Hispanic or Latino/a, all races",23,978,2020-09-20 14:20:04
-2020-05-14,"Hispanic or Latino/a, all races",22,1000,2020-09-20 14:20:04
-2020-05-15,"Hispanic or Latino/a, all races",16,1016,2020-09-20 14:20:04
-2020-05-16,"Hispanic or Latino/a, all races",2,1018,2020-09-20 14:20:04
-2020-05-17,"Hispanic or Latino/a, all races",9,1027,2020-09-20 14:20:04
-2020-05-18,"Hispanic or Latino/a, all races",29,1056,2020-09-20 14:20:04
-2020-05-19,"Hispanic or Latino/a, all races",21,1077,2020-09-20 14:20:04
-2020-05-20,"Hispanic or Latino/a, all races",22,1099,2020-09-20 14:20:04
-2020-05-21,"Hispanic or Latino/a, all races",12,1111,2020-09-20 14:20:04
-2020-05-22,"Hispanic or Latino/a, all races",26,1137,2020-09-20 14:20:04
-2020-05-23,"Hispanic or Latino/a, all races",8,1145,2020-09-20 14:20:04
-2020-05-24,"Hispanic or Latino/a, all races",5,1150,2020-09-20 14:20:04
-2020-05-25,"Hispanic or Latino/a, all races",7,1157,2020-09-20 14:20:04
-2020-05-26,"Hispanic or Latino/a, all races",34,1191,2020-09-20 14:20:04
-2020-05-27,"Hispanic or Latino/a, all races",20,1211,2020-09-20 14:20:04
-2020-05-28,"Hispanic or Latino/a, all races",17,1228,2020-09-20 14:20:04
-2020-05-29,"Hispanic or Latino/a, all races",21,1249,2020-09-20 14:20:04
-2020-05-30,"Hispanic or Latino/a, all races",13,1262,2020-09-20 14:20:04
-2020-05-31,"Hispanic or Latino/a, all races",16,1278,2020-09-20 14:20:04
-2020-06-01,"Hispanic or Latino/a, all races",25,1303,2020-09-20 14:20:04
-2020-06-02,"Hispanic or Latino/a, all races",29,1332,2020-09-20 14:20:04
-2020-06-03,"Hispanic or Latino/a, all races",15,1347,2020-09-20 14:20:04
-2020-06-04,"Hispanic or Latino/a, all races",22,1369,2020-09-20 14:20:04
-2020-06-05,"Hispanic or Latino/a, all races",16,1385,2020-09-20 14:20:04
-2020-06-06,"Hispanic or Latino/a, all races",11,1396,2020-09-20 14:20:04
-2020-06-07,"Hispanic or Latino/a, all races",11,1407,2020-09-20 14:20:04
-2020-06-08,"Hispanic or Latino/a, all races",22,1429,2020-09-20 14:20:04
-2020-06-09,"Hispanic or Latino/a, all races",20,1449,2020-09-20 14:20:04
-2020-06-10,"Hispanic or Latino/a, all races",6,1455,2020-09-20 14:20:04
-2020-06-11,"Hispanic or Latino/a, all races",11,1466,2020-09-20 14:20:04
-2020-06-12,"Hispanic or Latino/a, all races",15,1481,2020-09-20 14:20:04
-2020-06-13,"Hispanic or Latino/a, all races",11,1492,2020-09-20 14:20:04
-2020-06-14,"Hispanic or Latino/a, all races",7,1499,2020-09-20 14:20:04
-2020-06-15,"Hispanic or Latino/a, all races",28,1527,2020-09-20 14:20:04
-2020-06-16,"Hispanic or Latino/a, all races",32,1559,2020-09-20 14:20:04
-2020-06-17,"Hispanic or Latino/a, all races",34,1593,2020-09-20 14:20:04
-2020-06-18,"Hispanic or Latino/a, all races",19,1612,2020-09-20 14:20:04
-2020-06-19,"Hispanic or Latino/a, all races",20,1632,2020-09-20 14:20:04
-2020-06-20,"Hispanic or Latino/a, all races",24,1656,2020-09-20 14:20:04
-2020-06-21,"Hispanic or Latino/a, all races",24,1680,2020-09-20 14:20:04
-2020-06-22,"Hispanic or Latino/a, all races",44,1724,2020-09-20 14:20:04
-2020-06-23,"Hispanic or Latino/a, all races",34,1758,2020-09-20 14:20:04
-2020-06-24,"Hispanic or Latino/a, all races",35,1793,2020-09-20 14:20:04
-2020-06-25,"Hispanic or Latino/a, all races",29,1822,2020-09-20 14:20:04
-2020-06-26,"Hispanic or Latino/a, all races",45,1867,2020-09-20 14:20:04
-2020-06-27,"Hispanic or Latino/a, all races",28,1895,2020-09-20 14:20:04
-2020-06-28,"Hispanic or Latino/a, all races",18,1913,2020-09-20 14:20:04
-2020-06-29,"Hispanic or Latino/a, all races",39,1952,2020-09-20 14:20:04
-2020-06-30,"Hispanic or Latino/a, all races",47,1999,2020-09-20 14:20:04
-2020-07-01,"Hispanic or Latino/a, all races",37,2036,2020-09-20 14:20:04
-2020-07-02,"Hispanic or Latino/a, all races",39,2075,2020-09-20 14:20:04
-2020-07-03,"Hispanic or Latino/a, all races",26,2101,2020-09-20 14:20:04
-2020-07-04,"Hispanic or Latino/a, all races",9,2110,2020-09-20 14:20:04
-2020-07-05,"Hispanic or Latino/a, all races",22,2132,2020-09-20 14:20:04
-2020-07-06,"Hispanic or Latino/a, all races",46,2178,2020-09-20 14:20:04
-2020-07-07,"Hispanic or Latino/a, all races",34,2212,2020-09-20 14:20:04
-2020-07-08,"Hispanic or Latino/a, all races",61,2273,2020-09-20 14:20:04
-2020-07-09,"Hispanic or Latino/a, all races",45,2318,2020-09-20 14:20:04
-2020-07-10,"Hispanic or Latino/a, all races",66,2384,2020-09-20 14:20:04
-2020-07-11,"Hispanic or Latino/a, all races",33,2417,2020-09-20 14:20:04
-2020-07-12,"Hispanic or Latino/a, all races",32,2449,2020-09-20 14:20:04
-2020-07-13,"Hispanic or Latino/a, all races",81,2530,2020-09-20 14:20:04
-2020-07-14,"Hispanic or Latino/a, all races",61,2591,2020-09-20 14:20:04
-2020-07-15,"Hispanic or Latino/a, all races",75,2666,2020-09-20 14:20:04
-2020-07-16,"Hispanic or Latino/a, all races",82,2748,2020-09-20 14:20:04
-2020-07-17,"Hispanic or Latino/a, all races",62,2810,2020-09-20 14:20:04
-2020-07-18,"Hispanic or Latino/a, all races",38,2848,2020-09-20 14:20:04
-2020-07-19,"Hispanic or Latino/a, all races",45,2893,2020-09-20 14:20:04
-2020-07-20,"Hispanic or Latino/a, all races",71,2964,2020-09-20 14:20:04
-2020-07-21,"Hispanic or Latino/a, all races",67,3031,2020-09-20 14:20:04
-2020-07-22,"Hispanic or Latino/a, all races",60,3091,2020-09-20 14:20:04
-2020-07-23,"Hispanic or Latino/a, all races",61,3152,2020-09-20 14:20:04
-2020-07-24,"Hispanic or Latino/a, all races",60,3212,2020-09-20 14:20:04
-2020-07-25,"Hispanic or Latino/a, all races",42,3254,2020-09-20 14:20:04
-2020-07-26,"Hispanic or Latino/a, all races",37,3291,2020-09-20 14:20:04
-2020-07-27,"Hispanic or Latino/a, all races",53,3344,2020-09-20 14:20:04
-2020-07-28,"Hispanic or Latino/a, all races",63,3407,2020-09-20 14:20:04
-2020-07-29,"Hispanic or Latino/a, all races",73,3480,2020-09-20 14:20:04
-2020-06-06,"Black or African American",1,139,2020-09-20 14:20:04
-2020-07-30,"Hispanic or Latino/a, all races",70,3550,2020-09-20 14:20:04
-2020-07-31,"Hispanic or Latino/a, all races",60,3610,2020-09-20 14:20:04
-2020-08-01,"Hispanic or Latino/a, all races",26,3636,2020-09-20 14:20:04
-2020-08-02,"Hispanic or Latino/a, all races",20,3656,2020-09-20 14:20:04
-2020-08-03,"Hispanic or Latino/a, all races",60,3716,2020-09-20 14:20:04
-2020-08-04,"Hispanic or Latino/a, all races",52,3768,2020-09-20 14:20:04
-2020-08-05,"Hispanic or Latino/a, all races",80,3848,2020-09-20 14:20:04
-2020-08-06,"Hispanic or Latino/a, all races",58,3906,2020-09-20 14:20:04
-2020-08-07,"Hispanic or Latino/a, all races",82,3988,2020-09-20 14:20:04
-2020-08-08,"Hispanic or Latino/a, all races",34,4022,2020-09-20 14:20:04
-2020-08-10,"Hispanic or Latino/a, all races",53,4114,2020-09-20 14:20:04
-2020-08-11,"Hispanic or Latino/a, all races",66,4180,2020-09-20 14:20:04
-2020-08-12,"Hispanic or Latino/a, all races",83,4263,2020-09-20 14:20:04
-2020-08-13,"Hispanic or Latino/a, all races",57,4320,2020-09-20 14:20:04
-2020-08-14,"Hispanic or Latino/a, all races",62,4382,2020-09-20 14:20:04
-2020-08-15,"Hispanic or Latino/a, all races",27,4409,2020-09-20 14:20:04
-2020-08-16,"Hispanic or Latino/a, all races",14,4423,2020-09-20 14:20:04
-2020-08-17,"Hispanic or Latino/a, all races",44,4467,2020-09-20 14:20:04
-2020-08-18,"Hispanic or Latino/a, all races",39,4506,2020-09-20 14:20:04
-2020-08-19,"Hispanic or Latino/a, all races",59,4565,2020-09-20 14:20:04
-2020-08-20,"Hispanic or Latino/a, all races",37,4602,2020-09-20 14:20:04
-2020-08-21,"Hispanic or Latino/a, all races",35,4637,2020-09-20 14:20:04
-2020-08-22,"Hispanic or Latino/a, all races",21,4658,2020-09-20 14:20:04
-2020-08-23,"Hispanic or Latino/a, all races",25,4683,2020-09-20 14:20:04
-2020-08-24,"Hispanic or Latino/a, all races",57,4740,2020-09-20 14:20:04
-2020-08-25,"Hispanic or Latino/a, all races",30,4770,2020-09-20 14:20:04
-2020-08-26,"Hispanic or Latino/a, all races",50,4820,2020-09-20 14:20:04
-2020-08-27,"Hispanic or Latino/a, all races",56,4876,2020-09-20 14:20:04
-2020-08-28,"Hispanic or Latino/a, all races",30,4906,2020-09-20 14:20:04
-2020-08-29,"Hispanic or Latino/a, all races",20,4926,2020-09-20 14:20:04
-2020-08-30,"Hispanic or Latino/a, all races",15,4941,2020-09-20 14:20:04
-2020-08-31,"Hispanic or Latino/a, all races",38,4979,2020-09-20 14:20:04
-2020-09-01,"Hispanic or Latino/a, all races",37,5016,2020-09-20 14:20:04
-2020-09-02,"Hispanic or Latino/a, all races",31,5047,2020-09-20 14:20:04
-2020-09-03,"Hispanic or Latino/a, all races",36,5083,2020-09-20 14:20:04
-2020-09-04,"Hispanic or Latino/a, all races",40,5123,2020-09-20 14:20:04
-2020-09-05,"Hispanic or Latino/a, all races",17,5140,2020-09-20 14:20:04
-2020-09-06,"Hispanic or Latino/a, all races",8,5148,2020-09-20 14:20:04
-2020-09-07,"Hispanic or Latino/a, all races",15,5163,2020-09-20 14:20:04
-2020-09-08,"Hispanic or Latino/a, all races",27,5190,2020-09-20 14:20:04
-2020-09-09,"Hispanic or Latino/a, all races",24,5214,2020-09-20 14:20:04
-2020-09-10,"Hispanic or Latino/a, all races",23,5237,2020-09-20 14:20:04
-2020-09-11,"Hispanic or Latino/a, all races",33,5270,2020-09-20 14:20:04
-2020-09-12,"Hispanic or Latino/a, all races",22,5292,2020-09-20 14:20:04
-2020-09-13,"Hispanic or Latino/a, all races",8,5300,2020-09-20 14:20:04
-2020-09-14,"Hispanic or Latino/a, all races",48,5348,2020-09-20 14:20:04
-2020-09-15,"Hispanic or Latino/a, all races",27,5375,2020-09-20 14:20:04
-2020-09-16,"Hispanic or Latino/a, all races",34,5409,2020-09-20 14:20:04
-2020-09-17,"Hispanic or Latino/a, all races",15,5424,2020-09-20 14:20:04
-2020-09-18,"Hispanic or Latino/a, all races",14,5438,2020-09-20 14:20:04
-2020-09-19,"Hispanic or Latino/a, all races",0,5438,2020-09-20 14:20:04
-2020-04-07,"Multi-racial",1,5,2020-09-20 14:20:04
-2020-04-08,"Multi-racial",2,7,2020-09-20 14:20:04
-2020-04-09,"Multi-racial",2,9,2020-09-20 14:20:04
-2020-04-10,"Multi-racial",0,9,2020-09-20 14:20:04
-2020-04-11,"Multi-racial",1,10,2020-09-20 14:20:04
-2020-04-12,"Multi-racial",0,10,2020-09-20 14:20:04
-2020-04-13,"Multi-racial",0,10,2020-09-20 14:20:04
-2020-04-14,"Multi-racial",0,10,2020-09-20 14:20:04
-2020-04-15,"Multi-racial",1,11,2020-09-20 14:20:04
-2020-04-16,"Multi-racial",0,11,2020-09-20 14:20:04
-2020-04-17,"Multi-racial",0,11,2020-09-20 14:20:04
-2020-04-18,"Multi-racial",0,11,2020-09-20 14:20:04
-2020-04-19,"Multi-racial",0,11,2020-09-20 14:20:04
-2020-04-20,"Multi-racial",1,12,2020-09-20 14:20:04
-2020-04-21,"Multi-racial",0,12,2020-09-20 14:20:04
-2020-04-22,"Multi-racial",0,12,2020-09-20 14:20:04
-2020-04-23,"Multi-racial",1,13,2020-09-20 14:20:04
-2020-04-24,"Multi-racial",0,13,2020-09-20 14:20:04
-2020-04-25,"Multi-racial",0,13,2020-09-20 14:20:04
-2020-04-26,"Multi-racial",2,15,2020-09-20 14:20:04
-2020-04-27,"Multi-racial",1,16,2020-09-20 14:20:04
-2020-04-28,"Multi-racial",1,17,2020-09-20 14:20:04
-2020-04-29,"Multi-racial",2,19,2020-09-20 14:20:04
-2020-04-30,"Multi-racial",0,19,2020-09-20 14:20:04
-2020-05-01,"Multi-racial",1,20,2020-09-20 14:20:04
-2020-05-02,"Multi-racial",1,21,2020-09-20 14:20:04
-2020-05-03,"Multi-racial",0,21,2020-09-20 14:20:04
-2020-05-04,"Multi-racial",0,21,2020-09-20 14:20:04
-2020-05-05,"Multi-racial",0,21,2020-09-20 14:20:04
-2020-05-06,"Multi-racial",0,21,2020-09-20 14:20:04
-2020-05-07,"Multi-racial",0,21,2020-09-20 14:20:04
-2020-05-08,"Multi-racial",0,21,2020-09-20 14:20:04
-2020-05-09,"Multi-racial",0,21,2020-09-20 14:20:04
-2020-05-10,"Multi-racial",0,21,2020-09-20 14:20:04
-2020-05-11,"Multi-racial",0,21,2020-09-20 14:20:04
-2020-05-12,"Multi-racial",1,22,2020-09-20 14:20:04
-2020-05-13,"Multi-racial",0,22,2020-09-20 14:20:04
-2020-05-14,"Multi-racial",1,23,2020-09-20 14:20:04
-2020-05-15,"Multi-racial",0,23,2020-09-20 14:20:04
-2020-05-16,"Multi-racial",0,23,2020-09-20 14:20:04
-2020-05-17,"Multi-racial",0,23,2020-09-20 14:20:04
-2020-05-18,"Multi-racial",1,24,2020-09-20 14:20:04
-2020-05-19,"Multi-racial",3,27,2020-09-20 14:20:04
-2020-05-20,"Multi-racial",1,28,2020-09-20 14:20:04
-2020-05-21,"Multi-racial",1,29,2020-09-20 14:20:04
-2020-05-22,"Multi-racial",0,29,2020-09-20 14:20:04
-2020-05-23,"Multi-racial",0,29,2020-09-20 14:20:04
-2020-05-24,"Multi-racial",0,29,2020-09-20 14:20:04
-2020-05-25,"Multi-racial",0,29,2020-09-20 14:20:04
-2020-05-26,"Multi-racial",2,31,2020-09-20 14:20:04
-2020-05-27,"Multi-racial",0,31,2020-09-20 14:20:04
-2020-05-28,"Multi-racial",0,31,2020-09-20 14:20:04
-2020-05-29,"Multi-racial",2,33,2020-09-20 14:20:04
-2020-05-30,"Multi-racial",0,33,2020-09-20 14:20:04
-2020-05-31,"Multi-racial",0,33,2020-09-20 14:20:04
-2020-06-01,"Multi-racial",2,35,2020-09-20 14:20:04
-2020-06-02,"Multi-racial",2,37,2020-09-20 14:20:04
-2020-06-03,"Multi-racial",0,37,2020-09-20 14:20:04
-2020-06-04,"Multi-racial",0,37,2020-09-20 14:20:04
-2020-06-05,"Multi-racial",0,37,2020-09-20 14:20:04
-2020-06-06,"Multi-racial",0,37,2020-09-20 14:20:04
-2020-06-07,"Multi-racial",1,38,2020-09-20 14:20:04
-2020-06-08,"Multi-racial",0,38,2020-09-20 14:20:04
-2020-06-09,"Multi-racial",0,38,2020-09-20 14:20:04
-2020-06-10,"Multi-racial",0,38,2020-09-20 14:20:04
-2020-06-11,"Multi-racial",3,41,2020-09-20 14:20:04
-2020-06-12,"Multi-racial",1,42,2020-09-20 14:20:04
-2020-06-13,"Multi-racial",2,44,2020-09-20 14:20:04
-2020-06-14,"Multi-racial",0,44,2020-09-20 14:20:04
-2020-06-15,"Multi-racial",0,44,2020-09-20 14:20:04
-2020-06-16,"Multi-racial",0,44,2020-09-20 14:20:04
-2020-06-17,"Multi-racial",0,44,2020-09-20 14:20:04
-2020-06-18,"Multi-racial",1,45,2020-09-20 14:20:04
-2020-06-19,"Multi-racial",0,45,2020-09-20 14:20:04
-2020-06-20,"Multi-racial",0,45,2020-09-20 14:20:04
-2020-06-21,"Multi-racial",0,45,2020-09-20 14:20:04
-2020-06-22,"Multi-racial",7,52,2020-09-20 14:20:04
-2020-06-23,"Multi-racial",2,54,2020-09-20 14:20:04
-2020-06-24,"Multi-racial",4,58,2020-09-20 14:20:04
-2020-06-25,"Multi-racial",2,60,2020-09-20 14:20:04
-2020-06-26,"Multi-racial",2,62,2020-09-20 14:20:04
-2020-06-27,"Multi-racial",0,62,2020-09-20 14:20:04
-2020-06-28,"Multi-racial",0,62,2020-09-20 14:20:04
-2020-06-29,"Multi-racial",1,63,2020-09-20 14:20:04
-2020-06-30,"Multi-racial",4,67,2020-09-20 14:20:04
-2020-07-01,"Multi-racial",4,71,2020-09-20 14:20:04
-2020-07-02,"Multi-racial",11,82,2020-09-20 14:20:04
-2020-07-03,"Multi-racial",1,83,2020-09-20 14:20:04
-2020-07-04,"Multi-racial",0,83,2020-09-20 14:20:04
-2020-07-05,"Multi-racial",1,84,2020-09-20 14:20:04
-2020-07-06,"Multi-racial",1,85,2020-09-20 14:20:04
-2020-07-07,"Multi-racial",3,88,2020-09-20 14:20:04
-2020-07-08,"Multi-racial",2,90,2020-09-20 14:20:04
-2020-07-09,"Multi-racial",0,90,2020-09-20 14:20:04
-2020-07-10,"Multi-racial",0,90,2020-09-20 14:20:04
-2020-07-11,"Multi-racial",2,92,2020-09-20 14:20:04
-2020-07-12,"Multi-racial",0,92,2020-09-20 14:20:04
-2020-07-13,"Multi-racial",5,97,2020-09-20 14:20:04
-2020-07-14,"Multi-racial",2,99,2020-09-20 14:20:04
-2020-07-15,"Multi-racial",4,103,2020-09-20 14:20:04
-2020-07-16,"Multi-racial",3,106,2020-09-20 14:20:04
-2020-07-17,"Multi-racial",4,110,2020-09-20 14:20:04
-2020-07-18,"Multi-racial",5,115,2020-09-20 14:20:04
-2020-07-19,"Multi-racial",1,116,2020-09-20 14:20:04
-2020-07-20,"Multi-racial",3,119,2020-09-20 14:20:04
-2020-07-21,"Multi-racial",0,119,2020-09-20 14:20:04
-2020-07-22,"Multi-racial",5,124,2020-09-20 14:20:04
-2020-07-23,"Multi-racial",2,126,2020-09-20 14:20:04
-2020-07-24,"Multi-racial",1,127,2020-09-20 14:20:04
-2020-07-25,"Multi-racial",1,128,2020-09-20 14:20:04
-2020-07-26,"Multi-racial",2,130,2020-09-20 14:20:04
-2020-07-27,"Multi-racial",3,133,2020-09-20 14:20:04
-2020-07-28,"Multi-racial",1,134,2020-09-20 14:20:04
-2020-07-29,"Multi-racial",7,141,2020-09-20 14:20:04
-2020-07-30,"Multi-racial",3,144,2020-09-20 14:20:04
-2020-07-31,"Multi-racial",6,150,2020-09-20 14:20:04
-2020-08-01,"Multi-racial",1,151,2020-09-20 14:20:04
-2020-08-02,"Multi-racial",1,152,2020-09-20 14:20:04
-2020-08-03,"Multi-racial",1,153,2020-09-20 14:20:04
-2020-08-04,"Multi-racial",0,153,2020-09-20 14:20:04
-2020-08-05,"Multi-racial",1,154,2020-09-20 14:20:04
-2020-08-06,"Multi-racial",0,154,2020-09-20 14:20:04
-2020-08-07,"Multi-racial",6,160,2020-09-20 14:20:04
-2020-08-08,"Multi-racial",2,162,2020-09-20 14:20:04
-2020-08-09,"Multi-racial",2,164,2020-09-20 14:20:04
-2020-08-10,"Multi-racial",6,170,2020-09-20 14:20:04
-2020-08-11,"Multi-racial",4,174,2020-09-20 14:20:04
-2020-08-12,"Multi-racial",3,177,2020-09-20 14:20:04
-2020-08-13,"Multi-racial",4,181,2020-09-20 14:20:04
-2020-08-14,"Multi-racial",3,184,2020-09-20 14:20:04
-2020-08-15,"Multi-racial",4,188,2020-09-20 14:20:04
-2020-08-16,"Multi-racial",1,189,2020-09-20 14:20:04
-2020-08-17,"Multi-racial",1,190,2020-09-20 14:20:04
-2020-08-18,"Multi-racial",2,192,2020-09-20 14:20:04
-2020-08-19,"Multi-racial",3,195,2020-09-20 14:20:04
-2020-08-20,"Multi-racial",2,197,2020-09-20 14:20:04
-2020-08-21,"Multi-racial",4,201,2020-09-20 14:20:04
-2020-08-22,"Multi-racial",0,201,2020-09-20 14:20:04
-2020-08-23,"Multi-racial",0,201,2020-09-20 14:20:04
-2020-08-24,"Multi-racial",4,205,2020-09-20 14:20:04
-2020-08-25,"Multi-racial",3,208,2020-09-20 14:20:04
-2020-08-26,"Multi-racial",3,211,2020-09-20 14:20:04
-2020-08-27,"Multi-racial",2,213,2020-09-20 14:20:04
-2020-08-28,"Multi-racial",0,213,2020-09-20 14:20:04
-2020-08-29,"Multi-racial",1,214,2020-09-20 14:20:04
-2020-08-30,"Multi-racial",0,214,2020-09-20 14:20:04
-2020-08-31,"Multi-racial",0,214,2020-09-20 14:20:04
-2020-09-01,"Multi-racial",0,214,2020-09-20 14:20:04
-2020-09-02,"Multi-racial",3,217,2020-09-20 14:20:04
-2020-09-03,"Multi-racial",3,220,2020-09-20 14:20:04
-2020-09-04,"Multi-racial",4,224,2020-09-20 14:20:04
-2020-09-05,"Multi-racial",0,224,2020-09-20 14:20:04
-2020-09-06,"Multi-racial",0,224,2020-09-20 14:20:04
-2020-09-07,"Multi-racial",1,225,2020-09-20 14:20:04
-2020-09-08,"Multi-racial",4,229,2020-09-20 14:20:04
-2020-09-09,"Multi-racial",1,230,2020-09-20 14:20:04
-2020-09-10,"Multi-racial",1,231,2020-09-20 14:20:04
-2020-09-11,"Multi-racial",1,232,2020-09-20 14:20:04
-2020-09-12,"Multi-racial",0,232,2020-09-20 14:20:04
-2020-09-13,"Multi-racial",0,232,2020-09-20 14:20:04
-2020-09-14,"Multi-racial",4,236,2020-09-20 14:20:04
-2020-09-15,"Multi-racial",2,238,2020-09-20 14:20:04
-2020-09-16,"Multi-racial",1,239,2020-09-20 14:20:04
-2020-09-17,"Multi-racial",1,240,2020-09-20 14:20:04
-2020-09-18,"Multi-racial",2,242,2020-09-20 14:20:04
-2020-09-19,"Multi-racial",0,242,2020-09-20 14:20:04
-2020-03-19,"Other",1,5,2020-09-20 14:20:04
-2020-03-20,"Other",0,5,2020-09-20 14:20:04
-2020-03-21,"Other",0,5,2020-09-20 14:20:04
-2020-03-22,"Other",1,6,2020-09-20 14:20:04
-2020-03-23,"Other",2,8,2020-09-20 14:20:04
-2020-03-24,"Other",3,11,2020-09-20 14:20:04
-2020-03-25,"Other",0,11,2020-09-20 14:20:04
-2020-03-26,"Other",2,13,2020-09-20 14:20:04
-2020-03-27,"Other",2,15,2020-09-20 14:20:04
-2020-03-28,"Other",0,15,2020-09-20 14:20:04
-2020-03-29,"Other",0,15,2020-09-20 14:20:04
-2020-03-30,"Other",1,16,2020-09-20 14:20:04
-2020-03-31,"Other",1,17,2020-09-20 14:20:04
-2020-04-01,"Other",1,18,2020-09-20 14:20:04
-2020-04-02,"Other",1,19,2020-09-20 14:20:04
-2020-04-03,"Other",3,22,2020-09-20 14:20:04
-2020-04-04,"Other",1,23,2020-09-20 14:20:04
-2020-04-05,"Other",0,23,2020-09-20 14:20:04
-2020-04-06,"Other",0,23,2020-09-20 14:20:04
-2020-04-07,"Other",0,23,2020-09-20 14:20:04
-2020-04-08,"Other",0,23,2020-09-20 14:20:04
-2020-04-09,"Other",0,23,2020-09-20 14:20:04
-2020-04-10,"Other",0,23,2020-09-20 14:20:04
-2020-04-11,"Other",0,23,2020-09-20 14:20:04
-2020-04-12,"Other",0,23,2020-09-20 14:20:04
-2020-04-13,"Other",0,23,2020-09-20 14:20:04
-2020-04-14,"Other",0,23,2020-09-20 14:20:04
-2020-04-15,"Other",0,23,2020-09-20 14:20:04
-2020-04-16,"Other",0,23,2020-09-20 14:20:04
-2020-04-17,"Other",0,23,2020-09-20 14:20:04
-2020-04-18,"Other",0,23,2020-09-20 14:20:04
-2020-04-19,"Other",0,23,2020-09-20 14:20:04
-2020-04-20,"Other",0,23,2020-09-20 14:20:04
-2020-04-21,"Other",0,23,2020-09-20 14:20:04
-2020-04-22,"Other",0,23,2020-09-20 14:20:04
-2020-04-23,"Other",0,23,2020-09-20 14:20:04
-2020-04-24,"Other",0,23,2020-09-20 14:20:04
-2020-04-25,"Other",0,23,2020-09-20 14:20:04
-2020-04-26,"Other",0,23,2020-09-20 14:20:04
-2020-04-27,"Other",0,23,2020-09-20 14:20:04
-2020-04-28,"Other",0,23,2020-09-20 14:20:04
-2020-04-29,"Other",0,23,2020-09-20 14:20:04
-2020-04-30,"Other",0,23,2020-09-20 14:20:04
-2020-05-01,"Other",0,23,2020-09-20 14:20:04
-2020-05-02,"Other",0,23,2020-09-20 14:20:04
-2020-05-03,"Other",0,23,2020-09-20 14:20:04
-2020-05-04,"Other",0,23,2020-09-20 14:20:04
-2020-05-05,"Other",0,23,2020-09-20 14:20:04
-2020-05-06,"Other",0,23,2020-09-20 14:20:04
-2020-05-07,"Other",0,23,2020-09-20 14:20:04
-2020-05-08,"Other",0,23,2020-09-20 14:20:04
-2020-05-09,"Other",0,23,2020-09-20 14:20:04
-2020-05-10,"Other",0,23,2020-09-20 14:20:04
-2020-05-11,"Other",0,23,2020-09-20 14:20:04
-2020-05-12,"Other",0,23,2020-09-20 14:20:04
-2020-05-13,"Other",0,23,2020-09-20 14:20:04
-2020-05-14,"Other",0,23,2020-09-20 14:20:04
-2020-05-15,"Other",0,23,2020-09-20 14:20:04
-2020-05-16,"Other",0,23,2020-09-20 14:20:04
-2020-05-17,"Other",0,23,2020-09-20 14:20:04
-2020-05-18,"Other",0,23,2020-09-20 14:20:04
-2020-05-19,"Other",0,23,2020-09-20 14:20:04
-2020-05-20,"Other",0,23,2020-09-20 14:20:04
-2020-05-21,"Other",0,23,2020-09-20 14:20:04
-2020-05-22,"Other",0,23,2020-09-20 14:20:04
-2020-05-23,"Other",0,23,2020-09-20 14:20:04
-2020-05-24,"Other",0,23,2020-09-20 14:20:04
-2020-05-25,"Other",0,23,2020-09-20 14:20:04
-2020-05-26,"Other",0,23,2020-09-20 14:20:04
-2020-05-27,"Other",0,23,2020-09-20 14:20:04
-2020-05-28,"Other",0,23,2020-09-20 14:20:04
-2020-05-29,"Other",0,23,2020-09-20 14:20:04
-2020-05-30,"Other",0,23,2020-09-20 14:20:04
-2020-05-31,"Other",0,23,2020-09-20 14:20:04
-2020-06-01,"Other",0,23,2020-09-20 14:20:04
-2020-06-02,"Other",0,23,2020-09-20 14:20:04
-2020-06-03,"Other",0,23,2020-09-20 14:20:04
-2020-06-04,"Other",0,23,2020-09-20 14:20:04
-2020-06-05,"Other",0,23,2020-09-20 14:20:04
-2020-06-06,"Other",0,23,2020-09-20 14:20:04
-2020-06-07,"Other",0,23,2020-09-20 14:20:04
-2020-06-08,"Other",0,23,2020-09-20 14:20:04
-2020-06-09,"Other",0,23,2020-09-20 14:20:04
-2020-06-10,"Other",0,23,2020-09-20 14:20:04
-2020-06-11,"Other",0,23,2020-09-20 14:20:04
-2020-06-12,"Other",0,23,2020-09-20 14:20:04
-2020-06-13,"Other",0,23,2020-09-20 14:20:04
-2020-06-14,"Other",0,23,2020-09-20 14:20:04
-2020-06-15,"Other",0,23,2020-09-20 14:20:04
-2020-06-16,"Other",0,23,2020-09-20 14:20:04
-2020-06-17,"Other",0,23,2020-09-20 14:20:04
-2020-06-18,"Other",0,23,2020-09-20 14:20:04
-2020-06-19,"Other",0,23,2020-09-20 14:20:04
-2020-06-20,"Other",0,23,2020-09-20 14:20:04
-2020-06-21,"Other",0,23,2020-09-20 14:20:04
-2020-06-22,"Other",0,23,2020-09-20 14:20:04
-2020-06-23,"Other",0,23,2020-09-20 14:20:04
-2020-06-24,"Other",0,23,2020-09-20 14:20:04
-2020-06-25,"Other",0,23,2020-09-20 14:20:04
-2020-06-26,"Other",0,23,2020-09-20 14:20:04
-2020-06-27,"Other",0,23,2020-09-20 14:20:04
-2020-06-28,"Other",0,23,2020-09-20 14:20:04
-2020-06-29,"Other",0,23,2020-09-20 14:20:04
-2020-06-30,"Other",0,23,2020-09-20 14:20:04
-2020-07-01,"Other",0,23,2020-09-20 14:20:04
-2020-07-02,"Other",0,23,2020-09-20 14:20:04
-2020-07-03,"Other",0,23,2020-09-20 14:20:04
-2020-07-04,"Other",0,23,2020-09-20 14:20:04
-2020-07-05,"Other",0,23,2020-09-20 14:20:04
-2020-07-06,"Other",0,23,2020-09-20 14:20:04
-2020-07-07,"Other",0,23,2020-09-20 14:20:04
-2020-07-08,"Other",0,23,2020-09-20 14:20:04
-2020-07-09,"Other",0,23,2020-09-20 14:20:04
-2020-07-10,"Other",0,23,2020-09-20 14:20:04
-2020-07-11,"Other",0,23,2020-09-20 14:20:04
-2020-07-12,"Other",0,23,2020-09-20 14:20:04
-2020-07-13,"Other",0,23,2020-09-20 14:20:04
-2020-07-14,"Other",0,23,2020-09-20 14:20:04
-2020-07-15,"Other",0,23,2020-09-20 14:20:04
-2020-07-16,"Other",0,23,2020-09-20 14:20:04
-2020-07-17,"Other",0,23,2020-09-20 14:20:04
-2020-07-18,"Other",0,23,2020-09-20 14:20:04
-2020-07-19,"Other",0,23,2020-09-20 14:20:04
-2020-07-20,"Other",0,23,2020-09-20 14:20:04
-2020-07-21,"Other",0,23,2020-09-20 14:20:04
-2020-07-22,"Other",0,23,2020-09-20 14:20:04
-2020-07-23,"Other",0,23,2020-09-20 14:20:04
-2020-07-24,"Other",0,23,2020-09-20 14:20:04
-2020-07-25,"Other",0,23,2020-09-20 14:20:04
-2020-07-26,"Other",0,23,2020-09-20 14:20:04
-2020-07-27,"Other",0,23,2020-09-20 14:20:04
-2020-07-28,"Other",0,23,2020-09-20 14:20:04
-2020-07-29,"Other",0,23,2020-09-20 14:20:04
-2020-07-30,"Other",0,23,2020-09-20 14:20:04
-2020-07-31,"Other",0,23,2020-09-20 14:20:04
-2020-08-01,"Other",0,23,2020-09-20 14:20:04
-2020-08-02,"Other",0,23,2020-09-20 14:20:04
-2020-08-03,"Other",0,23,2020-09-20 14:20:04
-2020-08-04,"Other",0,23,2020-09-20 14:20:04
-2020-08-05,"Other",0,23,2020-09-20 14:20:04
-2020-08-06,"Other",0,23,2020-09-20 14:20:04
-2020-08-07,"Other",0,23,2020-09-20 14:20:04
-2020-08-08,"Other",0,23,2020-09-20 14:20:04
-2020-08-09,"Other",0,23,2020-09-20 14:20:04
-2020-08-10,"Other",0,23,2020-09-20 14:20:04
-2020-08-11,"Other",0,23,2020-09-20 14:20:04
-2020-08-12,"Other",0,23,2020-09-20 14:20:04
-2020-08-13,"Other",0,23,2020-09-20 14:20:04
-2020-08-14,"Other",0,23,2020-09-20 14:20:04
-2020-08-15,"Other",0,23,2020-09-20 14:20:04
-2020-08-16,"Other",0,23,2020-09-20 14:20:04
-2020-08-17,"Other",0,23,2020-09-20 14:20:04
-2020-08-18,"Other",0,23,2020-09-20 14:20:04
-2020-08-19,"Other",0,23,2020-09-20 14:20:04
-2020-08-20,"Other",0,23,2020-09-20 14:20:04
-2020-08-21,"Other",0,23,2020-09-20 14:20:04
-2020-08-22,"Other",0,23,2020-09-20 14:20:04
-2020-08-23,"Other",0,23,2020-09-20 14:20:04
-2020-08-24,"Other",0,23,2020-09-20 14:20:04
-2020-08-25,"Other",0,23,2020-09-20 14:20:04
-2020-08-26,"Other",0,23,2020-09-20 14:20:04
-2020-08-27,"Other",0,23,2020-09-20 14:20:04
-2020-08-28,"Other",0,23,2020-09-20 14:20:04
-2020-08-29,"Other",0,23,2020-09-20 14:20:04
-2020-08-30,"Other",0,23,2020-09-20 14:20:04
-2020-08-31,"Other",0,23,2020-09-20 14:20:04
-2020-09-01,"Other",0,23,2020-09-20 14:20:04
-2020-09-02,"Other",0,23,2020-09-20 14:20:04
-2020-09-03,"Other",0,23,2020-09-20 14:20:04
-2020-09-04,"Other",0,23,2020-09-20 14:20:04
-2020-09-05,"Other",0,23,2020-09-20 14:20:04
-2020-09-06,"Other",0,23,2020-09-20 14:20:04
-2020-09-07,"Other",0,23,2020-09-20 14:20:04
-2020-09-08,"Other",0,23,2020-09-20 14:20:04
-2020-09-09,"Other",0,23,2020-09-20 14:20:04
-2020-09-10,"Other",0,23,2020-09-20 14:20:04
-2020-09-11,"Other",0,23,2020-09-20 14:20:04
-2020-09-12,"Other",0,23,2020-09-20 14:20:04
-2020-09-13,"Other",0,23,2020-09-20 14:20:04
-2020-09-14,"Other",0,23,2020-09-20 14:20:04
-2020-09-15,"Other",0,23,2020-09-20 14:20:04
-2020-09-16,"Other",0,23,2020-09-20 14:20:04
-2020-09-17,"Other",0,23,2020-09-20 14:20:04
-2020-09-18,"Other",0,23,2020-09-20 14:20:04
-2020-09-19,"Other",0,23,2020-09-20 14:20:04
-2020-04-25,"Native American",4,6,2020-09-20 14:20:04
-2020-04-26,"Native American",0,6,2020-09-20 14:20:04
-2020-04-27,"Native American",0,6,2020-09-20 14:20:04
-2020-04-28,"Native American",0,6,2020-09-20 14:20:04
-2020-04-29,"Native American",1,7,2020-09-20 14:20:04
-2020-04-30,"Native American",0,7,2020-09-20 14:20:04
-2020-05-01,"Native American",0,7,2020-09-20 14:20:04
-2020-05-02,"Native American",1,8,2020-09-20 14:20:04
-2020-05-03,"Native American",0,8,2020-09-20 14:20:04
-2020-05-04,"Native American",1,9,2020-09-20 14:20:04
-2020-05-05,"Native American",0,9,2020-09-20 14:20:04
-2020-05-06,"Native American",0,9,2020-09-20 14:20:04
-2020-05-07,"Native American",0,9,2020-09-20 14:20:04
-2020-05-08,"Native American",0,9,2020-09-20 14:20:04
-2020-05-09,"Native American",0,9,2020-09-20 14:20:04
-2020-05-10,"Native American",0,9,2020-09-20 14:20:04
-2020-05-11,"Native American",0,9,2020-09-20 14:20:04
-2020-05-12,"Native American",0,9,2020-09-20 14:20:04
-2020-05-13,"Native American",0,9,2020-09-20 14:20:04
-2020-05-14,"Native American",1,10,2020-09-20 14:20:04
-2020-05-15,"Native American",0,10,2020-09-20 14:20:04
-2020-05-16,"Native American",0,10,2020-09-20 14:20:04
-2020-05-17,"Native American",0,10,2020-09-20 14:20:04
-2020-05-18,"Native American",1,11,2020-09-20 14:20:04
-2020-05-19,"Native American",0,11,2020-09-20 14:20:04
-2020-05-20,"Native American",0,11,2020-09-20 14:20:04
-2020-05-21,"Native American",0,11,2020-09-20 14:20:04
-2020-05-22,"Native American",0,11,2020-09-20 14:20:04
-2020-05-23,"Native American",0,11,2020-09-20 14:20:04
-2020-05-24,"Native American",0,11,2020-09-20 14:20:04
-2020-05-25,"Native American",0,11,2020-09-20 14:20:04
-2020-05-26,"Native American",0,11,2020-09-20 14:20:04
-2020-05-27,"Native American",0,11,2020-09-20 14:20:04
-2020-05-28,"Native American",0,11,2020-09-20 14:20:04
-2020-05-29,"Native American",0,11,2020-09-20 14:20:04
-2020-05-30,"Native American",0,11,2020-09-20 14:20:04
-2020-05-31,"Native American",0,11,2020-09-20 14:20:04
-2020-06-01,"Native American",0,11,2020-09-20 14:20:04
-2020-06-02,"Native American",0,11,2020-09-20 14:20:04
-2020-06-03,"Native American",1,12,2020-09-20 14:20:04
-2020-06-04,"Native American",0,12,2020-09-20 14:20:04
-2020-06-05,"Native American",0,12,2020-09-20 14:20:04
-2020-06-06,"Native American",0,12,2020-09-20 14:20:04
-2020-06-07,"Native American",0,12,2020-09-20 14:20:04
-2020-06-08,"Native American",0,12,2020-09-20 14:20:04
-2020-06-09,"Native American",1,13,2020-09-20 14:20:04
-2020-06-10,"Native American",0,13,2020-09-20 14:20:04
-2020-06-11,"Native American",1,14,2020-09-20 14:20:04
-2020-06-12,"Native American",0,14,2020-09-20 14:20:04
-2020-06-13,"Native American",0,14,2020-09-20 14:20:04
-2020-06-14,"Native American",0,14,2020-09-20 14:20:04
-2020-06-15,"Native American",0,14,2020-09-20 14:20:04
-2020-06-16,"Native American",0,14,2020-09-20 14:20:04
-2020-06-17,"Native American",0,14,2020-09-20 14:20:04
-2020-06-18,"Native American",0,14,2020-09-20 14:20:04
-2020-06-19,"Native American",1,15,2020-09-20 14:20:04
-2020-06-20,"Native American",0,15,2020-09-20 14:20:04
-2020-06-21,"Native American",0,15,2020-09-20 14:20:04
-2020-06-22,"Native American",1,16,2020-09-20 14:20:04
-2020-06-23,"Native American",0,16,2020-09-20 14:20:04
-2020-06-24,"Native American",0,16,2020-09-20 14:20:04
-2020-06-25,"Native American",0,16,2020-09-20 14:20:04
-2020-06-26,"Native American",0,16,2020-09-20 14:20:04
-2020-06-27,"Native American",0,16,2020-09-20 14:20:04
-2020-06-28,"Native American",1,17,2020-09-20 14:20:04
-2020-06-29,"Native American",0,17,2020-09-20 14:20:04
-2020-06-30,"Native American",0,17,2020-09-20 14:20:04
-2020-07-01,"Native American",1,18,2020-09-20 14:20:04
-2020-07-02,"Native American",0,18,2020-09-20 14:20:04
-2020-07-03,"Native American",1,19,2020-09-20 14:20:04
-2020-07-04,"Native American",0,19,2020-09-20 14:20:04
-2020-07-05,"Native American",0,19,2020-09-20 14:20:04
-2020-07-06,"Native American",0,19,2020-09-20 14:20:04
-2020-07-07,"Native American",0,19,2020-09-20 14:20:04
-2020-07-08,"Native American",0,19,2020-09-20 14:20:04
-2020-07-09,"Native American",1,20,2020-09-20 14:20:04
-2020-07-10,"Native American",0,20,2020-09-20 14:20:04
-2020-07-11,"Native American",0,20,2020-09-20 14:20:04
-2020-07-12,"Native American",0,20,2020-09-20 14:20:04
-2020-07-13,"Native American",0,20,2020-09-20 14:20:04
-2020-07-14,"Native American",0,20,2020-09-20 14:20:04
-2020-07-15,"Native American",2,22,2020-09-20 14:20:04
-2020-07-16,"Native American",0,22,2020-09-20 14:20:04
-2020-07-17,"Native American",0,22,2020-09-20 14:20:04
-2020-07-18,"Native American",0,22,2020-09-20 14:20:04
-2020-07-19,"Native American",0,22,2020-09-20 14:20:04
-2020-07-20,"Native American",0,22,2020-09-20 14:20:04
-2020-07-21,"Native American",0,22,2020-09-20 14:20:04
-2020-07-22,"Native American",0,22,2020-09-20 14:20:04
-2020-07-23,"Native American",1,23,2020-09-20 14:20:04
-2020-07-24,"Native American",0,23,2020-09-20 14:20:04
-2020-07-25,"Native American",1,24,2020-09-20 14:20:04
-2020-07-26,"Native American",0,24,2020-09-20 14:20:04
-2020-07-27,"Native American",0,24,2020-09-20 14:20:04
-2020-07-28,"Native American",1,25,2020-09-20 14:20:04
-2020-07-29,"Native American",0,25,2020-09-20 14:20:04
-2020-07-30,"Native American",0,25,2020-09-20 14:20:04
-2020-07-31,"Native American",0,25,2020-09-20 14:20:04
-2020-08-01,"Native American",0,25,2020-09-20 14:20:04
-2020-08-02,"Native American",0,25,2020-09-20 14:20:04
-2020-08-03,"Native American",0,25,2020-09-20 14:20:04
-2020-08-04,"Native American",0,25,2020-09-20 14:20:04
-2020-08-05,"Native American",1,26,2020-09-20 14:20:04
-2020-08-06,"Native American",0,26,2020-09-20 14:20:04
-2020-08-07,"Native American",3,29,2020-09-20 14:20:04
-2020-08-08,"Native American",1,30,2020-09-20 14:20:04
-2020-08-09,"Native American",1,31,2020-09-20 14:20:04
-2020-08-10,"Native American",0,31,2020-09-20 14:20:04
-2020-08-11,"Native American",0,31,2020-09-20 14:20:04
-2020-08-12,"Native American",0,31,2020-09-20 14:20:04
-2020-08-13,"Native American",0,31,2020-09-20 14:20:04
-2020-08-14,"Native American",1,32,2020-09-20 14:20:04
-2020-08-15,"Native American",0,32,2020-09-20 14:20:04
-2020-08-16,"Native American",0,32,2020-09-20 14:20:04
-2020-08-17,"Native American",0,32,2020-09-20 14:20:04
-2020-08-18,"Native American",0,32,2020-09-20 14:20:04
-2020-08-19,"Native American",0,32,2020-09-20 14:20:04
-2020-08-20,"Native American",0,32,2020-09-20 14:20:04
-2020-08-21,"Native American",0,32,2020-09-20 14:20:04
-2020-08-22,"Native American",0,32,2020-09-20 14:20:04
-2020-08-23,"Native American",0,32,2020-09-20 14:20:04
-2020-08-24,"Native American",0,32,2020-09-20 14:20:04
-2020-08-25,"Native American",0,32,2020-09-20 14:20:04
-2020-08-26,"Native American",0,32,2020-09-20 14:20:04
-2020-08-27,"Native American",0,32,2020-09-20 14:20:04
-2020-08-28,"Native American",0,32,2020-09-20 14:20:04
-2020-08-29,"Native American",0,32,2020-09-20 14:20:04
-2020-08-30,"Native American",0,32,2020-09-20 14:20:04
-2020-08-31,"Native American",0,32,2020-09-20 14:20:04
-2020-09-01,"Native American",0,32,2020-09-20 14:20:04
-2020-09-02,"Native American",0,32,2020-09-20 14:20:04
-2020-09-03,"Native American",1,33,2020-09-20 14:20:04
-2020-09-04,"Native American",0,33,2020-09-20 14:20:04
-2020-09-05,"Native American",0,33,2020-09-20 14:20:04
-2020-09-06,"Native American",0,33,2020-09-20 14:20:04
-2020-09-07,"Native American",0,33,2020-09-20 14:20:04
-2020-09-08,"Native American",0,33,2020-09-20 14:20:04
-2020-09-09,"Native American",0,33,2020-09-20 14:20:04
-2020-09-10,"Native American",0,33,2020-09-20 14:20:04
-2020-09-11,"Native American",0,33,2020-09-20 14:20:04
-2020-09-12,"Native American",0,33,2020-09-20 14:20:04
-2020-09-13,"Native American",0,33,2020-09-20 14:20:04
-2020-09-14,"Native American",0,33,2020-09-20 14:20:04
-2020-09-15,"Native American",0,33,2020-09-20 14:20:04
-2020-09-16,"Native American",0,33,2020-09-20 14:20:04
-2020-09-17,"Native American",0,33,2020-09-20 14:20:04
-2020-09-18,"Native American",0,33,2020-09-20 14:20:04
-2020-09-19,"Native American",0,33,2020-09-20 14:20:04
-2020-03-24,"Black or African American",2,18,2020-09-20 14:20:04
-2020-03-25,"Black or African American",4,22,2020-09-20 14:20:04
-2020-03-26,"Black or African American",4,26,2020-09-20 14:20:04
-2020-03-27,"Black or African American",2,28,2020-09-20 14:20:04
-2020-03-28,"Black or African American",2,30,2020-09-20 14:20:04
-2020-03-29,"Black or African American",1,31,2020-09-20 14:20:04
-2020-03-30,"Black or African American",0,31,2020-09-20 14:20:04
-2020-03-31,"Black or African American",1,32,2020-09-20 14:20:04
-2020-04-01,"Black or African American",4,36,2020-09-20 14:20:04
-2020-04-02,"Black or African American",0,36,2020-09-20 14:20:04
-2020-04-03,"Black or African American",0,36,2020-09-20 14:20:04
-2020-04-04,"Black or African American",0,36,2020-09-20 14:20:04
-2020-04-05,"Black or African American",2,38,2020-09-20 14:20:04
-2020-04-06,"Black or African American",0,38,2020-09-20 14:20:04
-2020-04-07,"Black or African American",4,42,2020-09-20 14:20:04
-2020-04-08,"Black or African American",9,51,2020-09-20 14:20:04
-2020-04-09,"Black or African American",9,60,2020-09-20 14:20:04
-2020-04-10,"Black or African American",1,61,2020-09-20 14:20:04
-2020-04-11,"Black or African American",6,67,2020-09-20 14:20:04
-2020-04-12,"Black or African American",2,69,2020-09-20 14:20:04
-2020-04-13,"Black or African American",2,71,2020-09-20 14:20:04
-2020-04-14,"Black or African American",4,75,2020-09-20 14:20:04
-2020-04-15,"Black or African American",1,76,2020-09-20 14:20:04
-2020-04-16,"Black or African American",0,76,2020-09-20 14:20:04
-2020-04-17,"Black or African American",2,78,2020-09-20 14:20:04
-2020-04-18,"Black or African American",0,78,2020-09-20 14:20:04
-2020-04-19,"Black or African American",1,79,2020-09-20 14:20:04
-2020-04-20,"Black or African American",1,80,2020-09-20 14:20:04
-2020-04-21,"Black or African American",1,81,2020-09-20 14:20:04
-2020-04-22,"Black or African American",2,83,2020-09-20 14:20:04
-2020-04-23,"Black or African American",3,86,2020-09-20 14:20:04
-2020-04-24,"Black or African American",0,86,2020-09-20 14:20:04
-2020-04-25,"Black or African American",2,88,2020-09-20 14:20:04
-2020-04-26,"Black or African American",2,90,2020-09-20 14:20:04
-2020-04-27,"Black or African American",4,94,2020-09-20 14:20:04
-2020-04-28,"Black or African American",0,94,2020-09-20 14:20:04
-2020-04-29,"Black or African American",1,95,2020-09-20 14:20:04
-2020-04-30,"Black or African American",2,97,2020-09-20 14:20:04
-2020-05-01,"Black or African American",0,97,2020-09-20 14:20:04
-2020-05-02,"Black or African American",0,97,2020-09-20 14:20:04
-2020-05-03,"Black or African American",0,97,2020-09-20 14:20:04
-2020-05-04,"Black or African American",2,99,2020-09-20 14:20:04
-2020-05-05,"Black or African American",1,100,2020-09-20 14:20:04
-2020-05-06,"Black or African American",3,103,2020-09-20 14:20:04
-2020-05-07,"Black or African American",0,103,2020-09-20 14:20:04
-2020-05-08,"Black or African American",2,105,2020-09-20 14:20:04
-2020-05-09,"Black or African American",1,106,2020-09-20 14:20:04
-2020-05-10,"Black or African American",0,106,2020-09-20 14:20:04
-2020-05-11,"Black or African American",2,108,2020-09-20 14:20:04
-2020-05-12,"Black or African American",2,110,2020-09-20 14:20:04
-2020-05-13,"Black or African American",1,111,2020-09-20 14:20:04
-2020-05-14,"Black or African American",0,111,2020-09-20 14:20:04
-2020-05-15,"Black or African American",3,114,2020-09-20 14:20:04
-2020-05-16,"Black or African American",0,114,2020-09-20 14:20:04
-2020-05-17,"Black or African American",0,114,2020-09-20 14:20:04
-2020-05-18,"Black or African American",1,115,2020-09-20 14:20:04
-2020-05-19,"Black or African American",4,119,2020-09-20 14:20:04
-2020-05-20,"Black or African American",7,126,2020-09-20 14:20:04
-2020-05-21,"Black or African American",0,126,2020-09-20 14:20:04
-2020-05-22,"Black or African American",1,127,2020-09-20 14:20:04
-2020-05-23,"Black or African American",1,128,2020-09-20 14:20:04
-2020-05-24,"Black or African American",1,129,2020-09-20 14:20:04
-2020-05-25,"Black or African American",0,129,2020-09-20 14:20:04
-2020-05-27,"Black or African American",3,132,2020-09-20 14:20:04
-2020-05-28,"Black or African American",0,132,2020-09-20 14:20:04
-2020-05-29,"Black or African American",0,132,2020-09-20 14:20:04
-2020-05-30,"Black or African American",1,133,2020-09-20 14:20:04
-2020-05-31,"Black or African American",0,133,2020-09-20 14:20:04
-2020-06-01,"Black or African American",0,133,2020-09-20 14:20:04
-2020-06-02,"Black or African American",1,134,2020-09-20 14:20:04
-2020-06-03,"Black or African American",0,134,2020-09-20 14:20:04
-2020-06-04,"Black or African American",2,136,2020-09-20 14:20:04
-2020-06-05,"Black or African American",2,138,2020-09-20 14:20:04
-2020-07-01,"Black or African American",5,214,2020-09-20 14:20:04
-2020-06-07,"Black or African American",1,140,2020-09-20 14:20:04
-2020-06-08,"Black or African American",1,141,2020-09-20 14:20:04
-2020-06-09,"Black or African American",1,142,2020-09-20 14:20:04
-2020-06-10,"Black or African American",1,143,2020-09-20 14:20:04
-2020-06-11,"Black or African American",0,143,2020-09-20 14:20:04
-2020-06-12,"Black or African American",0,143,2020-09-20 14:20:04
-2020-06-13,"Black or African American",0,143,2020-09-20 14:20:04
-2020-06-14,"Black or African American",0,143,2020-09-20 14:20:04
-2020-06-15,"Black or African American",0,143,2020-09-20 14:20:04
-2020-06-16,"Black or African American",0,143,2020-09-20 14:20:04
-2020-06-17,"Black or African American",2,145,2020-09-20 14:20:04
-2020-06-18,"Black or African American",4,149,2020-09-20 14:20:04
-2020-06-19,"Black or African American",4,153,2020-09-20 14:20:04
-2020-06-20,"Black or African American",2,155,2020-09-20 14:20:04
-2020-06-21,"Black or African American",1,156,2020-09-20 14:20:04
-2020-06-22,"Black or African American",6,162,2020-09-20 14:20:04
-2020-06-23,"Black or African American",10,172,2020-09-20 14:20:04
-2020-06-24,"Black or African American",5,177,2020-09-20 14:20:04
-2020-06-25,"Black or African American",7,184,2020-09-20 14:20:04
-2020-06-26,"Black or African American",5,189,2020-09-20 14:20:04
-2020-06-27,"Black or African American",10,199,2020-09-20 14:20:04
-2020-06-28,"Black or African American",2,201,2020-09-20 14:20:04
-2020-06-29,"Black or African American",2,203,2020-09-20 14:20:04
-2020-06-30,"Black or African American",6,209,2020-09-20 14:20:04
-2020-07-07,"Black or African American",11,247,2020-09-20 14:20:04
-2020-07-08,"Black or African American",4,251,2020-09-20 14:20:04
-2020-07-09,"Black or African American",8,259,2020-09-20 14:20:04
-2020-07-10,"Black or African American",6,265,2020-09-20 14:20:04
-2020-07-11,"Black or African American",3,268,2020-09-20 14:20:04
-2020-07-12,"Black or African American",1,269,2020-09-20 14:20:04
-2020-07-13,"Black or African American",8,277,2020-09-20 14:20:04
-2020-07-14,"Black or African American",9,286,2020-09-20 14:20:04
-2020-07-15,"Black or African American",9,295,2020-09-20 14:20:04
-2020-07-16,"Black or African American",10,305,2020-09-20 14:20:04
-2020-07-17,"Black or African American",26,331,2020-09-20 14:20:04
-2020-07-18,"Black or African American",9,340,2020-09-20 14:20:04
-2020-07-19,"Black or African American",4,344,2020-09-20 14:20:04
-2020-07-20,"Black or African American",7,351,2020-09-20 14:20:04
-2020-07-21,"Black or African American",6,357,2020-09-20 14:20:04
-2020-07-22,"Black or African American",9,366,2020-09-20 14:20:04
-2020-07-23,"Black or African American",11,377,2020-09-20 14:20:04
-2020-07-24,"Black or African American",6,383,2020-09-20 14:20:04
-2020-07-25,"Black or African American",6,389,2020-09-20 14:20:04
-2020-07-26,"Black or African American",4,393,2020-09-20 14:20:04
-2020-07-27,"Black or African American",3,396,2020-09-20 14:20:04
-2020-07-28,"Black or African American",6,402,2020-09-20 14:20:04
-2020-07-29,"Black or African American",6,408,2020-09-20 14:20:04
-2020-07-30,"Black or African American",3,411,2020-09-20 14:20:04
-2020-07-31,"Black or African American",5,416,2020-09-20 14:20:04
-2020-04-11,"Asian",5,160,2020-09-20 14:20:04
-2020-04-12,"Asian",3,163,2020-09-20 14:20:04
-2020-04-13,"Asian",9,172,2020-09-20 14:20:04
-2020-04-14,"Asian",9,181,2020-09-20 14:20:04
-2020-04-15,"Asian",7,188,2020-09-20 14:20:04
-2020-04-16,"Asian",3,191,2020-09-20 14:20:04
-2020-04-17,"Asian",8,199,2020-09-20 14:20:04
-2020-04-18,"Asian",0,199,2020-09-20 14:20:04
-2020-04-19,"Asian",1,200,2020-09-20 14:20:04
-2020-04-20,"Asian",4,204,2020-09-20 14:20:04
-2020-04-21,"Asian",5,209,2020-09-20 14:20:04
-2020-04-22,"Asian",4,213,2020-09-20 14:20:04
-2020-04-23,"Asian",5,218,2020-09-20 14:20:04
-2020-04-24,"Asian",4,222,2020-09-20 14:20:04
-2020-04-25,"Asian",5,227,2020-09-20 14:20:04
-2020-04-26,"Asian",3,230,2020-09-20 14:20:04
-2020-04-27,"Asian",2,232,2020-09-20 14:20:04
-2020-04-28,"Asian",5,237,2020-09-20 14:20:04
-2020-08-01,"Black or African American",7,423,2020-09-20 14:20:04
-2020-08-02,"Black or African American",2,425,2020-09-20 14:20:04
-2020-08-03,"Black or African American",13,438,2020-09-20 14:20:04
-2020-08-04,"Black or African American",3,441,2020-09-20 14:20:04
-2020-08-05,"Black or African American",15,456,2020-09-20 14:20:04
-2020-08-06,"Black or African American",3,459,2020-09-20 14:20:04
-2020-08-07,"Black or African American",4,463,2020-09-20 14:20:04
-2020-08-08,"Black or African American",8,471,2020-09-20 14:20:04
-2020-08-09,"Black or African American",2,473,2020-09-20 14:20:04
-2020-08-10,"Black or African American",2,475,2020-09-20 14:20:04
-2020-08-11,"Black or African American",4,479,2020-09-20 14:20:04
-2020-08-12,"Black or African American",7,486,2020-09-20 14:20:04
-2020-08-13,"Black or African American",6,492,2020-09-20 14:20:04
-2020-08-14,"Black or African American",6,498,2020-09-20 14:20:04
-2020-08-15,"Black or African American",3,501,2020-09-20 14:20:04
-2020-08-16,"Black or African American",4,505,2020-09-20 14:20:04
-2020-08-17,"Black or African American",6,511,2020-09-20 14:20:04
-2020-09-17,"Black or African American",5,625,2020-09-20 14:20:04
-2020-09-18,"Black or African American",7,632,2020-09-20 14:20:04
-2020-09-19,"Black or African American",0,632,2020-09-20 14:20:04
-2020-09-13,"Asian",3,1246,2020-09-20 14:20:04
-2020-07-15,"Unknown",25,744,2020-09-20 14:20:04
-2020-03-19,"Black or African American",2,6,2020-09-20 14:20:04
-2020-03-20,"Black or African American",3,9,2020-09-20 14:20:04
-2020-03-21,"Black or African American",1,10,2020-09-20 14:20:04
-2020-03-22,"Black or African American",3,13,2020-09-20 14:20:04
-2020-03-23,"Black or African American",3,16,2020-09-20 14:20:04
-2020-08-18,"Black or African American",4,515,2020-09-20 14:20:04
-2020-08-19,"Black or African American",7,522,2020-09-20 14:20:04
-2020-08-20,"Black or African American",12,534,2020-09-20 14:20:04
-2020-08-21,"Black or African American",1,535,2020-09-20 14:20:04
-2020-08-22,"Black or African American",4,539,2020-09-20 14:20:04
-2020-05-25,"Asian",0,320,2020-09-20 14:20:04
-2020-08-23,"Black or African American",1,540,2020-09-20 14:20:04
-2020-08-24,"Black or African American",2,542,2020-09-20 14:20:04
-2020-08-25,"Black or African American",4,546,2020-09-20 14:20:04
-2020-08-26,"Black or African American",4,550,2020-09-20 14:20:04
-2020-08-27,"Black or African American",5,555,2020-09-20 14:20:04
-2020-08-28,"Black or African American",2,557,2020-09-20 14:20:04
-2020-08-29,"Black or African American",2,559,2020-09-20 14:20:04
-2020-08-30,"Black or African American",2,561,2020-09-20 14:20:04
-2020-08-31,"Black or African American",8,569,2020-09-20 14:20:04
-2020-09-01,"Black or African American",7,576,2020-09-20 14:20:04
-2020-09-02,"Black or African American",1,577,2020-09-20 14:20:04
-2020-09-03,"Black or African American",4,581,2020-09-20 14:20:04
-2020-09-04,"Black or African American",4,585,2020-09-20 14:20:04
-2020-09-05,"Black or African American",3,588,2020-09-20 14:20:04
-2020-09-10,"Black or African American",6,603,2020-09-20 14:20:04
-2020-09-11,"Black or African American",4,607,2020-09-20 14:20:04
-2020-09-12,"Black or African American",2,609,2020-09-20 14:20:04
-2020-09-13,"Black or African American",1,610,2020-09-20 14:20:04
-2020-09-14,"Black or African American",2,612,2020-09-20 14:20:04
-2020-09-15,"Black or African American",4,616,2020-09-20 14:20:04
-2020-09-16,"Black or African American",4,620,2020-09-20 14:20:04
-2020-03-29,"White",0,128,2020-09-20 14:20:04
-2020-08-14,"Unknown",5,1126,2020-09-20 14:20:04
-2020-03-23,"Asian",2,37,2020-09-20 14:20:04
-2020-03-24,"Asian",6,43,2020-09-20 14:20:04
-2020-03-25,"Asian",9,52,2020-09-20 14:20:04
-2020-03-26,"Asian",4,56,2020-09-20 14:20:04
-2020-03-27,"Asian",9,65,2020-09-20 14:20:04
-2020-03-28,"Asian",2,67,2020-09-20 14:20:04
-2020-03-29,"Asian",5,72,2020-09-20 14:20:04
-2020-03-30,"Asian",10,82,2020-09-20 14:20:04
-2020-03-31,"Asian",11,93,2020-09-20 14:20:04
-2020-04-01,"Asian",8,101,2020-09-20 14:20:04
-2020-04-02,"Asian",7,108,2020-09-20 14:20:04
-2020-04-03,"Asian",7,115,2020-09-20 14:20:04
-2020-04-04,"Asian",0,115,2020-09-20 14:20:04
-2020-04-05,"Asian",8,123,2020-09-20 14:20:04
-2020-04-06,"Asian",5,128,2020-09-20 14:20:04
-2020-08-09,"Hispanic or Latino/a, all races",39,4061,2020-09-20 14:20:04
-2020-05-26,"Black or African American",0,129,2020-09-20 14:20:04
-2020-09-06,"Black or African American",2,590,2020-09-20 14:20:04
-2020-09-07,"Black or African American",5,595,2020-09-20 14:20:04
-2020-09-08,"Black or African American",0,595,2020-09-20 14:20:04
-2020-09-09,"Black or African American",2,597,2020-09-20 14:20:04
-2020-07-20,"White",22,985,2020-09-20 14:20:04
-2020-03-13,"Asian",3,6,2020-09-20 14:20:04
-2020-03-14,"Asian",2,8,2020-09-20 14:20:04
-2020-03-15,"Asian",2,10,2020-09-20 14:20:04
-2020-03-16,"Asian",7,17,2020-09-20 14:20:04
-2020-03-17,"Asian",3,20,2020-09-20 14:20:04
-2020-03-18,"Asian",0,20,2020-09-20 14:20:04
-2020-03-19,"Asian",3,23,2020-09-20 14:20:04
-2020-03-20,"Asian",7,30,2020-09-20 14:20:04
-2020-03-21,"Asian",2,32,2020-09-20 14:20:04
-2020-03-22,"Asian",3,35,2020-09-20 14:20:04
-2020-07-02,"Black or African American",11,225,2020-09-20 14:20:04
-2020-07-03,"Black or African American",2,227,2020-09-20 14:20:04
-2020-07-04,"Black or African American",2,229,2020-09-20 14:20:04
-2020-07-05,"Black or African American",3,232,2020-09-20 14:20:04
-2020-07-06,"Black or African American",4,236,2020-09-20 14:20:04
+2020-08-19,"Asian",12,934,2020-09-21 14:20:28
+2020-09-03,"Black or African American",4,581,2020-09-21 14:20:28
+2020-09-04,"Black or African American",4,585,2020-09-21 14:20:28
+2020-09-05,"Black or African American",3,588,2020-09-21 14:20:28
+2020-09-06,"Black or African American",2,590,2020-09-21 14:20:28
+2020-09-07,"Black or African American",5,595,2020-09-21 14:20:28
+2020-09-08,"Black or African American",0,595,2020-09-21 14:20:28
+2020-09-09,"Black or African American",2,597,2020-09-21 14:20:28
+2020-09-10,"Black or African American",6,603,2020-09-21 14:20:28
+2020-09-11,"Black or African American",4,607,2020-09-21 14:20:28
+2020-09-12,"Black or African American",2,609,2020-09-21 14:20:28
+2020-09-13,"Black or African American",1,610,2020-09-21 14:20:28
+2020-09-14,"Black or African American",2,612,2020-09-21 14:20:28
+2020-09-15,"Black or African American",4,616,2020-09-21 14:20:28
+2020-09-16,"Black or African American",4,620,2020-09-21 14:20:28
+2020-09-17,"Black or African American",5,625,2020-09-21 14:20:28
+2020-09-18,"Black or African American",9,634,2020-09-21 14:20:28
+2020-09-19,"Black or African American",2,636,2020-09-21 14:20:28
+2020-09-20,"Black or African American",0,636,2020-09-21 14:20:28
+2020-03-23,"Asian",2,37,2020-09-21 14:20:28
+2020-08-22,"White",7,1348,2020-09-21 14:20:28
+2020-03-24,"Asian",6,43,2020-09-21 14:20:28
+2020-04-09,"Unknown",16,181,2020-09-21 14:20:28
+2020-03-20,"Asian",7,30,2020-09-21 14:20:28
+2020-06-10,"Unknown",2,413,2020-09-21 14:20:28
+2020-03-21,"Asian",2,32,2020-09-21 14:20:28
+2020-08-11,"Unknown",12,1102,2020-09-21 14:20:28
+2020-03-13,"Asian",3,6,2020-09-21 14:20:28
+2020-04-02,"Hispanic or Latino/a, all races",14,190,2020-09-21 14:20:28
+2020-07-26,"Other",0,23,2020-09-21 14:20:28
+2020-09-08,"Native American",0,33,2020-09-21 14:20:28
+2020-03-25,"Asian",9,52,2020-09-21 14:20:28
+2020-05-01,"Black or African American",0,97,2020-09-21 14:20:28
+2020-08-18,"Black or African American",4,515,2020-09-21 14:20:28
+2020-08-19,"Black or African American",7,522,2020-09-21 14:20:28
+2020-08-20,"Black or African American",12,534,2020-09-21 14:20:28
+2020-08-21,"Black or African American",1,535,2020-09-21 14:20:28
+2020-08-22,"Black or African American",4,539,2020-09-21 14:20:28
+2020-08-23,"Black or African American",1,540,2020-09-21 14:20:28
+2020-08-24,"Black or African American",2,542,2020-09-21 14:20:28
+2020-08-25,"Black or African American",4,546,2020-09-21 14:20:28
+2020-08-26,"Black or African American",4,550,2020-09-21 14:20:28
+2020-08-27,"Black or African American",5,555,2020-09-21 14:20:28
+2020-08-28,"Black or African American",2,557,2020-09-21 14:20:28
+2020-08-29,"Black or African American",2,559,2020-09-21 14:20:28
+2020-08-30,"Black or African American",2,561,2020-09-21 14:20:28
+2020-08-31,"Black or African American",8,569,2020-09-21 14:20:28
+2020-09-01,"Black or African American",7,576,2020-09-21 14:20:28
+2020-03-26,"Asian",4,56,2020-09-21 14:20:28
+2020-03-27,"Asian",9,65,2020-09-21 14:20:28
+2020-03-28,"Asian",2,67,2020-09-21 14:20:28
+2020-03-29,"Asian",5,72,2020-09-21 14:20:28
+2020-03-30,"Asian",10,82,2020-09-21 14:20:28
+2020-08-10,"Asian",12,831,2020-09-21 14:20:28
+2020-03-15,"Asian",2,10,2020-09-21 14:20:28
+2020-07-09,"Native Hawaiian or Other Pacific Islander",2,46,2020-09-21 14:20:28
+2020-07-10,"Native Hawaiian or Other Pacific Islander",0,46,2020-09-21 14:20:28
+2020-09-19,"White",4,1612,2020-09-21 14:20:28
+2020-08-13,"Unknown",7,1122,2020-09-21 14:20:28
+2020-08-14,"Unknown",5,1127,2020-09-21 14:20:28
+2020-08-15,"Unknown",9,1136,2020-09-21 14:20:28
+2020-08-16,"Unknown",8,1144,2020-09-21 14:20:28
+2020-08-17,"Unknown",8,1152,2020-09-21 14:20:28
+2020-08-18,"Unknown",11,1163,2020-09-21 14:20:28
+2020-08-19,"Unknown",6,1169,2020-09-21 14:20:28
+2020-08-20,"Unknown",11,1180,2020-09-21 14:20:28
+2020-08-21,"Unknown",6,1186,2020-09-21 14:20:28
+2020-08-22,"Unknown",1,1187,2020-09-21 14:20:28
+2020-08-23,"Unknown",3,1190,2020-09-21 14:20:28
+2020-08-24,"Unknown",8,1198,2020-09-21 14:20:28
+2020-08-25,"Unknown",15,1213,2020-09-21 14:20:28
+2020-08-26,"Unknown",7,1220,2020-09-21 14:20:28
+2020-08-27,"Unknown",8,1228,2020-09-21 14:20:28
+2020-07-05,"Multi-racial",1,84,2020-09-21 14:20:28
+2020-07-06,"Multi-racial",1,85,2020-09-21 14:20:28
+2020-07-07,"Multi-racial",3,88,2020-09-21 14:20:28
+2020-06-15,"Asian",0,377,2020-09-21 14:20:28
+2020-08-01,"Other",0,23,2020-09-21 14:20:28
+2020-08-02,"Other",0,23,2020-09-21 14:20:28
+2020-08-03,"Other",0,23,2020-09-21 14:20:28
+2020-08-04,"Other",0,23,2020-09-21 14:20:28
+2020-08-05,"Other",0,23,2020-09-21 14:20:28
+2020-08-06,"Other",0,23,2020-09-21 14:20:28
+2020-08-07,"Other",0,23,2020-09-21 14:20:28
+2020-08-08,"Other",0,23,2020-09-21 14:20:28
+2020-08-09,"Other",0,23,2020-09-21 14:20:28
+2020-08-10,"Other",0,23,2020-09-21 14:20:28
+2020-08-11,"Other",0,23,2020-09-21 14:20:28
+2020-08-12,"Other",0,23,2020-09-21 14:20:28
+2020-09-13,"Native American",0,33,2020-09-21 14:20:28
+2020-09-14,"Native American",0,33,2020-09-21 14:20:28
+2020-09-15,"Native American",0,33,2020-09-21 14:20:28
+2020-09-16,"Native American",0,33,2020-09-21 14:20:28
+2020-09-17,"Native American",0,33,2020-09-21 14:20:28
+2020-09-18,"Native American",0,33,2020-09-21 14:20:28
+2020-08-30,"Native Hawaiian or Other Pacific Islander",1,134,2020-09-21 14:20:28
+2020-08-31,"Native Hawaiian or Other Pacific Islander",1,135,2020-09-21 14:20:28
+2020-09-01,"Native Hawaiian or Other Pacific Islander",2,137,2020-09-21 14:20:28
+2020-09-02,"Native Hawaiian or Other Pacific Islander",2,139,2020-09-21 14:20:28
+2020-03-13,"White",2,6,2020-09-21 14:20:28
+2020-03-14,"White",5,11,2020-09-21 14:20:28
+2020-03-29,"White",0,128,2020-09-21 14:20:28
+2020-08-05,"Black or African American",15,456,2020-09-21 14:20:28
+2020-08-06,"Black or African American",3,459,2020-09-21 14:20:28
+2020-08-07,"Black or African American",4,463,2020-09-21 14:20:28
+2020-08-11,"Black or African American",4,479,2020-09-21 14:20:28
+2020-08-12,"Black or African American",7,486,2020-09-21 14:20:28
+2020-08-13,"Black or African American",6,492,2020-09-21 14:20:28
+2020-04-25,"Hispanic or Latino/a, all races",23,579,2020-09-21 14:20:28
+2020-04-26,"Hispanic or Latino/a, all races",20,599,2020-09-21 14:20:28
+2020-04-27,"Hispanic or Latino/a, all races",19,618,2020-09-21 14:20:28
+2020-08-16,"Multi-racial",1,189,2020-09-21 14:20:28
+2020-08-17,"Multi-racial",1,190,2020-09-21 14:20:28
+2020-08-18,"Multi-racial",2,192,2020-09-21 14:20:28
+2020-08-19,"Multi-racial",3,195,2020-09-21 14:20:28
+2020-08-20,"Multi-racial",2,197,2020-09-21 14:20:28
+2020-08-21,"Multi-racial",4,201,2020-09-21 14:20:28
+2020-08-22,"Multi-racial",0,201,2020-09-21 14:20:28
+2020-08-23,"Multi-racial",0,201,2020-09-21 14:20:28
+2020-08-24,"Multi-racial",4,205,2020-09-21 14:20:28
+2020-08-25,"Multi-racial",3,208,2020-09-21 14:20:28
+2020-08-26,"Multi-racial",3,211,2020-09-21 14:20:28
+2020-08-27,"Multi-racial",2,213,2020-09-21 14:20:28
+2020-08-28,"Multi-racial",0,213,2020-09-21 14:20:28
+2020-08-29,"Multi-racial",1,214,2020-09-21 14:20:28
+2020-08-30,"Multi-racial",0,214,2020-09-21 14:20:28
+2020-08-08,"Black or African American",8,471,2020-09-21 14:20:28
+2020-08-09,"Black or African American",2,473,2020-09-21 14:20:28
+2020-08-10,"Black or African American",2,475,2020-09-21 14:20:28
+2020-07-11,"Black or African American",3,268,2020-09-21 14:20:28
+2020-07-12,"Black or African American",1,269,2020-09-21 14:20:28
+2020-07-13,"Black or African American",8,277,2020-09-21 14:20:28
