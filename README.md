@@ -65,12 +65,12 @@ data(covid19sf_age)
 
 head(covid19sf_age)
 #>   specimen_collection_date age_group new_confirmed_cases cumulative_confirmed_cases        last_updated
-#> 1               2020-03-12     51-60                   2                          6 2020-09-12 14:19:25
-#> 2               2020-03-13     51-60                   2                          8 2020-09-12 14:19:25
-#> 3               2020-03-14     51-60                   1                          9 2020-09-12 14:19:25
-#> 4               2020-03-15     51-60                   0                          9 2020-09-12 14:19:25
-#> 5               2020-03-16     51-60                   8                         17 2020-09-12 14:19:25
-#> 6               2020-03-17     51-60                   3                         20 2020-09-12 14:19:25
+#> 1               2020-03-12     51-60                   2                          6 2020-09-25 14:21:41
+#> 2               2020-03-13     51-60                   2                          8 2020-09-25 14:21:41
+#> 3               2020-03-14     51-60                   1                          9 2020-09-25 14:21:41
+#> 4               2020-03-15     51-60                   0                          9 2020-09-25 14:21:41
+#> 5               2020-03-16     51-60                   8                         17 2020-09-25 14:21:41
+#> 6               2020-03-17     51-60                   3                         20 2020-09-25 14:21:41
 ```
 
 The following box-plot shows the distribution of the positive cases by
@@ -100,7 +100,7 @@ layout(title = "Case Dist. by Age Group",
 
 <img src="man/figures/age_dist1.png" width="100%" />
 
-Here is the overall distribution of cases by age group as of 2020-09-11:
+Here is the overall distribution of cases by age group as of 2020-09-24:
 
 ``` r
 library(dplyr)
@@ -131,12 +131,12 @@ data(covid19sf_tests)
 
 head(covid19sf_tests)
 #>   specimen_collection_date tests pos        pct neg indeterminate        last_updated
-#> 1               2020-02-28     2   0 0.00000000   2             0 2020-09-12 14:24:00
-#> 2               2020-03-01     2   0 0.00000000   2             0 2020-09-12 14:24:00
-#> 3               2020-03-02     2   0 0.00000000   2             0 2020-09-12 14:24:00
-#> 4               2020-03-03     7   2 0.28571429   5             0 2020-09-12 14:24:00
-#> 5               2020-03-04    11   0 0.00000000  11             0 2020-09-12 14:24:00
-#> 6               2020-03-05    19   6 0.31578947  13             0 2020-09-12 14:24:00
+#> 1               2020-02-28     2   0 0.00000000   2             0 2020-09-25 14:28:00
+#> 2               2020-03-01     2   0 0.00000000   2             0 2020-09-25 14:28:00
+#> 3               2020-03-02     2   0 0.00000000   2             0 2020-09-25 14:28:00
+#> 4               2020-03-03     7   2 0.28571429   5             0 2020-09-25 14:28:00
+#> 5               2020-03-04    11   0 0.00000000  11             0 2020-09-25 14:28:00
+#> 6               2020-03-05    19   6 0.31578947  13             0 2020-09-25 14:28:00
 ```
 
 The plot below shows the daily distribution of the results of the tests:
@@ -170,12 +170,12 @@ data(covid19sf_demo)
 
 head(covid19sf_demo)
 #>   specimen_collection_date race_ethnicity new_confirmed_cases cumulative_confirmed_cases        last_updated
-#> 1               2020-09-11          Asian                   0                       1186 2020-09-12 14:19:25
-#> 2               2020-05-14          Asian                   3                        292 2020-09-12 14:19:25
-#> 3               2020-04-07          Asian                   8                        136 2020-09-12 14:19:25
-#> 4               2020-05-15          Asian                   4                        296 2020-09-12 14:19:25
-#> 5               2020-05-16          Asian                   4                        300 2020-09-12 14:19:25
-#> 6               2020-05-17          Asian                   1                        301 2020-09-12 14:19:25
+#> 1               2020-04-28          Asian                   5                        240 2020-09-25 14:21:41
+#> 2               2020-04-09          Asian                   6                        147 2020-09-25 14:21:41
+#> 3               2020-05-09          White                   0                        342 2020-09-25 14:21:41
+#> 4               2020-04-29          Asian                   9                        249 2020-09-25 14:21:41
+#> 5               2020-04-10          Asian                   9                        156 2020-09-25 14:21:41
+#> 6               2020-04-11          Asian                   5                        161 2020-09-25 14:21:41
 ```
 
 Below is a plot of the cumulative positive cases by race and ethnicity:

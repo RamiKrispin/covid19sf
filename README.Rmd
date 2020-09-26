@@ -179,7 +179,7 @@ head(covid19sf_tests)
 ```
 
 The plot below shows the daily distribution of the results of the tests:
-
+ 
 ```r
 covid19sf_tests %>%
 plotly::plot_ly(x = ~ specimen_collection_date,
