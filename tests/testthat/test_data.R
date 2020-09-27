@@ -17,7 +17,7 @@ test_that(desc = "Test the data dimension", {
   expect_equal(base::nrow(covid19sf_gender) > 617, TRUE)
   expect_equal(base::ncol(covid19sf_gender) == 5, TRUE)
 
-  expect_equal(base::nrow(covid19sf_geo) == 263, TRUE)
+  expect_equal(base::nrow(covid19sf_geo) == 264, TRUE)
   expect_equal(base::ncol(covid19sf_geo) == 8, TRUE)
 
   expect_equal(base::nrow(covid19sf_homeless) > 164, TRUE)
