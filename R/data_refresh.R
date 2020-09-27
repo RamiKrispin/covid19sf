@@ -267,7 +267,7 @@ covid19sf_refresh <- function(force = FALSE){
 
 
   } else{
-    cat("Updates are not available...\n")
+    cat("No updates are available\n")
   }
 
 }

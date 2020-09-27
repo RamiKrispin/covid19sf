@@ -1,0 +1,44 @@
+---
+title: "Covid19 SF Data Refresh"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{data_refresh}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(covid19sf)
+```
+
+
+While the CRAN version of the package is updated once every month or two, the package [repository](https://github.com/RamiKrispin/covid19sf) gets updated daily. The `covid19sf_refresh` function enables you to keep the package's data up-to-date with the most recent data available on the package repository. The function is compared between the datasets on the installed version and the ones on the repository. If new data available on any of the package dataset, the function will prompt the following questions and enable the user to choose whether to reinstall the package or not:
+
+``` r 
+library(covid19sf)
+
+covid19sf_refresh()
+```
+
+If no new data is available on the package repository, the function will return the following message:
+
+``` r
+No updates are available
+```
+
+Once new data is available, the function will prompt the following question that enables the user to select whether to install the updates from the package repository:
+
+``` r
+Updates are available on the covid19sf main repository. Do you want to reinstall the package? N/y
+```
+
+In order to make the new data available, you will have to restart your R session.
+
+**Note:** As frequent changes may occur on the raw data structure (such as new fields, retroactive updates in the data, etc.), the package repository version dataset may change accordingly. 
