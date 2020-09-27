@@ -191,8 +191,7 @@ data_refresh <- function(){
     covid19sf_geo <- sf::st_read("https://data.sfgov.org/resource/tpyr-dvnc.geojson",
                                  stringsAsFactors = FALSE,
                                  quiet = TRUE) %>%
-      dplyr::select(area_type, id, count, rate, deaths, acs_population, last_updated = last_updated_at, geometry) %>%
-      dplyr::filter(area_type != "Citywide")
+      dplyr::select(area_type, id, count, rate, deaths, acs_population, last_updated = last_updated_at, geometry)
 
     covid19sf_geo$count <- as.numeric(covid19sf_geo$count)
     covid19sf_geo$rate <- as.numeric(covid19sf_geo$rate)
