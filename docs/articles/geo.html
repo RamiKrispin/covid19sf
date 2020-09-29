@@ -101,9 +101,132 @@
 <div class="sourceCode" id="cb1"><pre class="downlit">
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/RamiKrispin/covid19sf">covid19sf</a></span>)
 </pre></div>
-<div id="geospatial-visualization-of" class="section level3">
+<p>The <code>covid19sf_geo</code> provides information about San Francisco Covid19 cases distribution by geospatial location. Also, testing locations across San Francisco available on <code>covid19sf_test_loc</code> dataset. The following vignette provides examples for geospatial visualization of those datasets. Both datasets are <code>sf</code> objects and contain geometric information (i.e., ready to plot).</p>
+<div id="the-covid19sf_geo-dataset" class="section level3">
 <h3 class="hasAnchor">
-<a href="#geospatial-visualization-of" class="anchor"></a>Geospatial visualization of</h3>
+<a href="#the-covid19sf_geo-dataset" class="anchor"></a>The covid19sf_geo dataset</h3>
+<p>The <code>covid19sf_geo</code> dataset provides a snapshot of the distribution of the Covid19 cases in San Francisco by different geographic locations splits of the city. The datasets contains the following fields:</p>
+<ul>
+<li>
+<code>area_type</code> - the geograpichal split method:
+<ul>
+<li>
+<code>ZCTA</code> for view the data by ZIP code</li>
+<li>
+<code>Analysis Neighborhood</code> for view the data by neigborhoods</li>
+<li>
+<code>Census Tract</code> for view the data by census tract, and</li>
+<li>
+<code>Citywide</code> for total cases in the city</li>
+</ul>
+</li>
+<li>
+<code>id</code> - the area ID</li>
+<li>
+<code>count</code> - total number of positive cases in the area</li>
+<li>
+<code>rate</code> - the cases rate per 10000 residents</li>
+<li>
+<code>deaths</code> - total number of deaths in the area</li>
+<li>
+<code>acs_population</code> - total number of residents in the area</li>
+<li>
+<code>last_updated</code> - last update time of the dataset</li>
+</ul>
+<p>While the first three geograpichal split methods contain geomatry components that enable to plot them as a mpa, the last is just aggregated summary of the total cases in the city.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/RamiKrispin/covid19sf">covid19sf</a></span>)
+
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://r-spatial.github.io/sf">sf</a></span>)
+
+<span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="kw">covid19sf_geo</span>)
+
+<span class="fu"><a href="https://rdrr.io/r/base/class.html">class</a></span>(<span class="kw">covid19sf_geo</span>)
+<span class="co">#&gt; [1] "sf"         "data.frame"</span>
+
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_geo</span>)
+<span class="co">#&gt; Simple feature collection with 6 features and 7 fields</span>
+<span class="co">#&gt; geometry type:  MULTIPOLYGON</span>
+<span class="co">#&gt; dimension:      XY</span>
+<span class="co">#&gt; bbox:           xmin: -122.4774 ymin: 37.73216 xmax: -122.3741 ymax: 37.80602</span>
+<span class="co">#&gt; CRS:            4326</span>
+<span class="co">#&gt;               area_type                             id count      rate deaths</span>
+<span class="co">#&gt; 1                  ZCTA                          94103   591 205.67252      1</span>
+<span class="co">#&gt; 2 Analysis Neighborhood Financial District/South Beach   150  77.08912     NA</span>
+<span class="co">#&gt; 3                  ZCTA                          94110  1586 213.85904      7</span>
+<span class="co">#&gt; 4 Analysis Neighborhood                       Nob Hill   191  71.86124     NA</span>
+<span class="co">#&gt; 5          Census Tract                    06075980900    NA        NA     NA</span>
+<span class="co">#&gt; 6                  ZCTA                          94117   245  55.38100      6</span>
+<span class="co">#&gt;   acs_population        last_updated                       geometry</span>
+<span class="co">#&gt; 1          28735 2020-09-26 18:00:34 MULTIPOLYGON (((-122.3978 3...</span>
+<span class="co">#&gt; 2          19458 2020-09-26 18:00:34 MULTIPOLYGON (((-122.3875 3...</span>
+<span class="co">#&gt; 3          74161 2020-09-26 18:00:34 MULTIPOLYGON (((-122.4051 3...</span>
+<span class="co">#&gt; 4          26579 2020-09-26 18:00:34 MULTIPOLYGON (((-122.4115 3...</span>
+<span class="co">#&gt; 5            272 2020-09-26 18:00:34 MULTIPOLYGON (((-122.3741 3...</span>
+<span class="co">#&gt; 6          44239 2020-09-26 18:00:34 MULTIPOLYGON (((-122.4299 3...</span>
+</pre></div>
+<div id="plotting-cases-with-base-plot" class="section level4">
+<h4 class="hasAnchor">
+<a href="#plotting-cases-with-base-plot" class="anchor"></a>Plotting cases with base plot</h4>
+<p>The <a href="https://r-spatial.github.io/sf/index.html">sf</a> package provides a <code>plot</code> method for <code>sf</code> objects (see <code>?sf:::plot.sf</code> for more information). The following example demonsrate a simple use case of the <code>plot</code> function to plot the confirmed cases in San Francisco with the <code>plot</code> function to plot cases distrubtion by ZIP code:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org">dplyr</a></span>)
+
+<span class="kw">zip</span> <span class="op">&lt;-</span> <span class="kw">covid19sf_geo</span> <span class="op">%&gt;%</span> 
+  <span class="kw">dplyr</span>::<span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="kw">area_type</span> <span class="op">==</span> <span class="st">"ZCTA"</span>) <span class="op">%&gt;%</span> 
+  <span class="kw">dplyr</span>::<span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span>(<span class="kw">count</span>, <span class="kw">geometry</span>) <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://rdrr.io/pkg/sf/man/plot.html">plot</a></span>(main = <span class="st">"Covid19 Cases by ZIP Code"</span>)
+</pre></div>
+<p><img src="geo_files/figure-html/unnamed-chunk-3-1.png" width="576"></p>
+<p>You can defines the color palette with the <code>pal</code> argument and set the level of breaks of the color scale by setting the <code>breaks</code> argument to <code>quantile</code> and the number of breaks with the <code>nbreaks</code> argument (which should be aligned with number of colors on the color palette):</p>
+<div class="sourceCode" id="cb4"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw">RColorBrewer</span>)
+<span class="kw">pal</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/RColorBrewer/man/ColorBrewer.html">brewer.pal</a></span>(<span class="fl">9</span>, <span class="st">"OrRd"</span>)
+
+<span class="kw">covid19sf_geo</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="kw">area_type</span> <span class="op">==</span> <span class="st">"ZCTA"</span>) <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span>(<span class="kw">count</span>, <span class="kw">geometry</span>) <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://rdrr.io/pkg/sf/man/plot.html">plot</a></span>(main = <span class="st">"Covid19 Cases by ZIP Code"</span>,
+       breaks = <span class="st">"quantile"</span>, nbreaks = <span class="fl">9</span>,
+       pal = <span class="kw">pal</span>)
+</pre></div>
+<p><img src="geo_files/figure-html/unnamed-chunk-4-1.png" width="576"></p>
+</div>
+<div id="plotting-cases-with-ggplot" class="section level4">
+<h4 class="hasAnchor">
+<a href="#plotting-cases-with-ggplot" class="anchor"></a>Plotting cases with ggplot</h4>
+<div class="sourceCode" id="cb5"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="http://ggplot2.tidyverse.org">ggplot2</a></span>)
+
+<span class="kw">covid19sf_geo</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="kw">area_type</span> <span class="op">==</span> <span class="st">"ZCTA"</span>) <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>() <span class="op">+</span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html">geom_sf</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(fill=<span class="kw">count</span>)) <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">ggtitle</a></span>(<span class="st">"Covid19 Cases by ZIP Code"</span>)
+</pre></div>
+<p><img src="geo_files/figure-html/unnamed-chunk-5-1.png" width="576"></p>
+<div class="sourceCode" id="cb6"><pre class="downlit">
+<span class="kw">covid19sf_geo</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="kw">area_type</span> <span class="op">==</span> <span class="st">"ZCTA"</span>) <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>() <span class="op">+</span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html">geom_sf</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(fill=<span class="kw">count</span>)) <span class="op">+</span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html">scale_fill_viridis_b</a></span>() <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">ggtitle</a></span>(<span class="st">"Covid19 Cases by ZIP Code"</span>)
+</pre></div>
+<p><img src="geo_files/figure-html/unnamed-chunk-6-1.png" width="576"></p>
+<div class="sourceCode" id="cb7"><pre class="downlit">
+<span class="kw">covid19sf_geo</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="kw">area_type</span> <span class="op">==</span> <span class="st">"ZCTA"</span>) <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>() <span class="op">+</span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html">geom_sf</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(fill=<span class="kw">count</span>)) <span class="op">+</span> 
+    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_viridis.html">scale_fill_viridis_b</a></span>(option = <span class="st">"A"</span>,
+                       begin = <span class="fl">0.2</span>,
+                       end = <span class="fl">0.7</span>) <span class="op">+</span> 
+   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_void</a></span>() <span class="op">+</span>
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">ggtitle</a></span>(<span class="st">"Covid19 Cases by ZIP Code"</span>)
+</pre></div>
+<p><img src="geo_files/figure-html/unnamed-chunk-7-1.png" width="576"></p>
+</div>
 </div>
   </div>
 

@@ -66,9 +66,9 @@ The [sf](https://r-spatial.github.io/sf/index.html) package provides a `plot` me
 ```{r}
 library(dplyr)
 
-covid19sf_geo %>% 
-  filter(area_type == "ZCTA") %>% 
-  select(count, geometry) %>%
+zip <- covid19sf_geo %>% 
+  dplyr::filter(area_type == "ZCTA") %>% 
+  dplyr::select(count, geometry) %>%
   plot(main = "Covid19 Cases by ZIP Code")
 
 ```
