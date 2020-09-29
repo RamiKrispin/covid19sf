@@ -18,32 +18,27 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(covid19sf)
-```
-
-
-The `covid19sf_geo` provides information about San Francisco Covid19 cases distribution by geospatial location. Also, testing locations across San Francisco available on `covid19sf_test_loc` dataset. The following vignette provides examples for geospatial visualization of those datasets. Both datasets are `sf` objects and contain geometric information (i.e., ready to plot).
+The `covid19sf_geo` provides information about San Francisco Covid19 cases distribution by geospatial location. Also, testing locations across San Francisco available on `covid19sf_test_loc` dataset. The following vignette provides examples for geospatial visualization of those datasets. Both datasets are `sf` objects and contain geometric information (i.e., ready to plot on a map).
 
 
 ### The covid19sf_geo dataset
 
-The `covid19sf_geo` dataset provides a snapshot of the distribution of the Covid19 cases in San Francisco by different geographic locations splits of the city. The datasets contains the following fields:
+The `covid19sf_geo` dataset provides a snapshot of the distribution of the Covid19 cases in San Francisco by different geographic locations splits of the city. The dataset contains the following fields:
 
 - `area_type` - the geograpichal split method:
   - `ZCTA` for view the data by ZIP code
   - `Analysis Neighborhood` for view the data by neigborhoods
   - `Census Tract` for view the data by census tract, and
   - `Citywide` for total cases in the city
-- `id` - the area ID
+- `id` - the area ID (e.g., ZIP code, neighborhood name, etc.)
 - `count` - total number of positive cases in the area
-- `rate` - the cases rate per 10000 residents
+- `rate` - cases rate per 10000 residents
 - `deaths` - total number of deaths in the area
 - `acs_population` - total number of residents in the area
-- `last_updated` - last update time of the dataset
+- `last_updated` - most recent update time of the dataset
 
 
-While the first three geograpichal split methods contain geomatry components that enable to plot them as a mpa, the last is just aggregated summary of the total cases in the city.
+While the first three geographical split methods contain geometry components that enable us to plot them as a map, the last is just an aggregated summary of the city's total cases.
 
 ```{r }
 library(covid19sf)
@@ -57,14 +52,37 @@ class(covid19sf_geo)
 head(covid19sf_geo)
 ```
 
+#### Plotting cases with mapview
 
-#### Plotting cases with base plot
+The most intuitive method for plotting `sf` objects is with the mapview package, which is a wrapper for the leaflet JavaScript package. The main advantages of the mapview package that it is both intercative and smoothly works with `sf` objects. The following example demonstrated the use case of the `mapview` function to plot the confirmed cases in San Francisco with the `plot` function to plot cases distribution by ZIP code:
 
-The [sf](https://r-spatial.github.io/sf/index.html) package provides a `plot` method for `sf` objects (see `?sf:::plot.sf` for more information). The following example demonsrate a simple use case of the `plot` function to plot the confirmed cases in San Francisco with the `plot` function to plot cases distrubtion by ZIP code:
+```{r}
+library(mapview)
+library(dplyr)
+
+covid19sf_geo %>% 
+  filter(area_type == "ZCTA") %>% 
+  mapview(zcol = "count")
+```
+
+
+
 
 
 ```{r}
-library(dplyr)
+covid19sf_geo %>% 
+  filter(area_type == "ZCTA") %>% 
+  mapview(zcol = "count", 
+          at = c(0,  200, 400, 800, 1200, 1600, 1800),
+          col.regions = (c('#fef0d9','#b30000')))
+```
+#### Plotting cases with base plot
+
+The [sf](https://r-spatial.github.io/sf/index.html) package provides a `plot` method for `sf` objects (see `?sf:::plot.sf` for more information). Similarly to the previews examples above we will replot the confirmed cases by ZIP code with the `plot` function:
+
+
+```{r}
+
 
 zip <- covid19sf_geo %>% 
   dplyr::filter(area_type == "ZCTA") %>% 
@@ -73,7 +91,7 @@ zip <- covid19sf_geo %>%
 
 ```
 
-You can defines the color palette with the `pal` argument and set the level of breaks of the color scale by setting the `breaks` argument to `quantile` and the number of breaks with the `nbreaks` argument (which should be aligned with number of colors on the color palette):
+You can define the color palette with the `pal` argument and set the level of breaks of the color scale by setting the `breaks` argument to `quantile` and the number of breaks with the `nbreaks` argument (which should be aligned with the number of colors on the color palette):
 
 
 ```{r }
@@ -90,7 +108,9 @@ covid19sf_geo %>%
 
 
 
-#### Plotting cases with ggplot
+#### Plotting cases with ggplot2
+
+Plotting `sf` object can be done with the [ggplot2](https://ggplot2.tidyverse.org/) package by using the [geom_sf](https://ggplot2.tidyverse.org/reference/ggsf.html) function for plotting `sf` objects:
 
 ```{r}
 library(ggplot2)
@@ -102,6 +122,7 @@ covid19sf_geo %>%
   ggtitle("Covid19 Cases by ZIP Code")
 ```
 
+You can customize the polygon color scale by using the [scale_viridis](https://ggplot2.tidyverse.org/reference/scale_viridis.html) function that enables you to select different viridis color palettes. In addition, the [geom_sf_label](https://ggplot2.tidyverse.org/reference/ggsf.html) enables you to add labels for each polygon. In the next example, we will replot the count of cases by ZIP code, this time using `scale_fill_viridis_b` color palette and setting the `id` variable as the polygon title using the `geom_sf_label`:
 
 ```{r}
 covid19sf_geo %>% 
@@ -109,11 +130,12 @@ covid19sf_geo %>%
   ggplot() + 
   geom_sf(aes(fill=count)) + 
   scale_fill_viridis_b() +
+  geom_sf_label(aes(label = id)) + 
   ggtitle("Covid19 Cases by ZIP Code")
 ```
 
 
-
+Additional customization of the viridis color palettes can be done by the `option` argument, where the `begin`, and `end` arguments control the color hue:
 
 ```{r}
 covid19sf_geo %>% 
@@ -126,7 +148,6 @@ covid19sf_geo %>%
    theme_void() +
   ggtitle("Covid19 Cases by ZIP Code")
 ```
-
 
 
 
