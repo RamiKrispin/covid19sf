@@ -1,0 +1,134 @@
+---
+title: "Geospatial Visualization of the Covid19 Cases"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{geo}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  message=FALSE, 
+  warning=FALSE,
+  collapse = TRUE,
+  fig.height=6, 
+  fig.width=6, 
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(covid19sf)
+```
+
+
+The `covid19sf_geo` provides information about San Francisco Covid19 cases distribution by geospatial location. Also, testing locations across San Francisco available on `covid19sf_test_loc` dataset. The following vignette provides examples for geospatial visualization of those datasets. Both datasets are `sf` objects and contain geometric information (i.e., ready to plot).
+
+
+### The covid19sf_geo dataset
+
+The `covid19sf_geo` dataset provides a snapshot of the distribution of the Covid19 cases in San Francisco by different geographic locations splits of the city. The datasets contains the following fields:
+
+- `area_type` - the geograpichal split method:
+  - `ZCTA` for view the data by ZIP code
+  - `Analysis Neighborhood` for view the data by neigborhoods
+  - `Census Tract` for view the data by census tract, and
+  - `Citywide` for total cases in the city
+- `id` - the area ID
+- `count` - total number of positive cases in the area
+- `rate` - the cases rate per 10000 residents
+- `deaths` - total number of deaths in the area
+- `acs_population` - total number of residents in the area
+- `last_updated` - last update time of the dataset
+
+
+While the first three geograpichal split methods contain geomatry components that enable to plot them as a mpa, the last is just aggregated summary of the total cases in the city.
+
+```{r }
+library(covid19sf)
+
+library(sf)
+
+data(covid19sf_geo)
+
+class(covid19sf_geo)
+
+head(covid19sf_geo)
+```
+
+
+#### Plotting cases with base plot
+
+The [sf](https://r-spatial.github.io/sf/index.html) package provides a `plot` method for `sf` objects (see `?sf:::plot.sf` for more information). The following example demonsrate a simple use case of the `plot` function to plot the confirmed cases in San Francisco with the `plot` function to plot cases distrubtion by ZIP code:
+
+
+```{r}
+library(dplyr)
+
+covid19sf_geo %>% 
+  filter(area_type == "ZCTA") %>% 
+  select(count, geometry) %>%
+  plot(main = "Covid19 Cases by ZIP Code")
+
+```
+
+You can defines the color palette with the `pal` argument and set the level of breaks of the color scale by setting the `breaks` argument to `quantile` and the number of breaks with the `nbreaks` argument (which should be aligned with number of colors on the color palette):
+
+
+```{r }
+library(RColorBrewer)
+pal <- brewer.pal(9, "OrRd")
+
+covid19sf_geo %>% 
+  filter(area_type == "ZCTA") %>% 
+  select(count, geometry) %>%
+  plot(main = "Covid19 Cases by ZIP Code",
+       breaks = "quantile", nbreaks = 9,
+       pal = pal)
+```
+
+
+
+#### Plotting cases with ggplot
+
+```{r}
+library(ggplot2)
+
+covid19sf_geo %>% 
+  filter(area_type == "ZCTA") %>% 
+  ggplot() + 
+  geom_sf(aes(fill=count)) +
+  ggtitle("Covid19 Cases by ZIP Code")
+```
+
+
+```{r}
+covid19sf_geo %>% 
+  filter(area_type == "ZCTA") %>% 
+  ggplot() + 
+  geom_sf(aes(fill=count)) + 
+  scale_fill_viridis_b() +
+  ggtitle("Covid19 Cases by ZIP Code")
+```
+
+
+
+
+```{r}
+covid19sf_geo %>% 
+  filter(area_type == "ZCTA") %>% 
+  ggplot() + 
+  geom_sf(aes(fill=count)) + 
+    scale_fill_viridis_b(option = "A",
+                       begin = 0.2,
+                       end = 0.7) + 
+   theme_void() +
+  ggtitle("Covid19 Cases by ZIP Code")
+```
+
+
+
+
+
+

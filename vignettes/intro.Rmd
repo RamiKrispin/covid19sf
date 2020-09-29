@@ -1,0 +1,36 @@
+---
+title: "Introduction to the covid19italy Datasets"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(covid19sf)
+```
+
+The covid19sf package provides a daily summary of the covid19 cases in San Francisco. The package includes the following datasets:
+
+* `covid19sf_age` -  Cases summarized by age group
+* `covid19sf_demo` -  Cases summarized by date, transmission and case disposition
+* `covid19sf_gender` -  Confirmed cases summarized by gender
+* `covid19sf_geo` -  Confirmed cases and deaths summarized by geography
+* `covid19sf_homeless` -  Confirmed cases by homelessness
+* `covid19sf_hospital` -  Hospital capacity data
+* `covid19sf_hospitalizations` -  Hospitalizations data
+* `covid19sf_housing` -  Alternative housing sites
+* `covid19sf_summary` -  Cases summarized by date, transmission and case disposition
+* `covid19sf_test_loc` -  Testing locations
+* `covid19sf_tests` -  Daily number of tests
+
+
+**Data soucre:** San Francisco, Department of Public Health - Population Health Division through the San Francisco [Opne Data protal website](https://datasf.org/opendata/)
