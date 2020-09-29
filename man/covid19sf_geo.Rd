@@ -7,13 +7,13 @@
 \format{
 An object class sf and data.frame with 8 variables.
 \describe{
-  \item{rate}{The rate of cases in the area, calculated as (count/acs_population) * 10000 which is a rate per 10,000 residents}
-  \item{count}{The count of cases in the area}
-  \item{deaths}{The number of cases in the area }
-  \item{last_updated}{Last update of the data in POSIXc forecast)}
+  \item{area_type}{Area type, c("ZCTA", "Analysis Neighborhood", "Census Tract", "Citywide")}
   \item{id}{area id}
-  \item{area_type}{Area type}
+  \item{count}{The count of cases in the area}
+  \item{rate}{The rate of cases in the area, calculated as (count/acs_population) * 10000 which is a rate per 10,000 residents}
+  \item{deaths}{The number of cases in the area }
   \item{acs_population}{The population from the latest 5-year estimates from the American Community Survey (2014-2018))}
+  \item{last_updated}{Last update of the data in POSIXc format)}
   \item{geometry}{The area polygon data)}
   }
 }
@@ -38,9 +38,18 @@ data(covid19sf_geo)
 head(covid19sf_geo)
 
 library(sf)
-# Ploting SF Covid19 map using base plot function
-plot(covid19sf_geo[, c("count", "geometry")])
-plot(covid19sf_geo[, c("rate", "geometry")])
+# Ploting SF Covid19 counts using base plot function
+# Plotting by zip code
+plot(covid19sf_geo[which(covid19sf_geo$area_type == "ZCTA"), c("count", "geometry")],
+      main = "Covid19 Cases by ZIP Code")
+# Plotting by neighborhood
+plot(covid19sf_geo[which(covid19sf_geo$area_type == "Analysis Neighborhood"), c("count", "geometry")],
+     main = "Covid19 Cases by Neighborhood")
+#Plotting by census tract
+plot(covid19sf_geo[which(covid19sf_geo$area_type == "Census Tract"), c("count", "geometry")],
+     main = "Covid19 Cases by Census Tract")
+plot(covid19sf_geo[which(covid19sf_geo$area_type == "Census Tract"), c("rate", "geometry")],
+     main = "Covid19 Cases Rate per 10,000 by Census Tract")
 }
 \keyword{COVID19}
 \keyword{datasets}
