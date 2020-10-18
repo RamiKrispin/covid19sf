@@ -8,12 +8,161 @@ vignette: >
 ---
 
 ```{r, include = FALSE}
+library(covid19sf)
+
 knitr::opts_chunk$set(
+  fig.height=5, fig.width=8,
+   message=FALSE, warning=FALSE,
   collapse = TRUE,
   comment = "#>"
 )
 ```
 
-```{r setup}
-library(covid19sf)
+The **covid19sf** package provides several datasets that descrive the distribution of cases in the city by demographic group (age, race, gender, homelessness, etc.). That includes the following datasets:
+
+* `covid19sf_age` -  Cases summarized by age group
+* `covid19sf_demo` -  Cases summarized by date, transmission and case disposition
+* `covid19sf_gender` -  Confirmed cases summarized by gender
+* `covid19sf_homeless` -  Confirmed cases by homelessness
+
+**Note:** All datasets above are not normalized by the proportion of the overall population of San Francisco (or any other normalization method). Therefore, it hard to conclude on any of the demographic groups (age, gender, race, etc.) without having additional information about San Francisco's overall demographic distribution. In addition, unfortunately, the datasets do not have a unique key. Therefore, it is not possible to make an inner join between different demographic measurements (e.g., age and gender).
+
+### Age group
+
+The `covid19sf_age` dataset provides distribution of new and aggregate cases by age group. That includes the following age groups:
+
+* Under 18
+* 18 to 30
+* 31 to 40
+* 41 to 50
+* 51 to 60
+* 61 to 70
+* 71 to 80
+* 81 and above
+
+```{r}
+data(covid19sf_age)
+
+head(covid19sf_age)
 ```
+
+
+In the following example, we will use the [plotly](https://plotly.com/r/) package to visualize the daily new cases distributions by age group. First, let's sort the age group:
+
+
+```{r}
+library(plotly)
+
+covid19sf_age$age_group <- factor(covid19sf_age$age_group, 
+                                  levels = c("under 18",  "18-30", 
+                                             "31-40", "41-50",
+                                             "51-60", "61-70",
+                                             "71-80","81+"))
+```
+
+Next, we will use the `box` plot option to create a box-plot by age group:
+
+```{r}
+plot_ly(covid19sf_age, 
+        color = ~ age_group, 
+        y = ~ new_confirmed_cases, 
+        boxpoints = "all", 
+        jitter = 0.3,
+        pointpos = -1.8,
+        type = "box" ) %>%
+layout(title = "Case Dist. by Age Group",
+       yaxis = list(title = "Number of Cases"),
+       xaxis = list(title = "Source: San Francisco Department of Public Health"),
+       legend = list(x = 0.9, y = 0.9))
+```
+
+As you can see in the box-plot above, the distribution is getting narrow as the age group is older. It is hard to conclude about age group distribution without some information about the overall distribution of the age groups of San Francisco population (i.e., the data is not normalized).
+
+The next plot describes the distribution of the cumulative cases by age group as of the most recent date in the data:
+
+```{r}
+covid19sf_age %>% 
+  filter(specimen_collection_date == max(specimen_collection_date)) %>%
+  plot_ly(values = ~ cumulative_confirmed_cases, 
+          labels = ~ age_group, 
+          type = "pie",
+          textposition = 'inside',
+          textinfo = 'label+percent',
+          insidetextfont = list(color = '#FFFFFF'),
+          hoverinfo = 'text',
+          text = ~paste("Age Group:", age_group, "<br>",
+                        "Total:", cumulative_confirmed_cases)) %>%
+   layout(title = ~ paste("Total Cases Dist. by Age Group as of", max(specimen_collection_date)))
+```
+
+### Gender
+
+The `covid19sf_gender` dataset provides a daily snapshot of the daily new and cumulative cases in San Francisco by gender. It followed the same structure as the `covid19sf_age` dataset:
+
+```{r}
+data(covid19sf_gender)
+
+head(covid19sf_gender)
+```
+
+Let's look at the cumulative number of confirmed cases by gender. We will filter the data to the most recent date and use the [tidyr](https://tidyr.tidyverse.org/) package to spread the data by gender group with the `pivot_wider` function:
+
+```{r}
+library(tidyr)
+
+covid19sf_gender %>% 
+  filter(specimen_collection_date == max(specimen_collection_date)) %>%
+  select(specimen_collection_date, gender, cumulative_confirmed_cases) %>%
+  pivot_wider(names_from = gender, values_from = cumulative_confirmed_cases)
+```
+
+
+### Race and Ethnicity
+
+The `covid19sf_demo` dataset also follows the same structure as the previous datasets above, providing daily new and cumulative cases by race and ethnicity group. In the next example, we will plot the cumulative confirmed cases by race and ethnicity group:
+
+```{r }
+data(covid19sf_demo)
+
+covid19sf_demo %>%
+  dplyr::arrange(specimen_collection_date) %>%
+plotly::plot_ly(x = ~ specimen_collection_date, 
+                y = ~ cumulative_confirmed_cases, 
+                # name = 'Cases', 
+                type = 'scatter', 
+                mode = 'none', 
+                color = ~race_ethnicity,
+                stackgroup = 'one') %>%
+  layout(title = "Total Cases Dist. by Race and Ethnicity",
+          legend = list(x = 0.1, y = 0.9),
+         yaxis = list(title = "Number of Cases", tickformat = ".0f"),
+         xaxis = list(title = "Source: San Francisco Department of Public Health"),
+         hovermode = "compare")
+```
+
+
+### Homelessness
+
+The `covid19sf_homeless` dataset provides information about number of new and cumulative Covid19 cases of homeless in San Francisco:
+
+```{r}
+data(covid19sf_homeless)
+
+head(covid19sf_homeless)
+```
+
+The following plot describe the daily number of new Covid19 cases:
+
+```{r}
+plot_ly(data = covid19sf_homeless,
+        x = ~ specimen_collection_date,
+        y = ~ new_confirmed_cases,
+        type = "scatter",
+        mode = "lines",
+        name = "New Cases") %>%
+  layout(title = "Confirmed New Covid19 Cases by Homelessness",
+         yaxis = list(title = "New Cases"),
+         xaxis = list(title = "Source: San Francisco Department of Public Health"),
+         hovermode = "compare")
+```
+
