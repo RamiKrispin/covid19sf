@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the covid19italy Datasets"
+title: "Introduction to the covid19sf Datasets"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{intro}
