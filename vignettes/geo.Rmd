@@ -54,7 +54,7 @@ head(covid19sf_geo)
 
 #### Plotting cases with mapview
 
-The most intuitive method for plotting `sf` objects is with the mapview package, which is a wrapper for the leaflet JavaScript package. The main advantages of the mapview package that it is both intercative and smoothly works with `sf` objects. The following example demonstrated the use case of the `mapview` function to plot the confirmed cases in San Francisco with the `plot` function to plot cases distribution by ZIP code:
+The most intuitive method for plotting `sf` objects is with the [mapview](https://r-spatial.github.io/mapview/) package, which is a wrapper for the leaflet JavaScript package. The main advantage of the mapview package that it is both interactive and smoothly works with `sf` objects. The following example demonstrated the use case of the `mapview` function to plot the confirmed cases in San Francisco with the `plot` function to plot cases distribution by ZIP code:
 
 ```{r}
 library(mapview)
@@ -67,18 +67,19 @@ covid19sf_geo %>%
 
 
 
-
+You can use `at` and `col.regions` arguments to define color buckets and color range, respectively:
 
 ```{r}
 covid19sf_geo %>% 
   filter(area_type == "ZCTA") %>% 
   mapview(zcol = "count", 
-          at = c(0,  200, 400, 800, 1200, 1600, 1800),
+          at = c(0,  200, 400, 800, 1200, 1600, 2000),
           col.regions = (c('#fef0d9','#b30000')))
 ```
+
 #### Plotting cases with base plot
 
-The [sf](https://r-spatial.github.io/sf/index.html) package provides a `plot` method for `sf` objects (see `?sf:::plot.sf` for more information). Similarly to the previews examples above we will replot the confirmed cases by ZIP code with the `plot` function:
+The [sf](https://r-spatial.github.io/sf/index.html) package provides a `plot` method for `sf` objects (see `?sf:::plot.sf` for more information). Similarly to the previews examples above, we will replot the confirmed cases by ZIP code with the `plot` function:
 
 
 ```{r}
@@ -110,7 +111,7 @@ covid19sf_geo %>%
 
 #### Plotting cases with ggplot2
 
-Plotting `sf` object can be done with the [ggplot2](https://ggplot2.tidyverse.org/) package by using the [geom_sf](https://ggplot2.tidyverse.org/reference/ggsf.html) function for plotting `sf` objects:
+Plotting `sf` object can be done with the [ggplot2](https://ggplot2.tidyverse.org/) package natively by using the [geom_sf](https://ggplot2.tidyverse.org/reference/ggsf.html) function for plotting `sf` objects:
 
 ```{r}
 library(ggplot2)
@@ -150,6 +151,21 @@ covid19sf_geo %>%
 ```
 
 
+### The covid19sf_test_loc dataset
+
+The `covid19sf_test_loc` datasets provides general metadata about the Covid19 testing locations in San Francisco:
+
+```{r}
+data(covid19sf_test_loc)
+
+head(covid19sf_test_loc)
+```
+
+Plotting the testing locations on map is fairly similar to one of the `covid19sf_geo` as both are `sf` objects. The main distinction between the two, is that the `covid19sf_test_loc` provides the geometry location (e.g., latitude and longitude) as opposed to a polygon. Let's plot the locations with the **mapview** package setting the location color by the type (private or public):
+
+```{r}
+covid19sf_test_loc %>% mapview(zcol = "location_type")
+```
 
 
 
