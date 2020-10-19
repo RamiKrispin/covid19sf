@@ -167,5 +167,18 @@ Plotting the testing locations on map is fairly similar to one of the `covid19sf
 covid19sf_test_loc %>% mapview(zcol = "location_type")
 ```
 
+### Combine cases dist. and testing points
+
+The `sync` function from the **mapview** package enables to combine multiple maps plots. In the following example, we will put side by side the cases split by ZIP code and the testing point in the city map:
+
+```{r}
+m1 <- covid19sf_geo %>% 
+  filter(area_type == "ZCTA") %>% 
+  mapview(zcol = "count", 
+          at = c(0,  200, 400, 800, 1200, 1600, 2000),
+          col.regions = (c('#fef0d9','#b30000')))
+m2 <- covid19sf_test_loc %>% mapview(zcol = "location_type")
+sync(m1, m2)
+```
 
 

@@ -18,27 +18,48 @@ knitr::opts_chunk$set(
 library(covid19sf)
 ```
 
+The **covid19sf** package provides two datasets focusing on the overall hospital capacity and patients status in San Francisco hospitals:
+
+* `covid19sf_hospital` - a daily snapshot of the hospital capacity
+* `covid19sf_hospitalizations` - a daily snapshot of the patients status
+
+### Hospital Capacity
+
+The `covid19sf_hospital` dataset provides a daily snapshot of the San Francisco hospital capacity by bed type and status with the following variables:
+
+* `bed_type` - number of hospital beds available by department type:
+    * Acute Care
+    * Intensive Care
+    * Acute Care Surge
+    * Intensive Care Surge
+* `status` - the department corresponding bed status:
+  * Available
+  * COVID-19 (Confirmed & Suspected)
+  * Other Patients
 
 
 ```{r}
-library(dplyr)
-library(plotly)
-
+data(covid19sf_hospital)
 
 head(covid19sf_hospital)
-unique(covid19sf_hospital$bed_type)
-unique(covid19sf_hospital$status)
+```
 
+
+Let's summarise the hospital status as of the most recent date available on the dataset:
+
+```{r}
+library(dplyr)
 
 covid19sf_hospital %>%
-  dplyr::filter(date == max(date)) %>%
+  filter(date == max(date)) %>%
   group_by(bed_type, status) %>%
   summarise(total = sum(count))
 ```
 
 
-
 ```{r}
+library(plotly)
+
 covid19sf_hospital %>%
   filter(bed_type == "Acute Care") %>%
   mutate(status = factor(status, levels = c("Other Patients", "COVID-19 (Confirmed & Suspected)", "Available"))) %>%
@@ -73,10 +94,24 @@ covid19sf_hospital %>%
 ```
 
 
+### Covid19 Hospitalizations 
+
+The `covid19sf_hospitalizations` provides daily snapshot of the number of patients in San Francisco hospitals by hospitalization unit and Covid19 status using the following variables:
+
+* `dphcategory` - the hospital unit type, either `ICU` (intensive care unit) or `Med/Surg` (acute care).
+* `covidstatus` - the Covid19 status, either `COVID+` (confirmed cases) or `PUI` (patient under investigation)
+
+The below example summarised the hospitalizations status as of the most recent date in the data:
+
+
 ```{r}
+data(covid19sf_hospitalizations)
+
 covid19sf_hospitalizations %>%
   filter(reportdate == max(reportdate)) %>%
   group_by(dphcategory, covidstatus) %>%
   summarise(total = sum(patientcount))
 ```
+
+
 

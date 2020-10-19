@@ -107,6 +107,9 @@ data will change to reflect as information becomes available. More information a
       <a href="../articles/geo.html">Geospatial Visualization of the Covid19 Cases</a>
     </li>
     <li>
+      <a href="../articles/hospital.html">Hospital capacity data</a>
+    </li>
+    <li>
       <a href="../articles/intro.html">Introduction to the covid19sf Datasets</a>
     </li>
   </ul>
@@ -178,28 +181,28 @@ and case disposition</p>
 #&gt; 5               2020-03-08        Confirmed          From Contact          1
 #&gt; 6               2020-03-10        Confirmed             Community          4
 #&gt;          last_updated
-#&gt; 1 2020-10-16 14:15:02
-#&gt; 2 2020-10-16 14:15:02
-#&gt; 3 2020-10-16 14:15:02
-#&gt; 4 2020-10-16 14:15:02
-#&gt; 5 2020-10-16 14:15:02
-#&gt; 6 2020-10-16 14:15:02</div><div class='input'>
+#&gt; 1 2020-10-17 14:15:01
+#&gt; 2 2020-10-17 14:15:01
+#&gt; 3 2020-10-17 14:15:01
+#&gt; 4 2020-10-17 14:15:01
+#&gt; 5 2020-10-17 14:15:01
+#&gt; 6 2020-10-17 14:15:01</div><div class='input'>
 <span class='co'># Case disposition summary</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>)
 </div><div class='output co'>#&gt; 
 #&gt; Confirmed     Death 
-#&gt;       554       109 </div><div class='input'>
+#&gt;       556       109 </div><div class='input'>
 <span class='co'># Transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt; 
 #&gt;    Community From Contact      Unknown 
-#&gt;          278          268          117 </div><div class='input'>
+#&gt;          279          269          117 </div><div class='input'>
 <span class='co'># Summary of case disposition and transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>,
       <span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt;            
 #&gt;             Community From Contact Unknown
-#&gt;   Confirmed       221          220     113
+#&gt;   Confirmed       222          221     113
 #&gt;   Death            57           48       4</div><div class='input'>
 </div></pre>
   </div>
