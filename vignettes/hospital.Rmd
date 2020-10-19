@@ -1,0 +1,82 @@
+---
+title: "Hospital capacity data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{hospital}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  fig.height=5, fig.width=8,
+   message=FALSE, warning=FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+`%>%` <- magrittr::`%>%`
+library(covid19sf)
+```
+
+
+
+```{r}
+library(dplyr)
+library(plotly)
+
+
+head(covid19sf_hospital)
+unique(covid19sf_hospital$bed_type)
+unique(covid19sf_hospital$status)
+
+
+covid19sf_hospital %>%
+  dplyr::filter(date == max(date)) %>%
+  group_by(bed_type, status) %>%
+  summarise(total = sum(count))
+```
+
+
+
+```{r}
+covid19sf_hospital %>%
+  filter(bed_type == "Acute Care") %>%
+  mutate(status = factor(status, levels = c("Other Patients", "COVID-19 (Confirmed & Suspected)", "Available"))) %>%
+  plot_ly(x = ~ date,
+          y = ~ count,
+          type = 'scatter', 
+          mode = 'none', 
+          color = ~status,
+          stackgroup = 'one') %>%
+    layout(title = "SF Acute Hospitals - Acute Care Bed Count",
+          legend = list(x = 0.05, y = 0.95),
+         yaxis = list(title = "Number of Beds", tickformat = ".0f"),
+         xaxis = list(title = "Source: San Francisco Department of Public Health"),
+         hovermode = "compare")
+```
+
+```{r}
+covid19sf_hospital %>%
+  filter(bed_type == "Intensive Care") %>%
+  mutate(status = factor(status, levels = c("Other Patients", "COVID-19 (Confirmed & Suspected)", "Available"))) %>%
+  plot_ly(x = ~ date,
+          y = ~ count,
+          type = 'scatter', 
+          mode = 'none', 
+          color = ~status,
+          stackgroup = 'one') %>%
+    layout(title = "SF Acute Hospitals - Intensive Care Bed Count",
+          legend = list(x = 0.05, y = 1),
+         yaxis = list(title = "Number of Beds", tickformat = ".0f"),
+         xaxis = list(title = "Source: San Francisco Department of Public Health"),
+         hovermode = "compare")
+```
+
+
+```{r}
+covid19sf_hospitalizations %>%
+  filter(reportdate == max(reportdate)) %>%
+  group_by(dphcategory, covidstatus) %>%
+  summarise(total = sum(patientcount))
+```
+
