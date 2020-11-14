@@ -40,15 +40,20 @@ head(covid19sf_geo)
 library(sf)
 # Ploting SF Covid19 counts using base plot function
 # Plotting by zip code
-plot(covid19sf_geo[which(covid19sf_geo$area_type == "ZCTA"), c("count", "geometry")],
+plot(covid19sf_geo[which(covid19sf_geo$area_type == "ZCTA"),
+                   c("count", "geometry")],
       main = "Covid19 Cases by ZIP Code")
 # Plotting by neighborhood
-plot(covid19sf_geo[which(covid19sf_geo$area_type == "Analysis Neighborhood"), c("count", "geometry")],
+plot(covid19sf_geo[which(covid19sf_geo$area_type ==
+                         "Analysis Neighborhood"),
+                   c("count", "geometry")],
      main = "Covid19 Cases by Neighborhood")
 #Plotting by census tract
-plot(covid19sf_geo[which(covid19sf_geo$area_type == "Census Tract"), c("count", "geometry")],
+plot(covid19sf_geo[which(covid19sf_geo$area_type == "Census Tract"),
+                   c("count", "geometry")],
      main = "Covid19 Cases by Census Tract")
-plot(covid19sf_geo[which(covid19sf_geo$area_type == "Census Tract"), c("rate", "geometry")],
+plot(covid19sf_geo[which(covid19sf_geo$area_type == "Census Tract"),
+                   c("rate", "geometry")],
      main = "Covid19 Cases Rate per 10,000 by Census Tract")
 }
 \keyword{COVID19}

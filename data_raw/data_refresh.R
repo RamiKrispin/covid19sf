@@ -132,7 +132,7 @@ data_refresh <- function(){
     cat(paste0("\033[4;", 36, "m","covid19sf_demo dataset","\033[0m","\n"))
     cat("Checking for updates...\n")
 
-    covid19sf_demo <- read.csv("https://data.sfgov.org/resource/vqqm-nsqg.csv?$limit=2000", stringsAsFactors = FALSE) %>%
+    covid19sf_demo <- read.csv("https://data.sfgov.org/resource/vqqm-nsqg.csv?$limit=3000", stringsAsFactors = FALSE) %>%
       dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
                                                                           tz = "America/Los_Angeles")),
                     last_updated = lubridate::ymd_hms(last_updated_at,
