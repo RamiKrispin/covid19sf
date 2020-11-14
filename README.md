@@ -17,19 +17,19 @@ commit](https://img.shields.io/github/last-commit/RamiKrispin/covid19sf)](https:
 The covid19sf package provides a daily summary of the covid19 cases in
 San Francisco. The package includes the following datasets:
 
-  - `covid19sf_age` - Cases summarized by age group
-  - `covid19sf_demo` - Cases summarized by date, transmission and case
+-   `covid19sf_age` - Cases summarized by age group
+-   `covid19sf_demo` - Cases summarized by date, transmission and case
     disposition
-  - `covid19sf_gender` - Confirmed cases summarized by gender
-  - `covid19sf_geo` - Confirmed cases and deaths summarized by geography
-  - `covid19sf_homeless` - Confirmed cases by homelessness
-  - `covid19sf_hospital` - Hospital capacity data
-  - `covid19sf_hospitalizations` - Hospitalizations data
-  - `covid19sf_housing` - Alternative housing sites
-  - `covid19sf_summary` - Cases summarized by date, transmission and
+-   `covid19sf_gender` - Confirmed cases summarized by gender
+-   `covid19sf_geo` - Confirmed cases and deaths summarized by geography
+-   `covid19sf_homeless` - Confirmed cases by homelessness
+-   `covid19sf_hospital` - Hospital capacity data
+-   `covid19sf_hospitalizations` - Hospitalizations data
+-   `covid19sf_housing` - Alternative housing sites
+-   `covid19sf_summary` - Cases summarized by date, transmission and
     case disposition
-  - `covid19sf_test_loc` - Testing locations
-  - `covid19sf_tests` - Daily number of tests
+-   `covid19sf_test_loc` - Testing locations
+-   `covid19sf_tests` - Daily number of tests
 
 **Data soucre:** San Francisco, Department of Public Health - Population
 Health Division through the San Francisco [Opne Data protal
@@ -65,12 +65,12 @@ data(covid19sf_age)
 
 head(covid19sf_age)
 #>   specimen_collection_date age_group new_confirmed_cases cumulative_confirmed_cases        last_updated
-#> 1               2020-03-12     51-60                   2                          6 2020-10-16 14:15:02
-#> 2               2020-03-13     51-60                   3                          9 2020-10-16 14:15:02
-#> 3               2020-03-14     51-60                   1                         10 2020-10-16 14:15:02
-#> 4               2020-03-15     51-60                   0                         10 2020-10-16 14:15:02
-#> 5               2020-03-16     51-60                   8                         18 2020-10-16 14:15:02
-#> 6               2020-03-17     51-60                   3                         21 2020-10-16 14:15:02
+#> 1               2020-03-12     51-60                   2                          6 2020-11-13 14:15:03
+#> 2               2020-03-13     51-60                   3                          9 2020-11-13 14:15:03
+#> 3               2020-03-14     51-60                   1                         10 2020-11-13 14:15:03
+#> 4               2020-03-15     51-60                   0                         10 2020-11-13 14:15:03
+#> 5               2020-03-16     51-60                   8                         18 2020-11-13 14:15:03
+#> 6               2020-03-17     51-60                   3                         21 2020-11-13 14:15:03
 ```
 
 The following box-plot shows the distribution of the positive cases by
@@ -100,7 +100,7 @@ layout(title = "Case Dist. by Age Group",
 
 <img src="man/figures/age_dist1.png" width="100%" />
 
-Here is the overall distribution of cases by age group as of 2020-10-15:
+Here is the overall distribution of cases by age group as of 2020-11-12:
 
 ``` r
 library(dplyr)
@@ -131,12 +131,12 @@ data(covid19sf_tests)
 
 head(covid19sf_tests)
 #>   specimen_collection_date tests pos        pct neg indeterminate        last_updated
-#> 1               2020-02-28     2   0 0.00000000   2             0 2020-10-16 14:15:00
-#> 2               2020-03-01     2   0 0.00000000   2             0 2020-10-16 14:15:00
-#> 3               2020-03-02     2   0 0.00000000   2             0 2020-10-16 14:15:00
-#> 4               2020-03-03     7   2 0.28571429   5             0 2020-10-16 14:15:00
-#> 5               2020-03-04    11   0 0.00000000  11             0 2020-10-16 14:15:00
-#> 6               2020-03-05    19   6 0.31578947  13             0 2020-10-16 14:15:00
+#> 1               2020-02-28     2   0 0.00000000   2             0 2020-11-13 14:15:00
+#> 2               2020-03-01     2   0 0.00000000   2             0 2020-11-13 14:15:00
+#> 3               2020-03-02     2   0 0.00000000   2             0 2020-11-13 14:15:00
+#> 4               2020-03-03     8   2 0.25000000   6             0 2020-11-13 14:15:00
+#> 5               2020-03-04    12   0 0.00000000  12             0 2020-11-13 14:15:00
+#> 6               2020-03-05    23   6 0.26086957  17             0 2020-11-13 14:15:00
 ```
 
 The plot below shows the daily distribution of the results of the tests:
@@ -170,12 +170,12 @@ data(covid19sf_demo)
 
 head(covid19sf_demo)
 #>   specimen_collection_date race_ethnicity new_confirmed_cases cumulative_confirmed_cases        last_updated
-#> 1               2020-04-20          Asian                   4                        208 2020-10-16 14:15:02
-#> 2               2020-04-21          Asian                   5                        213 2020-10-16 14:15:02
-#> 3               2020-06-04          Asian                   5                        361 2020-10-16 14:15:02
-#> 4               2020-06-05          Asian                   2                        363 2020-10-16 14:15:02
-#> 5               2020-06-06          Asian                   1                        364 2020-10-16 14:15:02
-#> 6               2020-06-07          Asian                   0                        364 2020-10-16 14:15:02
+#> 1               2020-05-19          Asian                   0                        312 2020-11-13 14:15:03
+#> 2               2020-05-31          Asian                   5                        348 2020-11-13 14:15:03
+#> 3               2020-06-01          Asian                   5                        353 2020-11-13 14:15:03
+#> 4               2020-06-02          Asian                   3                        356 2020-11-13 14:15:03
+#> 5               2020-06-03          Asian                   2                        358 2020-11-13 14:15:03
+#> 6               2020-06-04          Asian                   5                        363 2020-11-13 14:15:03
 ```
 
 Below is a plot of the cumulative positive cases by race and ethnicity:

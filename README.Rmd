@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 `%>%` <- magrittr::`%>%`
 ```
 
-# covid19sf
+# covid19sf 
 
 <!-- badges: start -->
 [![build](https://github.com/RamiKrispin/covid19sf/workflows/build/badge.svg)](https://github.com/RamiKrispin/covid19sf/actions)
