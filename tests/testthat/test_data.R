@@ -67,7 +67,7 @@ test_that(desc = "Test dates/times variable", {
 
   expect_equal(base::class(covid19sf_homeless$specimen_collection_date) == "Date", TRUE)
   expect_equal(base::all(c("POSIXct", "POSIXt") %in% base::class(covid19sf_homeless$last_updated)), TRUE)
-  expect_equal(base::min(covid19sf_homeless$specimen_collection_date) == as.Date("2020-03-31"), TRUE)
+  expect_equal(base::min(covid19sf_homeless$specimen_collection_date) == as.Date("2020-03-05"), TRUE)
 
   expect_equal(base::class(covid19sf_hospital$date) == "Date", TRUE)
   expect_equal(base::min(covid19sf_hospital$date) == as.Date("2020-04-01"), TRUE)
@@ -100,7 +100,7 @@ test_that(desc = "Missing values", {
   expect_equal(base::any(base::is.na(covid19sf_gender$new_confirmed_cases)), FALSE)
   expect_equal(base::any(base::is.na(covid19sf_gender$cumulative_confirmed_cases)), FALSE)
 
-  expect_equal(base::length(base::which(base::is.na(covid19sf_geo$count))), 15)
+  expect_equal(base::length(base::which(base::is.na(covid19sf_geo$count))), 6)
 
   expect_equal(base::any(base::is.na(covid19sf_homeless$new_confirmed_cases)), FALSE)
   expect_equal(base::any(base::is.na(covid19sf_homeless$cumulative_confirmed_cases)), FALSE)
