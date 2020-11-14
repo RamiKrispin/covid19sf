@@ -210,7 +210,8 @@
 #'                    c("count", "geometry")],
 #'       main = "Covid19 Cases by ZIP Code")
 #' # Plotting by neighborhood
-#' plot(covid19sf_geo[which(covid19sf_geo$area_type == "Analysis Neighborhood"),
+#' plot(covid19sf_geo[which(covid19sf_geo$area_type ==
+#'                          "Analysis Neighborhood"),
 #'                    c("count", "geometry")],
 #'      main = "Covid19 Cases by Neighborhood")
 #' #Plotting by census tract
