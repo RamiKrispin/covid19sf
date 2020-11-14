@@ -7,3 +7,6 @@
 ^.github$
 ^csv$
 ^README\.Rmd$
+^vignettes/geo.Rmd$
+^vignettes/demo.Rmd$
+^vignettes/hospital.Rmd$
