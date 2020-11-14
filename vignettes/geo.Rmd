@@ -20,6 +20,15 @@ knitr::opts_chunk$set(
 
 The `covid19sf_geo` provides information about San Francisco Covid19 cases distribution by geospatial location. Also, testing locations across San Francisco available on `covid19sf_test_loc` dataset. The following vignette provides examples for geospatial visualization of those datasets. Both datasets are `sf` objects and contain geometric information (i.e., ready to plot on a map).
 
+**Note:** This is a non-CRAN vignette, and the following libraries required to build the plots on this document:
+
+```{r}
+require(ggplot2)
+require(mapview)
+require(sf)
+require(RColorBrewer)
+```
+
 
 ### The covid19sf_geo dataset
 
@@ -43,8 +52,6 @@ While the first three geographical split methods contain geometry components tha
 ```{r }
 library(covid19sf)
 
-library(sf)
-
 data(covid19sf_geo)
 
 class(covid19sf_geo)
@@ -57,7 +64,6 @@ head(covid19sf_geo)
 The most intuitive method for plotting `sf` objects is with the [mapview](https://r-spatial.github.io/mapview/) package, which is a wrapper for the leaflet JavaScript package. The main advantage of the mapview package that it is both interactive and smoothly works with `sf` objects. The following example demonstrated the use case of the `mapview` function to plot the confirmed cases in San Francisco with the `plot` function to plot cases distribution by ZIP code:
 
 ```{r}
-library(mapview)
 library(dplyr)
 
 covid19sf_geo %>% 
