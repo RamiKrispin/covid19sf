@@ -3,7 +3,7 @@ name: covid19sf data refresh
 
 on: 
   schedule:
-    - cron:  '30 */4 * * *'
+    - cron:  '30 */12 * * *'
 jobs:
   data_refresh_master:
     name: covid19sf dataset refresh dev
