@@ -35,7 +35,7 @@ San Francisco. The package includes the following datasets:
 Health Division through the San Francisco [Opne Data protal
 website](https://datasf.org/opendata/)
 
-<a href='https://ramikrispin.github.io/covid19sf/index.html/'><img src='man/figures/map.png' align="right"  /></a>
+<a href='https://ramikrispin.github.io/covid19sf/index.html/'><img src='man/figures/sf_map.png' align="right"  /></a>
 
 ## Installation
 
