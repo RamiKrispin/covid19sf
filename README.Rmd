@@ -42,7 +42,7 @@ The covid19sf package provides a daily summary of the covid19 cases in San Franc
 
 **Data soucre:** San Francisco, Department of Public Health - Population Health Division through the San Francisco [Opne Data protal website](https://datasf.org/opendata/)
 
-<a href='https://ramikrispin.github.io/covid19sf/index.html/'><img src='man/figures/sf_map.png' align="right"  /></a>
+<a href='https://ramikrispin.github.io/covid19sf/'><img src='man/figures/sf_map.png' align="right"  /></a>
 
 ## Installation
 
