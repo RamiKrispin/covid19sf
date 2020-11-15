@@ -75,7 +75,7 @@ data will change to reflect as information becomes available. More information a
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">covid19sf</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
       </span>
     </div>
 
@@ -174,36 +174,36 @@ and case disposition</p>
 
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_summary</span>)
 </div><div class='output co'>#&gt;   specimen_collection_date case_disposition transmission_category case_count
-#&gt; 1               2020-03-03        Confirmed             Community          2
-#&gt; 2               2020-03-05        Confirmed             Community          1
-#&gt; 3               2020-03-05        Confirmed          From Contact          5
-#&gt; 4               2020-03-07        Confirmed          From Contact          5
-#&gt; 5               2020-03-08        Confirmed          From Contact          1
-#&gt; 6               2020-03-10        Confirmed             Community          4
+#&gt; 1               2020-11-11        Confirmed               Unknown         17
+#&gt; 2               2020-11-11        Confirmed          From Contact          7
+#&gt; 3               2020-11-11        Confirmed             Community         10
+#&gt; 4               2020-11-10        Confirmed             Community         27
+#&gt; 5               2020-11-10        Confirmed          From Contact         21
+#&gt; 6               2020-11-10        Confirmed               Unknown         24
 #&gt;          last_updated
-#&gt; 1 2020-10-17 14:15:01
-#&gt; 2 2020-10-17 14:15:01
-#&gt; 3 2020-10-17 14:15:01
-#&gt; 4 2020-10-17 14:15:01
-#&gt; 5 2020-10-17 14:15:01
-#&gt; 6 2020-10-17 14:15:01</div><div class='input'>
+#&gt; 1 2020-11-13 14:15:03
+#&gt; 2 2020-11-13 14:15:03
+#&gt; 3 2020-11-13 14:15:03
+#&gt; 4 2020-11-13 14:15:03
+#&gt; 5 2020-11-13 14:15:03
+#&gt; 6 2020-11-13 14:15:03</div><div class='input'>
 <span class='co'># Case disposition summary</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>)
 </div><div class='output co'>#&gt; 
 #&gt; Confirmed     Death 
-#&gt;       556       109 </div><div class='input'>
+#&gt;       616       124 </div><div class='input'>
 <span class='co'># Transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt; 
 #&gt;    Community From Contact      Unknown 
-#&gt;          279          269          117 </div><div class='input'>
+#&gt;          313          303          124 </div><div class='input'>
 <span class='co'># Summary of case disposition and transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>,
       <span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt;            
 #&gt;             Community From Contact Unknown
-#&gt;   Confirmed       222          221     113
-#&gt;   Death            57           48       4</div><div class='input'>
+#&gt;   Confirmed       249          248     119
+#&gt;   Death            64           55       5</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

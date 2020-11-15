@@ -31,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">covid19sf</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
       </span>
     </div>
 
@@ -121,7 +121,7 @@
 <code>covid19sf_tests</code> - Daily number of tests</li>
 </ul>
 <p><strong>Data soucre:</strong> San Francisco, Department of Public Health - Population Health Division through the San Francisco <a href="https://datasf.org/opendata/">Opne Data protal website</a></p>
-<p><a href="https://ramikrispin.github.io/covid19sf/index.html/"><img src="reference/figures/map.png" align="right"></a></p>
+<p><a href="https://ramikrispin.github.io/covid19sf/index.html/"><img src="reference/figures/sf_map.png" align="right"></a></p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -146,12 +146,12 @@
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_age</span>)
 <span class="co">#&gt;   specimen_collection_date age_group new_confirmed_cases cumulative_confirmed_cases        last_updated</span>
-<span class="co">#&gt; 1               2020-03-12     51-60                   2                          6 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 2               2020-03-13     51-60                   3                          9 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 3               2020-03-14     51-60                   1                         10 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 4               2020-03-15     51-60                   0                         10 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 5               2020-03-16     51-60                   8                         18 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 6               2020-03-17     51-60                   3                         21 2020-10-16 14:15:02</span>
+<span class="co">#&gt; 1               2020-03-12     51-60                   2                          6 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 2               2020-03-13     51-60                   3                          9 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 3               2020-03-14     51-60                   1                         10 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 4               2020-03-15     51-60                   0                         10 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 5               2020-03-16     51-60                   8                         18 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 6               2020-03-17     51-60                   3                         21 2020-11-13 14:15:03</span>
 </pre></div>
 <p>The following box-plot shows the distribution of the positive cases by age group:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit">
@@ -176,7 +176,7 @@
        legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.9</span>, y = <span class="fl">0.9</span>))
 </pre></div>
 <p><img src="reference/figures/age_dist1.png" width="100%"></p>
-<p>Here is the overall distribution of cases by age group as of 2020-10-15:</p>
+<p>Here is the overall distribution of cases by age group as of 2020-11-12:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit">
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org">dplyr</a></span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://plotly-r.com">plotly</a></span>)
@@ -204,12 +204,12 @@
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_tests</span>)
 <span class="co">#&gt;   specimen_collection_date tests pos        pct neg indeterminate        last_updated</span>
-<span class="co">#&gt; 1               2020-02-28     2   0 0.00000000   2             0 2020-10-16 14:15:00</span>
-<span class="co">#&gt; 2               2020-03-01     2   0 0.00000000   2             0 2020-10-16 14:15:00</span>
-<span class="co">#&gt; 3               2020-03-02     2   0 0.00000000   2             0 2020-10-16 14:15:00</span>
-<span class="co">#&gt; 4               2020-03-03     7   2 0.28571429   5             0 2020-10-16 14:15:00</span>
-<span class="co">#&gt; 5               2020-03-04    11   0 0.00000000  11             0 2020-10-16 14:15:00</span>
-<span class="co">#&gt; 6               2020-03-05    19   6 0.31578947  13             0 2020-10-16 14:15:00</span>
+<span class="co">#&gt; 1               2020-02-28     2   0 0.00000000   2             0 2020-11-13 14:15:00</span>
+<span class="co">#&gt; 2               2020-03-01     2   0 0.00000000   2             0 2020-11-13 14:15:00</span>
+<span class="co">#&gt; 3               2020-03-02     2   0 0.00000000   2             0 2020-11-13 14:15:00</span>
+<span class="co">#&gt; 4               2020-03-03     8   2 0.25000000   6             0 2020-11-13 14:15:00</span>
+<span class="co">#&gt; 5               2020-03-04    12   0 0.00000000  12             0 2020-11-13 14:15:00</span>
+<span class="co">#&gt; 6               2020-03-05    23   6 0.26086957  17             0 2020-11-13 14:15:00</span>
 </pre></div>
 <p>The plot below shows the daily distribution of the results of the tests:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit">
@@ -239,12 +239,12 @@
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_demo</span>)
 <span class="co">#&gt;   specimen_collection_date race_ethnicity new_confirmed_cases cumulative_confirmed_cases        last_updated</span>
-<span class="co">#&gt; 1               2020-04-20          Asian                   4                        208 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 2               2020-04-21          Asian                   5                        213 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 3               2020-06-04          Asian                   5                        361 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 4               2020-06-05          Asian                   2                        363 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 5               2020-06-06          Asian                   1                        364 2020-10-16 14:15:02</span>
-<span class="co">#&gt; 6               2020-06-07          Asian                   0                        364 2020-10-16 14:15:02</span>
+<span class="co">#&gt; 1               2020-05-19          Asian                   0                        312 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 2               2020-05-31          Asian                   5                        348 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 3               2020-06-01          Asian                   5                        353 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 4               2020-06-02          Asian                   3                        356 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 5               2020-06-03          Asian                   2                        358 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 6               2020-06-04          Asian                   5                        363 2020-11-13 14:15:03</span>
 </pre></div>
 <p>Below is a plot of the cumulative positive cases by race and ethnicity:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit">
