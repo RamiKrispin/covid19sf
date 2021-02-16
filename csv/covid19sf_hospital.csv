@@ -7,6 +7,7 @@
 "All SF Acute Hospitals",2020-06-19,"Acute Care Surge","Available",485
 "All SF Acute Hospitals",2020-06-20,"Intensive Care Surge","Available",268
 "All SF Acute Hospitals",2020-06-20,"Acute Care Surge","Available",513
+"All SF Acute Hospitals",2020-04-03,"Acute Care","Available",918
 "All SF Acute Hospitals",2020-06-21,"Intensive Care Surge","Available",268
 "All SF Acute Hospitals",2020-06-21,"Acute Care Surge","Available",525
 "All SF Acute Hospitals",2020-06-22,"Intensive Care Surge","Available",268
@@ -17,6 +18,7 @@
 "All SF Acute Hospitals",2020-06-24,"Acute Care Surge","Available",397
 "All SF Acute Hospitals",2020-06-25,"Intensive Care Surge","Available",268
 "All SF Acute Hospitals",2020-06-25,"Acute Care Surge","Available",413
+"All SF Acute Hospitals",2020-06-11,"Acute Care","Available",448
 "All SF Acute Hospitals",2020-06-26,"Intensive Care Surge","Available",268
 "All SF Acute Hospitals",2020-06-26,"Acute Care Surge","Available",443
 "All SF Acute Hospitals",2020-06-27,"Intensive Care Surge","Available",268
@@ -167,6 +169,7 @@
 "All SF Acute Hospitals",2020-05-17,"Acute Care Surge","Available",675
 "All SF Acute Hospitals",2020-05-18,"Intensive Care Surge","Available",312
 "All SF Acute Hospitals",2020-05-18,"Acute Care Surge","Available",702
+"All SF Acute Hospitals",2020-04-03,"Intensive Care","Available",147
 "All SF Acute Hospitals",2020-05-19,"Intensive Care Surge","Available",312
 "All SF Acute Hospitals",2020-05-19,"Acute Care Surge","Available",676
 "All SF Acute Hospitals",2020-05-20,"Intensive Care Surge","Available",312
@@ -225,32 +228,10 @@
 "All SF Acute Hospitals",2020-06-15,"Acute Care Surge","Available",506
 "All SF Acute Hospitals",2020-06-16,"Intensive Care Surge","Available",312
 "All SF Acute Hospitals",2020-06-16,"Acute Care Surge","Available",479
-"All SF Acute Hospitals",2020-08-11,"Acute Care","Available",431
-"All SF Acute Hospitals",2020-08-15,"Acute Care","Available",517
-"All SF Acute Hospitals",2020-09-04,"Acute Care","Available",495
-"All SF Acute Hospitals",2020-09-08,"Acute Care","Available",460
-"All SF Acute Hospitals",2020-10-21,"Acute Care","Available",354
-"All SF Acute Hospitals",2020-10-25,"Acute Care","Available",448
-"All SF Acute Hospitals",2020-11-14,"Acute Care","Available",461
-"All SF Acute Hospitals",2020-11-18,"Acute Care","Available",325
-"All SF Acute Hospitals",2020-12-31,"Acute Care","Available",510
-"All SF Acute Hospitals",2021-01-04,"Acute Care","Available",428
-"All SF Acute Hospitals",2020-04-01,"Acute Care","Available",846
-"All SF Acute Hospitals",2021-01-24,"Acute Care","Available",438
-"All SF Acute Hospitals",2021-01-28,"Acute Care","Available",339
-"All SF Acute Hospitals",2020-04-01,"Intensive Care","Available",125
-"All SF Acute Hospitals",2020-04-01,"Intensive Care","COVID-19 (Confirmed & Suspected)",50
-"All SF Acute Hospitals",2020-04-01,"Intensive Care","Other Patients",104
-"All SF Acute Hospitals",2020-04-01,"Acute Care","COVID-19 (Confirmed & Suspected)",62
-"All SF Acute Hospitals",2020-04-01,"Acute Care","Other Patients",394
-"All SF Acute Hospitals",2020-04-02,"Acute Care","Available",937
-"All SF Acute Hospitals",2020-04-02,"Intensive Care","Available",129
-"All SF Acute Hospitals",2020-04-02,"Intensive Care","COVID-19 (Confirmed & Suspected)",43
-"All SF Acute Hospitals",2020-04-02,"Intensive Care","Other Patients",107
-"All SF Acute Hospitals",2020-04-02,"Acute Care","COVID-19 (Confirmed & Suspected)",65
-"All SF Acute Hospitals",2020-04-02,"Acute Care","Other Patients",300
-"All SF Acute Hospitals",2020-04-03,"Acute Care","Available",918
-"All SF Acute Hospitals",2020-04-03,"Intensive Care","Available",147
+"All SF Acute Hospitals",2020-11-13,"Acute Care","Available",397
+"All SF Acute Hospitals",2020-12-21,"Acute Care","Other Patients",1110
+"All SF Acute Hospitals",2021-01-06,"Intensive Care","Other Patients",160
+"All SF Acute Hospitals",2021-02-08,"Acute Care","Other Patients",1163
 "All SF Acute Hospitals",2020-04-03,"Intensive Care","COVID-19 (Confirmed & Suspected)",41
 "All SF Acute Hospitals",2020-04-03,"Intensive Care","Other Patients",91
 "All SF Acute Hospitals",2020-04-03,"Acute Care","COVID-19 (Confirmed & Suspected)",47
@@ -663,7 +644,6 @@
 "All SF Acute Hospitals",2020-06-10,"Intensive Care","Other Patients",175
 "All SF Acute Hospitals",2020-06-10,"Acute Care","COVID-19 (Confirmed & Suspected)",39
 "All SF Acute Hospitals",2020-06-10,"Acute Care","Other Patients",656
-"All SF Acute Hospitals",2020-06-11,"Acute Care","Available",448
 "All SF Acute Hospitals",2020-06-11,"Intensive Care","Available",87
 "All SF Acute Hospitals",2020-06-11,"Intensive Care","COVID-19 (Confirmed & Suspected)",15
 "All SF Acute Hospitals",2020-06-11,"Intensive Care","Other Patients",177
@@ -916,7 +896,6 @@
 "All SF Acute Hospitals",2020-07-22,"Acute Care","COVID-19 (Confirmed & Suspected)",85
 "All SF Acute Hospitals",2020-07-22,"Acute Care","Other Patients",1117
 "All SF Acute Hospitals",2020-07-23,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-07-23,"Acute Care","Available",375
 "All SF Acute Hospitals",2020-07-23,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-07-23,"Intensive Care","Available",68
 "All SF Acute Hospitals",2020-07-23,"Intensive Care","COVID-19 (Confirmed & Suspected)",33
@@ -973,6 +952,7 @@
 "All SF Acute Hospitals",2020-07-28,"Intensive Care","Other Patients",174
 "All SF Acute Hospitals",2020-07-28,"Intensive Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-07-28,"Acute Care","COVID-19 (Confirmed & Suspected)",70
+"All SF Acute Hospitals",2020-04-01,"Acute Care","Available",846
 "All SF Acute Hospitals",2020-07-28,"Acute Care","Other Patients",1156
 "All SF Acute Hospitals",2020-07-28,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-07-29,"Intensive Care Surge","Available",298
@@ -1032,12 +1012,10 @@
 "All SF Acute Hospitals",2020-08-03,"Intensive Care","COVID-19 (Confirmed & Suspected)",36
 "All SF Acute Hospitals",2020-08-03,"Intensive Care","Other Patients",159
 "All SF Acute Hospitals",2020-08-03,"Intensive Care Surge","Occupied Surge",0
-"All SF Acute Hospitals",2020-08-27,"Intensive Care","Available",94
 "All SF Acute Hospitals",2020-08-03,"Acute Care","COVID-19 (Confirmed & Suspected)",68
 "All SF Acute Hospitals",2020-08-03,"Acute Care","Other Patients",1060
 "All SF Acute Hospitals",2020-08-03,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-08-04,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-08-04,"Acute Care","Available",532
 "All SF Acute Hospitals",2020-08-04,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-08-04,"Intensive Care","Available",95
 "All SF Acute Hospitals",2020-08-04,"Intensive Care","COVID-19 (Confirmed & Suspected)",34
@@ -1045,6 +1023,7 @@
 "All SF Acute Hospitals",2020-08-04,"Intensive Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-08-04,"Acute Care","COVID-19 (Confirmed & Suspected)",66
 "All SF Acute Hospitals",2020-08-04,"Acute Care","Other Patients",1018
+"All SF Acute Hospitals",2020-08-06,"Acute Care","Available",486
 "All SF Acute Hospitals",2020-08-04,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-08-05,"Intensive Care Surge","Available",298
 "All SF Acute Hospitals",2020-08-05,"Acute Care","Available",455
@@ -1057,7 +1036,6 @@
 "All SF Acute Hospitals",2020-08-05,"Acute Care","Other Patients",1098
 "All SF Acute Hospitals",2020-08-05,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-08-06,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-08-06,"Acute Care","Available",486
 "All SF Acute Hospitals",2020-08-06,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-08-06,"Intensive Care","Available",81
 "All SF Acute Hospitals",2020-08-06,"Intensive Care","COVID-19 (Confirmed & Suspected)",32
@@ -1107,6 +1085,7 @@
 "All SF Acute Hospitals",2020-08-10,"Acute Care","Other Patients",1045
 "All SF Acute Hospitals",2020-08-10,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-08-11,"Intensive Care Surge","Available",298
+"All SF Acute Hospitals",2020-08-11,"Acute Care","Available",431
 "All SF Acute Hospitals",2020-08-11,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-08-11,"Intensive Care","Available",82
 "All SF Acute Hospitals",2020-08-11,"Intensive Care","COVID-19 (Confirmed & Suspected)",35
@@ -1146,6 +1125,7 @@
 "All SF Acute Hospitals",2020-08-14,"Acute Care","Other Patients",1051
 "All SF Acute Hospitals",2020-08-14,"Acute Care Surge","Occupied Surge",6
 "All SF Acute Hospitals",2020-08-15,"Intensive Care Surge","Available",291
+"All SF Acute Hospitals",2020-08-15,"Acute Care","Available",517
 "All SF Acute Hospitals",2020-08-15,"Acute Care Surge","Available",238
 "All SF Acute Hospitals",2020-08-15,"Intensive Care","Available",103
 "All SF Acute Hospitals",2020-08-15,"Intensive Care","COVID-19 (Confirmed & Suspected)",36
@@ -1155,7 +1135,6 @@
 "All SF Acute Hospitals",2020-08-15,"Acute Care","Other Patients",1028
 "All SF Acute Hospitals",2020-08-15,"Acute Care Surge","Occupied Surge",9
 "All SF Acute Hospitals",2020-08-16,"Intensive Care Surge","Available",287
-"All SF Acute Hospitals",2020-08-16,"Acute Care","Available",514
 "All SF Acute Hospitals",2020-08-16,"Acute Care Surge","Available",231
 "All SF Acute Hospitals",2020-08-16,"Intensive Care","Available",104
 "All SF Acute Hospitals",2020-08-16,"Intensive Care","COVID-19 (Confirmed & Suspected)",39
@@ -1194,6 +1173,17 @@
 "All SF Acute Hospitals",2020-08-19,"Acute Care","COVID-19 (Confirmed & Suspected)",83
 "All SF Acute Hospitals",2020-08-19,"Acute Care","Other Patients",1155
 "All SF Acute Hospitals",2020-08-19,"Acute Care Surge","Occupied Surge",14
+"All SF Acute Hospitals",2020-04-01,"Intensive Care","Available",125
+"All SF Acute Hospitals",2020-04-01,"Intensive Care","COVID-19 (Confirmed & Suspected)",50
+"All SF Acute Hospitals",2020-04-01,"Intensive Care","Other Patients",104
+"All SF Acute Hospitals",2020-04-01,"Acute Care","COVID-19 (Confirmed & Suspected)",62
+"All SF Acute Hospitals",2020-04-01,"Acute Care","Other Patients",394
+"All SF Acute Hospitals",2020-04-02,"Acute Care","Available",937
+"All SF Acute Hospitals",2020-04-02,"Intensive Care","Available",129
+"All SF Acute Hospitals",2020-04-02,"Intensive Care","COVID-19 (Confirmed & Suspected)",43
+"All SF Acute Hospitals",2020-04-02,"Intensive Care","Other Patients",107
+"All SF Acute Hospitals",2020-04-02,"Acute Care","COVID-19 (Confirmed & Suspected)",65
+"All SF Acute Hospitals",2020-04-02,"Acute Care","Other Patients",300
 "All SF Acute Hospitals",2020-08-20,"Intensive Care Surge","Available",283
 "All SF Acute Hospitals",2020-08-20,"Acute Care","Available",384
 "All SF Acute Hospitals",2020-08-20,"Acute Care Surge","Available",232
@@ -1228,7 +1218,6 @@
 "All SF Acute Hospitals",2020-08-23,"Acute Care","Available",493
 "All SF Acute Hospitals",2020-08-23,"Acute Care Surge","Available",226
 "All SF Acute Hospitals",2020-08-23,"Intensive Care","Available",112
-"All SF Acute Hospitals",2020-08-31,"Intensive Care","Available",114
 "All SF Acute Hospitals",2020-08-23,"Intensive Care","COVID-19 (Confirmed & Suspected)",37
 "All SF Acute Hospitals",2020-08-23,"Intensive Care","Other Patients",137
 "All SF Acute Hospitals",2020-08-23,"Intensive Care Surge","Occupied Surge",0
@@ -1268,6 +1257,7 @@
 "All SF Acute Hospitals",2020-08-27,"Intensive Care Surge","Available",298
 "All SF Acute Hospitals",2020-08-27,"Acute Care","Available",376
 "All SF Acute Hospitals",2020-08-27,"Acute Care Surge","Available",236
+"All SF Acute Hospitals",2020-08-27,"Intensive Care","Available",94
 "All SF Acute Hospitals",2020-08-27,"Intensive Care","COVID-19 (Confirmed & Suspected)",27
 "All SF Acute Hospitals",2020-08-27,"Intensive Care","Other Patients",165
 "All SF Acute Hospitals",2020-08-27,"Intensive Care Surge","Occupied Surge",0
@@ -1307,6 +1297,7 @@
 "All SF Acute Hospitals",2020-08-31,"Intensive Care Surge","Available",298
 "All SF Acute Hospitals",2020-08-31,"Acute Care","Available",463
 "All SF Acute Hospitals",2020-08-31,"Acute Care Surge","Available",235
+"All SF Acute Hospitals",2020-08-31,"Intensive Care","Available",114
 "All SF Acute Hospitals",2020-08-31,"Intensive Care","COVID-19 (Confirmed & Suspected)",24
 "All SF Acute Hospitals",2020-08-31,"Intensive Care","Other Patients",148
 "All SF Acute Hospitals",2020-08-31,"Intensive Care Surge","Occupied Surge",0
@@ -1344,6 +1335,7 @@
 "All SF Acute Hospitals",2020-09-03,"Acute Care","Other Patients",1151
 "All SF Acute Hospitals",2020-09-03,"Acute Care Surge","Occupied Surge",6
 "All SF Acute Hospitals",2020-09-04,"Intensive Care Surge","Available",298
+"All SF Acute Hospitals",2020-09-04,"Acute Care","Available",495
 "All SF Acute Hospitals",2020-09-04,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-09-04,"Intensive Care","Available",96
 "All SF Acute Hospitals",2020-09-04,"Intensive Care","COVID-19 (Confirmed & Suspected)",21
@@ -1352,6 +1344,7 @@
 "All SF Acute Hospitals",2020-09-04,"Acute Care","COVID-19 (Confirmed & Suspected)",36
 "All SF Acute Hospitals",2020-09-04,"Acute Care","Other Patients",1085
 "All SF Acute Hospitals",2020-09-04,"Acute Care Surge","Occupied Surge",0
+"All SF Acute Hospitals",2020-09-06,"Acute Care","Available",553
 "All SF Acute Hospitals",2020-09-05,"Intensive Care Surge","Available",298
 "All SF Acute Hospitals",2020-09-05,"Acute Care","Available",543
 "All SF Acute Hospitals",2020-09-05,"Acute Care Surge","Available",247
@@ -1363,7 +1356,6 @@
 "All SF Acute Hospitals",2020-09-05,"Acute Care","Other Patients",1024
 "All SF Acute Hospitals",2020-09-05,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-09-06,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-09-06,"Acute Care","Available",553
 "All SF Acute Hospitals",2020-09-06,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-09-06,"Intensive Care","Available",109
 "All SF Acute Hospitals",2020-09-06,"Intensive Care","COVID-19 (Confirmed & Suspected)",26
@@ -1383,12 +1375,14 @@
 "All SF Acute Hospitals",2020-09-07,"Acute Care","Other Patients",1034
 "All SF Acute Hospitals",2020-09-07,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-09-08,"Intensive Care Surge","Available",298
+"All SF Acute Hospitals",2020-09-08,"Acute Care","Available",460
 "All SF Acute Hospitals",2020-09-08,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-09-08,"Intensive Care","Available",95
 "All SF Acute Hospitals",2020-09-08,"Intensive Care","COVID-19 (Confirmed & Suspected)",25
 "All SF Acute Hospitals",2020-09-08,"Intensive Care","Other Patients",166
 "All SF Acute Hospitals",2020-09-08,"Intensive Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-09-08,"Acute Care","COVID-19 (Confirmed & Suspected)",55
+"All SF Acute Hospitals",2020-09-10,"Acute Care","Available",427
 "All SF Acute Hospitals",2020-09-08,"Acute Care","Other Patients",1101
 "All SF Acute Hospitals",2020-09-08,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-09-09,"Intensive Care Surge","Available",298
@@ -1402,7 +1396,6 @@
 "All SF Acute Hospitals",2020-09-09,"Acute Care","Other Patients",1127
 "All SF Acute Hospitals",2020-09-09,"Acute Care Surge","Occupied Surge",2
 "All SF Acute Hospitals",2020-09-10,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-09-10,"Acute Care","Available",427
 "All SF Acute Hospitals",2020-09-10,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-09-10,"Intensive Care","Available",96
 "All SF Acute Hospitals",2020-09-10,"Intensive Care","COVID-19 (Confirmed & Suspected)",21
@@ -1502,7 +1495,6 @@
 "All SF Acute Hospitals",2020-09-19,"Acute Care","Other Patients",1169
 "All SF Acute Hospitals",2020-09-19,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-09-20,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-09-20,"Acute Care","Available",439
 "All SF Acute Hospitals",2020-09-20,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-09-20,"Intensive Care","Available",119
 "All SF Acute Hospitals",2020-09-20,"Intensive Care","COVID-19 (Confirmed & Suspected)",17
@@ -1542,7 +1534,6 @@
 "All SF Acute Hospitals",2020-09-23,"Acute Care","Other Patients",1233
 "All SF Acute Hospitals",2020-09-23,"Acute Care Surge","Occupied Surge",2
 "All SF Acute Hospitals",2020-09-24,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-09-24,"Acute Care","Available",352
 "All SF Acute Hospitals",2020-09-24,"Acute Care Surge","Available",238
 "All SF Acute Hospitals",2020-09-24,"Intensive Care","Available",92
 "All SF Acute Hospitals",2020-09-24,"Intensive Care","COVID-19 (Confirmed & Suspected)",24
@@ -1658,12 +1649,10 @@
 "All SF Acute Hospitals",2020-10-05,"Intensive Care","COVID-19 (Confirmed & Suspected)",15
 "All SF Acute Hospitals",2020-10-05,"Intensive Care","Other Patients",164
 "All SF Acute Hospitals",2020-10-05,"Intensive Care Surge","Occupied Surge",0
-"All SF Acute Hospitals",2020-10-29,"Intensive Care","Available",116
 "All SF Acute Hospitals",2020-10-05,"Acute Care","COVID-19 (Confirmed & Suspected)",35
 "All SF Acute Hospitals",2020-10-05,"Acute Care","Other Patients",1165
 "All SF Acute Hospitals",2020-10-05,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-10-06,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-10-06,"Acute Care","Available",377
 "All SF Acute Hospitals",2020-10-06,"Acute Care Surge","Available",242
 "All SF Acute Hospitals",2020-10-06,"Intensive Care","Available",103
 "All SF Acute Hospitals",2020-10-06,"Intensive Care","COVID-19 (Confirmed & Suspected)",17
@@ -1703,7 +1692,6 @@
 "All SF Acute Hospitals",2020-10-09,"Acute Care","Other Patients",1216
 "All SF Acute Hospitals",2020-10-09,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-10-10,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-10-10,"Acute Care","Available",492
 "All SF Acute Hospitals",2020-10-10,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-10-10,"Intensive Care","Available",120
 "All SF Acute Hospitals",2020-10-10,"Intensive Care","COVID-19 (Confirmed & Suspected)",12
@@ -1741,6 +1729,7 @@
 "All SF Acute Hospitals",2020-10-13,"Intensive Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-10-13,"Acute Care","COVID-19 (Confirmed & Suspected)",25
 "All SF Acute Hospitals",2020-10-13,"Acute Care","Other Patients",1225
+"All SF Acute Hospitals",2020-10-16,"Acute Care","Available",407
 "All SF Acute Hospitals",2020-10-13,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-10-14,"Intensive Care Surge","Available",298
 "All SF Acute Hospitals",2020-10-14,"Acute Care","Available",339
@@ -1763,7 +1752,6 @@
 "All SF Acute Hospitals",2020-10-15,"Acute Care","Other Patients",1252
 "All SF Acute Hospitals",2020-10-15,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-10-16,"Intensive Care Surge","Available",298
-"All SF Acute Hospitals",2020-10-16,"Acute Care","Available",407
 "All SF Acute Hospitals",2020-10-16,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-10-16,"Intensive Care","Available",93
 "All SF Acute Hospitals",2020-10-16,"Intensive Care","COVID-19 (Confirmed & Suspected)",9
@@ -1776,7 +1764,6 @@
 "All SF Acute Hospitals",2020-10-17,"Acute Care","Available",482
 "All SF Acute Hospitals",2020-10-17,"Acute Care Surge","Available",247
 "All SF Acute Hospitals",2020-10-17,"Intensive Care","Available",116
-"All SF Acute Hospitals",2020-11-02,"Intensive Care","Available",106
 "All SF Acute Hospitals",2020-10-17,"Intensive Care","COVID-19 (Confirmed & Suspected)",10
 "All SF Acute Hospitals",2020-10-17,"Intensive Care","Other Patients",160
 "All SF Acute Hospitals",2020-10-17,"Intensive Care Surge","Occupied Surge",0
@@ -1814,6 +1801,7 @@
 "All SF Acute Hospitals",2020-10-20,"Acute Care","Other Patients",1257
 "All SF Acute Hospitals",2020-10-20,"Acute Care Surge","Occupied Surge",6
 "All SF Acute Hospitals",2020-10-21,"Intensive Care Surge","Available",298
+"All SF Acute Hospitals",2020-10-21,"Acute Care","Available",354
 "All SF Acute Hospitals",2020-10-21,"Acute Care Surge","Available",240
 "All SF Acute Hospitals",2020-10-21,"Intensive Care","Available",96
 "All SF Acute Hospitals",2020-10-21,"Intensive Care","COVID-19 (Confirmed & Suspected)",10
@@ -1853,9 +1841,11 @@
 "All SF Acute Hospitals",2020-10-24,"Acute Care","Other Patients",1162
 "All SF Acute Hospitals",2020-10-24,"Acute Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-10-25,"Intensive Care Surge","Available",298
+"All SF Acute Hospitals",2020-10-25,"Acute Care","Available",448
 "All SF Acute Hospitals",2020-10-25,"Acute Care Surge","Available",240
 "All SF Acute Hospitals",2020-10-25,"Intensive Care","Available",118
 "All SF Acute Hospitals",2020-10-25,"Intensive Care","COVID-19 (Confirmed & Suspected)",6
+"All SF Acute Hospitals",2020-07-23,"Acute Care","Available",375
 "All SF Acute Hospitals",2020-10-25,"Intensive Care","Other Patients",162
 "All SF Acute Hospitals",2020-10-25,"Intensive Care Surge","Occupied Surge",0
 "All SF Acute Hospitals",2020-10-25,"Acute Care","COVID-19 (Confirmed & Suspected)",28
@@ -1894,6 +1884,7 @@
 "All SF Acute Hospitals",2020-10-29,"Intensive Care Surge","Available",298
 "All SF Acute Hospitals",2020-10-29,"Acute Care","Available",375
 "All SF Acute Hospitals",2020-10-29,"Acute Care Surge","Available",247
+"All SF Acute Hospitals",2020-10-29,"Intensive Care","Available",116
 "All SF Acute Hospitals",2020-10-29,"Intensive Care","COVID-19 (Confirmed & Suspected)",7
 "All SF Acute Hospitals",2020-10-29,"Intensive Care","Other Patients",163
 "All SF Acute Hospitals",2020-10-29,"Intensive Care Surge","Occupied Surge",0
@@ -1933,6 +1924,7 @@
 "All SF Acute Hospitals",2020-11-02,"Intensive Care Surge","Available",298
 "All SF Acute Hospitals",2020-11-02,"Acute Care","Available",386
 "All SF Acute Hospitals",2020-11-02,"Acute Care Surge","Available",244
+"All SF Acute Hospitals",2020-11-02,"Intensive Care","Available",106
 "All SF Acute Hospitals",2020-11-02,"Intensive Care","COVID-19 (Confirmed & Suspected)",12
 "All SF Acute Hospitals",2020-11-02,"Intensive Care","Other Patients",168
 "All SF Acute Hospitals",2020-11-02,"Intensive Care Surge","Occupied Surge",0
@@ -1966,6 +1958,7 @@
 "All SF Acute Hospitals",2020-11-05,"Intensive Care","COVID-19 (Confirmed & Suspected)",12
 "All SF Acute Hospitals",2020-11-05,"Intensive Care","Other Patients",186
 "All SF Acute Hospitals",2020-11-05,"Intensive Care Surge","Occupied Surge",0
+"All SF Acute Hospitals",2020-08-04,"Acute Care","Available",532
 "All SF Acute Hospitals",2020-11-05,"Acute Care","COVID-19 (Confirmed & Suspected)",28
 "All SF Acute Hospitals",2020-11-05,"Acute Care","Other Patients",1272
 "All SF Acute Hospitals",2020-11-05,"Acute Care Surge","Occupied Surge",8
@@ -1999,3 +1992,10 @@
 "All SF Acute Hospitals",2020-11-08,"Acute Care","COVID-19 (Confirmed & Suspected)",27
 "All SF Acute Hospitals",2020-11-08,"Acute Care","Other Patients",1154
 "All SF Acute Hospitals",2020-11-08,"Acute Care Surge","Occupied Surge",19
+"All SF Acute Hospitals",2020-11-09,"Intensive Care Surge","Available",298
+"All SF Acute Hospitals",2020-11-09,"Acute Care","Available",379
+"All SF Acute Hospitals",2020-11-09,"Acute Care Surge","Available",235
+"All SF Acute Hospitals",2020-11-09,"Intensive Care","Available",102
+"All SF Acute Hospitals",2020-11-09,"Intensive Care","COVID-19 (Confirmed & Suspected)",9
+"All SF Acute Hospitals",2020-11-09,"Intensive Care","Other Patients",175
+"All SF Acute Hospitals",2020-11-09,"Intensive Care Surge","Occupied Surge",0
