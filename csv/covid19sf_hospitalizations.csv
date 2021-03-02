@@ -339,7 +339,8 @@
 2021-02-23,"All SF Hospitals","Med/Surg","COVID+",59
 2021-02-24,"All SF Hospitals","Med/Surg","COVID+",67
 2021-02-25,"All SF Hospitals","Med/Surg","COVID+",60
-2021-02-26,"All SF Hospitals","Med/Surg","COVID+",55
+2021-02-26,"All SF Hospitals","Med/Surg","COVID+",52
+2021-02-27,"All SF Hospitals","Med/Surg","COVID+",52
 2020-03-23,"All SF Hospitals","ICU","COVID+",14
 2020-03-24,"All SF Hospitals","ICU","COVID+",15
 2020-03-25,"All SF Hospitals","ICU","COVID+",18
@@ -681,6 +682,7 @@
 2021-02-24,"All SF Hospitals","ICU","COVID+",25
 2021-02-25,"All SF Hospitals","ICU","COVID+",21
 2021-02-26,"All SF Hospitals","ICU","COVID+",22
+2021-02-27,"All SF Hospitals","ICU","COVID+",26
 2020-03-23,"All SF Hospitals","Med/Surg","PUI",101
 2020-03-24,"All SF Hospitals","Med/Surg","PUI",96
 2020-03-25,"All SF Hospitals","Med/Surg","PUI",62
@@ -997,5 +999,3 @@
 2021-01-30,"All SF Hospitals","Med/Surg","PUI",4
 2021-01-31,"All SF Hospitals","Med/Surg","PUI",1
 2021-02-01,"All SF Hospitals","Med/Surg","PUI",7
-2021-02-02,"All SF Hospitals","Med/Surg","PUI",9
-2021-02-03,"All SF Hospitals","Med/Surg","PUI",4
