@@ -1,47 +1,47 @@
 "site_id","status","facility_type","site_type","units_occupied","total_units","population_covid_status","date_updated"
-"1.0","Active","Hotel","SIP: COVID-Negative/Unknown",25,62,"COVID Negative/Unknown",2021-03-04
-"2.0","Active","Hotel","SIP: COVID-Negative/Unknown",90,142,"COVID Negative/Unknown",2021-03-04
-"4.0","Active","Hotel","SIP: COVID-Negative/Unknown",72,116,"COVID Negative/Unknown",2021-03-04
-"5.0","Active","Hotel","SIP: COVID-Negative/Unknown",40,63,"COVID Negative/Unknown",2021-03-04
-"6.0","Active","Hotel","I/Q",9,31,"COVID Positive",2021-03-04
-"7.0","Active","Hotel","SIP: COVID-Negative/Unknown",59,68,"COVID Negative/Unknown",2021-03-04
-"8.0","Active","Hotel","I/Q",5,79,"COVID Positive",2021-03-04
-"10.0","Active","Hotel","SIP: COVID-Negative/Unknown",385,459,"COVID Negative/Unknown",2021-03-04
-"11.0","Active","Hotel","SIP: COVID-Negative/Unknown",42,51,"COVID Negative/Unknown",2021-03-04
-"16.0","Active","Hotel","I/Q",8,84,"COVID Positive",2021-03-04
-"17.0","Active","Hotel","SIP: COVID-Negative/Unknown",37,57,"COVID Negative/Unknown",2021-03-04
-"24.0","Active","Hotel","Front Line Worker",0,18,"COVID Positive",2021-03-04
-"25.0","Active","Hotel","SIP: COVID-Negative/Unknown",88,110,"COVID Negative/Unknown",2021-03-04
-"28.0","Active","Hotel","SIP: COVID-Negative/Unknown",39,72,"COVID Negative/Unknown",2021-03-04
-"29.0","Active","Hotel","SIP: COVID-Negative/Unknown",39,50,"COVID Negative/Unknown",2021-03-04
-"30.0","Active","Hotel","SIP: COVID-Negative/Unknown",91,100,"COVID Negative/Unknown",2021-03-04
-"31.0","Active","Hotel","SIP: COVID-Negative/Unknown",48,105,"COVID Negative/Unknown",2021-03-04
-"32.0","Active","Hotel","SIP: COVID-Negative/Unknown",95,130,"COVID Negative/Unknown",2021-03-04
-"33.0","Active","Hotel","SIP: COVID-Negative/Unknown",86,119,"COVID Negative/Unknown",2021-03-04
-"34.0","Active","Hotel","SIP: COVID-Negative/Unknown",44,70,"COVID Negative/Unknown",2021-03-04
-"35.0","Active","Hotel","SIP: COVID-Negative/Unknown",63,92,"COVID Negative/Unknown",2021-03-04
-"36.0","Active","Hotel","SIP: COVID-Negative/Unknown",111,131,"COVID Negative/Unknown",2021-03-04
-"37.0","Active","Hotel","I/Q",15,65,"COVID Positive",2021-03-04
-"38.0","Active","Hotel","SIP: COVID-Negative/Unknown",76,95,"COVID Negative/Unknown",2021-03-04
-"42.0","Active","Hotel","SIP: COVID-Negative/Unknown",26,41,"COVID Negative/Unknown",2021-03-04
-"44.0","Active","Hotel","SIP: COVID-Negative/Unknown",80,118,"COVID Negative/Unknown",2021-03-04
-"47.0","Active","Hotel","SIP: COVID-Negative/Unknown",35,40,"COVID Negative/Unknown",2021-03-04
-"48.0","Active","Hotel","SIP: COVID-Negative/Unknown",37,45,"COVID Negative/Unknown",2021-03-04
-"49.0","Active","Hotel","SIP: COVID-Negative/Unknown",125,136,"COVID Negative/Unknown",2021-03-04
-"V02","Active","Safe Sleep","SS: COVID-Negative/Unknown",103,108,"COVID Negative/Unknown",2021-03-04
-"V03","Active","Safe Sleep","SS: COVID-Negative/Unknown",35,40,"COVID Negative/Unknown",2021-03-04
-"V04","Active","Safe Sleep","SS: COVID-Negative/Unknown",33,33,"COVID Negative/Unknown",2021-03-04
-"V05","Active","Safe Sleep","SS: COVID-Negative/Unknown",14,15,"COVID Negative/Unknown",2021-03-04
-"V06","Active","Safe Sleep","SS: COVID-Negative/Unknown",20,22,"COVID Negative/Unknown",2021-03-04
-"V07","Active","Safe Sleep","SS: COVID-Negative/Unknown",43,44,"COVID Negative/Unknown",2021-03-04
-"A","Active","Congregate","SIP: COVID-Negative/Unknown",131,200,"COVID Negative/Unknown",2021-03-04
-"AB","Active","Congregate","SIP: COVID-Negative/Unknown",65,73,"COVID Negative/Unknown",2021-03-04
-"AD","Active","Congregate","SIP: COVID-Negative/Unknown",61,113,"COVID Negative/Unknown",2021-03-04
-"AF","Active","Congregate","SIP: COVID-Negative/Unknown",22,24,"COVID Negative/Unknown",2021-03-04
-"D","Active","Congregate","SIP: COVID-Negative/Unknown",80,111,"COVID Negative/Unknown",2021-03-04
-"E","Active","Congregate","SIP: COVID-Negative/Unknown",72,77,"COVID Negative/Unknown",2021-03-04
-"F","Active","RV","SIP: COVID-Negative/Unknown",116,120,"COVID Negative/Unknown",2021-03-04
-"H","Active","Congregate","SIP: COVID-Negative/Unknown",69,88,"COVID Negative/Unknown",2021-03-04
-"R","Active","Congregate","SIP: COVID-Negative/Unknown",46,55,"COVID Negative/Unknown",2021-03-04
-"S","Active","Congregate","SIP: COVID-Negative/Unknown",79,149,"COVID Negative/Unknown",2021-03-04
-"Y","Active","Congregate","I/Q",0,45,"COVID Positive",2021-03-04
+"1.0","Active","Hotel","SIP: COVID-Negative/Unknown",25,62,"COVID Negative/Unknown",2021-03-05
+"2.0","Active","Hotel","SIP: COVID-Negative/Unknown",90,142,"COVID Negative/Unknown",2021-03-05
+"4.0","Active","Hotel","SIP: COVID-Negative/Unknown",71,116,"COVID Negative/Unknown",2021-03-05
+"5.0","Active","Hotel","SIP: COVID-Negative/Unknown",39,63,"COVID Negative/Unknown",2021-03-05
+"6.0","Active","Hotel","I/Q",9,31,"COVID Positive",2021-03-05
+"7.0","Active","Hotel","SIP: COVID-Negative/Unknown",59,68,"COVID Negative/Unknown",2021-03-05
+"8.0","Active","Hotel","I/Q",6,79,"COVID Positive",2021-03-05
+"10.0","Active","Hotel","SIP: COVID-Negative/Unknown",386,459,"COVID Negative/Unknown",2021-03-05
+"11.0","Active","Hotel","SIP: COVID-Negative/Unknown",42,51,"COVID Negative/Unknown",2021-03-05
+"16.0","Active","Hotel","I/Q",10,84,"COVID Positive",2021-03-05
+"17.0","Active","Hotel","SIP: COVID-Negative/Unknown",37,57,"COVID Negative/Unknown",2021-03-05
+"24.0","Active","Hotel","Front Line Worker",0,18,"COVID Positive",2021-03-05
+"25.0","Active","Hotel","SIP: COVID-Negative/Unknown",91,110,"COVID Negative/Unknown",2021-03-05
+"28.0","Active","Hotel","SIP: COVID-Negative/Unknown",39,72,"COVID Negative/Unknown",2021-03-05
+"29.0","Active","Hotel","SIP: COVID-Negative/Unknown",39,50,"COVID Negative/Unknown",2021-03-05
+"30.0","Active","Hotel","SIP: COVID-Negative/Unknown",91,100,"COVID Negative/Unknown",2021-03-05
+"31.0","Active","Hotel","SIP: COVID-Negative/Unknown",47,105,"COVID Negative/Unknown",2021-03-05
+"32.0","Active","Hotel","SIP: COVID-Negative/Unknown",95,130,"COVID Negative/Unknown",2021-03-05
+"33.0","Active","Hotel","SIP: COVID-Negative/Unknown",87,119,"COVID Negative/Unknown",2021-03-05
+"34.0","Active","Hotel","SIP: COVID-Negative/Unknown",43,70,"COVID Negative/Unknown",2021-03-05
+"35.0","Active","Hotel","SIP: COVID-Negative/Unknown",64,92,"COVID Negative/Unknown",2021-03-05
+"36.0","Active","Hotel","SIP: COVID-Negative/Unknown",111,131,"COVID Negative/Unknown",2021-03-05
+"37.0","Active","Hotel","I/Q",17,65,"COVID Positive",2021-03-05
+"38.0","Active","Hotel","SIP: COVID-Negative/Unknown",76,95,"COVID Negative/Unknown",2021-03-05
+"42.0","Active","Hotel","SIP: COVID-Negative/Unknown",26,41,"COVID Negative/Unknown",2021-03-05
+"44.0","Active","Hotel","SIP: COVID-Negative/Unknown",80,118,"COVID Negative/Unknown",2021-03-05
+"47.0","Active","Hotel","SIP: COVID-Negative/Unknown",35,40,"COVID Negative/Unknown",2021-03-05
+"48.0","Active","Hotel","SIP: COVID-Negative/Unknown",39,45,"COVID Negative/Unknown",2021-03-05
+"49.0","Active","Hotel","SIP: COVID-Negative/Unknown",125,136,"COVID Negative/Unknown",2021-03-05
+"V02","Active","Safe Sleep","SS: COVID-Negative/Unknown",103,108,"COVID Negative/Unknown",2021-03-05
+"V03","Active","Safe Sleep","SS: COVID-Negative/Unknown",35,40,"COVID Negative/Unknown",2021-03-05
+"V04","Active","Safe Sleep","SS: COVID-Negative/Unknown",33,33,"COVID Negative/Unknown",2021-03-05
+"V05","Active","Safe Sleep","SS: COVID-Negative/Unknown",14,15,"COVID Negative/Unknown",2021-03-05
+"V06","Active","Safe Sleep","SS: COVID-Negative/Unknown",20,22,"COVID Negative/Unknown",2021-03-05
+"V07","Active","Safe Sleep","SS: COVID-Negative/Unknown",43,44,"COVID Negative/Unknown",2021-03-05
+"A","Active","Congregate","SIP: COVID-Negative/Unknown",133,200,"COVID Negative/Unknown",2021-03-05
+"AB","Active","Congregate","SIP: COVID-Negative/Unknown",65,73,"COVID Negative/Unknown",2021-03-05
+"AD","Active","Congregate","SIP: COVID-Negative/Unknown",61,113,"COVID Negative/Unknown",2021-03-05
+"AF","Active","Congregate","SIP: COVID-Negative/Unknown",22,24,"COVID Negative/Unknown",2021-03-05
+"D","Active","Congregate","SIP: COVID-Negative/Unknown",80,111,"COVID Negative/Unknown",2021-03-05
+"E","Active","Congregate","SIP: COVID-Negative/Unknown",72,77,"COVID Negative/Unknown",2021-03-05
+"F","Active","RV","SIP: COVID-Negative/Unknown",116,120,"COVID Negative/Unknown",2021-03-05
+"H","Active","Congregate","SIP: COVID-Negative/Unknown",69,88,"COVID Negative/Unknown",2021-03-05
+"R","Active","Congregate","SIP: COVID-Negative/Unknown",46,55,"COVID Negative/Unknown",2021-03-05
+"S","Active","Congregate","SIP: COVID-Negative/Unknown",81,149,"COVID Negative/Unknown",2021-03-05
+"Y","Active","Congregate","I/Q",0,45,"COVID Positive",2021-03-05
