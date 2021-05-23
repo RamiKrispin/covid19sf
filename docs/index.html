@@ -163,14 +163,14 @@
                                              <span class="st">"51-60"</span>, <span class="st">"61-70"</span>,
                                              <span class="st">"71-80"</span>,<span class="st">"81+"</span>))
 
-<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html">plot_ly</a></span>(<span class="kw">covid19sf_age</span>, 
+<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/plot_ly.html">plot_ly</a></span>(<span class="kw">covid19sf_age</span>, 
         color = <span class="op">~</span> <span class="kw">age_group</span>, 
         y = <span class="op">~</span> <span class="kw">new_confirmed_cases</span>, 
         boxpoints = <span class="st">"all"</span>, 
         jitter = <span class="fl">0.3</span>,
         pointpos = <span class="op">-</span><span class="fl">1.8</span>,
         type = <span class="st">"box"</span> ) <span class="op">%&gt;%</span>
-<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html">layout</a></span>(title = <span class="st">"Case Dist. by Age Group"</span>,
+<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Case Dist. by Age Group"</span>,
        yaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Number of Cases"</span>),
        xaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Source: San Francisco Department of Public Health"</span>),
        legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.9</span>, y = <span class="fl">0.9</span>))
@@ -182,7 +182,7 @@
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://plotly-r.com">plotly</a></span>)
 <span class="kw">covid19sf_age</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="kw">specimen_collection_date</span> <span class="op">==</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span>(<span class="kw">specimen_collection_date</span>)) <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html">plot_ly</a></span>(values = <span class="op">~</span> <span class="kw">cumulative_confirmed_cases</span>, 
+  <span class="fu"><a href="https://docs.ropensci.org/plotly/reference/plot_ly.html">plot_ly</a></span>(values = <span class="op">~</span> <span class="kw">cumulative_confirmed_cases</span>, 
           labels = <span class="op">~</span> <span class="kw">age_group</span>, 
           type = <span class="st">"pie"</span>,
           textposition = <span class="st">'inside'</span>,
@@ -191,7 +191,7 @@
           hoverinfo = <span class="st">'text'</span>,
           text = <span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span>(<span class="st">"Age Group:"</span>, <span class="kw">age_group</span>, <span class="st">"&lt;br&gt;"</span>,
                         <span class="st">"Total:"</span>, <span class="kw">cumulative_confirmed_cases</span>)) <span class="op">%&gt;%</span>
-   <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html">layout</a></span>(title = <span class="st">"Total Cases Distribution by Age Group"</span>)
+   <span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Total Cases Distribution by Age Group"</span>)
 </pre></div>
 <p><img src="reference/figures/age_dist2.png" width="70%"></p>
 </div>
@@ -214,16 +214,16 @@
 <p>The plot below shows the daily distribution of the results of the tests:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit">
 <span class="kw">covid19sf_tests</span> <span class="op">%&gt;%</span>
-<span class="kw">plotly</span>::<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html">plot_ly</a></span>(x = <span class="op">~</span> <span class="kw">specimen_collection_date</span>,
+<span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/plot_ly.html">plot_ly</a></span>(x = <span class="op">~</span> <span class="kw">specimen_collection_date</span>,
                 y = <span class="op">~</span> <span class="kw">pos</span>,
                 name = <span class="st">"Positive"</span>,
                 type = <span class="st">'scatter'</span>, 
                 mode = <span class="st">'none'</span>, 
                 stackgroup = <span class="st">'one'</span>,
                 fillcolor = <span class="st">"red"</span>) <span class="op">%&gt;%</span>
-  <span class="kw">plotly</span>::<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/add_trace.html">add_trace</a></span>(y = <span class="op">~</span> <span class="kw">neg</span>, name = <span class="st">"Negative"</span>, fillcolor = <span class="st">"green"</span>) <span class="op">%&gt;%</span>
-  <span class="kw">plotly</span>::<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/add_trace.html">add_trace</a></span>(y = <span class="op">~</span> <span class="kw">indeterminate</span>, name = <span class="st">"Indeterminate"</span>, fillcolor = <span class="st">"gray"</span>) <span class="op">%&gt;%</span>
-  <span class="kw">plotly</span>::<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html">layout</a></span>(title = <span class="st">"Tests Results Distribution"</span>,
+  <span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/add_trace.html">add_trace</a></span>(y = <span class="op">~</span> <span class="kw">neg</span>, name = <span class="st">"Negative"</span>, fillcolor = <span class="st">"green"</span>) <span class="op">%&gt;%</span>
+  <span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/add_trace.html">add_trace</a></span>(y = <span class="op">~</span> <span class="kw">indeterminate</span>, name = <span class="st">"Indeterminate"</span>, fillcolor = <span class="st">"gray"</span>) <span class="op">%&gt;%</span>
+  <span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Tests Results Distribution"</span>,
                  yaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Tests Count"</span>),
                  xaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Source: San Francisco Department of Public Health"</span>),
                  legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.1</span>, y = <span class="fl">0.9</span>))
@@ -250,14 +250,14 @@
 <div class="sourceCode" id="cb9"><pre class="downlit">
 <span class="kw">covid19sf_demo</span> <span class="op">%&gt;%</span>
   <span class="kw">dplyr</span>::<span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span>(<span class="kw">specimen_collection_date</span>) <span class="op">%&gt;%</span>
-<span class="kw">plotly</span>::<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html">plot_ly</a></span>(x = <span class="op">~</span> <span class="kw">specimen_collection_date</span>, 
+<span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/plot_ly.html">plot_ly</a></span>(x = <span class="op">~</span> <span class="kw">specimen_collection_date</span>, 
                 y = <span class="op">~</span> <span class="kw">cumulative_confirmed_cases</span>, 
                 <span class="co"># name = 'Cases', </span>
                 type = <span class="st">'scatter'</span>, 
                 mode = <span class="st">'none'</span>, 
                 color = <span class="op">~</span><span class="kw">race_ethnicity</span>,
                 stackgroup = <span class="st">'one'</span>) <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html">layout</a></span>(title = <span class="st">"Total Cases Dist. by Race and Ethnicity"</span>,
+  <span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Total Cases Dist. by Race and Ethnicity"</span>,
           legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.1</span>, y = <span class="fl">0.9</span>),
          yaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Number of Cases"</span>, tickformat = <span class="st">".0f"</span>),
          xaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Source: San Francisco Department of Public Health"</span>))
@@ -272,6 +272,8 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=covid19sf">https://​cloud.r-project.org/​package=covid19sf</a>
+</li>
 <li>Browse source code at <br><a href="https://github.com/RamiKrispin/covid19sf/">https://​github.com/​RamiKrispin/​covid19sf/​</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/RamiKrispin/covid19sf/issues">https://​github.com/​RamiKrispin/​covid19sf/​issues</a>
