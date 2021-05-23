@@ -77,10 +77,13 @@ The following box-plot shows the distribution of the positive cases by age group
 library(plotly)
 
 covid19sf_age$age_group <- factor(covid19sf_age$age_group, 
-                                  levels = c("under 18",  "18-30", 
-                                             "31-40", "41-50",
-                                             "51-60", "61-70",
-                                             "71-80","81+"))
+                                  levels = c("0-4",  "5-10", 
+                                             "11-13", "14-17",
+                                             "18-20", "21-24",
+                                             "25-29",
+                                             "30-39", "40-49",
+                                             "50-59", "60-69",
+                                             "70-79", "80+"))
 
 plot_ly(covid19sf_age, 
         color = ~ age_group, 
@@ -89,7 +92,7 @@ plot_ly(covid19sf_age,
         jitter = 0.3,
         pointpos = -1.8,
         type = "box" ) %>%
-layout(title = "Case Dist. by Age Group",
+layout(title = "Distribution of Daily New Covid Cases in San Francisco by Age Group",
        yaxis = list(title = "Number of Cases"),
        xaxis = list(title = "Source: San Francisco Department of Public Health"),
        legend = list(x = 0.9, y = 0.9))
@@ -99,28 +102,31 @@ layout(title = "Case Dist. by Age Group",
 library(plotly)
 
 covid19sf_age$age_group <- factor(covid19sf_age$age_group, 
-                                  levels = c("under 18",  "18-30", 
-                                             "31-40", "41-50",
-                                             "51-60", "61-70",
-                                             "71-80","81+"))
+                                  levels = c("0-4",  "5-10", 
+                                             "11-13", "14-17",
+                                             "18-20", "21-24",
+                                             "25-29",
+                                             "30-39", "40-49",
+                                             "50-59", "60-69",
+                                             "70-79", "80+"))
 
-p1 <- plotly::plot_ly(covid19sf_age, 
-                color = ~ age_group, 
-                y = ~ new_confirmed_cases, 
-                boxpoints = "all", 
-                jitter = 0.3,
-                pointpos = -1.8,
-                type = "box" ) %>%
-  layout(title = "Case Dist. by Age Group",
-         yaxis = list(title = "Number of Cases"),
-         xaxis = list(title = "Source: San Francisco Department of Public Health"),
-         legend = list(x = 0.9, y = 0.9))
+p1 <- plot_ly(covid19sf_age, 
+        color = ~ age_group, 
+        y = ~ new_confirmed_cases, 
+        boxpoints = "all", 
+        jitter = 0.3,
+        pointpos = -1.8,
+        type = "box" ) %>%
+layout(title = "Distribution of Daily New Covid Cases in San Francisco by Age Group",
+       yaxis = list(title = "Number of Cases"),
+       xaxis = list(title = "Source: San Francisco Department of Public Health"),
+       legend = list(x = 0.9, y = 0.9))
 
-orca(p1, "man/figures/age_dist1.png", width = 8 * 96, height = 5 * 96)
+orca(p1, "man/figures/age_dist1.svg", width = 8 * 96, height = 5 * 96)
 ```
 
 
-<img src="man/figures/age_dist1.png" width="100%" />
+<img src="man/figures/age_dist1.svg" width="100%" />
 
 
 Here is the overall distribution of cases by age group as of `r max(covid19sf_age$specimen_collection_date)`:
@@ -161,11 +167,11 @@ p <- covid19sf_age %>%
                         "Total:", cumulative_confirmed_cases)) %>%
   layout(title = "Total Cases Distribution by Age Group")
 
-orca(p, "man/figures/age_dist2.png", width = 5 * 96, height = 5 * 96)
+orca(p, "man/figures/age_dist2.svg", width = 5 * 96, height = 5 * 96)
 ```
 
 
-<img src="man/figures/age_dist2.png" width="70%" />
+<img src="man/figures/age_dist2.svg" width="70%" />
 
 ### Tests results distribution
 
@@ -215,11 +221,11 @@ p <- covid19sf_tests %>%
                  xaxis = list(title = "Source: San Francisco Department of Public Health"),
                  legend = list(x = 0.1, y = 0.9))
 
-orca(p, "man/figures/test_dist.png", width = 8 * 96, height = 5 * 96)
+orca(p, "man/figures/test_dist.svg", width = 8 * 96, height = 5 * 96)
 ```
 
 
-<img src="man/figures/test_dist.png" width="100%" />
+<img src="man/figures/test_dist.svg" width="100%" />
 
 ### Cases distribution by race ethnicity
 
@@ -266,9 +272,9 @@ plotly::plot_ly(x = ~ specimen_collection_date,
           legend = list(x = 0.1, y = 0.9),
          yaxis = list(title = "Number of Cases", tickformat = ".0f"),
          xaxis = list(title = "Source: San Francisco Department of Public Health"))
-orca(p, "man/figures/demo_dist.png", width = 8 * 96, height = 5 * 96)
+orca(p, "man/figures/demo_dist.svg", width = 8 * 96, height = 5 * 96)
 ```
 
 
-<img src="man/figures/demo_dist.png" width="100%" />
+<img src="man/figures/demo_dist.svg" width="100%" />
 
