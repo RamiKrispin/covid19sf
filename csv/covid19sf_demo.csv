@@ -430,6 +430,7 @@
 2021-05-15,"Asian",0,6629,2021-05-21 16:00:02
 2021-05-16,"Asian",5,6634,2021-05-21 16:00:02
 2021-05-17,"Asian",3,6637,2021-05-21 16:00:02
+2021-05-18,"Asian",2,6639,2021-05-21 16:00:02
 2020-04-01,"Native Hawaiian or Other Pacific Islander",3,7,2021-05-21 16:00:02
 2020-04-02,"Native Hawaiian or Other Pacific Islander",0,7,2021-05-21 16:00:02
 2020-04-03,"Native Hawaiian or Other Pacific Islander",0,7,2021-05-21 16:00:02
@@ -842,6 +843,7 @@
 2021-05-15,"Native Hawaiian or Other Pacific Islander",0,440,2021-05-21 16:00:02
 2021-05-16,"Native Hawaiian or Other Pacific Islander",0,440,2021-05-21 16:00:02
 2021-05-17,"Native Hawaiian or Other Pacific Islander",1,441,2021-05-21 16:00:02
+2021-05-18,"Native Hawaiian or Other Pacific Islander",2,443,2021-05-21 16:00:02
 2020-03-13,"White",3,7,2021-05-21 16:00:02
 2020-03-14,"White",5,12,2021-05-21 16:00:02
 2020-03-15,"White",6,18,2021-05-21 16:00:02
@@ -1273,6 +1275,7 @@
 2021-05-15,"White",2,8207,2021-05-21 16:00:02
 2021-05-16,"White",1,8208,2021-05-21 16:00:02
 2021-05-17,"White",2,8210,2021-05-21 16:00:02
+2021-05-18,"White",2,8212,2021-05-21 16:00:02
 2020-03-10,"Unknown",2,5,2021-05-21 16:00:02
 2020-03-11,"Unknown",3,8,2021-05-21 16:00:02
 2020-03-12,"Unknown",3,11,2021-05-21 16:00:02
@@ -1707,6 +1710,7 @@
 2021-05-15,"Unknown",0,2246,2021-05-21 16:00:02
 2021-05-16,"Unknown",0,2246,2021-05-21 16:00:02
 2021-05-17,"Unknown",3,2249,2021-05-21 16:00:02
+2021-05-18,"Unknown",2,2251,2021-05-21 16:00:02
 2020-03-05,"Hispanic or Latino/a, all races",5,6,2021-05-21 16:00:02
 2020-03-06,"Hispanic or Latino/a, all races",0,6,2021-05-21 16:00:02
 2020-03-07,"Hispanic or Latino/a, all races",4,10,2021-05-21 16:00:02
@@ -2146,6 +2150,7 @@
 2021-05-15,"Hispanic or Latino/a, all races",3,14758,2021-05-21 16:00:02
 2021-05-16,"Hispanic or Latino/a, all races",4,14762,2021-05-21 16:00:02
 2021-05-17,"Hispanic or Latino/a, all races",6,14768,2021-05-21 16:00:02
+2021-05-18,"Hispanic or Latino/a, all races",2,14770,2021-05-21 16:00:02
 2020-04-07,"Multi-racial",1,5,2021-05-21 16:00:02
 2020-04-08,"Multi-racial",2,7,2021-05-21 16:00:02
 2020-04-09,"Multi-racial",2,9,2021-05-21 16:00:02
@@ -2552,6 +2557,7 @@
 2021-05-15,"Multi-racial",0,677,2021-05-21 16:00:02
 2021-05-16,"Multi-racial",1,678,2021-05-21 16:00:02
 2021-05-17,"Multi-racial",0,678,2021-05-21 16:00:02
+2021-05-18,"Multi-racial",2,680,2021-05-21 16:00:02
 2020-03-19,"Other",1,5,2021-05-21 16:00:02
 2020-03-20,"Other",0,5,2021-05-21 16:00:02
 2020-03-21,"Other",0,5,2021-05-21 16:00:02
@@ -2977,6 +2983,7 @@
 2021-05-15,"Other",0,1191,2021-05-21 16:00:02
 2021-05-16,"Other",0,1191,2021-05-21 16:00:02
 2021-05-17,"Other",0,1191,2021-05-21 16:00:02
+2021-05-18,"Other",1,1192,2021-05-21 16:00:02
 2020-04-25,"Native American",4,6,2021-05-21 16:00:02
 2020-04-26,"Native American",0,6,2021-05-21 16:00:02
 2020-04-27,"Native American",0,6,2021-05-21 16:00:02
@@ -2999,3 +3006,797 @@
 2020-05-14,"Native American",1,10,2021-05-21 16:00:02
 2020-05-15,"Native American",0,10,2021-05-21 16:00:02
 2020-05-16,"Native American",0,10,2021-05-21 16:00:02
+2020-05-17,"Native American",0,10,2021-05-21 16:00:02
+2020-05-18,"Native American",1,11,2021-05-21 16:00:02
+2020-05-19,"Native American",0,11,2021-05-21 16:00:02
+2020-05-20,"Native American",0,11,2021-05-21 16:00:02
+2020-05-21,"Native American",0,11,2021-05-21 16:00:02
+2020-05-22,"Native American",0,11,2021-05-21 16:00:02
+2020-05-23,"Native American",0,11,2021-05-21 16:00:02
+2020-05-24,"Native American",0,11,2021-05-21 16:00:02
+2020-05-25,"Native American",0,11,2021-05-21 16:00:02
+2020-05-26,"Native American",0,11,2021-05-21 16:00:02
+2020-05-27,"Native American",0,11,2021-05-21 16:00:02
+2020-05-28,"Native American",0,11,2021-05-21 16:00:02
+2020-05-29,"Native American",0,11,2021-05-21 16:00:02
+2020-05-30,"Native American",0,11,2021-05-21 16:00:02
+2020-05-31,"Native American",0,11,2021-05-21 16:00:02
+2020-06-01,"Native American",0,11,2021-05-21 16:00:02
+2020-06-02,"Native American",0,11,2021-05-21 16:00:02
+2020-06-03,"Native American",1,12,2021-05-21 16:00:02
+2020-06-04,"Native American",0,12,2021-05-21 16:00:02
+2020-06-05,"Native American",0,12,2021-05-21 16:00:02
+2020-06-06,"Native American",0,12,2021-05-21 16:00:02
+2020-06-07,"Native American",0,12,2021-05-21 16:00:02
+2020-06-08,"Native American",0,12,2021-05-21 16:00:02
+2020-06-09,"Native American",1,13,2021-05-21 16:00:02
+2020-06-10,"Native American",0,13,2021-05-21 16:00:02
+2020-06-11,"Native American",1,14,2021-05-21 16:00:02
+2020-06-12,"Native American",0,14,2021-05-21 16:00:02
+2020-06-13,"Native American",0,14,2021-05-21 16:00:02
+2020-06-14,"Native American",0,14,2021-05-21 16:00:02
+2020-06-15,"Native American",0,14,2021-05-21 16:00:02
+2020-06-16,"Native American",0,14,2021-05-21 16:00:02
+2020-06-17,"Native American",0,14,2021-05-21 16:00:02
+2020-06-18,"Native American",0,14,2021-05-21 16:00:02
+2020-06-19,"Native American",1,15,2021-05-21 16:00:02
+2020-06-20,"Native American",0,15,2021-05-21 16:00:02
+2020-06-21,"Native American",0,15,2021-05-21 16:00:02
+2020-06-22,"Native American",1,16,2021-05-21 16:00:02
+2020-06-23,"Native American",0,16,2021-05-21 16:00:02
+2020-06-24,"Native American",0,16,2021-05-21 16:00:02
+2020-06-25,"Native American",0,16,2021-05-21 16:00:02
+2020-06-26,"Native American",0,16,2021-05-21 16:00:02
+2020-06-27,"Native American",0,16,2021-05-21 16:00:02
+2020-06-28,"Native American",1,17,2021-05-21 16:00:02
+2020-06-29,"Native American",0,17,2021-05-21 16:00:02
+2020-06-30,"Native American",0,17,2021-05-21 16:00:02
+2020-07-01,"Native American",1,18,2021-05-21 16:00:02
+2020-07-02,"Native American",0,18,2021-05-21 16:00:02
+2020-07-03,"Native American",1,19,2021-05-21 16:00:02
+2020-07-04,"Native American",0,19,2021-05-21 16:00:02
+2020-07-05,"Native American",0,19,2021-05-21 16:00:02
+2020-07-06,"Native American",0,19,2021-05-21 16:00:02
+2020-07-07,"Native American",0,19,2021-05-21 16:00:02
+2020-07-08,"Native American",0,19,2021-05-21 16:00:02
+2020-07-09,"Native American",1,20,2021-05-21 16:00:02
+2020-07-10,"Native American",0,20,2021-05-21 16:00:02
+2020-07-11,"Native American",0,20,2021-05-21 16:00:02
+2020-07-12,"Native American",0,20,2021-05-21 16:00:02
+2020-07-13,"Native American",0,20,2021-05-21 16:00:02
+2020-07-14,"Native American",0,20,2021-05-21 16:00:02
+2020-07-15,"Native American",2,22,2021-05-21 16:00:02
+2020-07-16,"Native American",0,22,2021-05-21 16:00:02
+2020-07-17,"Native American",0,22,2021-05-21 16:00:02
+2020-07-18,"Native American",0,22,2021-05-21 16:00:02
+2020-07-19,"Native American",0,22,2021-05-21 16:00:02
+2020-07-20,"Native American",0,22,2021-05-21 16:00:02
+2020-07-21,"Native American",0,22,2021-05-21 16:00:02
+2020-07-22,"Native American",0,22,2021-05-21 16:00:02
+2020-07-23,"Native American",1,23,2021-05-21 16:00:02
+2020-07-24,"Native American",0,23,2021-05-21 16:00:02
+2020-07-25,"Native American",1,24,2021-05-21 16:00:02
+2020-07-26,"Native American",0,24,2021-05-21 16:00:02
+2020-07-27,"Native American",0,24,2021-05-21 16:00:02
+2020-07-28,"Native American",1,25,2021-05-21 16:00:02
+2020-07-29,"Native American",0,25,2021-05-21 16:00:02
+2020-07-30,"Native American",0,25,2021-05-21 16:00:02
+2020-07-31,"Native American",0,25,2021-05-21 16:00:02
+2020-08-01,"Native American",0,25,2021-05-21 16:00:02
+2020-08-02,"Native American",0,25,2021-05-21 16:00:02
+2020-08-03,"Native American",0,25,2021-05-21 16:00:02
+2020-08-04,"Native American",0,25,2021-05-21 16:00:02
+2020-08-05,"Native American",1,26,2021-05-21 16:00:02
+2020-08-06,"Native American",0,26,2021-05-21 16:00:02
+2020-08-07,"Native American",3,29,2021-05-21 16:00:02
+2020-08-08,"Native American",1,30,2021-05-21 16:00:02
+2020-08-09,"Native American",1,31,2021-05-21 16:00:02
+2020-08-10,"Native American",0,31,2021-05-21 16:00:02
+2020-08-11,"Native American",0,31,2021-05-21 16:00:02
+2020-08-12,"Native American",1,32,2021-05-21 16:00:02
+2020-08-13,"Native American",0,32,2021-05-21 16:00:02
+2020-08-14,"Native American",1,33,2021-05-21 16:00:02
+2020-08-15,"Native American",0,33,2021-05-21 16:00:02
+2020-08-16,"Native American",0,33,2021-05-21 16:00:02
+2020-08-17,"Native American",0,33,2021-05-21 16:00:02
+2020-08-18,"Native American",0,33,2021-05-21 16:00:02
+2020-08-19,"Native American",0,33,2021-05-21 16:00:02
+2020-08-20,"Native American",0,33,2021-05-21 16:00:02
+2020-08-21,"Native American",0,33,2021-05-21 16:00:02
+2020-08-22,"Native American",0,33,2021-05-21 16:00:02
+2020-08-23,"Native American",0,33,2021-05-21 16:00:02
+2020-08-24,"Native American",0,33,2021-05-21 16:00:02
+2020-08-25,"Native American",0,33,2021-05-21 16:00:02
+2020-08-26,"Native American",0,33,2021-05-21 16:00:02
+2020-08-27,"Native American",0,33,2021-05-21 16:00:02
+2020-08-28,"Native American",0,33,2021-05-21 16:00:02
+2020-08-29,"Native American",0,33,2021-05-21 16:00:02
+2020-08-30,"Native American",0,33,2021-05-21 16:00:02
+2020-08-31,"Native American",0,33,2021-05-21 16:00:02
+2020-09-01,"Native American",0,33,2021-05-21 16:00:02
+2020-09-02,"Native American",0,33,2021-05-21 16:00:02
+2020-09-03,"Native American",1,34,2021-05-21 16:00:02
+2020-09-04,"Native American",0,34,2021-05-21 16:00:02
+2020-09-05,"Native American",0,34,2021-05-21 16:00:02
+2020-09-06,"Native American",0,34,2021-05-21 16:00:02
+2020-09-07,"Native American",0,34,2021-05-21 16:00:02
+2020-09-08,"Native American",0,34,2021-05-21 16:00:02
+2020-09-09,"Native American",0,34,2021-05-21 16:00:02
+2020-09-10,"Native American",0,34,2021-05-21 16:00:02
+2020-09-11,"Native American",0,34,2021-05-21 16:00:02
+2020-09-12,"Native American",0,34,2021-05-21 16:00:02
+2020-09-13,"Native American",0,34,2021-05-21 16:00:02
+2020-09-14,"Native American",0,34,2021-05-21 16:00:02
+2020-09-15,"Native American",0,34,2021-05-21 16:00:02
+2020-09-16,"Native American",0,34,2021-05-21 16:00:02
+2020-09-17,"Native American",0,34,2021-05-21 16:00:02
+2020-09-18,"Native American",0,34,2021-05-21 16:00:02
+2020-09-19,"Native American",0,34,2021-05-21 16:00:02
+2020-09-20,"Native American",0,34,2021-05-21 16:00:02
+2020-09-21,"Native American",1,35,2021-05-21 16:00:02
+2020-09-22,"Native American",0,35,2021-05-21 16:00:02
+2020-09-23,"Native American",0,35,2021-05-21 16:00:02
+2020-09-24,"Native American",0,35,2021-05-21 16:00:02
+2020-09-25,"Native American",0,35,2021-05-21 16:00:02
+2020-09-26,"Native American",0,35,2021-05-21 16:00:02
+2020-09-27,"Native American",0,35,2021-05-21 16:00:02
+2020-09-28,"Native American",0,35,2021-05-21 16:00:02
+2020-09-29,"Native American",0,35,2021-05-21 16:00:02
+2020-09-30,"Native American",0,35,2021-05-21 16:00:02
+2020-10-01,"Native American",0,35,2021-05-21 16:00:02
+2020-10-02,"Native American",0,35,2021-05-21 16:00:02
+2020-10-03,"Native American",0,35,2021-05-21 16:00:02
+2020-10-04,"Native American",0,35,2021-05-21 16:00:02
+2020-10-05,"Native American",0,35,2021-05-21 16:00:02
+2020-10-06,"Native American",0,35,2021-05-21 16:00:02
+2020-10-07,"Native American",1,36,2021-05-21 16:00:02
+2020-10-08,"Native American",0,36,2021-05-21 16:00:02
+2020-10-09,"Native American",0,36,2021-05-21 16:00:02
+2020-10-10,"Native American",0,36,2021-05-21 16:00:02
+2020-10-11,"Native American",0,36,2021-05-21 16:00:02
+2020-10-12,"Native American",0,36,2021-05-21 16:00:02
+2020-10-13,"Native American",0,36,2021-05-21 16:00:02
+2020-10-14,"Native American",0,36,2021-05-21 16:00:02
+2020-10-15,"Native American",0,36,2021-05-21 16:00:02
+2020-10-16,"Native American",0,36,2021-05-21 16:00:02
+2020-10-17,"Native American",0,36,2021-05-21 16:00:02
+2020-10-18,"Native American",0,36,2021-05-21 16:00:02
+2020-10-19,"Native American",0,36,2021-05-21 16:00:02
+2020-10-20,"Native American",0,36,2021-05-21 16:00:02
+2020-10-21,"Native American",0,36,2021-05-21 16:00:02
+2020-10-22,"Native American",0,36,2021-05-21 16:00:02
+2020-10-23,"Native American",0,36,2021-05-21 16:00:02
+2020-10-24,"Native American",0,36,2021-05-21 16:00:02
+2020-10-25,"Native American",0,36,2021-05-21 16:00:02
+2020-10-26,"Native American",0,36,2021-05-21 16:00:02
+2020-10-27,"Native American",0,36,2021-05-21 16:00:02
+2020-10-28,"Native American",0,36,2021-05-21 16:00:02
+2020-10-29,"Native American",0,36,2021-05-21 16:00:02
+2020-10-30,"Native American",0,36,2021-05-21 16:00:02
+2020-10-31,"Native American",0,36,2021-05-21 16:00:02
+2020-11-01,"Native American",0,36,2021-05-21 16:00:02
+2020-11-02,"Native American",0,36,2021-05-21 16:00:02
+2020-11-03,"Native American",0,36,2021-05-21 16:00:02
+2020-11-04,"Native American",0,36,2021-05-21 16:00:02
+2020-11-05,"Native American",2,38,2021-05-21 16:00:02
+2020-11-06,"Native American",2,40,2021-05-21 16:00:02
+2020-11-07,"Native American",0,40,2021-05-21 16:00:02
+2020-11-08,"Native American",0,40,2021-05-21 16:00:02
+2020-11-09,"Native American",0,40,2021-05-21 16:00:02
+2020-11-10,"Native American",1,41,2021-05-21 16:00:02
+2020-11-11,"Native American",0,41,2021-05-21 16:00:02
+2020-11-12,"Native American",1,42,2021-05-21 16:00:02
+2020-11-13,"Native American",0,42,2021-05-21 16:00:02
+2020-11-14,"Native American",0,42,2021-05-21 16:00:02
+2020-11-15,"Native American",0,42,2021-05-21 16:00:02
+2020-11-16,"Native American",0,42,2021-05-21 16:00:02
+2020-11-17,"Native American",0,42,2021-05-21 16:00:02
+2020-11-18,"Native American",0,42,2021-05-21 16:00:02
+2020-11-19,"Native American",0,42,2021-05-21 16:00:02
+2020-11-20,"Native American",0,42,2021-05-21 16:00:02
+2020-11-21,"Native American",0,42,2021-05-21 16:00:02
+2020-11-22,"Native American",0,42,2021-05-21 16:00:02
+2020-11-23,"Native American",1,43,2021-05-21 16:00:02
+2020-11-24,"Native American",2,45,2021-05-21 16:00:02
+2020-11-25,"Native American",0,45,2021-05-21 16:00:02
+2020-11-26,"Native American",0,45,2021-05-21 16:00:02
+2020-11-27,"Native American",0,45,2021-05-21 16:00:02
+2020-11-28,"Native American",0,45,2021-05-21 16:00:02
+2020-11-29,"Native American",0,45,2021-05-21 16:00:02
+2020-11-30,"Native American",2,47,2021-05-21 16:00:02
+2020-12-01,"Native American",1,48,2021-05-21 16:00:02
+2020-12-02,"Native American",0,48,2021-05-21 16:00:02
+2020-12-03,"Native American",0,48,2021-05-21 16:00:02
+2020-12-04,"Native American",0,48,2021-05-21 16:00:02
+2020-12-05,"Native American",1,49,2021-05-21 16:00:02
+2020-12-06,"Native American",0,49,2021-05-21 16:00:02
+2020-12-07,"Native American",1,50,2021-05-21 16:00:02
+2020-12-08,"Native American",0,50,2021-05-21 16:00:02
+2020-12-09,"Native American",1,51,2021-05-21 16:00:02
+2020-12-10,"Native American",5,56,2021-05-21 16:00:02
+2020-12-11,"Native American",0,56,2021-05-21 16:00:02
+2020-12-12,"Native American",1,57,2021-05-21 16:00:02
+2020-12-13,"Native American",2,59,2021-05-21 16:00:02
+2020-12-14,"Native American",0,59,2021-05-21 16:00:02
+2020-12-15,"Native American",3,62,2021-05-21 16:00:02
+2020-12-16,"Native American",1,63,2021-05-21 16:00:02
+2020-12-17,"Native American",3,66,2021-05-21 16:00:02
+2020-12-18,"Native American",1,67,2021-05-21 16:00:02
+2020-12-19,"Native American",2,69,2021-05-21 16:00:02
+2020-12-20,"Native American",0,69,2021-05-21 16:00:02
+2020-12-21,"Native American",1,70,2021-05-21 16:00:02
+2020-12-22,"Native American",1,71,2021-05-21 16:00:02
+2020-12-23,"Native American",2,73,2021-05-21 16:00:02
+2020-12-24,"Native American",0,73,2021-05-21 16:00:02
+2020-12-25,"Native American",1,74,2021-05-21 16:00:02
+2020-12-26,"Native American",0,74,2021-05-21 16:00:02
+2020-12-27,"Native American",0,74,2021-05-21 16:00:02
+2020-12-28,"Native American",0,74,2021-05-21 16:00:02
+2020-12-29,"Native American",0,74,2021-05-21 16:00:02
+2020-12-30,"Native American",1,75,2021-05-21 16:00:02
+2020-12-31,"Native American",1,76,2021-05-21 16:00:02
+2021-01-01,"Native American",0,76,2021-05-21 16:00:02
+2021-01-02,"Native American",1,77,2021-05-21 16:00:02
+2021-01-03,"Native American",0,77,2021-05-21 16:00:02
+2021-01-04,"Native American",1,78,2021-05-21 16:00:02
+2021-01-05,"Native American",1,79,2021-05-21 16:00:02
+2021-01-06,"Native American",1,80,2021-05-21 16:00:02
+2021-01-07,"Native American",0,80,2021-05-21 16:00:02
+2021-01-08,"Native American",2,82,2021-05-21 16:00:02
+2021-01-09,"Native American",0,82,2021-05-21 16:00:02
+2021-01-10,"Native American",1,83,2021-05-21 16:00:02
+2021-01-11,"Native American",1,84,2021-05-21 16:00:02
+2021-01-12,"Native American",1,85,2021-05-21 16:00:02
+2021-01-13,"Native American",2,87,2021-05-21 16:00:02
+2021-01-14,"Native American",0,87,2021-05-21 16:00:02
+2021-01-15,"Native American",2,89,2021-05-21 16:00:02
+2021-01-16,"Native American",0,89,2021-05-21 16:00:02
+2021-01-17,"Native American",0,89,2021-05-21 16:00:02
+2021-01-18,"Native American",0,89,2021-05-21 16:00:02
+2021-01-19,"Native American",0,89,2021-05-21 16:00:02
+2021-01-20,"Native American",0,89,2021-05-21 16:00:02
+2021-01-21,"Native American",1,90,2021-05-21 16:00:02
+2021-01-22,"Native American",0,90,2021-05-21 16:00:02
+2021-01-23,"Native American",0,90,2021-05-21 16:00:02
+2021-01-24,"Native American",0,90,2021-05-21 16:00:02
+2021-01-25,"Native American",1,91,2021-05-21 16:00:02
+2021-01-26,"Native American",0,91,2021-05-21 16:00:02
+2021-01-27,"Native American",0,91,2021-05-21 16:00:02
+2021-01-28,"Native American",0,91,2021-05-21 16:00:02
+2021-01-29,"Native American",0,91,2021-05-21 16:00:02
+2021-01-30,"Native American",1,92,2021-05-21 16:00:02
+2021-01-31,"Native American",0,92,2021-05-21 16:00:02
+2021-02-01,"Native American",1,93,2021-05-21 16:00:02
+2021-02-02,"Native American",0,93,2021-05-21 16:00:02
+2021-02-03,"Native American",1,94,2021-05-21 16:00:02
+2021-02-04,"Native American",0,94,2021-05-21 16:00:02
+2021-02-05,"Native American",0,94,2021-05-21 16:00:02
+2021-02-06,"Native American",0,94,2021-05-21 16:00:02
+2021-02-07,"Native American",0,94,2021-05-21 16:00:02
+2021-02-08,"Native American",1,95,2021-05-21 16:00:02
+2021-02-09,"Native American",0,95,2021-05-21 16:00:02
+2021-02-10,"Native American",0,95,2021-05-21 16:00:02
+2021-02-11,"Native American",1,96,2021-05-21 16:00:02
+2021-02-12,"Native American",1,97,2021-05-21 16:00:02
+2021-02-13,"Native American",1,98,2021-05-21 16:00:02
+2021-02-14,"Native American",0,98,2021-05-21 16:00:02
+2021-02-15,"Native American",0,98,2021-05-21 16:00:02
+2021-02-16,"Native American",0,98,2021-05-21 16:00:02
+2021-02-17,"Native American",0,98,2021-05-21 16:00:02
+2021-02-18,"Native American",0,98,2021-05-21 16:00:02
+2021-02-19,"Native American",0,98,2021-05-21 16:00:02
+2021-02-20,"Native American",0,98,2021-05-21 16:00:02
+2021-02-21,"Native American",0,98,2021-05-21 16:00:02
+2021-02-22,"Native American",0,98,2021-05-21 16:00:02
+2021-02-23,"Native American",0,98,2021-05-21 16:00:02
+2021-02-24,"Native American",0,98,2021-05-21 16:00:02
+2021-02-25,"Native American",0,98,2021-05-21 16:00:02
+2021-02-26,"Native American",0,98,2021-05-21 16:00:02
+2021-02-27,"Native American",0,98,2021-05-21 16:00:02
+2021-02-28,"Native American",0,98,2021-05-21 16:00:02
+2021-03-01,"Native American",1,99,2021-05-21 16:00:02
+2021-03-02,"Native American",0,99,2021-05-21 16:00:02
+2021-03-03,"Native American",0,99,2021-05-21 16:00:02
+2021-03-04,"Native American",0,99,2021-05-21 16:00:02
+2021-03-05,"Native American",0,99,2021-05-21 16:00:02
+2021-03-06,"Native American",0,99,2021-05-21 16:00:02
+2021-03-07,"Native American",0,99,2021-05-21 16:00:02
+2021-03-08,"Native American",0,99,2021-05-21 16:00:02
+2021-03-09,"Native American",0,99,2021-05-21 16:00:02
+2021-03-10,"Native American",0,99,2021-05-21 16:00:02
+2021-03-11,"Native American",1,100,2021-05-21 16:00:02
+2021-03-12,"Native American",0,100,2021-05-21 16:00:02
+2021-03-13,"Native American",0,100,2021-05-21 16:00:02
+2021-03-14,"Native American",0,100,2021-05-21 16:00:02
+2021-03-15,"Native American",0,100,2021-05-21 16:00:02
+2021-03-16,"Native American",0,100,2021-05-21 16:00:02
+2021-03-17,"Native American",0,100,2021-05-21 16:00:02
+2021-03-18,"Native American",0,100,2021-05-21 16:00:02
+2021-03-19,"Native American",0,100,2021-05-21 16:00:02
+2021-03-20,"Native American",0,100,2021-05-21 16:00:02
+2021-03-21,"Native American",0,100,2021-05-21 16:00:02
+2021-03-22,"Native American",0,100,2021-05-21 16:00:02
+2021-03-23,"Native American",0,100,2021-05-21 16:00:02
+2021-03-24,"Native American",0,100,2021-05-21 16:00:02
+2021-03-25,"Native American",0,100,2021-05-21 16:00:02
+2021-03-26,"Native American",0,100,2021-05-21 16:00:02
+2021-03-27,"Native American",0,100,2021-05-21 16:00:02
+2021-03-28,"Native American",0,100,2021-05-21 16:00:02
+2021-03-29,"Native American",0,100,2021-05-21 16:00:02
+2021-03-30,"Native American",0,100,2021-05-21 16:00:02
+2021-03-31,"Native American",1,101,2021-05-21 16:00:02
+2021-04-01,"Native American",1,102,2021-05-21 16:00:02
+2021-04-02,"Native American",0,102,2021-05-21 16:00:02
+2021-04-03,"Native American",0,102,2021-05-21 16:00:02
+2021-04-04,"Native American",0,102,2021-05-21 16:00:02
+2021-04-05,"Native American",0,102,2021-05-21 16:00:02
+2021-04-06,"Native American",0,102,2021-05-21 16:00:02
+2021-04-07,"Native American",0,102,2021-05-21 16:00:02
+2021-04-08,"Native American",0,102,2021-05-21 16:00:02
+2021-04-09,"Native American",0,102,2021-05-21 16:00:02
+2021-04-10,"Native American",0,102,2021-05-21 16:00:02
+2021-04-11,"Native American",0,102,2021-05-21 16:00:02
+2021-04-12,"Native American",0,102,2021-05-21 16:00:02
+2021-04-13,"Native American",0,102,2021-05-21 16:00:02
+2021-04-14,"Native American",0,102,2021-05-21 16:00:02
+2021-04-15,"Native American",0,102,2021-05-21 16:00:02
+2021-04-16,"Native American",0,102,2021-05-21 16:00:02
+2021-04-17,"Native American",1,103,2021-05-21 16:00:02
+2021-04-18,"Native American",0,103,2021-05-21 16:00:02
+2021-04-19,"Native American",0,103,2021-05-21 16:00:02
+2021-04-20,"Native American",0,103,2021-05-21 16:00:02
+2021-04-21,"Native American",0,103,2021-05-21 16:00:02
+2021-04-22,"Native American",0,103,2021-05-21 16:00:02
+2021-04-23,"Native American",0,103,2021-05-21 16:00:02
+2021-04-24,"Native American",1,104,2021-05-21 16:00:02
+2021-04-25,"Native American",1,105,2021-05-21 16:00:02
+2021-04-26,"Native American",0,105,2021-05-21 16:00:02
+2021-04-27,"Native American",1,106,2021-05-21 16:00:02
+2021-04-28,"Native American",0,106,2021-05-21 16:00:02
+2021-04-29,"Native American",0,106,2021-05-21 16:00:02
+2021-04-30,"Native American",0,106,2021-05-21 16:00:02
+2021-05-01,"Native American",0,106,2021-05-21 16:00:02
+2021-05-02,"Native American",0,106,2021-05-21 16:00:02
+2021-05-03,"Native American",0,106,2021-05-21 16:00:02
+2021-05-04,"Native American",1,107,2021-05-21 16:00:02
+2021-05-05,"Native American",0,107,2021-05-21 16:00:02
+2021-05-06,"Native American",0,107,2021-05-21 16:00:02
+2021-05-07,"Native American",0,107,2021-05-21 16:00:02
+2021-05-08,"Native American",1,108,2021-05-21 16:00:02
+2021-05-09,"Native American",0,108,2021-05-21 16:00:02
+2021-05-10,"Native American",0,108,2021-05-21 16:00:02
+2021-05-11,"Native American",0,108,2021-05-21 16:00:02
+2021-05-12,"Native American",0,108,2021-05-21 16:00:02
+2021-05-13,"Native American",0,108,2021-05-21 16:00:02
+2021-05-14,"Native American",0,108,2021-05-21 16:00:02
+2021-05-15,"Native American",0,108,2021-05-21 16:00:02
+2021-05-16,"Native American",0,108,2021-05-21 16:00:02
+2021-05-17,"Native American",0,108,2021-05-21 16:00:02
+2021-05-18,"Native American",0,108,2021-05-21 16:00:02
+2020-03-18,"Black or African American",2,6,2021-05-21 16:00:02
+2020-03-19,"Black or African American",2,8,2021-05-21 16:00:02
+2020-03-20,"Black or African American",3,11,2021-05-21 16:00:02
+2020-03-21,"Black or African American",1,12,2021-05-21 16:00:02
+2020-03-22,"Black or African American",3,15,2021-05-21 16:00:02
+2020-03-23,"Black or African American",3,18,2021-05-21 16:00:02
+2020-03-24,"Black or African American",2,20,2021-05-21 16:00:02
+2020-03-25,"Black or African American",4,24,2021-05-21 16:00:02
+2020-03-26,"Black or African American",4,28,2021-05-21 16:00:02
+2020-03-27,"Black or African American",2,30,2021-05-21 16:00:02
+2020-03-28,"Black or African American",2,32,2021-05-21 16:00:02
+2020-03-29,"Black or African American",1,33,2021-05-21 16:00:02
+2020-03-30,"Black or African American",0,33,2021-05-21 16:00:02
+2020-03-31,"Black or African American",1,34,2021-05-21 16:00:02
+2020-04-01,"Black or African American",4,38,2021-05-21 16:00:02
+2020-04-02,"Black or African American",0,38,2021-05-21 16:00:02
+2020-04-03,"Black or African American",0,38,2021-05-21 16:00:02
+2020-04-04,"Black or African American",0,38,2021-05-21 16:00:02
+2020-04-05,"Black or African American",2,40,2021-05-21 16:00:02
+2020-04-06,"Black or African American",1,41,2021-05-21 16:00:02
+2020-04-07,"Black or African American",3,44,2021-05-21 16:00:02
+2020-04-08,"Black or African American",9,53,2021-05-21 16:00:02
+2020-04-09,"Black or African American",11,64,2021-05-21 16:00:02
+2020-04-10,"Black or African American",1,65,2021-05-21 16:00:02
+2020-04-11,"Black or African American",6,71,2021-05-21 16:00:02
+2020-04-12,"Black or African American",2,73,2021-05-21 16:00:02
+2020-04-13,"Black or African American",2,75,2021-05-21 16:00:02
+2020-04-14,"Black or African American",4,79,2021-05-21 16:00:02
+2020-04-15,"Black or African American",1,80,2021-05-21 16:00:02
+2020-04-16,"Black or African American",0,80,2021-05-21 16:00:02
+2020-04-17,"Black or African American",2,82,2021-05-21 16:00:02
+2020-04-18,"Black or African American",0,82,2021-05-21 16:00:02
+2020-04-19,"Black or African American",1,83,2021-05-21 16:00:02
+2020-04-20,"Black or African American",1,84,2021-05-21 16:00:02
+2020-04-21,"Black or African American",1,85,2021-05-21 16:00:02
+2020-04-22,"Black or African American",2,87,2021-05-21 16:00:02
+2020-04-23,"Black or African American",3,90,2021-05-21 16:00:02
+2020-04-24,"Black or African American",0,90,2021-05-21 16:00:02
+2020-04-25,"Black or African American",2,92,2021-05-21 16:00:02
+2020-04-26,"Black or African American",2,94,2021-05-21 16:00:02
+2020-04-27,"Black or African American",4,98,2021-05-21 16:00:02
+2020-04-28,"Black or African American",0,98,2021-05-21 16:00:02
+2020-04-29,"Black or African American",1,99,2021-05-21 16:00:02
+2020-04-30,"Black or African American",2,101,2021-05-21 16:00:02
+2020-05-01,"Black or African American",0,101,2021-05-21 16:00:02
+2020-05-02,"Black or African American",0,101,2021-05-21 16:00:02
+2020-05-03,"Black or African American",0,101,2021-05-21 16:00:02
+2020-05-04,"Black or African American",2,103,2021-05-21 16:00:02
+2020-05-05,"Black or African American",1,104,2021-05-21 16:00:02
+2020-05-06,"Black or African American",3,107,2021-05-21 16:00:02
+2020-05-07,"Black or African American",0,107,2021-05-21 16:00:02
+2020-05-08,"Black or African American",2,109,2021-05-21 16:00:02
+2020-05-09,"Black or African American",1,110,2021-05-21 16:00:02
+2020-05-10,"Black or African American",0,110,2021-05-21 16:00:02
+2020-05-11,"Black or African American",2,112,2021-05-21 16:00:02
+2020-05-12,"Black or African American",2,114,2021-05-21 16:00:02
+2020-05-13,"Black or African American",1,115,2021-05-21 16:00:02
+2020-05-14,"Black or African American",0,115,2021-05-21 16:00:02
+2020-05-15,"Black or African American",3,118,2021-05-21 16:00:02
+2020-05-16,"Black or African American",0,118,2021-05-21 16:00:02
+2020-05-17,"Black or African American",0,118,2021-05-21 16:00:02
+2020-05-18,"Black or African American",1,119,2021-05-21 16:00:02
+2020-05-19,"Black or African American",4,123,2021-05-21 16:00:02
+2020-05-20,"Black or African American",7,130,2021-05-21 16:00:02
+2020-05-21,"Black or African American",0,130,2021-05-21 16:00:02
+2020-05-22,"Black or African American",1,131,2021-05-21 16:00:02
+2020-05-23,"Black or African American",1,132,2021-05-21 16:00:02
+2020-05-24,"Black or African American",1,133,2021-05-21 16:00:02
+2020-05-25,"Black or African American",0,133,2021-05-21 16:00:02
+2020-05-26,"Black or African American",0,133,2021-05-21 16:00:02
+2020-05-27,"Black or African American",3,136,2021-05-21 16:00:02
+2020-05-28,"Black or African American",0,136,2021-05-21 16:00:02
+2020-05-29,"Black or African American",0,136,2021-05-21 16:00:02
+2020-05-30,"Black or African American",1,137,2021-05-21 16:00:02
+2020-05-31,"Black or African American",0,137,2021-05-21 16:00:02
+2020-06-01,"Black or African American",0,137,2021-05-21 16:00:02
+2020-06-02,"Black or African American",1,138,2021-05-21 16:00:02
+2020-06-03,"Black or African American",0,138,2021-05-21 16:00:02
+2020-06-04,"Black or African American",3,141,2021-05-21 16:00:02
+2020-06-05,"Black or African American",2,143,2021-05-21 16:00:02
+2020-06-06,"Black or African American",1,144,2021-05-21 16:00:02
+2020-06-07,"Black or African American",2,146,2021-05-21 16:00:02
+2020-06-08,"Black or African American",1,147,2021-05-21 16:00:02
+2020-06-09,"Black or African American",1,148,2021-05-21 16:00:02
+2020-06-10,"Black or African American",1,149,2021-05-21 16:00:02
+2020-06-11,"Black or African American",0,149,2021-05-21 16:00:02
+2020-06-12,"Black or African American",0,149,2021-05-21 16:00:02
+2020-06-13,"Black or African American",0,149,2021-05-21 16:00:02
+2020-06-14,"Black or African American",0,149,2021-05-21 16:00:02
+2020-06-15,"Black or African American",0,149,2021-05-21 16:00:02
+2020-06-16,"Black or African American",0,149,2021-05-21 16:00:02
+2020-06-17,"Black or African American",2,151,2021-05-21 16:00:02
+2020-06-18,"Black or African American",4,155,2021-05-21 16:00:02
+2020-06-19,"Black or African American",4,159,2021-05-21 16:00:02
+2020-06-20,"Black or African American",2,161,2021-05-21 16:00:02
+2020-06-21,"Black or African American",1,162,2021-05-21 16:00:02
+2020-06-22,"Black or African American",7,169,2021-05-21 16:00:02
+2020-06-23,"Black or African American",10,179,2021-05-21 16:00:02
+2020-06-24,"Black or African American",5,184,2021-05-21 16:00:02
+2020-06-25,"Black or African American",7,191,2021-05-21 16:00:02
+2020-06-26,"Black or African American",5,196,2021-05-21 16:00:02
+2020-06-27,"Black or African American",10,206,2021-05-21 16:00:02
+2020-06-28,"Black or African American",2,208,2021-05-21 16:00:02
+2020-06-29,"Black or African American",3,211,2021-05-21 16:00:02
+2020-06-30,"Black or African American",6,217,2021-05-21 16:00:02
+2020-07-01,"Black or African American",6,223,2021-05-21 16:00:02
+2020-07-02,"Black or African American",10,233,2021-05-21 16:00:02
+2020-07-03,"Black or African American",2,235,2021-05-21 16:00:02
+2020-07-04,"Black or African American",2,237,2021-05-21 16:00:02
+2020-07-05,"Black or African American",3,240,2021-05-21 16:00:02
+2020-07-06,"Black or African American",5,245,2021-05-21 16:00:02
+2020-07-07,"Black or African American",11,256,2021-05-21 16:00:02
+2020-07-08,"Black or African American",4,260,2021-05-21 16:00:02
+2020-07-09,"Black or African American",8,268,2021-05-21 16:00:02
+2020-07-10,"Black or African American",7,275,2021-05-21 16:00:02
+2020-07-11,"Black or African American",4,279,2021-05-21 16:00:02
+2020-07-12,"Black or African American",1,280,2021-05-21 16:00:02
+2020-07-13,"Black or African American",8,288,2021-05-21 16:00:02
+2020-07-14,"Black or African American",9,297,2021-05-21 16:00:02
+2020-07-15,"Black or African American",9,306,2021-05-21 16:00:02
+2020-07-16,"Black or African American",9,315,2021-05-21 16:00:02
+2020-07-17,"Black or African American",26,341,2021-05-21 16:00:02
+2020-07-18,"Black or African American",12,353,2021-05-21 16:00:02
+2020-07-19,"Black or African American",4,357,2021-05-21 16:00:02
+2020-07-20,"Black or African American",8,365,2021-05-21 16:00:02
+2020-07-21,"Black or African American",6,371,2021-05-21 16:00:02
+2020-07-22,"Black or African American",9,380,2021-05-21 16:00:02
+2020-07-23,"Black or African American",11,391,2021-05-21 16:00:02
+2020-07-24,"Black or African American",6,397,2021-05-21 16:00:02
+2020-07-25,"Black or African American",6,403,2021-05-21 16:00:02
+2020-07-26,"Black or African American",4,407,2021-05-21 16:00:02
+2020-07-27,"Black or African American",3,410,2021-05-21 16:00:02
+2020-07-28,"Black or African American",6,416,2021-05-21 16:00:02
+2020-07-29,"Black or African American",6,422,2021-05-21 16:00:02
+2020-07-30,"Black or African American",4,426,2021-05-21 16:00:02
+2020-07-31,"Black or African American",5,431,2021-05-21 16:00:02
+2020-08-01,"Black or African American",6,437,2021-05-21 16:00:02
+2020-08-02,"Black or African American",3,440,2021-05-21 16:00:02
+2020-08-03,"Black or African American",13,453,2021-05-21 16:00:02
+2020-08-04,"Black or African American",3,456,2021-05-21 16:00:02
+2020-08-05,"Black or African American",15,471,2021-05-21 16:00:02
+2020-08-06,"Black or African American",3,474,2021-05-21 16:00:02
+2020-08-07,"Black or African American",4,478,2021-05-21 16:00:02
+2020-08-08,"Black or African American",8,486,2021-05-21 16:00:02
+2020-08-09,"Black or African American",2,488,2021-05-21 16:00:02
+2020-08-10,"Black or African American",2,490,2021-05-21 16:00:02
+2020-08-11,"Black or African American",4,494,2021-05-21 16:00:02
+2020-08-12,"Black or African American",8,502,2021-05-21 16:00:02
+2020-08-13,"Black or African American",6,508,2021-05-21 16:00:02
+2020-08-14,"Black or African American",6,514,2021-05-21 16:00:02
+2020-08-15,"Black or African American",3,517,2021-05-21 16:00:02
+2020-08-16,"Black or African American",4,521,2021-05-21 16:00:02
+2020-08-17,"Black or African American",6,527,2021-05-21 16:00:02
+2020-08-18,"Black or African American",4,531,2021-05-21 16:00:02
+2020-08-19,"Black or African American",7,538,2021-05-21 16:00:02
+2020-08-20,"Black or African American",12,550,2021-05-21 16:00:02
+2020-08-21,"Black or African American",1,551,2021-05-21 16:00:02
+2020-08-22,"Black or African American",4,555,2021-05-21 16:00:02
+2020-08-23,"Black or African American",1,556,2021-05-21 16:00:02
+2020-08-24,"Black or African American",2,558,2021-05-21 16:00:02
+2020-08-25,"Black or African American",4,562,2021-05-21 16:00:02
+2020-08-26,"Black or African American",4,566,2021-05-21 16:00:02
+2020-08-27,"Black or African American",4,570,2021-05-21 16:00:02
+2020-08-28,"Black or African American",2,572,2021-05-21 16:00:02
+2020-08-29,"Black or African American",2,574,2021-05-21 16:00:02
+2020-08-30,"Black or African American",2,576,2021-05-21 16:00:02
+2020-08-31,"Black or African American",8,584,2021-05-21 16:00:02
+2020-09-01,"Black or African American",7,591,2021-05-21 16:00:02
+2020-09-02,"Black or African American",1,592,2021-05-21 16:00:02
+2020-09-03,"Black or African American",4,596,2021-05-21 16:00:02
+2020-09-04,"Black or African American",4,600,2021-05-21 16:00:02
+2020-09-05,"Black or African American",3,603,2021-05-21 16:00:02
+2020-09-06,"Black or African American",2,605,2021-05-21 16:00:02
+2020-09-07,"Black or African American",5,610,2021-05-21 16:00:02
+2020-09-08,"Black or African American",1,611,2021-05-21 16:00:02
+2020-09-09,"Black or African American",2,613,2021-05-21 16:00:02
+2020-09-10,"Black or African American",5,618,2021-05-21 16:00:02
+2020-09-11,"Black or African American",4,622,2021-05-21 16:00:02
+2020-09-12,"Black or African American",3,625,2021-05-21 16:00:02
+2020-09-13,"Black or African American",1,626,2021-05-21 16:00:02
+2020-09-14,"Black or African American",2,628,2021-05-21 16:00:02
+2020-09-15,"Black or African American",5,633,2021-05-21 16:00:02
+2020-09-16,"Black or African American",4,637,2021-05-21 16:00:02
+2020-09-17,"Black or African American",5,642,2021-05-21 16:00:02
+2020-09-18,"Black or African American",9,651,2021-05-21 16:00:02
+2020-09-19,"Black or African American",3,654,2021-05-21 16:00:02
+2020-09-20,"Black or African American",1,655,2021-05-21 16:00:02
+2020-09-21,"Black or African American",2,657,2021-05-21 16:00:02
+2020-09-22,"Black or African American",0,657,2021-05-21 16:00:02
+2020-09-23,"Black or African American",2,659,2021-05-21 16:00:02
+2020-09-24,"Black or African American",2,661,2021-05-21 16:00:02
+2020-09-25,"Black or African American",5,666,2021-05-21 16:00:02
+2020-09-26,"Black or African American",0,666,2021-05-21 16:00:02
+2020-09-27,"Black or African American",0,666,2021-05-21 16:00:02
+2020-09-28,"Black or African American",3,669,2021-05-21 16:00:02
+2020-09-29,"Black or African American",4,673,2021-05-21 16:00:02
+2020-09-30,"Black or African American",2,675,2021-05-21 16:00:02
+2020-10-01,"Black or African American",2,677,2021-05-21 16:00:02
+2020-10-02,"Black or African American",1,678,2021-05-21 16:00:02
+2020-10-03,"Black or African American",0,678,2021-05-21 16:00:02
+2020-10-04,"Black or African American",1,679,2021-05-21 16:00:02
+2020-10-05,"Black or African American",2,681,2021-05-21 16:00:02
+2020-10-06,"Black or African American",0,681,2021-05-21 16:00:02
+2020-10-07,"Black or African American",0,681,2021-05-21 16:00:02
+2020-10-08,"Black or African American",0,681,2021-05-21 16:00:02
+2020-10-09,"Black or African American",3,684,2021-05-21 16:00:02
+2020-10-10,"Black or African American",2,686,2021-05-21 16:00:02
+2020-10-11,"Black or African American",1,687,2021-05-21 16:00:02
+2020-10-12,"Black or African American",7,694,2021-05-21 16:00:02
+2020-10-13,"Black or African American",5,699,2021-05-21 16:00:02
+2020-10-14,"Black or African American",2,701,2021-05-21 16:00:02
+2020-10-15,"Black or African American",0,701,2021-05-21 16:00:02
+2020-10-16,"Black or African American",5,706,2021-05-21 16:00:02
+2020-10-17,"Black or African American",0,706,2021-05-21 16:00:02
+2020-10-18,"Black or African American",1,707,2021-05-21 16:00:02
+2020-10-19,"Black or African American",0,707,2021-05-21 16:00:02
+2020-10-20,"Black or African American",0,707,2021-05-21 16:00:02
+2020-10-21,"Black or African American",0,707,2021-05-21 16:00:02
+2020-10-22,"Black or African American",2,709,2021-05-21 16:00:02
+2020-10-23,"Black or African American",2,711,2021-05-21 16:00:02
+2020-10-24,"Black or African American",0,711,2021-05-21 16:00:02
+2020-10-25,"Black or African American",3,714,2021-05-21 16:00:02
+2020-10-26,"Black or African American",4,718,2021-05-21 16:00:02
+2020-10-27,"Black or African American",4,722,2021-05-21 16:00:02
+2020-10-28,"Black or African American",2,724,2021-05-21 16:00:02
+2020-10-29,"Black or African American",3,727,2021-05-21 16:00:02
+2020-10-30,"Black or African American",1,728,2021-05-21 16:00:02
+2020-10-31,"Black or African American",1,729,2021-05-21 16:00:02
+2020-11-01,"Black or African American",1,730,2021-05-21 16:00:02
+2020-11-02,"Black or African American",1,731,2021-05-21 16:00:02
+2020-11-03,"Black or African American",5,736,2021-05-21 16:00:02
+2020-11-04,"Black or African American",4,740,2021-05-21 16:00:02
+2020-11-05,"Black or African American",6,746,2021-05-21 16:00:02
+2020-11-06,"Black or African American",5,751,2021-05-21 16:00:02
+2020-11-07,"Black or African American",5,756,2021-05-21 16:00:02
+2020-11-08,"Black or African American",1,757,2021-05-21 16:00:02
+2020-11-09,"Black or African American",3,760,2021-05-21 16:00:02
+2020-11-10,"Black or African American",7,767,2021-05-21 16:00:02
+2020-11-11,"Black or African American",3,770,2021-05-21 16:00:02
+2020-11-12,"Black or African American",5,775,2021-05-21 16:00:02
+2020-11-13,"Black or African American",6,781,2021-05-21 16:00:02
+2020-11-14,"Black or African American",3,784,2021-05-21 16:00:02
+2020-11-15,"Black or African American",0,784,2021-05-21 16:00:02
+2020-11-16,"Black or African American",6,790,2021-05-21 16:00:02
+2020-11-17,"Black or African American",8,798,2021-05-21 16:00:02
+2020-11-18,"Black or African American",9,807,2021-05-21 16:00:02
+2020-11-19,"Black or African American",7,814,2021-05-21 16:00:02
+2020-11-20,"Black or African American",18,832,2021-05-21 16:00:02
+2020-11-21,"Black or African American",5,837,2021-05-21 16:00:02
+2020-11-22,"Black or African American",7,844,2021-05-21 16:00:02
+2020-11-23,"Black or African American",9,853,2021-05-21 16:00:02
+2020-11-24,"Black or African American",9,862,2021-05-21 16:00:02
+2020-11-25,"Black or African American",5,867,2021-05-21 16:00:02
+2020-11-26,"Black or African American",3,870,2021-05-21 16:00:02
+2020-11-27,"Black or African American",5,875,2021-05-21 16:00:02
+2020-11-28,"Black or African American",1,876,2021-05-21 16:00:02
+2020-11-29,"Black or African American",6,882,2021-05-21 16:00:02
+2020-11-30,"Black or African American",16,898,2021-05-21 16:00:02
+2020-12-01,"Black or African American",12,910,2021-05-21 16:00:02
+2020-12-02,"Black or African American",10,920,2021-05-21 16:00:02
+2020-12-03,"Black or African American",18,938,2021-05-21 16:00:02
+2020-12-04,"Black or African American",9,947,2021-05-21 16:00:02
+2020-12-05,"Black or African American",12,959,2021-05-21 16:00:02
+2020-12-06,"Black or African American",3,962,2021-05-21 16:00:02
+2020-12-07,"Black or African American",29,991,2021-05-21 16:00:02
+2020-12-08,"Black or African American",15,1006,2021-05-21 16:00:02
+2020-12-09,"Black or African American",10,1016,2021-05-21 16:00:02
+2020-12-10,"Black or African American",21,1037,2021-05-21 16:00:02
+2020-12-11,"Black or African American",17,1054,2021-05-21 16:00:02
+2020-12-12,"Black or African American",12,1066,2021-05-21 16:00:02
+2020-12-13,"Black or African American",6,1072,2021-05-21 16:00:02
+2020-12-14,"Black or African American",20,1092,2021-05-21 16:00:02
+2020-12-15,"Black or African American",18,1110,2021-05-21 16:00:02
+2020-12-16,"Black or African American",31,1141,2021-05-21 16:00:02
+2020-12-17,"Black or African American",14,1155,2021-05-21 16:00:02
+2020-12-18,"Black or African American",21,1176,2021-05-21 16:00:02
+2020-12-19,"Black or African American",4,1180,2021-05-21 16:00:02
+2020-12-20,"Black or African American",2,1182,2021-05-21 16:00:02
+2020-12-21,"Black or African American",17,1199,2021-05-21 16:00:02
+2020-12-22,"Black or African American",20,1219,2021-05-21 16:00:02
+2020-12-23,"Black or African American",12,1231,2021-05-21 16:00:02
+2020-12-24,"Black or African American",12,1243,2021-05-21 16:00:02
+2020-12-25,"Black or African American",3,1246,2021-05-21 16:00:02
+2020-12-26,"Black or African American",13,1259,2021-05-21 16:00:02
+2020-12-27,"Black or African American",11,1270,2021-05-21 16:00:02
+2020-12-28,"Black or African American",22,1292,2021-05-21 16:00:02
+2020-12-29,"Black or African American",29,1321,2021-05-21 16:00:02
+2020-12-30,"Black or African American",16,1337,2021-05-21 16:00:02
+2020-12-31,"Black or African American",23,1360,2021-05-21 16:00:02
+2021-01-01,"Black or African American",6,1366,2021-05-21 16:00:02
+2021-01-02,"Black or African American",8,1374,2021-05-21 16:00:02
+2021-01-03,"Black or African American",8,1382,2021-05-21 16:00:02
+2021-01-04,"Black or African American",30,1412,2021-05-21 16:00:02
+2021-01-05,"Black or African American",16,1428,2021-05-21 16:00:02
+2021-01-06,"Black or African American",23,1451,2021-05-21 16:00:02
+2021-01-07,"Black or African American",29,1480,2021-05-21 16:00:02
+2021-01-08,"Black or African American",23,1503,2021-05-21 16:00:02
+2021-01-09,"Black or African American",10,1513,2021-05-21 16:00:02
+2021-01-10,"Black or African American",12,1525,2021-05-21 16:00:02
+2021-01-11,"Black or African American",23,1548,2021-05-21 16:00:02
+2021-01-12,"Black or African American",17,1565,2021-05-21 16:00:02
+2021-01-13,"Black or African American",14,1579,2021-05-21 16:00:02
+2021-01-14,"Black or African American",23,1602,2021-05-21 16:00:02
+2021-01-15,"Black or African American",19,1621,2021-05-21 16:00:02
+2021-01-16,"Black or African American",10,1631,2021-05-21 16:00:02
+2021-01-17,"Black or African American",4,1635,2021-05-21 16:00:02
+2021-01-18,"Black or African American",18,1653,2021-05-21 16:00:02
+2021-01-19,"Black or African American",20,1673,2021-05-21 16:00:02
+2021-01-20,"Black or African American",15,1688,2021-05-21 16:00:02
+2021-01-21,"Black or African American",11,1699,2021-05-21 16:00:02
+2021-01-22,"Black or African American",8,1707,2021-05-21 16:00:02
+2021-01-23,"Black or African American",12,1719,2021-05-21 16:00:02
+2021-01-24,"Black or African American",7,1726,2021-05-21 16:00:02
+2021-01-25,"Black or African American",14,1740,2021-05-21 16:00:02
+2021-01-26,"Black or African American",21,1761,2021-05-21 16:00:02
+2021-01-27,"Black or African American",12,1773,2021-05-21 16:00:02
+2021-01-28,"Black or African American",7,1780,2021-05-21 16:00:02
+2021-01-29,"Black or African American",13,1793,2021-05-21 16:00:02
+2021-01-30,"Black or African American",8,1801,2021-05-21 16:00:02
+2021-01-31,"Black or African American",4,1805,2021-05-21 16:00:02
+2021-02-01,"Black or African American",15,1820,2021-05-21 16:00:02
+2021-02-02,"Black or African American",14,1834,2021-05-21 16:00:02
+2021-02-03,"Black or African American",12,1846,2021-05-21 16:00:02
+2021-02-04,"Black or African American",12,1858,2021-05-21 16:00:02
+2021-02-05,"Black or African American",15,1873,2021-05-21 16:00:02
+2021-02-06,"Black or African American",4,1877,2021-05-21 16:00:02
+2021-02-07,"Black or African American",3,1880,2021-05-21 16:00:02
+2021-02-08,"Black or African American",9,1889,2021-05-21 16:00:02
+2021-02-09,"Black or African American",6,1895,2021-05-21 16:00:02
+2021-02-10,"Black or African American",6,1901,2021-05-21 16:00:02
+2021-02-11,"Black or African American",5,1906,2021-05-21 16:00:02
+2021-02-12,"Black or African American",10,1916,2021-05-21 16:00:02
+2021-02-13,"Black or African American",2,1918,2021-05-21 16:00:02
+2021-02-14,"Black or African American",2,1920,2021-05-21 16:00:02
+2021-02-15,"Black or African American",5,1925,2021-05-21 16:00:02
+2021-02-16,"Black or African American",6,1931,2021-05-21 16:00:02
+2021-02-17,"Black or African American",8,1939,2021-05-21 16:00:02
+2021-02-18,"Black or African American",6,1945,2021-05-21 16:00:02
+2021-02-19,"Black or African American",1,1946,2021-05-21 16:00:02
+2021-02-20,"Black or African American",3,1949,2021-05-21 16:00:02
+2021-02-21,"Black or African American",5,1954,2021-05-21 16:00:02
+2021-02-22,"Black or African American",8,1962,2021-05-21 16:00:02
+2021-02-23,"Black or African American",5,1967,2021-05-21 16:00:02
+2021-02-24,"Black or African American",7,1974,2021-05-21 16:00:02
+2021-02-25,"Black or African American",0,1974,2021-05-21 16:00:02
+2021-02-26,"Black or African American",5,1979,2021-05-21 16:00:02
+2021-02-27,"Black or African American",1,1980,2021-05-21 16:00:02
+2021-02-28,"Black or African American",2,1982,2021-05-21 16:00:02
+2021-03-01,"Black or African American",0,1982,2021-05-21 16:00:02
+2021-03-02,"Black or African American",2,1984,2021-05-21 16:00:02
+2021-03-03,"Black or African American",2,1986,2021-05-21 16:00:02
+2021-03-04,"Black or African American",5,1991,2021-05-21 16:00:02
+2021-03-05,"Black or African American",2,1993,2021-05-21 16:00:02
+2021-03-06,"Black or African American",0,1993,2021-05-21 16:00:02
+2021-03-07,"Black or African American",1,1994,2021-05-21 16:00:02
+2021-03-08,"Black or African American",2,1996,2021-05-21 16:00:02
+2021-03-09,"Black or African American",3,1999,2021-05-21 16:00:02
+2021-03-10,"Black or African American",1,2000,2021-05-21 16:00:02
+2021-03-11,"Black or African American",8,2008,2021-05-21 16:00:02
+2021-03-12,"Black or African American",6,2014,2021-05-21 16:00:02
+2021-03-13,"Black or African American",2,2016,2021-05-21 16:00:02
+2021-03-14,"Black or African American",1,2017,2021-05-21 16:00:02
+2021-03-15,"Black or African American",5,2022,2021-05-21 16:00:02
+2021-03-16,"Black or African American",0,2022,2021-05-21 16:00:02
+2021-03-17,"Black or African American",0,2022,2021-05-21 16:00:02
+2021-03-18,"Black or African American",2,2024,2021-05-21 16:00:02
+2021-03-19,"Black or African American",4,2028,2021-05-21 16:00:02
+2021-03-20,"Black or African American",2,2030,2021-05-21 16:00:02
+2021-03-21,"Black or African American",1,2031,2021-05-21 16:00:02
+2021-03-22,"Black or African American",2,2033,2021-05-21 16:00:02
+2021-03-23,"Black or African American",2,2035,2021-05-21 16:00:02
+2021-03-24,"Black or African American",6,2041,2021-05-21 16:00:02
+2021-03-25,"Black or African American",6,2047,2021-05-21 16:00:02
+2021-03-26,"Black or African American",2,2049,2021-05-21 16:00:02
+2021-03-27,"Black or African American",1,2050,2021-05-21 16:00:02
+2021-03-28,"Black or African American",2,2052,2021-05-21 16:00:02
+2021-03-29,"Black or African American",3,2055,2021-05-21 16:00:02
+2021-03-30,"Black or African American",0,2055,2021-05-21 16:00:02
+2021-03-31,"Black or African American",4,2059,2021-05-21 16:00:02
+2021-04-01,"Black or African American",2,2061,2021-05-21 16:00:02
+2021-04-02,"Black or African American",1,2062,2021-05-21 16:00:02
+2021-04-03,"Black or African American",0,2062,2021-05-21 16:00:02
+2021-04-04,"Black or African American",2,2064,2021-05-21 16:00:02
+2021-04-05,"Black or African American",9,2073,2021-05-21 16:00:02
+2021-04-06,"Black or African American",2,2075,2021-05-21 16:00:02
+2021-04-07,"Black or African American",5,2080,2021-05-21 16:00:02
+2021-04-08,"Black or African American",2,2082,2021-05-21 16:00:02
+2021-04-09,"Black or African American",3,2085,2021-05-21 16:00:02
+2021-04-10,"Black or African American",3,2088,2021-05-21 16:00:02
+2021-04-11,"Black or African American",2,2090,2021-05-21 16:00:02
+2021-04-12,"Black or African American",4,2094,2021-05-21 16:00:02
+2021-04-13,"Black or African American",4,2098,2021-05-21 16:00:02
+2021-04-14,"Black or African American",3,2101,2021-05-21 16:00:02
+2021-04-15,"Black or African American",7,2108,2021-05-21 16:00:02
+2021-04-16,"Black or African American",10,2118,2021-05-21 16:00:02
+2021-04-17,"Black or African American",4,2122,2021-05-21 16:00:02
+2021-04-18,"Black or African American",6,2128,2021-05-21 16:00:02
+2021-04-19,"Black or African American",9,2137,2021-05-21 16:00:02
+2021-04-20,"Black or African American",11,2148,2021-05-21 16:00:02
+2021-04-21,"Black or African American",2,2150,2021-05-21 16:00:02
+2021-04-22,"Black or African American",2,2152,2021-05-21 16:00:02
+2021-04-23,"Black or African American",7,2159,2021-05-21 16:00:02
+2021-04-24,"Black or African American",7,2166,2021-05-21 16:00:02
+2021-04-25,"Black or African American",2,2168,2021-05-21 16:00:02
+2021-04-26,"Black or African American",4,2172,2021-05-21 16:00:02
+2021-04-27,"Black or African American",4,2176,2021-05-21 16:00:02
+2021-04-28,"Black or African American",12,2188,2021-05-21 16:00:02
+2021-04-29,"Black or African American",9,2197,2021-05-21 16:00:02
+2021-04-30,"Black or African American",11,2208,2021-05-21 16:00:02
+2021-05-01,"Black or African American",3,2211,2021-05-21 16:00:02
+2021-05-02,"Black or African American",2,2213,2021-05-21 16:00:02
+2021-05-03,"Black or African American",2,2215,2021-05-21 16:00:02
+2021-05-04,"Black or African American",5,2220,2021-05-21 16:00:02
+2021-05-05,"Black or African American",2,2222,2021-05-21 16:00:02
+2021-05-06,"Black or African American",11,2233,2021-05-21 16:00:02
+2021-05-07,"Black or African American",2,2235,2021-05-21 16:00:02
+2021-05-08,"Black or African American",5,2240,2021-05-21 16:00:02
+2021-05-09,"Black or African American",3,2243,2021-05-21 16:00:02
+2021-05-10,"Black or African American",2,2245,2021-05-21 16:00:02
+2021-05-11,"Black or African American",4,2249,2021-05-21 16:00:02
+2021-05-12,"Black or African American",5,2254,2021-05-21 16:00:02
+2021-05-13,"Black or African American",2,2256,2021-05-21 16:00:02
+2021-05-14,"Black or African American",5,2261,2021-05-21 16:00:02
+2021-05-15,"Black or African American",2,2263,2021-05-21 16:00:02
+2021-05-16,"Black or African American",0,2263,2021-05-21 16:00:02
+2021-05-17,"Black or African American",2,2265,2021-05-21 16:00:02
+2021-05-18,"Black or African American",3,2268,2021-05-21 16:00:02

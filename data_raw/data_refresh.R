@@ -12,7 +12,7 @@ data_refresh <- function(){
                                                     tz = "America/Los_Angeles"))
 
 
-    covid19sf_age <- read.csv("https://data.sfgov.org/resource/sunc-2t3k.csv?$limit=3000", stringsAsFactors = FALSE) %>%
+    covid19sf_age <- read.csv("https://data.sfgov.org/resource/sunc-2t3k.csv?$limit=10000", stringsAsFactors = FALSE) %>%
       dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
                                                                           tz = "America/Los_Angeles")),
                     last_updated = lubridate::ymd_hms(last_updated_at,
@@ -36,7 +36,7 @@ data_refresh <- function(){
 
 
 
-    covid19sf_summary <- read.csv("https://data.sfgov.org/resource/tvq9-ec9w.csv",
+    covid19sf_summary <- read.csv("https://data.sfgov.org/resource/tvq9-ec9w.csv?$limit=5000",
                                   stringsAsFactors = FALSE) %>%
       dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
                                                                           tz = "America/Los_Angeles")),
@@ -71,7 +71,7 @@ data_refresh <- function(){
 
 
 
-    covid19sf_hospitalizations <- read.csv("https://data.sfgov.org/resource/nxjg-bhem.csv", stringsAsFactors = FALSE) %>%
+    covid19sf_hospitalizations <- read.csv("https://data.sfgov.org/resource/nxjg-bhem.csv?$limit=5000", stringsAsFactors = FALSE) %>%
       dplyr::mutate(reportdate = as.Date(lubridate::ymd_hms(reportdate,
                                                             tz = "America/Los_Angeles")))
 
@@ -132,7 +132,7 @@ data_refresh <- function(){
     cat(paste0("\033[4;", 36, "m","covid19sf_demo dataset","\033[0m","\n"))
     cat("Checking for updates...\n")
 
-    covid19sf_demo <- read.csv("https://data.sfgov.org/resource/vqqm-nsqg.csv?$limit=3000", stringsAsFactors = FALSE) %>%
+    covid19sf_demo <- read.csv("https://data.sfgov.org/resource/vqqm-nsqg.csv?$limit=5000", stringsAsFactors = FALSE) %>%
       dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
                                                                           tz = "America/Los_Angeles")),
                     last_updated = lubridate::ymd_hms(last_updated_at,
@@ -164,7 +164,7 @@ data_refresh <- function(){
     cat(paste0("\033[4;", 36, "m","covid19sf_housing dataset","\033[0m","\n"))
     cat("Checking for updates...\n")
 
-    covid19sf_housing <- read.csv("https://data.sfgov.org/resource/qu2c-7bqh.csv", stringsAsFactors = FALSE) %>%
+    covid19sf_housing <- read.csv("https://data.sfgov.org/resource/qu2c-7bqh.csv?$limit=5000", stringsAsFactors = FALSE) %>%
       dplyr::mutate(date_updated = as.Date(lubridate::ymd_hms(date_updated,
                                                               quiet = TRUE,
                                                               tz = "America/Los_Angeles")))
@@ -221,7 +221,7 @@ data_refresh <- function(){
     cat(paste0("\033[4;", 36, "m","covid19sf_hospital dataset","\033[0m","\n"))
     cat("Checking for updates...\n")
 
-    covid19sf_hospital <- read.csv("https://data.sfgov.org/resource/rh24-ebzg.csv?$limit=2000", stringsAsFactors = FALSE) %>%
+    covid19sf_hospital <- read.csv("https://data.sfgov.org/resource/rh24-ebzg.csv?$limit=5000", stringsAsFactors = FALSE) %>%
       dplyr::mutate(date = as.Date(lubridate::ymd_hms(date,
                                                       tz = "America/Los_Angeles")))
 
@@ -267,7 +267,7 @@ data_refresh <- function(){
 
 
 
-      covid19sf_gender <- read.csv("https://data.sfgov.org/resource/nhy6-gqam.csv", stringsAsFactors = FALSE) %>%
+      covid19sf_gender <- read.csv("https://data.sfgov.org/resource/nhy6-gqam.csv?$limit=5000", stringsAsFactors = FALSE) %>%
         dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
                                                                             tz = "America/Los_Angeles")),
                       last_updated = lubridate::ymd_hms(last_updated_at,
@@ -303,7 +303,7 @@ data_refresh <- function(){
 
 
 
-      covid19sf_homeless <- read.csv("https://data.sfgov.org/resource/b45x-2crv.csv", stringsAsFactors = FALSE) %>%
+      covid19sf_homeless <- read.csv("https://data.sfgov.org/resource/b45x-2crv.csv?$limit=5000", stringsAsFactors = FALSE) %>%
         dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
                                                                             tz = "America/Los_Angeles")),
                       last_updated = lubridate::ymd_hms(last_updated_at,
