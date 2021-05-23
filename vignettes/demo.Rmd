@@ -31,14 +31,20 @@ The **covid19sf** package provides several datasets that descrive the distributi
 
 The `covid19sf_age` dataset provides distribution of new and aggregate cases by age group. That includes the following age groups:
 
-* Under 18
-* 18 to 30
-* 31 to 40
-* 41 to 50
-* 51 to 60
-* 61 to 70
-* 71 to 80
-* 81 and above
+* 0-4  
+* 5-10
+* 11-13
+* 14-17
+* 18-20
+* 21-24
+* 25-29
+* 30-39 
+* 40-49
+* 50-59
+* 60-69
+* 70-79
+* 80+
+
 
 ```{r}
 data(covid19sf_age)
@@ -54,10 +60,13 @@ In the following example, we will use the [plotly](https://plotly.com/r/) packag
 library(plotly)
 
 covid19sf_age$age_group <- factor(covid19sf_age$age_group, 
-                                  levels = c("under 18",  "18-30", 
-                                             "31-40", "41-50",
-                                             "51-60", "61-70",
-                                             "71-80","81+"))
+                                  levels = c("0-4",  "5-10", 
+                                             "11-13", "14-17",
+                                             "18-20", "21-24",
+                                             "25-29",
+                                             "30-39", "40-49",
+                                             "50-59", "60-69",
+                                             "70-79", "80+"))
 ```
 
 Next, we will use the `box` plot option to create a box-plot by age group:
@@ -70,7 +79,7 @@ plot_ly(covid19sf_age,
         jitter = 0.3,
         pointpos = -1.8,
         type = "box" ) %>%
-layout(title = "Case Dist. by Age Group",
+layout(title = "Distribution of Daily New Covid Cases in San Francisco by Age Group",
        yaxis = list(title = "Number of Cases"),
        xaxis = list(title = "Source: San Francisco Department of Public Health"),
        legend = list(x = 0.9, y = 0.9))
@@ -133,7 +142,7 @@ plotly::plot_ly(x = ~ specimen_collection_date,
                 mode = 'none', 
                 color = ~race_ethnicity,
                 stackgroup = 'one') %>%
-  layout(title = "Total Cases Dist. by Race and Ethnicity",
+  layout(title = "San Francisco Total Covid19 Confirmed Cases Dist. by Race and Ethnicity",
           legend = list(x = 0.1, y = 0.9),
          yaxis = list(title = "Number of Cases", tickformat = ".0f"),
          xaxis = list(title = "Source: San Francisco Department of Public Health"),
