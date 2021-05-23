@@ -146,22 +146,25 @@
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_age</span>)
 <span class="co">#&gt;   specimen_collection_date age_group new_confirmed_cases cumulative_confirmed_cases        last_updated</span>
-<span class="co">#&gt; 1               2020-03-12     51-60                   2                          6 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 2               2020-03-13     51-60                   3                          9 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 3               2020-03-14     51-60                   1                         10 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 4               2020-03-15     51-60                   0                         10 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 5               2020-03-16     51-60                   8                         18 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 6               2020-03-17     51-60                   3                         21 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 1               2020-03-13     25-29                   3                          7 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 2               2020-03-14     25-29                   2                          9 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 3               2020-03-15     25-29                   1                         10 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 4               2020-03-16     25-29                   1                         11 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 5               2020-03-17     25-29                   0                         11 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 6               2020-03-18     25-29                   3                         14 2021-05-21 16:00:02</span>
 </pre></div>
 <p>The following box-plot shows the distribution of the positive cases by age group:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit">
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://plotly-r.com">plotly</a></span>)
 
 <span class="kw">covid19sf_age</span><span class="op">$</span><span class="kw">age_group</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span>(<span class="kw">covid19sf_age</span><span class="op">$</span><span class="kw">age_group</span>, 
-                                  levels = <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"under 18"</span>,  <span class="st">"18-30"</span>, 
-                                             <span class="st">"31-40"</span>, <span class="st">"41-50"</span>,
-                                             <span class="st">"51-60"</span>, <span class="st">"61-70"</span>,
-                                             <span class="st">"71-80"</span>,<span class="st">"81+"</span>))
+                                  levels = <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"0-4"</span>,  <span class="st">"5-10"</span>, 
+                                             <span class="st">"11-13"</span>, <span class="st">"14-17"</span>,
+                                             <span class="st">"18-20"</span>, <span class="st">"21-24"</span>,
+                                             <span class="st">"25-29"</span>,
+                                             <span class="st">"30-39"</span>, <span class="st">"40-49"</span>,
+                                             <span class="st">"50-59"</span>, <span class="st">"60-69"</span>,
+                                             <span class="st">"70-79"</span>, <span class="st">"80+"</span>))
 
 <span class="fu"><a href="https://docs.ropensci.org/plotly/reference/plot_ly.html">plot_ly</a></span>(<span class="kw">covid19sf_age</span>, 
         color = <span class="op">~</span> <span class="kw">age_group</span>, 
@@ -170,13 +173,13 @@
         jitter = <span class="fl">0.3</span>,
         pointpos = <span class="op">-</span><span class="fl">1.8</span>,
         type = <span class="st">"box"</span> ) <span class="op">%&gt;%</span>
-<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Case Dist. by Age Group"</span>,
+<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Distribution of Daily New Covid Cases in San Francisco by Age Group"</span>,
        yaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Number of Cases"</span>),
        xaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Source: San Francisco Department of Public Health"</span>),
        legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.9</span>, y = <span class="fl">0.9</span>))
 </pre></div>
-<p><img src="reference/figures/age_dist1.png" width="100%"></p>
-<p>Here is the overall distribution of cases by age group as of 2020-11-12:</p>
+<p><img src="reference/figures/age_dist1.svg" width="100%"></p>
+<p>Here is the overall distribution of cases by age group as of 2021-05-18:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit">
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org">dplyr</a></span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://plotly-r.com">plotly</a></span>)
@@ -193,7 +196,7 @@
                         <span class="st">"Total:"</span>, <span class="kw">cumulative_confirmed_cases</span>)) <span class="op">%&gt;%</span>
    <span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Total Cases Distribution by Age Group"</span>)
 </pre></div>
-<p><img src="reference/figures/age_dist2.png" width="70%"></p>
+<p><img src="reference/figures/age_dist2.svg" width="70%"></p>
 </div>
 <div id="tests-results-distribution" class="section level3">
 <h3 class="hasAnchor">
@@ -204,12 +207,12 @@
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_tests</span>)
 <span class="co">#&gt;   specimen_collection_date tests pos        pct neg indeterminate        last_updated</span>
-<span class="co">#&gt; 1               2020-02-28     2   0 0.00000000   2             0 2020-11-13 14:15:00</span>
-<span class="co">#&gt; 2               2020-03-01     2   0 0.00000000   2             0 2020-11-13 14:15:00</span>
-<span class="co">#&gt; 3               2020-03-02     2   0 0.00000000   2             0 2020-11-13 14:15:00</span>
-<span class="co">#&gt; 4               2020-03-03     8   2 0.25000000   6             0 2020-11-13 14:15:00</span>
-<span class="co">#&gt; 5               2020-03-04    12   0 0.00000000  12             0 2020-11-13 14:15:00</span>
-<span class="co">#&gt; 6               2020-03-05    23   6 0.26086957  17             0 2020-11-13 14:15:00</span>
+<span class="co">#&gt; 1               2020-02-28     2   0 0.00000000   2             0 2021-05-21 16:00:00</span>
+<span class="co">#&gt; 2               2020-03-01     2   0 0.00000000   2             0 2021-05-21 16:00:00</span>
+<span class="co">#&gt; 3               2020-03-02     2   0 0.00000000   2             0 2021-05-21 16:00:00</span>
+<span class="co">#&gt; 4               2020-03-03     8   2 0.25000000   6             0 2021-05-21 16:00:00</span>
+<span class="co">#&gt; 5               2020-03-04    12   0 0.00000000  12             0 2021-05-21 16:00:00</span>
+<span class="co">#&gt; 6               2020-03-05    23   6 0.26086957  17             0 2021-05-21 16:00:00</span>
 </pre></div>
 <p>The plot below shows the daily distribution of the results of the tests:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit">
@@ -228,7 +231,7 @@
                  xaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Source: San Francisco Department of Public Health"</span>),
                  legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.1</span>, y = <span class="fl">0.9</span>))
 </pre></div>
-<p><img src="reference/figures/test_dist.png" width="100%"></p>
+<p><img src="reference/figures/test_dist.svg" width="100%"></p>
 </div>
 <div id="cases-distribution-by-race-ethnicity" class="section level3">
 <h3 class="hasAnchor">
@@ -239,12 +242,12 @@
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_demo</span>)
 <span class="co">#&gt;   specimen_collection_date race_ethnicity new_confirmed_cases cumulative_confirmed_cases        last_updated</span>
-<span class="co">#&gt; 1               2020-05-19          Asian                   0                        312 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 2               2020-05-31          Asian                   5                        348 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 3               2020-06-01          Asian                   5                        353 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 4               2020-06-02          Asian                   3                        356 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 5               2020-06-03          Asian                   2                        358 2020-11-13 14:15:03</span>
-<span class="co">#&gt; 6               2020-06-04          Asian                   5                        363 2020-11-13 14:15:03</span>
+<span class="co">#&gt; 1               2020-03-13          Asian                   3                          7 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 2               2020-03-14          Asian                   2                          9 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 3               2020-03-15          Asian                   2                         11 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 4               2020-03-16          Asian                   8                         19 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 5               2020-03-17          Asian                   4                         23 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 6               2020-03-18          Asian                   0                         23 2021-05-21 16:00:02</span>
 </pre></div>
 <p>Below is a plot of the cumulative positive cases by race and ethnicity:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit">
@@ -262,7 +265,7 @@
          yaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Number of Cases"</span>, tickformat = <span class="st">".0f"</span>),
          xaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Source: San Francisco Department of Public Health"</span>))
 </pre></div>
-<p><img src="reference/figures/demo_dist.png" width="100%"></p>
+<p><img src="reference/figures/demo_dist.svg" width="100%"></p>
 </div>
 </div>
 </div>
