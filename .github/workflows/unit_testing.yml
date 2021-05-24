@@ -6,8 +6,8 @@ jobs:
   R-CMD-check:
     name: R CMD check
     runs-on: ubuntu-18.04
-    container: 
-        image:  rkrispin/covid19sf:dev
+    container:
+        image:  docker.io/rkrispin/covid19sf:dev
     steps:
        - name: checkout_repo
          uses: actions/checkout@v2
