@@ -76,7 +76,7 @@ More information about the data available here" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">covid19sf</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
       </span>
     </div>
 
@@ -114,6 +114,9 @@ More information about the data available here" />
       <a href="../articles/intro.html">Introduction to the covid19sf Datasets</a>
     </li>
   </ul>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -174,20 +177,13 @@ More information about the data available <a href='https://data.sfgov.org/COVID-
     <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_hospital</span>)
 
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_hospital</span>)
-</div><div class='output co'>#&gt;                 hospital       date             bed_type
-#&gt; 1 All SF Acute Hospitals 2020-07-22 Intensive Care Surge
-#&gt; 2 All SF Acute Hospitals 2020-05-12       Intensive Care
-#&gt; 3 All SF Acute Hospitals 2020-07-22     Acute Care Surge
-#&gt; 4 All SF Acute Hospitals 2020-05-12       Intensive Care
-#&gt; 5 All SF Acute Hospitals 2020-05-12       Intensive Care
-#&gt; 6 All SF Acute Hospitals 2020-05-12           Acute Care
-#&gt;                             status count
-#&gt; 1                        Available   309
-#&gt; 2                        Available   106
-#&gt; 3                        Available   406
-#&gt; 4 COVID-19 (Confirmed &amp; Suspected)    31
-#&gt; 5                   Other Patients   142
-#&gt; 6 COVID-19 (Confirmed &amp; Suspected)    60</div></pre>
+</div><div class='output co'>#&gt;                 hospital       date             bed_type    status count
+#&gt; 1 All SF Acute Hospitals 2020-07-22 Intensive Care Surge Available   309
+#&gt; 2 All SF Acute Hospitals 2020-07-22     Acute Care Surge Available   406
+#&gt; 3 All SF Acute Hospitals 2021-05-25 Intensive Care Surge Available   298
+#&gt; 4 All SF Acute Hospitals 2021-05-25           Acute Care Available   381
+#&gt; 5 All SF Acute Hospitals 2021-05-25     Acute Care Surge Available   247
+#&gt; 6 All SF Acute Hospitals 2021-05-25       Intensive Care Available    99</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
