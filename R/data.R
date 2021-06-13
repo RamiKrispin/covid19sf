@@ -382,3 +382,48 @@
 #' head(covid19vaccine_demo)
 
 "covid19sf_vaccine_demo"
+
+#' COVID-19 Vaccine Doses Given to San Franciscans by Demographics Over Time
+#'
+#' @description  This dataset represents doses of COVID-19 vaccine administered in
+#' California to San Francisco residents over time. The data is broken down by multiple
+#' demographic slices. The three dose types are counted separately, i.e.
+#' (1) first doses administered as a part of a two-dose vaccination,
+#' (2) second doses administered as part of a two-dose vaccination, and
+#' (3) single-dose vaccines administered. \href{https://data.sfgov.org/COVID-19/COVID-19-Vaccine-Doses-Given-to-San-Franciscans-by/xjh5-h442}{here}
+#'
+#' @format An object class data.frame with 21 variables
+#' \describe{
+#'   \item{date_administered}{Date vaccination administered}
+#'   \item{overall_segment}{Segment (universe) of analysis.
+#'   Unique combination of administering_provider_type, age_group, and demographic_group.
+#'   Filter to a single option to derive meaningful totals.}
+#'   \item{administering_provider_type}{Providers included in a given overall_segment. Two possible values: 'All' (including SF DPH) or 'DPH Only'}
+#'   \item{age_group}{Age range included in a given overall_segment}
+#'   \item{demographic_group}{Type of demographic group included in a given overall_segment (e.g. Age, Race/Ethnicity)}
+#'   \item{demographic_subgroup}{Specific demographic group counted in a given record (e.g. 16-24, Asian)}
+#'   \item{demographic_subgroup_sort_order}{Numeric sort order for all demographic_subgroup. Convenient for maintaining consistent ordering across multiple data visualizations.}
+#'   \item{new_1st_doses}{Count of 1st doses administered for vaccines that take two doses to complete}
+#'   \item{new_2nd_doses}{Count of 2nd doses administered for vaccines that take two doses to complete}
+#'   \item{new_single_doses}{Count of doses administered for vaccines that take one dose to complete}
+#'   \item{new_series_completed}{Count of individuals newly fully vaccinated on a given day (given the 2nd dose of a two-dose vaccine or one dose of a single dose vaccine)}
+#'   \item{new_recipients}{Count of individuals vaccinated (with any dose) for the first time according to CA's records}
+#'   \item{cumulative_1st_doses}{Cumulative total of 1st doses administered for vaccines that take two doses to complete}
+#'   \item{cumulative_2nd_doses}{Cumulative total of 2nd doses administered for vaccines that take two doses to complete}
+#'   \item{cumulative_single_doses}{Cumulative total of doses administered for vaccines that take one dose to complete}
+#'   \item{cumulative_series_completed}{Cumulative total individuals fully vaccinated (given the 2nd dose of a two-dose vaccine or one dose of a single dose vaccine)}
+#'   \item{cumulative_recipients}{Cumulative total individuals vaccinated (with any dose) according to CA's records}
+#'   \item{subgroup_population}{American Community Survey population estimates for given demographic_subgroup}
+#'   \item{age_group_population}{American Community Survey population estimates for overall age_group}
+#'   \item{data_as_of}{Timestamp for last update date in source system}
+#'   \item{data_loaded_at}{Timestamp when the record (row) was most recently updated here in the Open Data Portal}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets time series COVID19 vaccine
+#' @details The dataset contains a time series of COVID-19 vaccine doses given to San Franciscans by demographics
+#' @examples
+#' data(covid19sf_vaccine_demo_ts)
+#'
+#' head(covid19sf_vaccine_demo_ts)
+
+"covid19sf_vaccine_demo_ts"
