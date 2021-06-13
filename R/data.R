@@ -381,4 +381,4 @@
 #'
 #' head(covid19vaccine_demo)
 
-"covid19vaccine_demo"
+"covid19sf_vaccine_demo"
