@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>San Francisco COVID-19 Cases Summarized by Gender — covid19sf_gender • covid19sf</title>
+<title>San Francisco COVID-19 Vaccine Doses Given to San Franciscans by Demographics — covid19sf_vaccine_demo • covid19sf</title>
 
 
 <!-- jquery -->
@@ -39,13 +39,13 @@
 
 
 
-<meta property="og:title" content="San Francisco COVID-19 Cases Summarized by Gender — covid19sf_gender" />
-<meta property="og:description" content="This dataset represents the COVID-19 positive confirmed cases by gender.
-Demographic and transmission data are based on information reported from case interviews,
-laboratories, and providers. This data may not be immediately available for recently reported
-cases and data will change to reflect as information becomes available.
-Cumulative counts of 5 or fewer are excluded from the dataset.
- More information about the data available here" />
+<meta property="og:title" content="San Francisco COVID-19 Vaccine Doses Given to San Franciscans by Demographics — covid19sf_vaccine_demo" />
+<meta property="og:description" content="This dataset represents doses of COVID-19 vaccine administered in
+California to residents of San Francisco. The data is broken down by multiple
+demographic slices. The three dose types are counted separately, i.e.
+(1) first doses administered as a part of a two-dose vaccination,
+(2) second doses administered as part of a two-dose vaccination, and
+(3) single-dose vaccines administered. here" />
 
 
 
@@ -140,31 +140,43 @@ Cumulative counts of 5 or fewer are excluded from the dataset.
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>San Francisco COVID-19 Cases Summarized by Gender</h1>
+    <h1>San Francisco COVID-19 Vaccine Doses Given to San Franciscans by Demographics</h1>
     <small class="dont-index">Source: <a href='https://github.com/RamiKrispin/covid19sf/blob/master/R/data.R'><code>R/data.R</code></a></small>
-    <div class="hidden name"><code>covid19sf_gender.Rd</code></div>
+    <div class="hidden name"><code>covid19sf_vaccine_demo.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This dataset represents the COVID-19 positive confirmed cases by gender.
-Demographic and transmission data are based on information reported from case interviews,
-laboratories, and providers. This data may not be immediately available for recently reported
-cases and data will change to reflect as information becomes available.
-Cumulative counts of 5 or fewer are excluded from the dataset.
- More information about the data available <a href='https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Gender/nhy6-gqam'>here</a></p>
+    <p>This dataset represents doses of COVID-19 vaccine administered in
+California to residents of San Francisco. The data is broken down by multiple
+demographic slices. The three dose types are counted separately, i.e.
+(1) first doses administered as a part of a two-dose vaccination,
+(2) second doses administered as part of a two-dose vaccination, and
+(3) single-dose vaccines administered. <a href='https://data.sfgov.org/COVID-19/COVID-19-Vaccine-Doses-Given-to-San-Franciscans-by/wv2h-rqwk'>here</a></p>
     </div>
 
-    <pre class="usage"><span class='kw'>covid19sf_gender</span></pre>
+    <pre class="usage"><span class='kw'>covid19sf_vaccine_demo</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object class data.frame with 5 variables</p><dl>
-  <dt>specimen_collection_date</dt><dd><p>Date which case was recorded in YYYY-MM-DD format.</p></dd>
-  <dt>gender</dt><dd><p>The cases gender c( "Female", "Male", "Trans Female", "Unknown")</p></dd>
-  <dt>new_confirmed_cases</dt><dd><p>Total cases confirmed cases per date and gender category</p></dd>
-  <dt>cumulative_confirmed_cases</dt><dd><p>Cumulative confirmed cases by category</p></dd>
-  <dt>last_updated</dt><dd><p>The table last update time in POSIX format</p></dd>
+    <p>An object class data.frame with 15 variables</p><dl>
+  <dt>overall_segment</dt><dd><p>Segment (universe) of analysis. Unique combination of
+  administering_provider_type, age_group, and demographic_group. Filter to a single
+  option to derive meaningful totals.</p></dd>
+  <dt>administering_provider_type</dt><dd><p>Providers included in a given OVERALL_SEGMENT. Two possible values: 'All' (including SF DPH) or 'DPH Only'</p></dd>
+  <dt>age_group</dt><dd><p>Age range included in a given OVERALL_SEGMENT</p></dd>
+  <dt>demographic_group</dt><dd><p>Type of demographic group included in a given OVERALL_SEGMENT (e.g. Age, Race/Ethnicity)</p></dd>
+  <dt>demographic_subgroup</dt><dd><p>Specific demographic group counted in a given record (e.g. 16-24, Asian)</p></dd>
+  <dt>demographic_subgroup_sort_order</dt><dd><p>Numeric sort order for all DEMOGRAPHIC_SUBGROUPs. Convenient for maintaining consistent ordering across multiple data visualizations.</p></dd>
+  <dt>total_1st_doses</dt><dd><p>Total number of first doses administered</p></dd>
+  <dt>total_2nd_doses</dt><dd><p>Total number of second doses administered</p></dd>
+  <dt>total_single_doses</dt><dd><p>Total number of single dose vaccines administered</p></dd>
+  <dt>total_recipients</dt><dd><p>Total number of unique vaccine recipients</p></dd>
+  <dt>total_series_completed</dt><dd><p>Total number of individuals fully vaccinated (those having received the second dose of a two-dose vaccine or one dose of a single-dose vaccine)</p></dd>
+  <dt>subgroup_population</dt><dd><p>2018 5-year American Community Survey population estimates for given DEMOGRAPHIC_SUBGROUP</p></dd>
+  <dt>age_group_population</dt><dd><p>2018 5-year American Community Survey population estimates for overall AGE_GROUP</p></dd>
+  <dt>data_as_of</dt><dd><p>Timestamp for last update date in source system</p></dd>
+  <dt>data_loaded_at</dt><dd><p>Timestamp when the record (row) was most recently updated in Socrata</p></dd>
   
 </dl>
 
@@ -173,26 +185,13 @@ Cumulative counts of 5 or fewer are excluded from the dataset.
     <p>San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal <a href='https://datasf.org/opendata/'>website</a>.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>The dataset contains the daily summary of covid19 cases in San Francisco by gender</p>
+    <p>The dataset contains a summary of COVID-19 vaccine doses given to San Franciscans by demographics</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_gender</span>)
-
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_gender</span>)
-</div><div class='output co'>#&gt;   specimen_collection_date gender new_confirmed_cases
-#&gt; 1               2020-03-07   Male                   3
-#&gt; 2               2020-03-08   Male                   1
-#&gt; 3               2020-03-09   Male                   0
-#&gt; 4               2020-03-10   Male                   4
-#&gt; 5               2020-03-11   Male                   5
-#&gt; 6               2020-03-12   Male                   2
-#&gt;   cumulative_confirmed_cases        last_updated
-#&gt; 1                          7 2021-06-11 16:00:02
-#&gt; 2                          8 2021-06-11 16:00:02
-#&gt; 3                          8 2021-06-11 16:00:02
-#&gt; 4                         12 2021-06-11 16:00:02
-#&gt; 5                         17 2021-06-11 16:00:02
-#&gt; 6                         19 2021-06-11 16:00:02</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19vaccine_demo</span>)
+</div><div class='output co'>#&gt; <span class='warning'>Warning: data set ‘covid19vaccine_demo’ not found</span></div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19vaccine_demo</span>)
+</div><div class='output co'>#&gt; <span class='error'>Error in head(covid19vaccine_demo): object 'covid19vaccine_demo' not found</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

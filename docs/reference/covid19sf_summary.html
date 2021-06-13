@@ -184,29 +184,29 @@ and case disposition</p>
 #&gt; 5               2020-03-08        Confirmed          From Contact          1
 #&gt; 6               2020-03-10        Confirmed             Community          4
 #&gt;          last_updated
-#&gt; 1 2021-05-28 16:00:02
-#&gt; 2 2021-05-28 16:00:02
-#&gt; 3 2021-05-28 16:00:02
-#&gt; 4 2021-05-28 16:00:02
-#&gt; 5 2021-05-28 16:00:02
-#&gt; 6 2021-05-28 16:00:02</div><div class='input'>
+#&gt; 1 2021-06-11 16:00:02
+#&gt; 2 2021-06-11 16:00:02
+#&gt; 3 2021-06-11 16:00:02
+#&gt; 4 2021-06-11 16:00:02
+#&gt; 5 2021-06-11 16:00:02
+#&gt; 6 2021-06-11 16:00:02</div><div class='input'>
 <span class='co'># Case disposition summary</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>)
 </div><div class='output co'>#&gt; 
 #&gt; Confirmed     Death 
-#&gt;      1197       307 </div><div class='input'>
+#&gt;      1237       311 </div><div class='input'>
 <span class='co'># Transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt; 
 #&gt;    Community From Contact      Unknown 
-#&gt;          552          534          418 </div><div class='input'>
+#&gt;          564          549          435 </div><div class='input'>
 <span class='co'># Summary of case disposition and transmission category</span>
 <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span>(<span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>case_disposition</span>,
       <span class='kw'>covid19sf_summary</span><span class='op'>$</span><span class='kw'>transmission_category</span>)
 </div><div class='output co'>#&gt;            
 #&gt;             Community From Contact Unknown
-#&gt;   Confirmed       443          441     313
-#&gt;   Death           109           93     105</div><div class='input'>
+#&gt;   Confirmed       455          455     327
+#&gt;   Death           109           94     108</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
