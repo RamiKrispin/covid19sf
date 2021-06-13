@@ -352,6 +352,9 @@ data_refresh <- function(){
   } else{
     cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
   }
+
+
+
   return(invisible(NULL))
 }
 

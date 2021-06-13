@@ -215,6 +215,29 @@ covid19sf_refresh <- function(force = FALSE){
     cat(paste0("\033[0;", 41, "m","no updates are available","\033[0m","\n"))
   }
 
+
+  # Vaccine demographic summary ----
+  cat(paste0("\033[4;", 36, "m","covid19sf_vaccine_demo dataset","\033[0m","\n"))
+  cat("Checking for updates...\n")
+
+  covid19sf_vaccine_demo_old <- covid19sf::covid19sf_vaccine_demo
+
+
+  covid19sf_vaccine_demo_csv <- read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_vaccine_demo.csv", stringsAsFactors = FALSE)
+  covid19sf_vaccine_demo_csv$data_as_of <- lubridate::ymd_hms(covid19sf_vaccine_demo_csv$data_as_of)
+  covid19sf_vaccine_demo_csv$data_loaded_at <- lubridate::ymd_hms(covid19sf_vaccine_demo_csv$data_loaded_at)
+  if(max(covid19sf_vaccine_demo_csv$data_loaded_at) > max(covid19sf_vaccine_demo_old$data_loaded_at)){
+    cat(paste0("\033[0;", 42, "m","updates available","\033[0m","\n"))
+    updates <- TRUE
+  } else{
+    cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
+  }
+
+
+
+
+
+
   if(updates){
 
     if(!force){
