@@ -181,3 +181,10 @@ nrow(covid19sf_homeless)
 
 usethis::use_data(covid19sf_homeless, overwrite = TRUE)
 write.csv(covid19sf_homeless, "csv/covid19sf_homeless.csv", row.names = FALSE)
+
+
+# Vaccine demograpic summary
+covid19vaccine_demo <- read.csv("https://data.sfgov.org/resource/wv2h-rqwk.csv?$limit=1000", stringsAsFactors = FALSE)
+
+usethis::use_data(covid19vaccine_demo, overwrite = TRUE)
+write.csv(covid19vaccine_demo, "csv/covid19vaccine_demo.csv", row.names = FALSE)
