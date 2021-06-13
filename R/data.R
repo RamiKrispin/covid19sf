@@ -344,6 +344,41 @@
 "covid19sf_test_loc"
 
 
+#' San Francisco COVID-19 Vaccine Doses Given to San Franciscans by Demographics
+#'
+#' @description  This dataset represents doses of COVID-19 vaccine administered in
+#' California to residents of San Francisco. The data is broken down by multiple
+#' demographic slices. The three dose types are counted separately, i.e.
+#' (1) first doses administered as a part of a two-dose vaccination,
+#' (2) second doses administered as part of a two-dose vaccination, and
+#' (3) single-dose vaccines administered. \href{https://data.sfgov.org/COVID-19/COVID-19-Vaccine-Doses-Given-to-San-Franciscans-by/wv2h-rqwk}{here}
+#'
+#' @format An object class data.frame with 15 variables
+#' \describe{
+#'   \item{overall_segment}{Segment (universe) of analysis. Unique combination of
+#'   administering_provider_type, age_group, and demographic_group. Filter to a single
+#'   option to derive meaningful totals.}
+#'   \item{administering_provider_type}{Providers included in a given OVERALL_SEGMENT. Two possible values: 'All' (including SF DPH) or 'DPH Only'}
+#'   \item{age_group}{Age range included in a given OVERALL_SEGMENT}
+#'   \item{demographic_group}{Type of demographic group included in a given OVERALL_SEGMENT (e.g. Age, Race/Ethnicity)}
+#'   \item{demographic_subgroup}{Specific demographic group counted in a given record (e.g. 16-24, Asian)}
+#'   \item{demographic_subgroup_sort_order}{Numeric sort order for all DEMOGRAPHIC_SUBGROUPs. Convenient for maintaining consistent ordering across multiple data visualizations.}
+#'   \item{total_1st_doses}{Total number of first doses administered}
+#'   \item{total_2nd_doses}{Total number of second doses administered}
+#'   \item{total_single_doses}{Total number of single dose vaccines administered}
+#'   \item{total_recipients}{Total number of unique vaccine recipients}
+#'   \item{total_series_completed}{Total number of individuals fully vaccinated (those having received the second dose of a two-dose vaccine or one dose of a single-dose vaccine)}
+#'   \item{subgroup_population}{2018 5-year American Community Survey population estimates for given DEMOGRAPHIC_SUBGROUP}
+#'   \item{age_group_population}{2018 5-year American Community Survey population estimates for overall AGE_GROUP}
+#'   \item{data_as_of}{Timestamp for last update date in source system}
+#'   \item{data_loaded_at}{Timestamp when the record (row) was most recently updated in Socrata}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 vaccine
+#' @details The dataset contains a summary of COVID-19 vaccine doses given to San Franciscans by demographics
+#' @examples
+#' data(covid19vaccine_demo)
+#'
+#' head(covid19vaccine_demo)
 
-
-
+"covid19vaccine_demo"
