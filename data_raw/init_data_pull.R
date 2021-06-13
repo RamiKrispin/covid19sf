@@ -19,7 +19,7 @@ nrow(covid19sf_summary)
 usethis::use_data(covid19sf_summary, overwrite = TRUE)
 write.csv(covid19sf_summary, "csv/covid19sf_summary.csv", row.names = FALSE)
 
-# COVID-19 Hospitalizations
+# COVID-19 Hospitalizations ----
 # https://data.sfgov.org/COVID-19/COVID-19-Hospitalizations/nxjg-bhem
 covid19sf_hospitalizations <- read.csv("https://data.sfgov.org/resource/nxjg-bhem.csv?$limit=2000", stringsAsFactors = FALSE) %>%
 dplyr::mutate(reportdate = as.Date(lubridate::ymd_hms(reportdate,
@@ -39,7 +39,7 @@ usethis::use_data(covid19sf_hospitalizations, overwrite = TRUE)
 write.csv(covid19sf_hospitalizations, "csv/covid19sf_hospitalizations.csv", row.names = FALSE)
 
 
-# Covid-19 Tests
+# Covid-19 Tests ----
 # https://data.sfgov.org/COVID-19/Covid-19-Tests/nfpa-mg4g
 
 covid19sf_tests <- read.csv("https://data.sfgov.org/resource/nfpa-mg4g.csv", stringsAsFactors = FALSE) %>%
@@ -55,7 +55,7 @@ nrow(covid19sf_tests)
 usethis::use_data(covid19sf_tests, overwrite = TRUE)
 write.csv(covid19sf_tests, "csv/covid19sf_tests.csv", row.names = FALSE)
 
-# COVID-19 Cases Summarized by Race and Ethnicity
+# COVID-19 Cases Summarized by Race and Ethnicity ----
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Race-and-Ethnicity/vqqm-nsqg
 covid19sf_demo <- read.csv("https://data.sfgov.org/resource/vqqm-nsqg.csv?$limit=5000", stringsAsFactors = FALSE) %>%
   dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
@@ -71,7 +71,7 @@ nrow(covid19sf_demo)
 
 usethis::use_data(covid19sf_demo, overwrite = TRUE)
 write.csv(covid19sf_demo, "csv/covid19sf_demo.csv", row.names = FALSE)
-# COVID-19 Cases Summarized by Age Group
+# COVID-19 Cases Summarized by Age Group ----
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Age-Group/sunc-2t3k
 
 covid19sf_age <- read.csv("https://data.sfgov.org/resource/sunc-2t3k.csv?$limit=10000", stringsAsFactors = FALSE) %>%
@@ -85,7 +85,7 @@ head(covid19sf_age)
 nrow(covid19sf_age)
 usethis::use_data(covid19sf_age, overwrite = TRUE)
 write.csv(covid19sf_age, "csv/covid19sf_age.csv", row.names = FALSE)
-# COVID-19 Alternative Housing Sites
+# COVID-19 Alternative Housing Sites ----
 # https://data.sfgov.org/COVID-19/COVID-19-Alternative-Housing-Sites/qu2c-7bqh
 
 
@@ -98,7 +98,7 @@ head(covid19sf_housing)
 nrow(covid19sf_housing)
 usethis::use_data(covid19sf_housing, overwrite = TRUE)
 write.csv(covid19sf_housing, "csv/covid19sf_housing.csv", row.names = FALSE)
-# COVID-19 Cases and Deaths Summarized by Geography
+# COVID-19 Cases and Deaths Summarized by Geography ----
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-and-Deaths-Summarized-by-Geography/tpyr-dvnc
 
 
@@ -119,7 +119,7 @@ usethis::use_data(covid19sf_geo, overwrite = TRUE)
 sf::write_sf(covid19sf_geo, "csv/covid19sf_geo.geojson")
 
 
-# COVID-19 Hospital Capacity
+# COVID-19 Hospital Capacity ----
 # https://data.sfgov.org/COVID-19/COVID-19-Hospital-Capacity/rh24-ebzg
 
 
@@ -132,7 +132,7 @@ tail(covid19sf_hospital)
 
 usethis::use_data(covid19sf_hospital, overwrite = TRUE)
 write.csv(covid19sf_hospital, "csv/covid19sf_hospital.csv", row.names = FALSE)
-# COVID-19 Testing Locations
+# COVID-19 Testing Locations ----
 # https://data.sfgov.org/COVID-19/COVID-19-Testing-Locations/dtit-7gp4
 covid19sf_test_loc <- sf::st_read("https://data.sfgov.org/resource/dtit-7gp4.geojson",
                                   stringsAsFactors = FALSE)  %>%
@@ -150,7 +150,7 @@ View(covid19sf_test_loc)
 
 usethis::use_data(covid19sf_test_loc, overwrite = TRUE)
 sf::write_sf(covid19sf_test_loc, "csv/covid19sf_test_loc.geojson")
-# COVID-19 Cases Summarized by Gender
+# COVID-19 Cases Summarized by Gender ----
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Gender/nhy6-gqam
 
 covid19sf_gender <- read.csv("https://data.sfgov.org/resource/nhy6-gqam.csv?$limit=5000", stringsAsFactors = FALSE) %>%
@@ -166,7 +166,7 @@ nrow(covid19sf_gender)
 usethis::use_data(covid19sf_gender, overwrite = TRUE)
 write.csv(covid19sf_gender, "csv/covid19sf_gender.csv", row.names = FALSE)
 
-# COVID-19 Cases Summarized by Homelessness Status
+# COVID-19 Cases Summarized by Homelessness Status ----
 # https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Homelessness-Status/b45x-2crv
 
 covid19sf_homeless <- read.csv("https://data.sfgov.org/resource/b45x-2crv.csv?$limit=2000", stringsAsFactors = FALSE) %>%
@@ -183,7 +183,8 @@ usethis::use_data(covid19sf_homeless, overwrite = TRUE)
 write.csv(covid19sf_homeless, "csv/covid19sf_homeless.csv", row.names = FALSE)
 
 
-# Vaccine demographic summary
+# Vaccine demographic summary ----
+# https://data.sfgov.org/COVID-19/COVID-19-Vaccine-Doses-Given-to-San-Franciscans-by/wv2h-rqwk
 covid19sf_vaccine_demo <- read.csv("https://data.sfgov.org/resource/wv2h-rqwk.csv?$limit=1000", stringsAsFactors = FALSE)
 
 covid19sf_vaccine_demo$data_as_of <- lubridate::ymd_hms(covid19sf_vaccine_demo$data_as_of)
@@ -192,3 +193,16 @@ covid19sf_vaccine_demo$data_loaded_at <- lubridate::ymd_hms(covid19sf_vaccine_de
 str(covid19sf_vaccine_demo)
 usethis::use_data(covid19sf_vaccine_demo, overwrite = TRUE)
 write.csv(covid19sf_vaccine_demo, "csv/covid19sf_vaccine_demo.csv", row.names = FALSE)
+
+
+# Vaccine demographic time series ----
+# https://data.sfgov.org/COVID-19/COVID-19-Vaccine-Doses-Given-to-San-Franciscans-by/xjh5-h442
+covid19sf_vaccine_demo_ts <- read.csv("https://data.sfgov.org/resource/xjh5-h442.csv?$limit=50000", stringsAsFactors = FALSE)
+
+covid19sf_vaccine_demo_ts$date_administered <- lubridate::ymd_hms(covid19sf_vaccine_demo_ts$date_administered)
+covid19sf_vaccine_demo_ts$data_as_of <- lubridate::ymd_hms(covid19sf_vaccine_demo_ts$data_as_of)
+covid19sf_vaccine_demo_ts$data_loaded_at <- lubridate::ymd_hms(covid19sf_vaccine_demo_ts$data_loaded_at)
+
+str(covid19sf_vaccine_demo_ts)
+usethis::use_data(covid19sf_vaccine_demo_ts, overwrite = TRUE)
+write.csv(covid19sf_vaccine_demo_ts, "csv/covid19sf_vaccine_demo_ts.csv", row.names = FALSE)
