@@ -223,7 +223,7 @@ covid19sf_refresh <- function(force = FALSE){
   covid19sf_vaccine_demo_old <- covid19sf::covid19sf_vaccine_demo
 
 
-  covid19sf_vaccine_demo_csv <- read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_vaccine_demo.csv", stringsAsFactors = FALSE)
+  covid19sf_vaccine_demo_csv <- utils::read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_vaccine_demo.csv", stringsAsFactors = FALSE)
   covid19sf_vaccine_demo_csv$data_as_of <- lubridate::ymd_hms(covid19sf_vaccine_demo_csv$data_as_of)
   covid19sf_vaccine_demo_csv$data_loaded_at <- lubridate::ymd_hms(covid19sf_vaccine_demo_csv$data_loaded_at)
   if(max(covid19sf_vaccine_demo_csv$data_loaded_at) > max(covid19sf_vaccine_demo_old$data_loaded_at)){
@@ -240,7 +240,7 @@ covid19sf_refresh <- function(force = FALSE){
 
   covid19sf_vaccine_demo_ts_old <- covid19sf::covid19sf_vaccine_demo_ts
 
-  covid19sf_vaccine_demo_ts_csv <- read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_vaccine_demo_ts.csv", stringsAsFactors = FALSE)
+  covid19sf_vaccine_demo_ts_csv <- utils::read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_vaccine_demo_ts.csv", stringsAsFactors = FALSE)
   covid19sf_vaccine_demo_ts_csv$data_as_of <- lubridate::ymd_hms(covid19sf_vaccine_demo_ts_csv$data_as_of)
   covid19sf_vaccine_demo_ts_csv$data_loaded_at <- lubridate::ymd_hms(covid19sf_vaccine_demo_ts_csv$data_loaded_at)
 
