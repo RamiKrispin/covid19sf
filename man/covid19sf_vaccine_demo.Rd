@@ -44,9 +44,9 @@ demographic slices. The three dose types are counted separately, i.e.
 The dataset contains a summary of COVID-19 vaccine doses given to San Franciscans by demographics
 }
 \examples{
-data(covid19vaccine_demo)
+data(covid19sf_vaccine_demo)
 
-head(covid19vaccine_demo)
+head(covid19sf_vaccine_demo)
 }
 \keyword{COVID19}
 \keyword{datasets}

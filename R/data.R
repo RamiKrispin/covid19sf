@@ -377,9 +377,9 @@
 #' @keywords datasets summary COVID19 vaccine
 #' @details The dataset contains a summary of COVID-19 vaccine doses given to San Franciscans by demographics
 #' @examples
-#' data(covid19vaccine_demo)
+#' data(covid19sf_vaccine_demo)
 #'
-#' head(covid19vaccine_demo)
+#' head(covid19sf_vaccine_demo)
 
 "covid19sf_vaccine_demo"
 
