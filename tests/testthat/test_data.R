@@ -6,7 +6,7 @@ test_that(desc = "Test the data dimension", {
   expect_equal(base::ncol(covid19sf_hospital) == 5, TRUE)
 
   expect_equal(base::nrow(covid19sf_tests) > 440, TRUE)
-  expect_equal(base::ncol(covid19sf_tests) == 7, TRUE)
+  expect_equal(base::ncol(covid19sf_tests) == 8, TRUE)
 
   expect_equal(base::nrow(covid19sf_demo) > 3800, TRUE)
   expect_equal(base::ncol(covid19sf_demo) == 5, TRUE)
