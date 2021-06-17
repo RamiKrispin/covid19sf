@@ -10,4 +10,5 @@
 ^vignettes/geo.Rmd$
 ^vignettes/demo.Rmd$
 ^vignettes/hospital.Rmd$
+^vignettes/vaccine_data.Rmd$
 ^CRAN-RELEASE$
