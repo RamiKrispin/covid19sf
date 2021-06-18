@@ -31,9 +31,9 @@ San Francisco. The package includes the following datasets:
 -   `covid19sf_test_loc` - Testing locations
 -   `covid19sf_tests` - Daily number of tests
 -   `covid19sf_vaccine_demo` - Summary of vaccine doses given to San
-    Franciscans by demographics
--   `covid19sf_vaccine_demo_ts` - Time series of vaccine doses given to
-    San Franciscans by demographics
+    Franciscans by demographics groups (age and race)
+-   `covid19sf_vaccine_demo_ts` - Time series view of vaccine doses
+    given to San Franciscans by demographics groups (age and race)
 
 **Data soucre:** San Francisco, Department of Public Health - Population
 Health Division through the San Francisco [Opne Data protal
