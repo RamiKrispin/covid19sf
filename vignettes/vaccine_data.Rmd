@@ -1,5 +1,5 @@
 ---
-title: "vaccine_data"
+title: "San Francisco Vaccination Data"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{vaccine_data}
@@ -9,11 +9,223 @@ vignette: >
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
+  message=FALSE, 
+  warning=FALSE,
   collapse = TRUE,
+  fig.height=5, 
+  fig.width=8,
   comment = "#>"
 )
 ```
 
+
+The covid19sf_vaccine_demo and covid19sf_vaccine_demo_ts datasets provide demographics information on the San Francisco vaccination effort:	
+
+* `covid19sf_vaccine_demo` -  Summary of vaccine doses given to San Franciscans by demographics groups (age and race)
+* `covid19sf_vaccine_demo_ts` -  Time series view of vaccine doses given to San Franciscans by demographics groups (age and race)
+
+
+
+### San Francisco vaccination summary 
+
+The `covid19sf_vaccine_demo` summarizes the COVID-19 vaccine doses given to San Franciscans by demographics (age and race groups) and includes the following fields:
+
+* `overall_segment` - Segment (universe) of analysis. Unique combination of administering_provider_type, age_group, and demographic_group. Filter to a single option to derive meaningful totals.
+* `administering_provider_type` - Providers included in a given overall_segment. Two possible values: 'All' (including SF DPH) or 'DPH Only'
+* `age_group` - Age range included in a given overall_segment
+* `demographic_group` - Type of demographic group included in a given overall_segment (e.g. Age, Race/Ethnicity)
+* `demographic_subgroup` - Specific demographic group counted in a given record (e.g. 16-24, Asian)
+* `demographic_subgroup_sort_order` - Numeric sort order for all DEMOGRAPHIC_SUBGROUPs. Convenient for maintaining consistent ordering across multiple data visualizations.
+* `total_1st_doses` - Total number of first doses administered
+* `total_2nd_doses` - Total number of second doses administered
+* `total_single_doses` - Total number of single dose vaccines administered
+* `total_recipients` - Total number of unique vaccine recipients
+* `total_series_completed` - Total number of individuals fully vaccinated (those having received the second dose of a two-dose vaccine or one dose of a single-dose vaccine)
+* `subgroup_population` - 2018 5-year American Community Survey population estimates for given DEMOGRAPHIC_SUBGROUP
+* `age_group_population` - 2018 5-year American Community Survey population estimates for overall AGE_GROUP
+* `data_as_of` - Timestamp for last update date in source system
+* `data_loaded_at` - Timestamp when the record (row) was most recently updated in Socrata
+
+
 ```{r setup}
 library(covid19sf)
+
+data("covid19sf_vaccine_demo")
+
+head(covid19sf_vaccine_demo)
+
+str(covid19sf_vaccine_demo)
 ```
+
+
+Using this dataset we can answers the following questions:
+
+- What is the proportion of San Francisco population that got vaccinated?
+- How many people got two does vaccine (e.g., Pfizer or Moderna) vs single dose (J&J)?
+- What is the distribution of the vaccine doses given to San Franciscans by demographics groups (age and race)?
+
+
+#### Doses given to San Franciscans by age group:
+
+In the following example we will explore the distribution of San Francisco population by age group. Let's start by filtering the data by all providers and age group demographic:
+
+```{r }
+library(dplyr)
+library(plotly)
+
+df_age <- covid19sf_vaccine_demo %>%
+  filter(administering_provider_type == "All Providers", 
+         demographic_group == "Age Bracket",
+         age_group == "All")
+
+df_age
+```
+
+Next, we will sort the data by the age group and convert the `demographic_subgroup` into an ordered factor:
+
+```{r}
+df_age <- df_age %>%
+  arrange(demographic_subgroup_sort_order) %>%
+  mutate(age_ordered = factor(demographic_subgroup, levels = demographic_subgroup))
+```
+
+
+Let's start with plotting the distribution between the San Franciscans that received all doses of the vaccine (e.g., single dose of J&J or two doses of either Pfizer or Moderna) vs. the ones the either received only the first dose (out of two) or not receive any. Since the `total_2nd_doses` variable (received the second dose) is a subset of `total_1st_doses` (received only the first out of two doses), we will have to exclude the first out of the later:
+
+```{r}
+df_age <- df_age %>%
+  mutate(only_1st_dose = total_1st_doses - total_2nd_doses)
+```
+
+Now we can create a pie plot to show the city population vaccination status:
+
+```{r}
+df_summary <- df_age %>%
+  summarise(`First Dose` = sum(only_1st_dose),
+            `Second Dose` = sum(total_2nd_doses),
+            `Single Dose` = sum(total_single_doses),
+            `Total Pop` = sum(subgroup_population)) %>%
+  mutate(`Not Received Vaccine` = `Total Pop` - `First Dose` - `Second Dose` - `Single Dose`) %>%
+  select(- `Total Pop`) %>%
+  t() %>%
+  as.data.frame() %>%
+  select(count = V1)
+
+df_summary$type <- rownames(df_summary)
+
+plot_ly(data = df_summary,
+        labels = ~ type,
+        values = ~ count,
+        textposition = 'inside',
+        textinfo = 'label+percent',
+        insidetextfont = list(color = '#FFFFFF',
+                              size = 16),
+        marker = list(colors = c("rgb(35, 90, 122)", "rgb(128, 200, 215)",
+                                 "rgb(74, 168, 192)", "rgb(225, 100, 74)"),
+                      line = list(color = '#FFFFFF', width = 1)),
+        type = "pie",
+        showlegend = FALSE) %>%
+  layout(title = "Distribution of COVID-19 Vaccine Doses Given to San Franciscans",
+         font = list(family = "Arieal",
+                     size = 18),
+         margin = list(t = 80, b = 60)) %>%
+  add_annotations(text = paste("- Including children under the age of 12",
+                               "- First and Second Doses refer to either either Pfizer or Moderna vaccine",
+                               "- Single Dose refer to J&J vaccine", sep = "<br>"),
+                  font = list(family = "Arieal",
+                     size = 14),
+                  
+                  x = -0.02,
+                  y = -0.15,
+                  align = "left",
+                  xref = "paper",
+                  yref = "paper",
+                  showarrow = FALSE)
+```
+
+As can see in the plot above, close to 65% of the SF population completed the vaccination process, and 8.5% received the first dose out of two. About 28% did not vaccinate. Note that the distribution includes children under the age of 12, which at this point cannot received the vaccine. If we want to get a better distribution of the vaccination effort of the SF population, let's exclude children under the age of 12:
+
+
+```{r}
+df_summary2 <- df_age %>%
+  filter(demographic_subgroup != "Under 12") %>%
+  summarise(`First Dose` = sum(only_1st_dose),
+            `Second Dose` = sum(total_2nd_doses),
+            `Single Dose` = sum(total_single_doses),
+            `Total Pop` = sum(subgroup_population)) %>%
+  mutate(`Not Received Vaccine` = `Total Pop` - `First Dose` - `Second Dose` - `Single Dose`) %>%
+  select(- `Total Pop`) %>%
+  t() %>%
+  as.data.frame() %>%
+  select(count = V1)
+
+df_summary2$type <- rownames(df_summary2)
+
+plot_ly(data = df_summary2,
+        labels = ~ type,
+        values = ~ count,
+        textposition = 'inside',
+        textinfo = 'label+percent',
+        insidetextfont = list(color = '#FFFFFF',
+                              size = 16),
+        marker = list(colors = c("rgb(35, 90, 122)", "rgb(128, 200, 215)",
+                                 "rgb(74, 168, 192)", "rgb(225, 100, 74)"),
+                      line = list(color = '#FFFFFF', width = 1)),
+        type = "pie",
+        showlegend = FALSE) %>%
+  layout(title = "Distribution of COVID-19 Vaccine Doses Given to San Franciscans",
+         font = list(family = "Arieal",
+                     size = 18),
+         margin = list(t = 80, b = 60)) %>%
+  add_annotations(text = paste("- Excluding children under the age of 12",
+                               "- First and Second Doses refer to either either Pfizer or Moderna vaccine",
+                               "- Single Dose refer to J&J vaccine", sep = "<br>"),
+                  font = list(family = "Arieal",
+                     size = 14),
+                  
+                  x = -0.02,
+                  y = -0.15,
+                  align = "left",
+                  xref = "paper",
+                  yref = "paper",
+                  showarrow = FALSE)
+```
+
+
+After we exclude children under the age of 12 group, we can see from the plot above that more than 70% of SF completed the vaccination process and close to 10% received the first dose.
+
+
+
+The `total_1st_doses` and `total_2nd_doses` variables represent the population of the city that received the first and second doses of the vaccine (Pfizer or Moderna), respectively.
+
+
+
+
+
+
+
+The `total_1st_doses` and `total_2nd_doses` variables represent the population of the city that received the first and second doses of the vaccine (Pfizer or Moderna), respectively. We 
+
+
+
+
+Let's now plot the total population that received the full doses of the vaccine (single for J&J and two for Pfizer and Moderna):
+
+```{r }
+plot_ly(data = df_age) %>%
+  add_trace(x = ~ age_ordered,
+            y = ~ total_2nd_doses,
+            type = "bar",
+            name = "Two Doses Vaccine") %>%
+  add_trace(x = ~ age_ordered,
+            type = "bar",
+            y = ~ total_single_doses,
+            name = "Single Dose Vaccine") %>%
+  layout(barmode = "stack")
+```
+
+ 
+
+
+
+
