@@ -3,18 +3,18 @@
 \docType{data}
 \name{covid19sf_vaccine_demo}
 \alias{covid19sf_vaccine_demo}
-\title{San Francisco COVID-19 Vaccine Doses Given to San Franciscans by Demographics}
+\title{COVID-19 Vaccine Doses Given to San Franciscans by Demographics}
 \format{
 An object class data.frame with 15 variables
 \describe{
   \item{overall_segment}{Segment (universe) of analysis. Unique combination of
   administering_provider_type, age_group, and demographic_group. Filter to a single
   option to derive meaningful totals.}
-  \item{administering_provider_type}{Providers included in a given OVERALL_SEGMENT. Two possible values: 'All' (including SF DPH) or 'DPH Only'}
-  \item{age_group}{Age range included in a given OVERALL_SEGMENT}
-  \item{demographic_group}{Type of demographic group included in a given OVERALL_SEGMENT (e.g. Age, Race/Ethnicity)}
+  \item{administering_provider_type}{Providers included in a given overall_segment. Two possible values: 'All' (including SF DPH) or 'DPH Only'}
+  \item{age_group}{Age range included in a given overall_segment}
+  \item{demographic_group}{Type of demographic group included in a given overall_segment (e.g. Age, Race/Ethnicity)}
   \item{demographic_subgroup}{Specific demographic group counted in a given record (e.g. 16-24, Asian)}
-  \item{demographic_subgroup_sort_order}{Numeric sort order for all DEMOGRAPHIC_SUBGROUPs. Convenient for maintaining consistent ordering across multiple data visualizations.}
+  \item{demographic_subgroup_sort_order}{Numeric sort order for all demographic_subgroups. Convenient for maintaining consistent ordering across multiple data visualizations.}
   \item{total_1st_doses}{Total number of first doses administered}
   \item{total_2nd_doses}{Total number of second doses administered}
   \item{total_single_doses}{Total number of single dose vaccines administered}
