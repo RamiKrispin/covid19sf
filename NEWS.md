@@ -1,6 +1,6 @@
 # covid19sf 0.1.1
 
-* Update the package data as of June 15th
+* Update the package data as of June 28th
 * Added vaccine demographics datasets:
   - `covid19sf_vaccine_demo` -  Summary of vaccine doses given to San Franciscans by demographics
   - `covid19sf_vaccine_demo_ts` -  Time series of vaccine doses given to San Franciscans by demographics
