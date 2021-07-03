@@ -68,6 +68,9 @@
     <li>
       <a href="articles/intro.html">Introduction to the covid19sf Datasets</a>
     </li>
+    <li>
+      <a href="articles/vaccine_data.html">San Francisco Vaccination Data</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -122,6 +125,10 @@
 <code>covid19sf_test_loc</code> - Testing locations</li>
 <li>
 <code>covid19sf_tests</code> - Daily number of tests</li>
+<li>
+<code>covid19sf_vaccine_demo</code> - Summary of vaccine doses given to San Franciscans by demographics groups (age and race)</li>
+<li>
+<code>covid19sf_vaccine_demo_ts</code> - Time series view of vaccine doses given to San Franciscans by demographics groups (age and race)</li>
 </ul>
 <p><strong>Data soucre:</strong> San Francisco, Department of Public Health - Population Health Division through the San Francisco <a href="https://datasf.org/opendata/">Opne Data protal website</a></p>
 <p><a href="https://ramikrispin.github.io/covid19sf/"><img src="reference/figures/sf_map.png" align="right"></a></p>
@@ -149,12 +156,12 @@
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_age</span>)
 <span class="co">#&gt;   specimen_collection_date age_group new_confirmed_cases cumulative_confirmed_cases        last_updated</span>
-<span class="co">#&gt; 1               2020-03-13     25-29                   3                          7 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 2               2020-03-14     25-29                   2                          9 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 3               2020-03-15     25-29                   1                         10 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 4               2020-03-16     25-29                   1                         11 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 5               2020-03-17     25-29                   0                         11 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 6               2020-03-18     25-29                   3                         14 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 1               2020-03-13     25-29                   3                          7 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 2               2020-03-14     25-29                   2                          9 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 3               2020-03-15     25-29                   1                         10 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 4               2020-03-16     25-29                   1                         11 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 5               2020-03-17     25-29                   0                         11 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 6               2020-03-18     25-29                   3                         14 2021-07-02 16:00:02</span>
 </pre></div>
 <p>The following box-plot shows the distribution of the positive cases by age group:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit">
@@ -182,7 +189,7 @@
        legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.9</span>, y = <span class="fl">0.9</span>))
 </pre></div>
 <p><img src="reference/figures/age_dist1.svg" width="100%"></p>
-<p>Here is the overall distribution of cases by age group as of 2021-05-18:</p>
+<p>Here is the overall distribution of cases by age group as of 2021-06-28:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit">
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org">dplyr</a></span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://plotly-r.com">plotly</a></span>)
@@ -209,13 +216,13 @@
 <span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="kw">covid19sf_tests</span>)
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_tests</span>)
-<span class="co">#&gt;   specimen_collection_date tests pos        pct neg indeterminate        last_updated</span>
-<span class="co">#&gt; 1               2020-02-28     2   0 0.00000000   2             0 2021-05-21 16:00:00</span>
-<span class="co">#&gt; 2               2020-03-01     2   0 0.00000000   2             0 2021-05-21 16:00:00</span>
-<span class="co">#&gt; 3               2020-03-02     2   0 0.00000000   2             0 2021-05-21 16:00:00</span>
-<span class="co">#&gt; 4               2020-03-03     8   2 0.25000000   6             0 2021-05-21 16:00:00</span>
-<span class="co">#&gt; 5               2020-03-04    12   0 0.00000000  12             0 2021-05-21 16:00:00</span>
-<span class="co">#&gt; 6               2020-03-05    23   6 0.26086957  17             0 2021-05-21 16:00:00</span>
+<span class="co">#&gt;   specimen_collection_date tests pos         pct neg indeterminate          data_loaded_at        last_updated</span>
+<span class="co">#&gt; 1               2020-03-12   192   9 0.046875000 183             0 2021-07-03T05:00:34.933 2021-07-02 16:31:29</span>
+<span class="co">#&gt; 2               2020-03-13   252  18 0.071428571 234             0 2021-07-03T05:00:36.662 2021-07-02 16:31:29</span>
+<span class="co">#&gt; 3               2020-03-14   153  10 0.065359477 143             0 2021-07-03T05:00:36.665 2021-07-02 16:31:29</span>
+<span class="co">#&gt; 4               2020-03-15   151  11 0.073333333 139             1 2021-07-03T05:00:36.668 2021-07-02 16:31:29</span>
+<span class="co">#&gt; 5               2020-03-29   161  16 0.101265823 142             3 2021-07-03T05:00:36.671 2021-07-02 16:31:29</span>
+<span class="co">#&gt; 6               2020-03-30   401  47 0.117500000 353             1 2021-07-03T05:00:36.674 2021-07-02 16:31:29</span>
 </pre></div>
 <p>The plot below shows the daily distribution of the results of the tests:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit">
@@ -245,12 +252,12 @@
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_demo</span>)
 <span class="co">#&gt;   specimen_collection_date race_ethnicity new_confirmed_cases cumulative_confirmed_cases        last_updated</span>
-<span class="co">#&gt; 1               2020-03-13          Asian                   3                          7 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 2               2020-03-14          Asian                   2                          9 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 3               2020-03-15          Asian                   2                         11 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 4               2020-03-16          Asian                   8                         19 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 5               2020-03-17          Asian                   4                         23 2021-05-21 16:00:02</span>
-<span class="co">#&gt; 6               2020-03-18          Asian                   0                         23 2021-05-21 16:00:02</span>
+<span class="co">#&gt; 1               2020-03-13          Asian                   3                          7 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 2               2020-03-14          Asian                   2                          9 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 3               2020-03-15          Asian                   2                         11 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 4               2020-03-16          Asian                   8                         19 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 5               2020-03-17          Asian                   4                         23 2021-07-02 16:00:02</span>
+<span class="co">#&gt; 6               2020-03-18          Asian                   0                         23 2021-07-02 16:00:02</span>
 </pre></div>
 <p>Below is a plot of the cumulative positive cases by race and ethnicity:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit">
@@ -305,7 +312,7 @@
 <ul class="list-unstyled">
 <li><a href="https://github.com/RamiKrispin/covid19sf/actions"><img src="https://github.com/RamiKrispin/covid19sf/workflows/build/badge.svg" alt="build"></a></li>
 <li><a href="https://cran.r-project.org/package=covid19sf"><img src="https://www.r-pkg.org/badges/version/covid19sf" alt="CRAN_Status_Badge"></a></li>
-<li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="lifecycle"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="lifecycle"></a></li>
 <li><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></li>
 <li><a href="https://github.com/RamiKrispin/covid19sf/commit/master"><img src="https://img.shields.io/github/last-commit/RamiKrispin/covid19sf" alt="GitHub commit"></a></li>
 </ul>

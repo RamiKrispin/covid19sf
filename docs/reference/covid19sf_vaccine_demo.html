@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>San Francisco COVID-19 Vaccine Doses Given to San Franciscans by Demographics — covid19sf_vaccine_demo • covid19sf</title>
+<title>COVID-19 Vaccine Doses Given to San Franciscans by Demographics — covid19sf_vaccine_demo • covid19sf</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,7 @@
 
 
 
-<meta property="og:title" content="San Francisco COVID-19 Vaccine Doses Given to San Franciscans by Demographics — covid19sf_vaccine_demo" />
+<meta property="og:title" content="COVID-19 Vaccine Doses Given to San Franciscans by Demographics — covid19sf_vaccine_demo" />
 <meta property="og:description" content="This dataset represents doses of COVID-19 vaccine administered in
 California to residents of San Francisco. The data is broken down by multiple
 demographic slices. The three dose types are counted separately, i.e.
@@ -114,6 +114,9 @@ demographic slices. The three dose types are counted separately, i.e.
     <li>
       <a href="../articles/intro.html">Introduction to the covid19sf Datasets</a>
     </li>
+    <li>
+      <a href="../articles/vaccine_data.html">San Francisco Vaccination Data</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -140,7 +143,7 @@ demographic slices. The three dose types are counted separately, i.e.
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>San Francisco COVID-19 Vaccine Doses Given to San Franciscans by Demographics</h1>
+    <h1>COVID-19 Vaccine Doses Given to San Franciscans by Demographics</h1>
     <small class="dont-index">Source: <a href='https://github.com/RamiKrispin/covid19sf/blob/master/R/data.R'><code>R/data.R</code></a></small>
     <div class="hidden name"><code>covid19sf_vaccine_demo.Rd</code></div>
     </div>
@@ -163,11 +166,11 @@ demographic slices. The three dose types are counted separately, i.e.
   <dt>overall_segment</dt><dd><p>Segment (universe) of analysis. Unique combination of
   administering_provider_type, age_group, and demographic_group. Filter to a single
   option to derive meaningful totals.</p></dd>
-  <dt>administering_provider_type</dt><dd><p>Providers included in a given OVERALL_SEGMENT. Two possible values: 'All' (including SF DPH) or 'DPH Only'</p></dd>
-  <dt>age_group</dt><dd><p>Age range included in a given OVERALL_SEGMENT</p></dd>
-  <dt>demographic_group</dt><dd><p>Type of demographic group included in a given OVERALL_SEGMENT (e.g. Age, Race/Ethnicity)</p></dd>
+  <dt>administering_provider_type</dt><dd><p>Providers included in a given overall_segment. Two possible values: 'All' (including SF DPH) or 'DPH Only'</p></dd>
+  <dt>age_group</dt><dd><p>Age range included in a given overall_segment</p></dd>
+  <dt>demographic_group</dt><dd><p>Type of demographic group included in a given overall_segment (e.g. Age, Race/Ethnicity)</p></dd>
   <dt>demographic_subgroup</dt><dd><p>Specific demographic group counted in a given record (e.g. 16-24, Asian)</p></dd>
-  <dt>demographic_subgroup_sort_order</dt><dd><p>Numeric sort order for all DEMOGRAPHIC_SUBGROUPs. Convenient for maintaining consistent ordering across multiple data visualizations.</p></dd>
+  <dt>demographic_subgroup_sort_order</dt><dd><p>Numeric sort order for all demographic_subgroups. Convenient for maintaining consistent ordering across multiple data visualizations.</p></dd>
   <dt>total_1st_doses</dt><dd><p>Total number of first doses administered</p></dd>
   <dt>total_2nd_doses</dt><dd><p>Total number of second doses administered</p></dd>
   <dt>total_single_doses</dt><dd><p>Total number of single dose vaccines administered</p></dd>
@@ -188,10 +191,51 @@ demographic slices. The three dose types are counted separately, i.e.
     <p>The dataset contains a summary of COVID-19 vaccine doses given to San Franciscans by demographics</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19vaccine_demo</span>)
-</div><div class='output co'>#&gt; <span class='warning'>Warning: data set ‘covid19vaccine_demo’ not found</span></div><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19vaccine_demo</span>)
-</div><div class='output co'>#&gt; <span class='error'>Error in head(covid19vaccine_demo): object 'covid19vaccine_demo' not found</span></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/data.html'>data</a></span>(<span class='kw'>covid19sf_vaccine_demo</span>)
+
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='kw'>covid19sf_vaccine_demo</span>)
+</div><div class='output co'>#&gt;                                          overall_segment
+#&gt; 1 Ages 12+ by Age Bracket, Administered by All Providers
+#&gt; 2 Ages 12+ by Age Bracket, Administered by All Providers
+#&gt; 3 Ages 12+ by Age Bracket, Administered by All Providers
+#&gt; 4 Ages 12+ by Age Bracket, Administered by All Providers
+#&gt; 5 Ages 12+ by Age Bracket, Administered by All Providers
+#&gt; 6      Ages 12+ by Age Bracket, Administered by DPH Only
+#&gt;   administering_provider_type age_group demographic_group demographic_subgroup
+#&gt; 1               All Providers       12+       Age Bracket                18-24
+#&gt; 2               All Providers       12+       Age Bracket                35-44
+#&gt; 3               All Providers       12+       Age Bracket                12-17
+#&gt; 4               All Providers       12+       Age Bracket                25-34
+#&gt; 5               All Providers       12+       Age Bracket                45-54
+#&gt; 6                    DPH Only       12+       Age Bracket                35-44
+#&gt;   demographic_subgroup_sort_order total_1st_doses total_2nd_doses
+#&gt; 1                               3           42229           36873
+#&gt; 2                               5          107842           98012
+#&gt; 3                               2           28937           24349
+#&gt; 4                               4          131657          118642
+#&gt; 5                               6           88120           80245
+#&gt; 6                               5           18553           16803
+#&gt;   total_single_doses total_recipients total_series_completed
+#&gt; 1               3263            45524                  40136
+#&gt; 2               9039           116930                 107051
+#&gt; 3                 11            28948                  24360
+#&gt; 4              11844           143643                 130486
+#&gt; 5               9281            97419                  89526
+#&gt; 6                690            19392                  17493
+#&gt;   subgroup_population age_group_population          data_as_of
+#&gt; 1               62127               791131 2021-07-02 07:53:22
+#&gt; 2              138390               791131 2021-07-02 07:53:22
+#&gt; 3               33938               791131 2021-07-02 07:53:22
+#&gt; 4              204639               791131 2021-07-02 07:53:22
+#&gt; 5              115527               791131 2021-07-02 07:53:22
+#&gt; 6              138390               791131 2021-07-02 07:53:22
+#&gt;        data_loaded_at
+#&gt; 1 2021-07-02 09:30:07
+#&gt; 2 2021-07-02 09:30:07
+#&gt; 3 2021-07-02 09:30:07
+#&gt; 4 2021-07-02 09:30:07
+#&gt; 5 2021-07-02 09:30:07
+#&gt; 6 2021-07-02 09:30:07</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
