@@ -48,7 +48,7 @@ test_that(desc = "Test dates/times variable", {
 
   expect_equal(base::class(covid19sf_tests$specimen_collection_date) == "Date", TRUE)
   expect_equal(base::all(c("POSIXct", "POSIXt") %in% base::class(covid19sf_tests$last_updated)), TRUE)
-  expect_equal(base::min(covid19sf_tests$specimen_collection_date) == as.Date("2020-02-28"), TRUE)
+  expect_equal(base::min(covid19sf_tests$specimen_collection_date) == as.Date("2020-03-01"), TRUE)
 
   expect_equal(base::class(covid19sf_demo$specimen_collection_date) == "Date", TRUE)
   expect_equal(base::all(c("POSIXct", "POSIXt") %in% base::class(covid19sf_demo$last_updated)), TRUE)
