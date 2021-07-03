@@ -18,34 +18,30 @@ knitr::opts_chunk$set(
 )
 ```
 
+The covid19sf_vaccine_demo and covid19sf_vaccine_demo_ts datasets provide demographics information on the San Francisco vaccination effort:
 
-The covid19sf_vaccine_demo and covid19sf_vaccine_demo_ts datasets provide demographics information on the San Francisco vaccination effort:	
+-   `covid19sf_vaccine_demo` - Summary of vaccine doses given to San Franciscans by demographics groups (age and race)
+-   `covid19sf_vaccine_demo_ts` - Time series view of vaccine doses given to San Franciscans by demographics groups (age and race)
 
-* `covid19sf_vaccine_demo` -  Summary of vaccine doses given to San Franciscans by demographics groups (age and race)
-* `covid19sf_vaccine_demo_ts` -  Time series view of vaccine doses given to San Franciscans by demographics groups (age and race)
-
-
-
-### San Francisco vaccination summary 
+### San Francisco vaccination summary
 
 The `covid19sf_vaccine_demo` summarizes the COVID-19 vaccine doses given to San Franciscans by demographics (age and race groups) and includes the following fields:
 
-* `overall_segment` - Segment (universe) of analysis. Unique combination of administering_provider_type, age_group, and demographic_group. Filter to a single option to derive meaningful totals.
-* `administering_provider_type` - Providers included in a given overall_segment. Two possible values: 'All' (including SF DPH) or 'DPH Only'
-* `age_group` - Age range included in a given overall_segment
-* `demographic_group` - Type of demographic group included in a given overall_segment (e.g. Age, Race/Ethnicity)
-* `demographic_subgroup` - Specific demographic group counted in a given record (e.g. 16-24, Asian)
-* `demographic_subgroup_sort_order` - Numeric sort order for all DEMOGRAPHIC_SUBGROUPs. Convenient for maintaining consistent ordering across multiple data visualizations.
-* `total_1st_doses` - Total number of first doses administered
-* `total_2nd_doses` - Total number of second doses administered
-* `total_single_doses` - Total number of single dose vaccines administered
-* `total_recipients` - Total number of unique vaccine recipients
-* `total_series_completed` - Total number of individuals fully vaccinated (those having received the second dose of a two-dose vaccine or one dose of a single-dose vaccine)
-* `subgroup_population` - 2018 5-year American Community Survey population estimates for given DEMOGRAPHIC_SUBGROUP
-* `age_group_population` - 2018 5-year American Community Survey population estimates for overall AGE_GROUP
-* `data_as_of` - Timestamp for last update date in source system
-* `data_loaded_at` - Timestamp when the record (row) was most recently updated in Socrata
-
+-   `overall_segment` - Segment (universe) of analysis. Unique combination of administering_provider_type, age_group, and demographic_group. Filter to a single option to derive meaningful totals.
+-   `administering_provider_type` - Providers included in a given overall_segment. Two possible values: 'All' (including SF DPH) or 'DPH Only'
+-   `age_group` - Age range included in a given overall_segment
+-   `demographic_group` - Type of demographic group included in a given overall_segment (e.g. Age, Race/Ethnicity)
+-   `demographic_subgroup` - Specific demographic group counted in a given record (e.g. 16-24, Asian)
+-   `demographic_subgroup_sort_order` - Numeric sort order for all demographic_subgroups. Convenient for maintaining consistent ordering across multiple data visualizations.
+-   `total_1st_doses` - Total number of first doses administered
+-   `total_2nd_doses` - Total number of second doses administered
+-   `total_single_doses` - Total number of single dose vaccines administered
+-   `total_recipients` - Total number of unique vaccine recipients
+-   `total_series_completed` - Total number of individuals fully vaccinated (those having received the second dose of a two-dose vaccine or one dose of a single-dose vaccine)
+-   `subgroup_population` - 2018 5-year American Community Survey population estimates for given demographic_subgroup
+-   `age_group_population` - 2018 5-year American Community Survey population estimates for overall age_group\
+-   `data_as_of` - Timestamp for last update date in source system
+-   `data_loaded_at` - Timestamp when the record (row) was most recently updated in Socrata
 
 ```{r setup}
 library(covid19sf)
@@ -57,17 +53,15 @@ head(covid19sf_vaccine_demo)
 str(covid19sf_vaccine_demo)
 ```
 
+Using this dataset, we can answer the following questions:
 
-Using this dataset we can answers the following questions:
-
-- What is the proportion of San Francisco population that got vaccinated?
-- How many people got two does vaccine (e.g., Pfizer or Moderna) vs single dose (J&J)?
-- What is the distribution of the vaccine doses given to San Franciscans by demographics groups (age and race)?
-
+-   What is the proportion of San Francisco population that got vaccinated?
+-   How many people got two doses of the vaccine (e.g., Pfizer or Moderna) vs single dose (J&J)?
+-   What is the distribution of the vaccine doses given to San Franciscans by demographics groups (age and race)?
 
 #### Doses given to San Franciscans by age group:
 
-In the following example we will explore the distribution of San Francisco population by age group. Let's start by filtering the data by all providers and age group demographic:
+In the following example, we will explore the distribution of San Francisco population by age group. Let's start by filtering the data by all providers and age group demographics:
 
 ```{r }
 library(dplyr)
@@ -81,7 +75,7 @@ df_age <- covid19sf_vaccine_demo %>%
 df_age
 ```
 
-Next, we will sort the data by the age group and convert the `demographic_subgroup` into an ordered factor:
+Next, we will sort the data by age group and convert the `demographic_subgroup` into an ordered factor:
 
 ```{r}
 df_age <- df_age %>%
@@ -89,23 +83,29 @@ df_age <- df_age %>%
   mutate(age_ordered = factor(demographic_subgroup, levels = demographic_subgroup))
 ```
 
+Let's start by plotting the distribution of San Francisco vaccinated population using the following groups:
 
-Let's start with plotting the distribution between the San Franciscans that received all doses of the vaccine (e.g., single dose of J&J or two doses of either Pfizer or Moderna) vs. the ones the either received only the first dose (out of two) or not receive any. Since the `total_2nd_doses` variable (received the second dose) is a subset of `total_1st_doses` (received only the first out of two doses), we will have to exclude the first out of the later:
+-   **Two Doses** - San Franciscans who received the two doses of either Pfizer or Moderna vaccine
+-   **Single Dose** - San Franciscans who received the J&J single-dose vaccine
+-   **First Dose** - San Franciscans who received the first dose out of two of either Pfizer or Moderna vaccine
+-   **Not Vaccinated** - San Franciscans who did not receive any COVID-19 vaccine
+
+Since the `total_2nd_doses` variable (received the second dose) is a subset of `total_1st_doses` (received only the first out of two doses), we will have to exclude it:
 
 ```{r}
 df_age <- df_age %>%
   mutate(only_1st_dose = total_1st_doses - total_2nd_doses)
 ```
 
-Now we can create a pie plot to show the city population vaccination status:
+Next, we will collapse and aggregate the data by vaccination status:
 
 ```{r}
 df_summary <- df_age %>%
   summarise(`First Dose` = sum(only_1st_dose),
-            `Second Dose` = sum(total_2nd_doses),
+            `Two Doses` = sum(total_2nd_doses),
             `Single Dose` = sum(total_single_doses),
             `Total Pop` = sum(subgroup_population)) %>%
-  mutate(`Not Received Vaccine` = `Total Pop` - `First Dose` - `Second Dose` - `Single Dose`) %>%
+  mutate(`Not Received Vaccine` = `Total Pop` - `First Dose` - `Two Doses` - `Single Dose`) %>%
   select(- `Total Pop`) %>%
   t() %>%
   as.data.frame() %>%
@@ -113,6 +113,12 @@ df_summary <- df_age %>%
 
 df_summary$type <- rownames(df_summary)
 
+head(df_summary)
+```
+
+Using the `df_summary`, let's plot the distribution of San Francisco vaccination status:
+
+```{r}
 plot_ly(data = df_summary,
         labels = ~ type,
         values = ~ count,
@@ -130,8 +136,8 @@ plot_ly(data = df_summary,
                      size = 18),
          margin = list(t = 80, b = 60)) %>%
   add_annotations(text = paste("- Including children under the age of 12",
-                               "- First and Second Doses refer to either either Pfizer or Moderna vaccine",
-                               "- Single Dose refer to J&J vaccine", sep = "<br>"),
+                               "- The First and Second Doses refer to either Pfizer or Moderna vaccine",
+                               "- Single Dose refers to J&J vaccine", sep = "<br>"),
                   font = list(family = "Arieal",
                      size = 14),
                   
@@ -143,17 +149,16 @@ plot_ly(data = df_summary,
                   showarrow = FALSE)
 ```
 
-As can see in the plot above, close to 65% of the SF population completed the vaccination process, and 8.5% received the first dose out of two. About 28% did not vaccinate. Note that the distribution includes children under the age of 12, which at this point cannot received the vaccine. If we want to get a better distribution of the vaccination effort of the SF population, let's exclude children under the age of 12:
-
+As can see in the plot above, about `r paste(round(100 *sum(df_summary[which(df_summary$type%in% c("Single Dose", "Two Doses")),]$count) / sum(df_summary$count)),"%", sep = "")` of the SF population completed the vaccination process, and `r paste(round(100 *sum(df_summary[which(df_summary$type%in% c("First Dose")),]$count) / sum(df_summary$count)),"%", sep = "")` received the first dose out of two. About `r paste(round(100 *sum(df_summary[which(df_summary$type%in% c("Not Received Vaccine")),]$count) / sum(df_summary$count)),"%", sep = "")` did not vaccinate. Note that the distribution includes children under the age of 12, which at this point are not vaccinated. If we want to get a better distribution of the vaccination effort of the SF population, let's exclude children under the age of 12:
 
 ```{r}
 df_summary2 <- df_age %>%
   filter(demographic_subgroup != "Under 12") %>%
   summarise(`First Dose` = sum(only_1st_dose),
-            `Second Dose` = sum(total_2nd_doses),
+            `Two Doses` = sum(total_2nd_doses),
             `Single Dose` = sum(total_single_doses),
             `Total Pop` = sum(subgroup_population)) %>%
-  mutate(`Not Received Vaccine` = `Total Pop` - `First Dose` - `Second Dose` - `Single Dose`) %>%
+  mutate(`Not Received Vaccine` = `Total Pop` - `First Dose` - `Two Doses` - `Single Dose`) %>%
   select(- `Total Pop`) %>%
   t() %>%
   as.data.frame() %>%
@@ -178,8 +183,8 @@ plot_ly(data = df_summary2,
                      size = 18),
          margin = list(t = 80, b = 60)) %>%
   add_annotations(text = paste("- Excluding children under the age of 12",
-                               "- First and Second Doses refer to either either Pfizer or Moderna vaccine",
-                               "- Single Dose refer to J&J vaccine", sep = "<br>"),
+                               "- The First and Second Doses refer to either Pfizer or Moderna vaccine",
+                               "- Single Dose refers to J&J vaccine", sep = "<br>"),
                   font = list(family = "Arieal",
                      size = 14),
                   
@@ -191,23 +196,7 @@ plot_ly(data = df_summary2,
                   showarrow = FALSE)
 ```
 
-
-After we exclude children under the age of 12 group, we can see from the plot above that more than 70% of SF completed the vaccination process and close to 10% received the first dose.
-
-
-
-The `total_1st_doses` and `total_2nd_doses` variables represent the population of the city that received the first and second doses of the vaccine (Pfizer or Moderna), respectively.
-
-
-
-
-
-
-
-The `total_1st_doses` and `total_2nd_doses` variables represent the population of the city that received the first and second doses of the vaccine (Pfizer or Moderna), respectively. We 
-
-
-
+After excluding children under the age of 12 group, we can see from the plot above that `r paste(round(100 *sum(df_summary2[which(df_summary2$type%in% c("Single Dose", "Two Doses")),]$count) / sum(df_summary2$count)),"%", sep = "")` of the SF population (age 12 and above) completed the vaccination process, and `r paste(round(100 *sum(df_summary2[which(df_summary2$type%in% c("First Dose")),]$count) / sum(df_summary2$count)),"%", sep = "")` received the first dose.
 
 Let's now plot the total population that received the full doses of the vaccine (single for J&J and two for Pfizer and Moderna):
 
@@ -216,16 +205,193 @@ plot_ly(data = df_age) %>%
   add_trace(x = ~ age_ordered,
             y = ~ total_2nd_doses,
             type = "bar",
-            name = "Two Doses Vaccine") %>%
+            name = "Pfizer or Moderna") %>%
   add_trace(x = ~ age_ordered,
             type = "bar",
             y = ~ total_single_doses,
-            name = "Single Dose Vaccine") %>%
-  layout(barmode = "stack")
+            name = "J&J") %>%
+  layout(title = "San Francisco Fully Vaccinated Population by Age and Vaccine Type",
+         barmode = "stack",
+         yaxis = list(title = "Population"),
+         xaxis = list(title = "Age Group"))
 ```
 
- 
+Last but not least, we will use a bar plot to describe the distribution, in percentage, between the city population that fully, partial, and not vaccinated. We will pre-calculate the percentage break down for each age group:
+
+```{r}
+
+d1a <- covid19sf_vaccine_demo %>%
+  filter(administering_provider_type == "All Providers",
+                demographic_group == "Age Bracket",
+                age_group == "All") %>%
+  mutate(only_1st = total_1st_doses - total_2nd_doses,
+                not_vaccinated = subgroup_population - total_series_completed - only_1st,
+                first_per = 100 * only_1st / subgroup_population,
+                second_per = 100 * total_2nd_doses / subgroup_population,
+                single_per = 100 * total_single_doses / subgroup_population,
+                not_vaccinated_per = 100 * not_vaccinated / subgroup_population,
+                complete_per = 100 - not_vaccinated_per - first_per) %>%
+  arrange(demographic_subgroup_sort_order) %>%
+  mutate(age = factor(demographic_subgroup, levels = demographic_subgroup)) %>%
+  select(age, first_per, second_per, single_per, not_vaccinated_per, complete_per)
+
+
+d1a
+
+```
+
+Inspired from The Economist data visualization, for the following plot, we will use The Economist default color palette for bar plot:
+
+```{r}
+# plot setting
+font_size <- 22
+opacity <- 0.95
+background <- "rgb(225, 236, 242)"
+complete_color <- paste("rgba(47, 106, 158,", opacity ,")", sep = "")
+first_color <-  paste("rgba(100, 184, 206,", opacity ,")", sep = "")
+not_vaccinated_color <- paste("rgba(162, 32, 61,", opacity ,")", sep = "")
+
+# Plot
+plot_ly(data = d1a,
+        x = ~ complete_per,
+        y = ~ age,
+        type = 'bar', orientation = 'h',
+        name = "Completed Two/Single Doses",
+        marker = list(color = complete_color,
+                      line = list(color = toRGB("gray50"), width = 1))) %>%
+  add_trace(x = ~ first_per ,
+            marker = list(color =first_color),
+            name = "First Dose") %>%
+  add_trace(x = ~ not_vaccinated_per ,
+            marker = list(color = not_vaccinated_color),
+            name = "Not Vaccinated") %>%
+  layout(xaxis = list(title = "",
+                      showgrid = TRUE,
+                      showline = FALSE,
+                      showticklabels = TRUE,
+                      zeroline = TRUE,
+                      tickwidth = 2,
+                      tickcolor = toRGB("gray50"),
+                      gridwidth = 2,
+                      gridcolor = toRGB("gray50"),
+                      side ="top",
+                      # domain = c(0.1, 1),
+                      ticksuffix = "%"),
+         yaxis = list(title = "Age Group",
+                      # domain = c(0, 0.8),
+                      showgrid = FALSE,
+                      showline = FALSE,
+                      showticklabels = TRUE,
+                      zeroline = FALSE),
+         barmode = "stack",
+         plot_bgcolor = background,
+         paper_bgcolor = background,
+         margin = list(l = 70, t = 100, b = 60),
+         legend = list(orientation = 'h')) %>%
+  add_annotations(text = "Source: San Francisco, Department of Public Health - Population Health Division",
+                  font = list(size = 16,
+                              family = "Ariel"),
+                  align = "left",
+                  x = 0,
+                  y = - 0.08,
+                  xref = "paper",
+                  yref = "paper",
+                  showarrow = FALSE) %>%
+  add_annotations(text = "San Francisco COVID-19 Vaccination Distribution by Age Group",
+                  y = 1.19,
+                  x = -0.03,
+                  font = list(family = "Ariel",
+                              size =  24,
+                              color = "black"),
+                  yref = "paper",
+                  xref = "paper",
+                  align = "left",
+                  valign = "middle",
+                  showarrow = FALSE) 
+```
 
 
 
+### San Francisco vaccination time series
+
+The `covid19sf_vaccine_demo_ts` dataset is a time series format of the `covid19sf_vaccine_demo` dataset, and includes the following fields:
+
+* `date_administered` - Date vaccination administered
+* `overall_segment` -Segment (universe) of analysis.
+   Unique combination of administering_provider_type, age_group, and demographic_group.
+   Filter to a single option to derive meaningful totals.
+* `administering_provider_type` - Providers included in a given overall_segment. Two possible values: 'All' (including SF DPH) or 'DPH Only'
+* `age_group` - Age range included in a given overall_segment
+* `demographic_group` - Type of demographic group included in a given overall_segment (e.g. Age, Race/Ethnicity)
+* `demographic_subgroup` - Specific demographic group counted in a given record (e.g. 16-24, Asian)
+* `demographic_subgroup_sort_order` - Numeric sort order for all demographic_subgroup. Convenient for maintaining consistent ordering across multiple data visualizations.
+* `new_1st_doses` - Count of 1st doses administered for vaccines that take two doses to complete
+* `new_2nd_doses` - Count of 2nd doses administered for vaccines that take two doses to complete
+* `new_single_doses` - Count of doses administered for vaccines that take one dose to complete
+* `new_series_completed` - Count of individuals newly fully vaccinated on a given day (given the 2nd dose of a two-dose vaccine or one dose of a single dose vaccine)
+* `new_recipients` - Count of individuals vaccinated (with any dose) for the first time according to CA's records
+* `cumulative_1st_doses` - Cumulative total of 1st doses administered for vaccines that take two doses to complete
+* `cumulative_2nd_doses` - Cumulative total of 2nd doses administered for vaccines that take two doses to complete
+* `cumulative_single_doses` - Cumulative total of doses administered for vaccines that take one dose to complete
+* `cumulative_series_completed` - Cumulative total individuals fully vaccinated (given the 2nd dose of a two-dose vaccine or one dose of a single dose vaccine)
+* `cumulative_recipients` - Cumulative total individuals vaccinated (with any dose) according to CA's records
+* `subgroup_population` - American Community Survey population estimates for given demographic_subgroup
+* `age_group_population` - American Community Survey population estimates for overall age_group
+* `data_as_of` - Timestamp for last update date in source system
+* `data_loaded_at` - Timestamp when the record (row) was most recently updated here in the Open Data Portal
+
+Let's load and review the dataset:
+
+```{r}
+data("covid19sf_vaccine_demo_ts")
+
+str(covid19sf_vaccine_demo_ts)
+
+unique(covid19sf_vaccine_demo_ts$demographic_group)
+```
+
+This dataset enables us to review the vaccination progress of SF population by age and race/ethnicity group over time. Let's review the vaccination of the SF population by race/ethnicity group:
+
+```{r}
+df <- covid19sf_vaccine_demo_ts %>%
+  dplyr::filter(overall_segment == "All Ages by Race/Ethnicity, Administered by All Providers") 
+
+table(df$demographic_subgroup)
+
+df %>%
+  plot_ly(x = ~ date_administered,
+          y = ~ new_series_completed,
+          color = ~ demographic_subgroup,
+          type = "scatter",
+          mode = "line") %>%
+  layout(title = "San Francisco COVID-19 Daily Vaccination by Race/Ethnicity",
+         yaxis = list(title = "Population"),
+         xaxis = list(title = "Source: San Francisco, Department of Public Health - Population Health Division"),
+         legend = list(x = 0, y = 1.1),
+         margin = list(t = 90))
+```
+
+Similarly, we can plot the vaccination progress over time by race/ethnicity group. Note that there is some calculation error for `Other Race` demographic sub-group as the cumulative values of the group surpass the sub-group population. Therefore, we will exclude it from the calculation: 
+
+```{r}
+df %>%
+  filter(demographic_subgroup != "Other Race") %>%
+  plot_ly(x = ~ date_administered,
+                  y = ~ 100 *cumulative_series_completed /subgroup_population,
+                  color = ~ demographic_subgroup,
+                  hoverinfo = "text",
+                  text = ~ paste(demographic_subgroup, "<br>",
+                                 "Date:", date_administered, "<br>",
+                                 "Sub-Group Population:", subgroup_population, "<br>",
+                                 "Completed Series:", cumulative_series_completed,
+                                 paste("(", round(100 *cumulative_series_completed /subgroup_population) ,"%)", sep = "")),
+                  type = "scatter",
+                  mode = "line") %>%
+  layout(title = "Proportion of San Francisco COVID-19 Vaccinated Population by Race/Ethnicity",
+         yaxis = list(title = "Percentage", 
+                      ticksuffix = "%"),
+         xaxis = list(title = "Source: San Francisco, Department of Public Health - Population Health Division"),
+         legend = list(x = 0.05, y = 0.95),
+         margin = list(t = 90))
+```
 
