@@ -69,12 +69,12 @@ data(covid19sf_age)
 
 head(covid19sf_age)
 #>   specimen_collection_date age_group new_confirmed_cases cumulative_confirmed_cases        last_updated
-#> 1               2020-03-13     25-29                   3                          7 2021-06-15 16:00:03
-#> 2               2020-03-14     25-29                   2                          9 2021-06-15 16:00:03
-#> 3               2020-03-15     25-29                   1                         10 2021-06-15 16:00:03
-#> 4               2020-03-16     25-29                   1                         11 2021-06-15 16:00:03
-#> 5               2020-03-17     25-29                   0                         11 2021-06-15 16:00:03
-#> 6               2020-03-18     25-29                   3                         14 2021-06-15 16:00:03
+#> 1               2020-03-13     25-29                   3                          7 2021-07-02 16:00:02
+#> 2               2020-03-14     25-29                   2                          9 2021-07-02 16:00:02
+#> 3               2020-03-15     25-29                   1                         10 2021-07-02 16:00:02
+#> 4               2020-03-16     25-29                   1                         11 2021-07-02 16:00:02
+#> 5               2020-03-17     25-29                   0                         11 2021-07-02 16:00:02
+#> 6               2020-03-18     25-29                   3                         14 2021-07-02 16:00:02
 ```
 
 The following box-plot shows the distribution of the positive cases by
@@ -107,7 +107,7 @@ layout(title = "Distribution of Daily New Covid Cases in San Francisco by Age Gr
 
 <img src="man/figures/age_dist1.svg" width="100%" />
 
-Here is the overall distribution of cases by age group as of 2021-06-11:
+Here is the overall distribution of cases by age group as of 2021-06-28:
 
 ``` r
 library(dplyr)
@@ -137,13 +137,13 @@ tests and their results (positive, negative, and indeterminate):
 data(covid19sf_tests)
 
 head(covid19sf_tests)
-#>   specimen_collection_date tests pos        pct neg indeterminate          data_loaded_at        last_updated
-#> 1               2020-02-28     2   0 0.00000000   2             0 2021-06-16T05:17:44.775 2021-06-15 16:00:00
-#> 2               2020-03-01     2   0 0.00000000   2             0 2021-06-16T05:17:46.048 2021-06-15 16:00:00
-#> 3               2020-03-02     2   0 0.00000000   2             0 2021-06-16T05:17:46.050 2021-06-15 16:00:00
-#> 4               2020-03-03     8   2 0.25000000   6             0 2021-06-16T05:17:46.051 2021-06-15 16:00:00
-#> 5               2020-03-04    12   0 0.00000000  12             0 2021-06-16T05:17:46.053 2021-06-15 16:00:00
-#> 6               2020-03-05    23   6 0.26086957  17             0 2021-06-16T05:17:46.054 2021-06-15 16:00:00
+#>   specimen_collection_date tests pos         pct neg indeterminate          data_loaded_at        last_updated
+#> 1               2020-03-12   192   9 0.046875000 183             0 2021-07-03T05:00:34.933 2021-07-02 16:31:29
+#> 2               2020-03-13   252  18 0.071428571 234             0 2021-07-03T05:00:36.662 2021-07-02 16:31:29
+#> 3               2020-03-14   153  10 0.065359477 143             0 2021-07-03T05:00:36.665 2021-07-02 16:31:29
+#> 4               2020-03-15   151  11 0.073333333 139             1 2021-07-03T05:00:36.668 2021-07-02 16:31:29
+#> 5               2020-03-29   161  16 0.101265823 142             3 2021-07-03T05:00:36.671 2021-07-02 16:31:29
+#> 6               2020-03-30   401  47 0.117500000 353             1 2021-07-03T05:00:36.674 2021-07-02 16:31:29
 ```
 
 The plot below shows the daily distribution of the results of the tests:
@@ -177,12 +177,12 @@ data(covid19sf_demo)
 
 head(covid19sf_demo)
 #>   specimen_collection_date race_ethnicity new_confirmed_cases cumulative_confirmed_cases        last_updated
-#> 1               2020-03-13          Asian                   3                          7 2021-06-15 16:00:03
-#> 2               2020-03-14          Asian                   2                          9 2021-06-15 16:00:03
-#> 3               2020-03-15          Asian                   2                         11 2021-06-15 16:00:03
-#> 4               2020-03-16          Asian                   8                         19 2021-06-15 16:00:03
-#> 5               2020-03-17          Asian                   4                         23 2021-06-15 16:00:03
-#> 6               2020-03-18          Asian                   0                         23 2021-06-15 16:00:03
+#> 1               2020-03-13          Asian                   3                          7 2021-07-02 16:00:02
+#> 2               2020-03-14          Asian                   2                          9 2021-07-02 16:00:02
+#> 3               2020-03-15          Asian                   2                         11 2021-07-02 16:00:02
+#> 4               2020-03-16          Asian                   8                         19 2021-07-02 16:00:02
+#> 5               2020-03-17          Asian                   4                         23 2021-07-02 16:00:02
+#> 6               2020-03-18          Asian                   0                         23 2021-07-02 16:00:02
 ```
 
 Below is a plot of the cumulative positive cases by race and ethnicity:
