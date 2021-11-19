@@ -1,113 +1,113 @@
 "overall_segment","administering_provider_type","age_group","demographic_group","demographic_subgroup","demographic_subgroup_sort_order","total_1st_doses","total_2nd_doses","total_single_doses","total_recipients","total_series_completed","subgroup_population","age_group_population","data_as_of","data_loaded_at"
-"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","25-34",5,145297,133594,14100,159669,147694,204639,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","35-44",6,117517,109594,10774,128403,120368,138390,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","12-17",3,36217,33375,15,36254,33390,33938,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","65-74",9,74679,70829,3283,77992,74112,74120,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","45-54",7,95157,89416,10749,105945,100165,115527,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","18-24",4,49166,44553,4159,53390,48712,62127,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","12-17",3,5290,5154,3,5556,5157,33938,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","55-64",8,86437,81754,10746,97199,92499,101483,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","American Indian or Alaska Native",1,1429,1217,143,1574,1360,1319,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","75+",10,52037,48943,2169,54223,51112,60907,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","25-34",5,20257,19528,1055,21750,20583,204639,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","18-24",4,8714,8289,389,9334,8678,62127,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Asian",2,229041,218439,16596,245768,235035,275992,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,2702,2457,198,2902,2655,2309,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","35-44",6,19791,19170,1162,21349,20332,138390,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Other Race",8,29531,26003,2778,32349,28781,3373,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","45-54",7,19141,18626,1207,20733,19833,115527,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Black or African American",3,28495,26005,3675,32138,29679,39432,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Multi-Racial",7,2212,2147,138,2438,2285,27478,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Hispanic or Latino/a, all races",4,106398,96299,8415,114856,104714,113734,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,604,568,42,677,610,2309,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Unknown",9,15899,13295,2356,18296,15651,0,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","55-64",8,20182,19704,1295,21856,20999,101483,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Unknown",9,890,762,217,1122,979,0,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","White",6,228161,214041,20866,249361,234907,327494,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","12-17",3,36217,33375,15,36254,33390,33938,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","65-74",9,14933,14402,453,15589,14855,74120,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","American Indian or Alaska Native",1,204,187,23,229,210,1319,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","25-34",5,145297,133594,14100,159669,147694,204639,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Asian",2,39695,39206,887,41421,40093,275992,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","55-64",8,86437,81754,10746,97199,92499,101483,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","75+",10,6376,6194,311,6854,6505,60907,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Black or African American",3,9687,9046,1283,11207,10329,39432,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","12-17",3,5290,5154,3,5556,5157,33938,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Other Race",8,3841,3635,232,4157,3867,3373,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","25-34",5,20257,19528,1055,21750,20583,204639,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Multi-Racial",7,14851,14302,968,15831,15270,27478,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","45-54",7,19141,18626,1207,20733,19833,115527,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","White",6,22589,21847,1554,24619,23401,327494,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","55-64",8,20182,19704,1295,21856,20999,101483,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Hispanic or Latino/a, all races",4,34962,33669,1499,37151,35168,113734,791131,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","18-24",4,49166,44553,4159,53390,48712,62127,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","35-44",6,117517,109594,10774,128403,120368,138390,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","45-54",7,95157,89416,10749,105945,100165,115527,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","5-11",2,13492,71,0,13492,71,44006,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","65-74",9,74679,70829,3283,77992,74112,74120,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","75+",10,6376,6194,311,6854,6505,60907,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","75+",10,52037,48943,2169,54223,51112,60907,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","18-24",4,8714,8289,389,9334,8678,62127,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Age Bracket, Administered by All Providers","All Providers","65+","Age Bracket","65-74",9,74679,70829,3283,77992,74112,74120,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","35-44",6,19791,19170,1162,21349,20332,138390,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Age Bracket, Administered by DPH Only","DPH Only","65+","Age Bracket","75+",10,6376,6194,311,6854,6505,60907,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","American Indian or Alaska Native",1,179,157,10,189,167,212,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,282,261,22,304,283,212,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","65-74",9,14933,14402,453,15589,14855,74120,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Unknown",9,1345,983,182,1528,1165,0,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Age Bracket, Administered by DPH Only","DPH Only","65+","Age Bracket","65-74",9,14933,14402,453,15589,14855,74120,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Asian",2,9221,8967,228,9598,9195,59492,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Multi-Racial",7,2724,2650,74,2797,2724,1848,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Black or African American",3,2691,2589,181,2913,2770,7566,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Hispanic or Latino/a, all races",4,3942,3814,74,4069,3888,12238,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Other Race",8,3555,3051,214,3772,3265,362,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Multi-Racial",7,527,513,11,549,524,1848,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,70,68,7,78,75,212,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","5-11",2,1261,9,0,1263,9,44006,835137,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","0-4",1,0,0,0,0,0,39650,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Other Race",8,501,478,15,527,493,362,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","12-17",3,36217,33375,15,36254,33390,33938,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","12-17",3,5290,5154,3,5556,5157,33938,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","25-34",5,145297,133594,14100,159669,147694,204639,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","18-24",4,8714,8289,389,9334,8678,62127,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","25-34",5,20257,19528,1055,21750,20583,204639,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","35-44",6,117517,109594,10774,128403,120368,138390,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Age Bracket, Administered by All Providers","All Providers","65+","Age Bracket","75+",10,52037,48943,2169,54223,51112,60907,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Asian",2,54483,51928,2559,57052,54487,59492,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","45-54",7,19141,18626,1207,20733,19833,115527,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","45-54",7,95157,89416,10749,105945,100165,115527,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","5-11",2,1261,9,0,1263,9,44006,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Black or African American",3,6378,6043,550,6922,6593,7566,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Asian",2,232571,218448,16596,249298,235044,298108,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Hispanic or Latino/a, all races",4,11225,10373,445,11680,10818,12238,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","65-74",9,74679,70829,3283,77992,74112,74120,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Other Race",8,31038,26007,2778,33856,28785,3626,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","White",6,46545,44326,1396,47971,45722,53097,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","American Indian or Alaska Native",1,35,34,0,36,34,212,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","0-4",1,0,0,0,0,0,39650,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Unknown",9,145,120,35,182,155,0,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","55-64",8,20182,19704,1295,21856,20999,101483,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","White",6,4177,4013,213,4491,4226,53097,135027,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","18-24",4,49166,44553,4159,53390,48712,62127,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","65-74",9,14933,14402,453,15589,14855,74120,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","5-11",2,13492,71,0,13492,71,44006,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","55-64",8,86437,81754,10746,97199,92499,101483,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","75+",10,6376,6194,311,6854,6505,60907,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","75+",10,52037,48943,2169,54223,51112,60907,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","35-44",6,19791,19170,1162,21349,20332,138390,874787,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Black or African American",3,28733,26005,3675,32376,29679,43782,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","American Indian or Alaska Native",1,1454,1217,143,1599,1360,1634,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","American Indian or Alaska Native",1,206,187,23,231,210,1634,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Hispanic or Latino/a, all races",4,108006,96311,8415,116464,104726,133314,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Asian",2,39997,39207,887,41723,40094,298108,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Multi-Racial",7,15378,14306,968,16358,15274,37140,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,2742,2457,198,2942,2655,2934,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Black or African American",3,9731,9046,1283,11251,10329,43782,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Unknown",9,16696,13299,2356,19093,15655,0,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Hispanic or Latino/a, all races",4,35441,33671,1499,37630,35170,133314,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","White",6,233381,214079,20866,254581,234945,354423,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Multi-Racial",7,2244,2148,138,2471,2286,37140,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Other Race",8,3935,3636,232,4251,3868,3626,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,606,568,42,679,610,2934,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","White",6,22888,21851,1554,24919,23405,354423,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
-"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Unknown",9,897,762,217,1129,979,0,874961,2021-11-17 06:00:04,2021-11-17 09:23:52
+"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","25-34",5,145515,133751,14113,159904,147864,204639,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","35-44",6,117602,109656,10781,128497,120437,138390,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","12-17",3,36255,33401,15,36292,33416,33938,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","65-74",9,74714,70877,3282,78028,74159,74120,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","45-54",7,95216,89469,10755,106009,100224,115527,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","18-24",4,49238,44605,4168,53471,48773,62127,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","55-64",8,86484,81793,10757,97256,92549,101483,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","12-17",3,5300,5159,3,5567,5162,33938,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by All Providers","All Providers","12+","Age Bracket","75+",10,52072,48989,2171,54261,51160,60907,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","American Indian or Alaska Native",1,1433,1221,144,1579,1365,1319,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","25-34",5,20264,19538,1055,21759,20593,204639,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","18-24",4,8719,8293,391,9341,8684,62127,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Asian",2,229209,218606,16611,245954,235217,275992,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","35-44",6,19793,19172,1166,21360,20338,138390,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,2699,2456,198,2899,2654,2309,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","45-54",7,19135,18623,1211,20733,19834,115527,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Black or African American",3,28528,26040,3678,32175,29717,39432,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Other Race",8,29468,25943,2780,32288,28723,3373,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Hispanic or Latino/a, all races",4,106514,96406,8419,114979,104825,113734,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Multi-Racial",7,2223,2156,138,2451,2294,27478,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","55-64",8,20185,19705,1297,21864,21002,101483,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,603,567,42,676,609,2309,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","65-74",9,14933,14402,452,15591,14854,74120,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Unknown",9,15850,13216,2347,18238,15563,0,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Unknown",9,888,759,219,1122,978,0,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","White",6,228459,214276,20895,249689,235171,327494,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","12-17",3,36255,33401,15,36292,33416,33938,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Age Bracket, Administered by DPH Only","DPH Only","12+","Age Bracket","75+",10,6377,6196,312,6857,6508,60907,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","American Indian or Alaska Native",1,207,189,23,232,212,1319,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Asian",2,39686,39197,889,41417,40086,275992,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","25-34",5,145515,133751,14113,159904,147864,204639,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by All Providers","All Providers","12+","Race/Ethnicity","Multi-Racial",7,14936,14377,970,15917,15347,27478,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Black or African American",3,9686,9055,1285,11211,10340,39432,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","55-64",8,86484,81793,10757,97256,92549,101483,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Other Race",8,3840,3632,236,4160,3868,3373,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","12-17",3,5300,5159,3,5567,5162,33938,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","Hispanic or Latino/a, all races",4,34981,33683,1499,37177,35182,113734,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","25-34",5,20264,19538,1055,21759,20593,204639,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 12+ by Race/Ethnicity, Administered by DPH Only","DPH Only","12+","Race/Ethnicity","White",6,22592,21850,1556,24626,23406,327494,791131,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","45-54",7,95216,89469,10755,106009,100224,115527,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","45-54",7,19135,18623,1211,20733,19834,115527,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","18-24",4,49238,44605,4168,53471,48773,62127,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","55-64",8,20185,19705,1297,21864,21002,101483,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","35-44",6,117602,109656,10781,128497,120437,138390,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","5-11",2,14398,74,0,14398,74,44006,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","65-74",9,74714,70877,3282,78028,74159,74120,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by All Providers","All Providers","5+","Age Bracket","75+",10,52072,48989,2171,54261,51160,60907,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","18-24",4,8719,8293,391,9341,8684,62127,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","75+",10,6377,6196,312,6857,6508,60907,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","35-44",6,19793,19172,1166,21360,20338,138390,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","65-74",9,14933,14402,452,15591,14854,74120,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Age Bracket, Administered by All Providers","All Providers","65+","Age Bracket","65-74",9,74714,70877,3282,78028,74159,74120,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Age Bracket, Administered by DPH Only","DPH Only","65+","Age Bracket","65-74",9,14933,14402,452,15591,14854,74120,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Age Bracket, Administered by DPH Only","DPH Only","65+","Age Bracket","75+",10,6377,6196,312,6857,6508,60907,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","American Indian or Alaska Native",1,180,158,10,190,168,212,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Multi-Racial",7,2739,2665,74,2812,2739,1848,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Other Race",8,3540,3039,213,3756,3252,362,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,69,67,7,77,74,212,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Other Race",8,503,480,15,529,495,362,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,282,260,22,304,282,212,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 5+ by Age Bracket, Administered by DPH Only","DPH Only","5+","Age Bracket","5-11",2,1294,9,0,1296,9,44006,835137,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","25-34",5,145515,133751,14113,159904,147864,204639,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Unknown",9,1332,969,180,1513,1149,0,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Asian",2,9222,8966,229,9600,9195,59492,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","35-44",6,117602,109656,10781,128497,120437,138390,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Black or African American",3,2689,2587,181,2911,2768,7566,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","45-54",7,95216,89469,10755,106009,100224,115527,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Age Bracket, Administered by All Providers","All Providers","65+","Age Bracket","75+",10,52072,48989,2171,54261,51160,60907,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Hispanic or Latino/a, all races",4,3946,3821,74,4076,3895,12238,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Asian",2,54509,51969,2561,57081,54530,59492,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","65-74",9,74714,70877,3282,78028,74159,74120,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Multi-Racial",7,530,515,11,553,526,1848,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Black or African American",3,6381,6043,549,6924,6592,7566,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","0-4",1,0,0,0,0,0,39650,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","Hispanic or Latino/a, all races",4,11250,10401,447,11708,10848,12238,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","0-4",1,0,0,0,0,0,39650,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","12-17",3,36255,33401,15,36292,33416,33938,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by All Providers","All Providers","65+","Race/Ethnicity","White",6,46573,44362,1397,48001,45759,53097,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","55-64",8,20185,19705,1297,21864,21002,101483,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","American Indian or Alaska Native",1,35,34,0,36,34,212,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","12-17",3,5300,5159,3,5567,5162,33938,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","Unknown",9,143,118,35,180,153,0,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","65-74",9,14933,14402,452,15591,14854,74120,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","18-24",4,8719,8293,391,9341,8684,62127,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"Ages 65+ by Race/Ethnicity, Administered by DPH Only","DPH Only","65+","Race/Ethnicity","White",6,4173,4010,212,4486,4222,53097,135027,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","75+",10,6377,6196,312,6857,6508,60907,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","25-34",5,20264,19538,1055,21759,20593,204639,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","18-24",4,49238,44605,4168,53471,48773,62127,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","5-11",2,14398,74,0,14398,74,44006,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Black or African American",3,28784,26040,3678,32431,29717,43782,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","55-64",8,86484,81793,10757,97256,92549,101483,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","45-54",7,19135,18623,1211,20733,19834,115527,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by All Providers","All Providers","All","Age Bracket","75+",10,52072,48989,2171,54261,51160,60907,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","5-11",2,1294,9,0,1296,9,44006,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","American Indian or Alaska Native",1,210,189,23,235,212,1634,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Age Bracket, Administered by DPH Only","DPH Only","All","Age Bracket","35-44",6,19793,19172,1166,21360,20338,138390,874787,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Asian",2,233026,218615,16611,249771,235226,298108,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Asian",2,39993,39198,889,41724,40087,298108,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Other Race",8,31072,25948,2780,33892,28728,3626,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Black or African American",3,9731,9055,1285,11256,10340,43782,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","American Indian or Alaska Native",1,1459,1221,144,1605,1365,1634,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Hispanic or Latino/a, all races",4,108248,96418,8419,116713,104837,133314,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Hispanic or Latino/a, all races",4,35485,33685,1499,37681,35184,133314,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Multi-Racial",7,15497,14382,970,16478,15352,37140,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,2741,2456,198,2941,2654,2934,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Other Race",8,3935,3633,236,4255,3869,3626,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","Unknown",9,16719,13220,2347,19107,15567,0,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","White",6,22891,21854,1556,24926,23410,354423,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by All Providers","All Providers","All","Race/Ethnicity","White",6,233948,214315,20895,255178,235210,354423,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Multi-Racial",7,2255,2157,138,2484,2295,37140,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Native Hawaiian or Other Pacific Islander",5,605,567,42,678,609,2934,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
+"All Ages by Race/Ethnicity, Administered by DPH Only","DPH Only","All","Race/Ethnicity","Unknown",9,895,759,219,1129,978,0,874961,2021-11-18 06:00:05,2021-11-18 08:15:10
