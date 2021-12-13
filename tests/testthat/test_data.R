@@ -100,7 +100,7 @@ test_that(desc = "Missing values", {
   expect_equal(base::any(base::is.na(covid19sf_gender$new_confirmed_cases)), FALSE)
   expect_equal(base::any(base::is.na(covid19sf_gender$cumulative_confirmed_cases)), FALSE)
 
-  expect_equal(base::length(base::which(base::is.na(covid19sf_geo$count))), 2)
+  expect_equal(base::length(base::which(base::is.na(covid19sf_geo$count))), 9)
 
   expect_equal(base::any(base::is.na(covid19sf_homeless$new_confirmed_cases)), FALSE)
   expect_equal(base::any(base::is.na(covid19sf_homeless$cumulative_confirmed_cases)), FALSE)
