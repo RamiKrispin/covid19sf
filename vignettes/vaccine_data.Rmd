@@ -153,7 +153,7 @@ As can see in the plot above, about `r paste(round(100 *sum(df_summary[which(df_
 
 ```{r}
 df_summary2 <- df_age %>%
-  filter(demographic_subgroup != "Under 12") %>%
+  filter(!demographic_subgroup %in% c("0-4", "5-11")) %>%
   summarise(`First Dose` = sum(only_1st_dose),
             `Two Doses` = sum(total_2nd_doses),
             `Single Dose` = sum(total_single_doses),
