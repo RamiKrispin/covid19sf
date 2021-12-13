@@ -1,5 +1,5 @@
-pandoc: 2.11.1
-pkgdown: 1.6.1
+pandoc: 2.14.0.3
+pkgdown: 2.0.1
 pkgdown_sha: ~
 articles:
   data_refresh: data_refresh.html
@@ -8,5 +8,5 @@ articles:
   hospital: hospital.html
   intro: intro.html
   vaccine_data: vaccine_data.html
-last_built: 2021-08-22T03:17Z
+last_built: 2021-12-13T19:44Z
 

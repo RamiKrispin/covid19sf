@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,18 +33,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">covid19sf</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.1</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
@@ -79,8 +75,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/RamiKrispin/covid19sf/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/RamiKrispin/covid19sf/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -96,9 +92,9 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="covid19sf" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#covid19sf" class="anchor"></a>covid19sf</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="covid19sf">covid19sf<a class="anchor" aria-label="anchor" href="#covid19sf"></a>
+</h1></div>
 <!-- badges: start -->
 
 <p>The covid19sf package provides a daily summary of the covid19 cases in San Francisco. The package includes the following datasets:</p>
@@ -130,151 +126,142 @@
 <li>
 <code>covid19sf_vaccine_demo_ts</code> - Time series view of vaccine doses given to San Franciscans by demographics groups (age and race)</li>
 </ul>
-<p><strong>Data soucre:</strong> San Francisco, Department of Public Health - Population Health Division through the San Francisco <a href="https://datasf.org/opendata/">Opne Data protal website</a></p>
-<p><a href="https://ramikrispin.github.io/covid19sf/"><img src="reference/figures/sf_map.png" align="right"></a></p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="co"># install.packages("devtools")</span>
-<span class="kw">devtools</span>::<span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"RamiKrispin/covid19sf"</span>)
-</pre></div>
+<p><strong>Data soucre:</strong> San Francisco, Department of Public Health - Population Health Division through the San Francisco <a href="https://datasf.org/opendata/" class="external-link">Opne Data protal website</a></p>
+<p><a href="https://ramikrispin.github.io/covid19sf/" class="external-link"><img src="reference/figures/sf_map.png" align="right"></a></p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"RamiKrispin/covid19sf"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="usage" class="section level2">
-<h2 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h2>
+<div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
 <p>The <strong>ccovid19sf</strong> package provides different views for the covid19 cases in San Francisco. That includes case distribution by age, gender, race, etc. The following examples demonstrate some of the data use cases.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/RamiKrispin/covid19sf">covid19sf</a></span>)
-</pre></div>
-<div id="cases-distribution-by-age" class="section level3">
-<h3 class="hasAnchor">
-<a href="#cases-distribution-by-age" class="anchor"></a>Cases distribution by age</h3>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/RamiKrispin/covid19sf" class="external-link">covid19sf</a></span><span class="op">)</span></code></pre></div>
+<div class="section level3">
+<h3 id="cases-distribution-by-age">Cases distribution by age<a class="anchor" aria-label="anchor" href="#cases-distribution-by-age"></a>
+</h3>
 <p>The covid19sf_age provides a daily summary of the cumulative positive cases by age group:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="kw">covid19sf_age</span>)
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">covid19sf_age</span><span class="op">)</span>
 
-<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_age</span>)
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">covid19sf_age</span><span class="op">)</span>
 <span class="co">#&gt;   specimen_collection_date age_group new_confirmed_cases cumulative_confirmed_cases        last_updated</span>
 <span class="co">#&gt; 1               2020-03-13     25-29                   3                          7 2021-07-02 16:00:02</span>
 <span class="co">#&gt; 2               2020-03-14     25-29                   2                          9 2021-07-02 16:00:02</span>
 <span class="co">#&gt; 3               2020-03-15     25-29                   1                         10 2021-07-02 16:00:02</span>
 <span class="co">#&gt; 4               2020-03-16     25-29                   1                         11 2021-07-02 16:00:02</span>
 <span class="co">#&gt; 5               2020-03-17     25-29                   0                         11 2021-07-02 16:00:02</span>
-<span class="co">#&gt; 6               2020-03-18     25-29                   3                         14 2021-07-02 16:00:02</span>
-</pre></div>
+<span class="co">#&gt; 6               2020-03-18     25-29                   3                         14 2021-07-02 16:00:02</span></code></pre></div>
 <p>The following box-plot shows the distribution of the positive cases by age group:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://plotly-r.com">plotly</a></span>)
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://plotly-r.com" class="external-link">plotly</a></span><span class="op">)</span>
 
-<span class="kw">covid19sf_age</span><span class="op">$</span><span class="kw">age_group</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">factor</a></span>(<span class="kw">covid19sf_age</span><span class="op">$</span><span class="kw">age_group</span>, 
-                                  levels = <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"0-4"</span>,  <span class="st">"5-10"</span>, 
+<span class="va">covid19sf_age</span><span class="op">$</span><span class="va">age_group</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">covid19sf_age</span><span class="op">$</span><span class="va">age_group</span>, 
+                                  levels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"0-4"</span>,  <span class="st">"5-10"</span>, 
                                              <span class="st">"11-13"</span>, <span class="st">"14-17"</span>,
                                              <span class="st">"18-20"</span>, <span class="st">"21-24"</span>,
                                              <span class="st">"25-29"</span>,
                                              <span class="st">"30-39"</span>, <span class="st">"40-49"</span>,
                                              <span class="st">"50-59"</span>, <span class="st">"60-69"</span>,
-                                             <span class="st">"70-79"</span>, <span class="st">"80+"</span>))
+                                             <span class="st">"70-79"</span>, <span class="st">"80+"</span><span class="op">)</span><span class="op">)</span>
 
-<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/plot_ly.html">plot_ly</a></span>(<span class="kw">covid19sf_age</span>, 
-        color = <span class="op">~</span> <span class="kw">age_group</span>, 
-        y = <span class="op">~</span> <span class="kw">new_confirmed_cases</span>, 
-        boxpoints = <span class="st">"all"</span>, 
-        jitter = <span class="fl">0.3</span>,
-        pointpos = <span class="op">-</span><span class="fl">1.8</span>,
-        type = <span class="st">"box"</span> ) <span class="op">%&gt;%</span>
-<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Distribution of Daily New Covid Cases in San Francisco by Age Group"</span>,
-       yaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Number of Cases"</span>),
-       xaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Source: San Francisco Department of Public Health"</span>),
-       legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.9</span>, y = <span class="fl">0.9</span>))
-</pre></div>
+<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html" class="external-link">plot_ly</a></span><span class="op">(</span><span class="va">covid19sf_age</span>, 
+        color <span class="op">=</span> <span class="op">~</span> <span class="va">age_group</span>, 
+        y <span class="op">=</span> <span class="op">~</span> <span class="va">new_confirmed_cases</span>, 
+        boxpoints <span class="op">=</span> <span class="st">"all"</span>, 
+        jitter <span class="op">=</span> <span class="fl">0.3</span>,
+        pointpos <span class="op">=</span> <span class="op">-</span><span class="fl">1.8</span>,
+        type <span class="op">=</span> <span class="st">"box"</span> <span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html" class="external-link">layout</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Distribution of Daily New Covid Cases in San Francisco by Age Group"</span>,
+       yaxis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Number of Cases"</span><span class="op">)</span>,
+       xaxis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Source: San Francisco Department of Public Health"</span><span class="op">)</span>,
+       legend <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0.9</span>, y <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/age_dist1.svg" width="100%"></p>
 <p>Here is the overall distribution of cases by age group as of 2021-06-28:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://dplyr.tidyverse.org">dplyr</a></span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://plotly-r.com">plotly</a></span>)
-<span class="kw">covid19sf_age</span> <span class="op">%&gt;%</span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="kw">specimen_collection_date</span> <span class="op">==</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html">max</a></span>(<span class="kw">specimen_collection_date</span>)) <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://docs.ropensci.org/plotly/reference/plot_ly.html">plot_ly</a></span>(values = <span class="op">~</span> <span class="kw">cumulative_confirmed_cases</span>, 
-          labels = <span class="op">~</span> <span class="kw">age_group</span>, 
-          type = <span class="st">"pie"</span>,
-          textposition = <span class="st">'inside'</span>,
-          textinfo = <span class="st">'label+percent'</span>,
-          insidetextfont = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(color = <span class="st">'#FFFFFF'</span>),
-          hoverinfo = <span class="st">'text'</span>,
-          text = <span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span>(<span class="st">"Age Group:"</span>, <span class="kw">age_group</span>, <span class="st">"&lt;br&gt;"</span>,
-                        <span class="st">"Total:"</span>, <span class="kw">cumulative_confirmed_cases</span>)) <span class="op">%&gt;%</span>
-   <span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Total Cases Distribution by Age Group"</span>)
-</pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://plotly-r.com" class="external-link">plotly</a></span><span class="op">)</span>
+<span class="va">covid19sf_age</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">specimen_collection_date</span> <span class="op">==</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">specimen_collection_date</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html" class="external-link">plot_ly</a></span><span class="op">(</span>values <span class="op">=</span> <span class="op">~</span> <span class="va">cumulative_confirmed_cases</span>, 
+          labels <span class="op">=</span> <span class="op">~</span> <span class="va">age_group</span>, 
+          type <span class="op">=</span> <span class="st">"pie"</span>,
+          textposition <span class="op">=</span> <span class="st">'inside'</span>,
+          textinfo <span class="op">=</span> <span class="st">'label+percent'</span>,
+          insidetextfont <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">'#FFFFFF'</span><span class="op">)</span>,
+          hoverinfo <span class="op">=</span> <span class="st">'text'</span>,
+          text <span class="op">=</span> <span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Age Group:"</span>, <span class="va">age_group</span>, <span class="st">"&lt;br&gt;"</span>,
+                        <span class="st">"Total:"</span>, <span class="va">cumulative_confirmed_cases</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+   <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html" class="external-link">layout</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Total Cases Distribution by Age Group"</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/age_dist2.svg" width="70%"></p>
 </div>
-<div id="tests-results-distribution" class="section level3">
-<h3 class="hasAnchor">
-<a href="#tests-results-distribution" class="anchor"></a>Tests results distribution</h3>
+<div class="section level3">
+<h3 id="tests-results-distribution">Tests results distribution<a class="anchor" aria-label="anchor" href="#tests-results-distribution"></a>
+</h3>
 <p>The covid19sf_tests provides a daily summary of the daily number of tests and their results (positive, negative, and indeterminate):</p>
-<div class="sourceCode" id="cb6"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="kw">covid19sf_tests</span>)
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">covid19sf_tests</span><span class="op">)</span>
 
-<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_tests</span>)
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">covid19sf_tests</span><span class="op">)</span>
 <span class="co">#&gt;   specimen_collection_date tests pos         pct neg indeterminate          data_loaded_at        last_updated</span>
 <span class="co">#&gt; 1               2020-03-12   192   9 0.046875000 183             0 2021-07-03T05:00:34.933 2021-07-02 16:31:29</span>
 <span class="co">#&gt; 2               2020-03-13   252  18 0.071428571 234             0 2021-07-03T05:00:36.662 2021-07-02 16:31:29</span>
 <span class="co">#&gt; 3               2020-03-14   153  10 0.065359477 143             0 2021-07-03T05:00:36.665 2021-07-02 16:31:29</span>
 <span class="co">#&gt; 4               2020-03-15   151  11 0.073333333 139             1 2021-07-03T05:00:36.668 2021-07-02 16:31:29</span>
 <span class="co">#&gt; 5               2020-03-29   161  16 0.101265823 142             3 2021-07-03T05:00:36.671 2021-07-02 16:31:29</span>
-<span class="co">#&gt; 6               2020-03-30   401  47 0.117500000 353             1 2021-07-03T05:00:36.674 2021-07-02 16:31:29</span>
-</pre></div>
+<span class="co">#&gt; 6               2020-03-30   401  47 0.117500000 353             1 2021-07-03T05:00:36.674 2021-07-02 16:31:29</span></code></pre></div>
 <p>The plot below shows the daily distribution of the results of the tests:</p>
-<div class="sourceCode" id="cb7"><pre class="downlit">
-<span class="kw">covid19sf_tests</span> <span class="op">%&gt;%</span>
-<span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/plot_ly.html">plot_ly</a></span>(x = <span class="op">~</span> <span class="kw">specimen_collection_date</span>,
-                y = <span class="op">~</span> <span class="kw">pos</span>,
-                name = <span class="st">"Positive"</span>,
-                type = <span class="st">'scatter'</span>, 
-                mode = <span class="st">'none'</span>, 
-                stackgroup = <span class="st">'one'</span>,
-                fillcolor = <span class="st">"red"</span>) <span class="op">%&gt;%</span>
-  <span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/add_trace.html">add_trace</a></span>(y = <span class="op">~</span> <span class="kw">neg</span>, name = <span class="st">"Negative"</span>, fillcolor = <span class="st">"green"</span>) <span class="op">%&gt;%</span>
-  <span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/add_trace.html">add_trace</a></span>(y = <span class="op">~</span> <span class="kw">indeterminate</span>, name = <span class="st">"Indeterminate"</span>, fillcolor = <span class="st">"gray"</span>) <span class="op">%&gt;%</span>
-  <span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Tests Results Distribution"</span>,
-                 yaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Tests Count"</span>),
-                 xaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Source: San Francisco Department of Public Health"</span>),
-                 legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.1</span>, y = <span class="fl">0.9</span>))
-</pre></div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">covid19sf_tests</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+<span class="fu">plotly</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html" class="external-link">plot_ly</a></span><span class="op">(</span>x <span class="op">=</span> <span class="op">~</span> <span class="va">specimen_collection_date</span>,
+                y <span class="op">=</span> <span class="op">~</span> <span class="va">pos</span>,
+                name <span class="op">=</span> <span class="st">"Positive"</span>,
+                type <span class="op">=</span> <span class="st">'scatter'</span>, 
+                mode <span class="op">=</span> <span class="st">'none'</span>, 
+                stackgroup <span class="op">=</span> <span class="st">'one'</span>,
+                fillcolor <span class="op">=</span> <span class="st">"red"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu">plotly</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/plotly/man/add_trace.html" class="external-link">add_trace</a></span><span class="op">(</span>y <span class="op">=</span> <span class="op">~</span> <span class="va">neg</span>, name <span class="op">=</span> <span class="st">"Negative"</span>, fillcolor <span class="op">=</span> <span class="st">"green"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu">plotly</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/plotly/man/add_trace.html" class="external-link">add_trace</a></span><span class="op">(</span>y <span class="op">=</span> <span class="op">~</span> <span class="va">indeterminate</span>, name <span class="op">=</span> <span class="st">"Indeterminate"</span>, fillcolor <span class="op">=</span> <span class="st">"gray"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu">plotly</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html" class="external-link">layout</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Tests Results Distribution"</span>,
+                 yaxis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Tests Count"</span><span class="op">)</span>,
+                 xaxis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Source: San Francisco Department of Public Health"</span><span class="op">)</span>,
+                 legend <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0.1</span>, y <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/test_dist.svg" width="100%"></p>
 </div>
-<div id="cases-distribution-by-race-ethnicity" class="section level3">
-<h3 class="hasAnchor">
-<a href="#cases-distribution-by-race-ethnicity" class="anchor"></a>Cases distribution by race ethnicity</h3>
+<div class="section level3">
+<h3 id="cases-distribution-by-race-ethnicity">Cases distribution by race ethnicity<a class="anchor" aria-label="anchor" href="#cases-distribution-by-race-ethnicity"></a>
+</h3>
 <p>The covid19sf_demp dataset provides a daily summary of the covid19 positive cases by race and ethnicity:</p>
-<div class="sourceCode" id="cb8"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="kw">covid19sf_demo</span>)
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">covid19sf_demo</span><span class="op">)</span>
 
-<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="kw">covid19sf_demo</span>)
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">covid19sf_demo</span><span class="op">)</span>
 <span class="co">#&gt;   specimen_collection_date race_ethnicity new_confirmed_cases cumulative_confirmed_cases        last_updated</span>
 <span class="co">#&gt; 1               2020-03-13          Asian                   3                          7 2021-07-02 16:00:02</span>
 <span class="co">#&gt; 2               2020-03-14          Asian                   2                          9 2021-07-02 16:00:02</span>
 <span class="co">#&gt; 3               2020-03-15          Asian                   2                         11 2021-07-02 16:00:02</span>
 <span class="co">#&gt; 4               2020-03-16          Asian                   8                         19 2021-07-02 16:00:02</span>
 <span class="co">#&gt; 5               2020-03-17          Asian                   4                         23 2021-07-02 16:00:02</span>
-<span class="co">#&gt; 6               2020-03-18          Asian                   0                         23 2021-07-02 16:00:02</span>
-</pre></div>
+<span class="co">#&gt; 6               2020-03-18          Asian                   0                         23 2021-07-02 16:00:02</span></code></pre></div>
 <p>Below is a plot of the cumulative positive cases by race and ethnicity:</p>
-<div class="sourceCode" id="cb9"><pre class="downlit">
-<span class="kw">covid19sf_demo</span> <span class="op">%&gt;%</span>
-  <span class="kw">dplyr</span>::<span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span>(<span class="kw">specimen_collection_date</span>) <span class="op">%&gt;%</span>
-<span class="kw">plotly</span>::<span class="fu"><a href="https://docs.ropensci.org/plotly/reference/plot_ly.html">plot_ly</a></span>(x = <span class="op">~</span> <span class="kw">specimen_collection_date</span>, 
-                y = <span class="op">~</span> <span class="kw">cumulative_confirmed_cases</span>, 
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">covid19sf_demo</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="va">specimen_collection_date</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+<span class="fu">plotly</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html" class="external-link">plot_ly</a></span><span class="op">(</span>x <span class="op">=</span> <span class="op">~</span> <span class="va">specimen_collection_date</span>, 
+                y <span class="op">=</span> <span class="op">~</span> <span class="va">cumulative_confirmed_cases</span>, 
                 <span class="co"># name = 'Cases', </span>
-                type = <span class="st">'scatter'</span>, 
-                mode = <span class="st">'none'</span>, 
-                color = <span class="op">~</span><span class="kw">race_ethnicity</span>,
-                stackgroup = <span class="st">'one'</span>) <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://docs.ropensci.org/plotly/reference/layout.html">layout</a></span>(title = <span class="st">"Total Cases Dist. by Race and Ethnicity"</span>,
-          legend = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(x = <span class="fl">0.1</span>, y = <span class="fl">0.9</span>),
-         yaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Number of Cases"</span>, tickformat = <span class="st">".0f"</span>),
-         xaxis = <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(title = <span class="st">"Source: San Francisco Department of Public Health"</span>))
-</pre></div>
+                type <span class="op">=</span> <span class="st">'scatter'</span>, 
+                mode <span class="op">=</span> <span class="st">'none'</span>, 
+                color <span class="op">=</span> <span class="op">~</span><span class="va">race_ethnicity</span>,
+                stackgroup <span class="op">=</span> <span class="st">'one'</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html" class="external-link">layout</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Total Cases Dist. by Race and Ethnicity"</span>,
+          legend <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0.1</span>, y <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span>,
+         yaxis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Number of Cases"</span>, tickformat <span class="op">=</span> <span class="st">".0f"</span><span class="op">)</span>,
+         xaxis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Source: San Francisco Department of Public Health"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/demo_dist.svg" width="100%"></p>
 </div>
 </div>
@@ -283,50 +270,60 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=covid19sf">https://​cloud.r-project.org/​package=covid19sf</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/RamiKrispin/covid19sf/">https://​github.com/​RamiKrispin/​covid19sf/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/RamiKrispin/covid19sf/issues">https://​github.com/​RamiKrispin/​covid19sf/​issues</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=covid19sf" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/RamiKrispin/covid19sf/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/RamiKrispin/covid19sf/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing covid19sf</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Rami Krispin <br><small class="roles"> Author, maintainer </small>  </li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/RamiKrispin/covid19sf/actions"><img src="https://github.com/RamiKrispin/covid19sf/workflows/build/badge.svg" alt="build"></a></li>
-<li><a href="https://cran.r-project.org/package=covid19sf"><img src="https://www.r-pkg.org/badges/version/covid19sf" alt="CRAN_Status_Badge"></a></li>
-<li><a href="https://lifecycle.r-lib.org/articles/stages.html"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="lifecycle"></a></li>
-<li><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></li>
-<li><a href="https://github.com/RamiKrispin/covid19sf/commit/master"><img src="https://img.shields.io/github/last-commit/RamiKrispin/covid19sf" alt="GitHub commit"></a></li>
+<li><a href="https://github.com/RamiKrispin/covid19sf/actions" class="external-link"><img src="https://github.com/RamiKrispin/covid19sf/workflows/build/badge.svg" alt="build"></a></li>
+<li><a href="https://cran.r-project.org/package=covid19sf" class="external-link"><img src="https://www.r-pkg.org/badges/version/covid19sf" alt="CRAN_Status_Badge"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="lifecycle"></a></li>
+<li><a href="https://opensource.org/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></li>
+<li><a href="https://github.com/RamiKrispin/covid19sf/commit/master" class="external-link"><img src="https://img.shields.io/github/last-commit/RamiKrispin/covid19sf" alt="GitHub commit"></a></li>
 </ul>
 </div>
-</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Rami Krispin.</p>
+  <p></p>
+<p>Developed by Rami Krispin.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -334,6 +331,8 @@
 
   
 
+
+  
 
   </body>
 </html>

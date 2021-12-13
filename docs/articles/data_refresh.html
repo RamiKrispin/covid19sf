@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,18 +33,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">covid19sf</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.1</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
@@ -79,8 +75,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/RamiKrispin/covid19sf/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/RamiKrispin/covid19sf/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -94,29 +90,26 @@
 
       
 
-      </header><script src="data_refresh_files/header-attrs-2.5/header-attrs.js"></script><link href="data_refresh_files/anchor-sections-1.0/anchor-sections.css" rel="stylesheet">
-<script src="data_refresh_files/anchor-sections-1.0/anchor-sections.js"></script><div class="row">
+      </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Covid19 SF Data Refresh</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/RamiKrispin/covid19sf/blob/master/vignettes/data_refresh.Rmd"><code>vignettes/data_refresh.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/RamiKrispin/covid19sf/blob/HEAD/vignettes/data_refresh.Rmd" class="external-link"><code>vignettes/data_refresh.Rmd</code></a></small>
       <div class="hidden name"><code>data_refresh.Rmd</code></div>
 
     </div>
 
     
     
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/RamiKrispin/covid19sf">covid19sf</a></span>)
-</pre></div>
-<p>While the CRAN version of the package is updated once every month or two, the package <a href="https://github.com/RamiKrispin/covid19sf">repository</a> gets updated daily. The <code>covid19sf_refresh</code> function enables you to keep the package’s data up-to-date with the most recent data available on the package repository. The function is compared between the datasets on the installed version and the ones on the repository. If new data available on any of the package dataset, the function will prompt the following questions and enable the user to choose whether to reinstall the package or not:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://github.com/RamiKrispin/covid19sf">covid19sf</a></span>)
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/RamiKrispin/covid19sf" class="external-link">covid19sf</a></span><span class="op">)</span></code></pre></div>
+<p>While the CRAN version of the package is updated once every month or two, the package <a href="https://github.com/RamiKrispin/covid19sf" class="external-link">repository</a> gets updated daily. The <code>covid19sf_refresh</code> function enables you to keep the package’s data up-to-date with the most recent data available on the package repository. The function is compared between the datasets on the installed version and the ones on the repository. If new data available on any of the package dataset, the function will prompt the following questions and enable the user to choose whether to reinstall the package or not:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/RamiKrispin/covid19sf" class="external-link">covid19sf</a></span><span class="op">)</span>
 
-<span class="fu"><a href="../reference/covid19sf_refresh.html">covid19sf_refresh</a></span>()
-</pre></div>
+<span class="fu"><a href="../reference/covid19sf_refresh.html">covid19sf_refresh</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p>If no new data is available on the package repository, the function will return the following message:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>No updates are available</span></code></pre></div>
 <p>Once new data is available, the function will prompt the following question that enables the user to select whether to install the updates from the package repository:</p>
@@ -134,11 +127,13 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Rami Krispin.</p>
+  <p></p>
+<p>Developed by Rami Krispin.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -146,6 +141,8 @@
 
   
 
+
+  
 
   </body>
 </html>
