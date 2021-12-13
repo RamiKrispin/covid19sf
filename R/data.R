@@ -226,6 +226,50 @@
 "covid19sf_geo"
 
 
+#' San Francisco COVID-19 Vaccines Given to San Franciscans by Geography
+#'
+#' @description  This dataset represents the COVID-19 vaccinations given to SF residents summarized
+#' by the geographic region of their residential address. All vaccines given to SF residents are
+#' included, no matter where the vaccination took place (the vaccine may have been administered
+#' in San Francisco or outside of San Francisco). Data provides counts for people who have received
+#' at least one dose and people who have completed a vaccine series. A vaccine series is complete
+#' after an individual has received both doses of a two-dose vaccine or one dose of a one-dose vaccine.
+#' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Vaccines-Given-to-San-Franciscans-by-Geog/4e7h-hjt4}{here}
+#'
+#' @format An object class sf and data.frame with 8 variables.
+#' \describe{
+#'   \item{id}{area id}
+#'   \item{area_type}{Area type, c("Analysis Neighborhood", "Summary")}
+#'   \item{count_vaccinated_by_dph}{Count of residents in the given geographic region who have received at least one dose administered by DPH}
+#'   \item{count_vaccinated}{Count of residents in the given geographic region who have received at least one dose regardless of who administered the vaccine}
+#'   \item{count_series_completed}{Count of residents in the given geographic region who have completed a vaccine series}
+#'   \item{acs_population}{2019 5-year American Community Survey population estimate for the given geographic region (all ages)}
+#'   \item{percent_pop_series_completed}{The total count of population that have complated a vaccine series by population estimate (acs_population)}
+#'   \item{last_updated}{Last update of the data in POSIXc format)}
+#'   \item{geometry}{The area polygon data)}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 geo map vaccine
+#' @details The dataset contains a summary of covid19 vaccination in San Francisco by neighborhood
+#' @examples
+#' data(covid19sf_vaccine_geo)
+#'
+#' head(covid19sf_vaccine_geo)
+#'
+#' library(sf)
+#' library(dplyr)
+#'
+#' df <- covid19sf_vaccine_geo %>% filter(area_type == "Analysis Neighborhood")
+#'
+#' # Ploting SF vaccine counts using base plot function
+#' plot(df[, c("count_series_completed", "geometry")],
+#'      main = "San Francisco - Fully Vaccineted Population")
+"covid19sf_vaccine_geo"
+
+
+
+
+
 #' San Francisco COVID-19 Hospital Capacity
 #'
 #' @description  Data on daily hospital bed use and available capacity at San Francisco
