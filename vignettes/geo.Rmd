@@ -25,10 +25,12 @@ The `covid19sf_geo` provides information about San Francisco Covid19 cases distr
 ```{r}
 require(ggplot2)
 require(mapview)
+library(leafsync)
 require(sf)
 require(RColorBrewer)
 ```
 
+**Note:** the **leafsync** package is not one of the package dependency and you may need to install it to run this vignette.
 
 ### The covid19sf_geo dataset
 
@@ -175,9 +177,10 @@ covid19sf_test_loc %>% mapview(zcol = "location_type")
 
 ### Combine cases dist. and testing points
 
-The `sync` function from the **mapview** package enables to combine multiple maps plots. In the following example, we will put side by side the cases split by ZIP code and the testing point in the city map:
+The `sync` function from the **leafsync** package enables to combine multiple maps plots. In the following example, we will put side by side the cases split by ZIP code and the testing point in the city map:
 
 ```{r}
+
 m1 <- covid19sf_geo %>% 
   filter(area_type == "ZCTA") %>% 
   mapview(zcol = "count", 
