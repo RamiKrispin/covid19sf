@@ -223,7 +223,9 @@ data_refresh <- function(){
   covid19sf_vaccine_geo <- sf::st_read("https://data.sfgov.org/resource/4e7h-hjt4.geojson",
                                        stringsAsFactors = FALSE,
                                        quiet = TRUE) %>%
-    dplyr::select(id, count_vaccinated_by_dph, count_vaccinated, count_series_completed, acs_population,
+    dplyr::select(id, area_type,
+                  count_vaccinated_by_dph, count_vaccinated,
+                  count_series_completed, acs_population,
                   percent_pop_series_completed, geometry,
                   last_updated = data_loaded_at) %>%
     dplyr::mutate(count_vaccinated_by_dph = as.numeric(count_vaccinated_by_dph),
@@ -242,6 +244,7 @@ data_refresh <- function(){
     cat(paste0("\033[0;", 42, "m","Updates are available, saving the changes","\033[0m","\n"))
 
     usethis::use_data(covid19sf_vaccine_geo, overwrite = TRUE)
+    unlink("csv/covid19sf_vaccine_geo.geojson")
     sf::write_sf(covid19sf_vaccine_geo, "csv/covid19sf_vaccine_geo.geojson")
   } else{
     cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
