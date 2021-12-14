@@ -111,14 +111,12 @@ df <- covid19sf_vaccine_geo %>% filter(area_type == "Analysis Neighborhood") %>%
 Now we can plot the new object:
 
 ```{r}
-
-
-tm_shape(df, bbox = bbox_new) + 
+tm_shape(df) + 
   tm_polygons("perc_complated", 
               title = "% Group")
 ```
 
-Let's now start to customize the plot and modify to color palette:
+By default, the `tm_polygons` function bucket the numeric variable, in this case percentage of vaccinated population, into buckets. You can control the number of buckets using the `n` argument. Let's now start to customize the plot and modify to color palette:
 
 ```{r}
 tm_shape(df) + 
@@ -127,17 +125,17 @@ tm_shape(df) +
               palette = "RdYlBu")
 ```
 
-We can customize the plot background with the `tm_style` function:
+We can customize the plot background with the `tm_style` function by using the `style` argument:
 
 ```{r}
 tm_shape(df) + 
   tm_polygons("perc_complated", 
               title = "% Group",
               palette = "RdYlBu") +
-  tm_style("cobalt")
+  tm_style(style = "cobalt")
 ```
 
-Last but not least, let's add title and labels for the geographic locations:
+Last but not least, let's add title and labels for the geographic locations with the `tm_text` and `tm_layout` functions:
 
 
 ```{r}
@@ -158,7 +156,7 @@ tm_shape(df) +
                  "to San Franciscans by Geography",
                  sep = " "), 
     title.position = c("left", "top") ,
-    inner.margins = c(0.02, .02, .01, .04)) 
+    inner.margins = c(0.01, .01, .12, .25)) 
 ```
 
 
