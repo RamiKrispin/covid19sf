@@ -27,10 +27,9 @@ require(ggplot2)
 require(mapview)
 library(leafsync)
 require(sf)
+require(tmap)
 require(RColorBrewer)
 ```
-
-**Note:** the **leafsync** package is not one of the package dependency and you may need to install it to run this vignette.
 
 ### The covid19sf_geo dataset
 
@@ -84,6 +83,84 @@ covid19sf_geo %>%
           at = c(0,  200, 400, 800, 1200, 1600, 2000),
           col.regions = (c('#fef0d9','#b30000')))
 ```
+
+
+#### Plotting vaccine data with tmap
+
+The [tmap](https://r-tmap.github.io/tmap/index.html) package provides functions and tools for creating thematic maps. The package supports `sf` objects and follow the **ggplot2** framework. In the example below we will plot the COVID-19 vaccine data by geographic using the `covid19sf_vaccine_geo` dataset:
+
+```{r}
+data(covid19sf_vaccine_geo)
+
+head(covid19sf_vaccine_geo)
+```
+
+**Additional setting:** Following changes in the default options of the **sf** package from version `1.0-1` by default option is to use s2 spherical geometry as default when coordinates are ellipsoidal. That cause some issues with the **tmap** package, therefore we will set this functionality as `FALSE`:
+
+```{r}
+sf_use_s2(FALSE)
+```
+
+We will use the `percent_pop_series_completed` variable to plot the percentage of population that finished their vaccination process. Let's first filter the data and transform the `percent_pop_series_completed` from decimal to percentage:
+
+```{r}
+df <- covid19sf_vaccine_geo %>% filter(area_type == "Analysis Neighborhood") %>%
+  dplyr::mutate(perc_complated = percent_pop_series_completed * 100)
+```
+
+Now we can plot the new object:
+
+```{r}
+
+
+tm_shape(df, bbox = bbox_new) + 
+  tm_polygons("perc_complated", 
+              title = "% Group")
+```
+
+Let's now start to customize the plot and modify to color palette:
+
+```{r}
+tm_shape(df) + 
+  tm_polygons("perc_complated", 
+              title = "% Group",
+              palette = "RdYlBu")
+```
+
+We can customize the plot background with the `tm_style` function:
+
+```{r}
+tm_shape(df) + 
+  tm_polygons("perc_complated", 
+              title = "% Group",
+              palette = "RdYlBu") +
+  tm_style("cobalt")
+```
+
+Last but not least, let's add title and labels for the geographic locations:
+
+
+```{r}
+tm_shape(df) + 
+  tm_polygons("perc_complated", 
+              title = "% Group",
+              palette = "RdYlBu") +
+  tm_style("cobalt") + 
+  tm_text("id", size = 0.5) +
+  tm_layout(
+    legend.position=c("right", "bottom"),
+    legend.outside = FALSE,
+    legend.width = 1,
+    legend.title.size = 1.2,
+    legend.text.size = 1,
+    # legend.outside.size = 0.9,
+    title= paste("COVID-19 Vaccines Given", 
+                 "to San Franciscans by Geography",
+                 sep = " "), 
+    title.position = c("left", "top") ,
+    inner.margins = c(0.02, .02, .01, .04)) 
+```
+
 
 #### Plotting cases with base plot
 
