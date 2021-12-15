@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![build](https://github.com/RamiKrispin/covid19sf/workflows/build/badge.svg)](https://github.com/RamiKrispin/covid19sf/actions)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/covid19sf)](https://cran.r-project.org/package=covid19sf)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/covid19sf)](https://cran.r-project.org/package=covid19sf)
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -34,6 +34,8 @@ San Francisco. The package includes the following datasets:
     Franciscans by demographics groups (age and race)
 -   `covid19sf_vaccine_demo_ts` - Time series view of vaccine doses
     given to San Franciscans by demographics groups (age and race)
+-   `covid19sf_vaccine_geo` - COVID-19 vaccines given to San Franciscans
+    by geography
 
 **Data soucre:** San Francisco, Department of Public Health - Population
 Health Division through the San Francisco [Opne Data protal
@@ -61,20 +63,27 @@ library(covid19sf)
 
 ### Cases distribution by age
 
-The covid19sf\_age provides a daily summary of the cumulative positive
+The covid19sf_age provides a daily summary of the cumulative positive
 cases by age group:
 
 ``` r
 data(covid19sf_age)
 
 head(covid19sf_age)
-#>   specimen_collection_date age_group new_confirmed_cases cumulative_confirmed_cases        last_updated
-#> 1               2020-03-13     25-29                   3                          7 2021-07-02 16:00:02
-#> 2               2020-03-14     25-29                   2                          9 2021-07-02 16:00:02
-#> 3               2020-03-15     25-29                   1                         10 2021-07-02 16:00:02
-#> 4               2020-03-16     25-29                   1                         11 2021-07-02 16:00:02
-#> 5               2020-03-17     25-29                   0                         11 2021-07-02 16:00:02
-#> 6               2020-03-18     25-29                   3                         14 2021-07-02 16:00:02
+#>   specimen_collection_date age_group new_confirmed_cases
+#> 1               2020-03-13     25-29                   3
+#> 2               2020-03-14     25-29                   2
+#> 3               2020-03-15     25-29                   1
+#> 4               2020-03-16     25-29                   1
+#> 5               2020-03-17     25-29                   0
+#> 6               2020-03-18     25-29                   3
+#>   cumulative_confirmed_cases        last_updated
+#> 1                          7 2021-11-01 16:00:03
+#> 2                          9 2021-11-01 16:00:03
+#> 3                         10 2021-11-01 16:00:03
+#> 4                         11 2021-11-01 16:00:03
+#> 5                         11 2021-11-01 16:00:03
+#> 6                         14 2021-11-01 16:00:03
 ```
 
 The following box-plot shows the distribution of the positive cases by
@@ -107,7 +116,7 @@ layout(title = "Distribution of Daily New Covid Cases in San Francisco by Age Gr
 
 <img src="man/figures/age_dist1.svg" width="100%" />
 
-Here is the overall distribution of cases by age group as of 2021-06-28:
+Here is the overall distribution of cases by age group as of 2021-10-28:
 
 ``` r
 library(dplyr)
@@ -128,22 +137,82 @@ covid19sf_age %>%
 
 <img src="man/figures/age_dist2.svg" width="70%" />
 
+### Geospatial visualiztion
+
+The package provides several geo-spatial dataset:
+
+-   `covid19sf_vaccine_geo` - COVID-19 vaccines given to San Franciscans
+    by geography
+-   `covid19sf_geo` - Confirmed cases and deaths summarized by geography
+-   `covid19sf_test_loc` - Testing locations
+
+Those three datasets are `sf` objects, ready to use. For example,
+plotting the COVID19 vaccination data by geography:
+
+``` r
+library(sf)
+#> Linking to GEOS 3.8.1, GDAL 3.2.1, PROJ 7.2.1
+
+data(covid19sf_vaccine_geo)
+
+str(covid19sf_vaccine_geo)
+#> Classes 'sf' and 'data.frame':   40 obs. of  9 variables:
+#>  $ id                          : chr  "Castro/Upper Market" "Nob Hill" "Oceanview/Merced/Ingleside" "Outer Richmond" ...
+#>  $ area_type                   : chr  "Analysis Neighborhood" "Analysis Neighborhood" "Analysis Neighborhood" "Analysis Neighborhood" ...
+#>  $ count_vaccinated_by_dph     : num  1399 1795 4949 2692 17446 ...
+#>  $ count_vaccinated            : num  18867 20246 23474 37192 37526 ...
+#>  $ count_series_completed      : num  17459 18373 22067 34939 34765 ...
+#>  $ acs_population              : num  22502 26445 27530 45921 37917 ...
+#>  $ percent_pop_series_completed: num  0.776 0.695 0.802 0.761 0.917 ...
+#>  $ last_updated                : POSIXct, format: "2021-12-13 12:45:07" "2021-12-13 12:45:09" ...
+#>  $ geometry                    :sfc_MULTIPOLYGON of length 40; first list element: List of 1
+#>   ..$ :List of 1
+#>   .. ..$ : num [1:183, 1:2] -122 -122 -122 -122 -122 ...
+#>   ..- attr(*, "class")= chr [1:3] "XY" "MULTIPOLYGON" "sfg"
+#>  - attr(*, "sf_column")= chr "geometry"
+#>  - attr(*, "agr")= Factor w/ 3 levels "constant","aggregate",..: NA NA NA NA NA NA NA NA
+#>   ..- attr(*, "names")= chr [1:8] "id" "area_type" "count_vaccinated_by_dph" "count_vaccinated" ...
+
+df <- covid19sf_vaccine_geo %>% filter(area_type == "Analysis Neighborhood") %>%
+  dplyr::mutate(perc_complated = percent_pop_series_completed * 100)
+```
+
+We will plot the object Using the **sf** package:
+
+``` r
+plot(df[, c("perc_complated", "geometry")],
+     main = "San Francisco - Percentage of Fully Vaccinated Population by Geo",
+     key.pos = 1, axes = TRUE, key.width = lcm(1.2), key.length = 1.0)
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
+More examples available on this
+[vignette](https://ramikrispin.github.io/covid19sf/articles/geo.html)
+
 ### Tests results distribution
 
-The covid19sf\_tests provides a daily summary of the daily number of
+The covid19sf_tests provides a daily summary of the daily number of
 tests and their results (positive, negative, and indeterminate):
 
 ``` r
 data(covid19sf_tests)
 
 head(covid19sf_tests)
-#>   specimen_collection_date tests pos         pct neg indeterminate          data_loaded_at        last_updated
-#> 1               2020-03-12   192   9 0.046875000 183             0 2021-07-03T05:00:34.933 2021-07-02 16:31:29
-#> 2               2020-03-13   252  18 0.071428571 234             0 2021-07-03T05:00:36.662 2021-07-02 16:31:29
-#> 3               2020-03-14   153  10 0.065359477 143             0 2021-07-03T05:00:36.665 2021-07-02 16:31:29
-#> 4               2020-03-15   151  11 0.073333333 139             1 2021-07-03T05:00:36.668 2021-07-02 16:31:29
-#> 5               2020-03-29   161  16 0.101265823 142             3 2021-07-03T05:00:36.671 2021-07-02 16:31:29
-#> 6               2020-03-30   401  47 0.117500000 353             1 2021-07-03T05:00:36.674 2021-07-02 16:31:29
+#>   specimen_collection_date tests pos        pct neg indeterminate
+#> 1               2020-03-01     2   0 0.00000000   2             0
+#> 2               2020-03-03     8   2 0.25000000   6             0
+#> 3               2020-03-04    12   0 0.00000000  12             0
+#> 4               2020-03-06    21   1 0.04761905  20             0
+#> 5               2020-03-07    23   7 0.30434783  16             0
+#> 6               2020-03-08    12   3 0.25000000   9             0
+#>            data_loaded_at        last_updated
+#> 1 2021-12-12T09:00:08.013 2021-12-11 16:35:02
+#> 2 2021-12-12T09:00:10.082 2021-12-11 16:35:02
+#> 3 2021-12-12T09:00:10.087 2021-12-11 16:35:02
+#> 4 2021-12-12T09:00:10.090 2021-12-11 16:35:02
+#> 5 2021-12-12T09:00:10.093 2021-12-11 16:35:02
+#> 6 2021-12-12T09:00:10.095 2021-12-11 16:35:02
 ```
 
 The plot below shows the daily distribution of the results of the tests:
@@ -169,20 +238,27 @@ plotly::plot_ly(x = ~ specimen_collection_date,
 
 ### Cases distribution by race ethnicity
 
-The covid19sf\_demp dataset provides a daily summary of the covid19
+The covid19sf_demp dataset provides a daily summary of the covid19
 positive cases by race and ethnicity:
 
 ``` r
 data(covid19sf_demo)
 
 head(covid19sf_demo)
-#>   specimen_collection_date race_ethnicity new_confirmed_cases cumulative_confirmed_cases        last_updated
-#> 1               2020-03-13          Asian                   3                          7 2021-07-02 16:00:02
-#> 2               2020-03-14          Asian                   2                          9 2021-07-02 16:00:02
-#> 3               2020-03-15          Asian                   2                         11 2021-07-02 16:00:02
-#> 4               2020-03-16          Asian                   8                         19 2021-07-02 16:00:02
-#> 5               2020-03-17          Asian                   4                         23 2021-07-02 16:00:02
-#> 6               2020-03-18          Asian                   0                         23 2021-07-02 16:00:02
+#>   specimen_collection_date race_ethnicity new_confirmed_cases
+#> 1               2020-03-13          Asian                   3
+#> 2               2020-03-14          Asian                   2
+#> 3               2020-03-15          Asian                   2
+#> 4               2020-03-16          Asian                   8
+#> 5               2020-03-17          Asian                   4
+#> 6               2020-03-18          Asian                   0
+#>   cumulative_confirmed_cases        last_updated
+#> 1                          7 2021-11-01 16:00:03
+#> 2                          9 2021-11-01 16:00:03
+#> 3                         11 2021-11-01 16:00:03
+#> 4                         19 2021-11-01 16:00:03
+#> 5                         23 2021-11-01 16:00:03
+#> 6                         23 2021-11-01 16:00:03
 ```
 
 Below is a plot of the cumulative positive cases by race and ethnicity:

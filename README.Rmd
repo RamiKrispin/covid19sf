@@ -40,6 +40,8 @@ The covid19sf package provides a daily summary of the covid19 cases in San Franc
 * `covid19sf_tests` -  Daily number of tests
 * `covid19sf_vaccine_demo` -  Summary of vaccine doses given to San Franciscans by demographics groups (age and race)
 * `covid19sf_vaccine_demo_ts` -  Time series view of vaccine doses given to San Franciscans by demographics groups (age and race)
+* `covid19sf_vaccine_geo` - COVID-19 vaccines given to San Franciscans by geography
+
 
 **Data soucre:** San Francisco, Department of Public Health - Population Health Division through the San Francisco [Opne Data protal website](https://datasf.org/opendata/)
 
@@ -173,6 +175,38 @@ orca(p, "man/figures/age_dist2.svg", width = 5 * 96, height = 5 * 96)
 
 
 <img src="man/figures/age_dist2.svg" width="70%" />
+
+
+### Geospatial visualiztion 
+
+The package provides several geo-spatial dataset:
+
+* `covid19sf_vaccine_geo` - COVID-19 vaccines given to San Franciscans by geography
+* `covid19sf_geo` -  Confirmed cases and deaths summarized by geography
+* `covid19sf_test_loc` -  Testing locations
+
+Those three datasets are `sf` objects, ready to use. For example, plotting the COVID19 vaccination data by geography:
+
+```{r}
+library(sf)
+
+data(covid19sf_vaccine_geo)
+
+str(covid19sf_vaccine_geo)
+
+df <- covid19sf_vaccine_geo %>% filter(area_type == "Analysis Neighborhood") %>%
+  dplyr::mutate(perc_complated = percent_pop_series_completed * 100)
+```
+
+We will plot the object Using the **sf** package:
+
+```{r}
+plot(df[, c("perc_complated", "geometry")],
+     main = "San Francisco - Percentage of Fully Vaccinated Population by Geo",
+     key.pos = 1, axes = TRUE, key.width = lcm(1.2), key.length = 1.0)
+```
+
+More examples available on this [vignette](https://ramikrispin.github.io/covid19sf/articles/geo.html)
 
 ### Tests results distribution
 
