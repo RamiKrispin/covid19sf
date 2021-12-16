@@ -477,3 +477,34 @@
 #' head(covid19sf_vaccine_demo_ts)
 
 "covid19sf_vaccine_demo_ts"
+
+#' COVID-19 Cases by Population Characteristics Over Time
+#'
+#' @description  TThis dataset shows San Francisco COVID-19 cases by population characteristics
+#' and by specimen collection date. Cases are included on the date the positive test was collected.
+#' Population characteristics are subgroups, or demographic cross-sections, like age, race, or
+#' gender. The City tracks how cases have been distributed among different subgroups.
+#' This information can reveal trends and disparities among groups. Data is lagged by
+#' five days, meaning the most recent specimen collection date included is 5 days prior to today.
+#' Tests take time to process and report, so more recent data is less reliable.  More details available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-by-Population-Characteristics-Over-/j7i3-u9ke}{here}
+
+#' @format An object class data.frame with 8 variables
+#' \describe{
+#'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
+#'   \item{characteristic_type}{Overall topic area for a given population characteristic. These are subgroups or demographic cross-sections, like age}
+#'   \item{characteristic_group}{Each group or category within a characteristic type or topic area. ex 0-4 yrs, 5-10 yrs}
+#'   \item{characteristic_group_sort_order}{Sort order of characteristic group to aid in visualizing data}
+#'   \item{new_cases}{Cases are counted as confirmed on the date of specimen collection after a positive lab test result}
+#'   \item{cumulative_cases}{Cumulative Cases}
+#'   \item{population_estimate}{Population estimate for a given characteristic type and characteristic group}
+#'   \item{last_updated}{Timestamp when data entered the socrata system}
+#'   }
+#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
+#' @keywords datasets summary COVID19 vaccine demographic
+#' @details The dataset contains a summary of COVID-19 cases overtime by population characteristics
+#' @examples
+#' data(covid19sf_population)
+#'
+#' head(covid19sf_population)
+
+"covid19sf_population"
