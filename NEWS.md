@@ -2,7 +2,7 @@
 
 * Due changes on SF data portal deprecated the `covid19sf_demo` dataset which will replaced with `covid19sf_population` 
 * Added `covid19sf_vaccine_geo` dataset - providing vaccine information by geography
-* Update the package vignettes
+* Updated the package vignettes
 
 
 # covid19sf 0.1.1
