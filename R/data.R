@@ -400,6 +400,9 @@
 #' (2) second doses administered as part of a two-dose vaccination, and
 #' (3) single-dose vaccines administered. \href{https://data.sfgov.org/COVID-19/COVID-19-Vaccine-Doses-Given-to-San-Franciscans-by/wv2h-rqwk}{here}
 #'
+#' NOTE: This dataset is no longer supported and will be deprecated on the next release (v0.1.3).
+#' The covid19sf_population dataset is an alternative for covid19sf_vaccine_demo.
+#'
 #' @format An object class data.frame with 15 variables
 #' \describe{
 #'   \item{overall_segment}{Segment (universe) of analysis. Unique combination of

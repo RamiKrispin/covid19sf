@@ -39,6 +39,9 @@ demographic slices. The three dose types are counted separately, i.e.
 (1) first doses administered as a part of a two-dose vaccination,
 (2) second doses administered as part of a two-dose vaccination, and
 (3) single-dose vaccines administered. \href{https://data.sfgov.org/COVID-19/COVID-19-Vaccine-Doses-Given-to-San-Franciscans-by/wv2h-rqwk}{here}
+
+NOTE: This dataset is no longer supported and will be deprecated on the next release (v0.1.3).
+The covid19sf_population dataset is an alternative for covid19sf_vaccine_demo.
 }
 \details{
 The dataset contains a summary of COVID-19 vaccine doses given to San Franciscans by demographics
