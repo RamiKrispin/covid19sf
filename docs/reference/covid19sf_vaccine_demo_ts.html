@@ -174,55 +174,55 @@ demographic slices. The three dose types are counted separately, i.e.
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">covid19sf_vaccine_demo_ts</span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">covid19sf_vaccine_demo_ts</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   date_administered                                        overall_segment</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1        2020-12-15 Ages 12+ by Age Bracket, Administered by All Providers</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2        2020-12-16 Ages 12+ by Age Bracket, Administered by All Providers</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3        2020-12-17 Ages 12+ by Age Bracket, Administered by All Providers</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4        2020-12-18 Ages 12+ by Age Bracket, Administered by All Providers</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5        2020-12-19 Ages 12+ by Age Bracket, Administered by All Providers</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6        2020-12-20 Ages 12+ by Age Bracket, Administered by All Providers</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   date_administered                                       overall_segment</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1        2021-07-28 Ages 5+ by Age Bracket, Administered by All Providers</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2        2021-07-29 Ages 5+ by Age Bracket, Administered by All Providers</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3        2021-07-30 Ages 5+ by Age Bracket, Administered by All Providers</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4        2021-07-31 Ages 5+ by Age Bracket, Administered by All Providers</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5        2021-08-01 Ages 5+ by Age Bracket, Administered by All Providers</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6        2021-08-02 Ages 5+ by Age Bracket, Administered by All Providers</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   administering_provider_type age_group demographic_group demographic_subgroup</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1               All Providers       12+       Age Bracket                35-44</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2               All Providers       12+       Age Bracket                35-44</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3               All Providers       12+       Age Bracket                35-44</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4               All Providers       12+       Age Bracket                35-44</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5               All Providers       12+       Age Bracket                35-44</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6               All Providers       12+       Age Bracket                35-44</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1               All Providers        5+       Age Bracket                12-17</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2               All Providers        5+       Age Bracket                12-17</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3               All Providers        5+       Age Bracket                12-17</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4               All Providers        5+       Age Bracket                12-17</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5               All Providers        5+       Age Bracket                12-17</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6               All Providers        5+       Age Bracket                12-17</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   demographic_subgroup_sort_order new_1st_doses new_2nd_doses new_single_doses</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                               6             3             0                0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                               6            66             0                0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                               6           139             0                0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                               6           284             1                0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                               6           206             0                0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                               6           137             1                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                               3           112            95                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                               3           123           100                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3                               3           110            83                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4                               3            77            63                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5                               3            38            18                0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6                               3           112           102                0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   new_series_completed new_recipients cumulative_1st_doses cumulative_2nd_doses</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                    0              3                    4                    1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                    0             66                   70                    1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                    0            139                  209                    1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                    1            285                  493                    2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                    0            206                  699                    2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                    1            138                  836                    3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                   95            112                31191                27942</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                  100            123                31314                28042</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3                   83            110                31424                28125</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4                   63             77                31501                28188</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5                   18             38                31539                28206</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6                  102            112                31651                28308</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   cumulative_single_doses cumulative_series_completed cumulative_recipients</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                       0                           1                     5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                       0                           1                    71</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3                       0                           1                   210</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4                       0                           2                   495</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                       0                           2                   701</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6                       0                           3                   839</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                      12                       27954                 31220</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                      12                       28054                 31343</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3                      12                       28137                 31453</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4                      12                       28200                 31530</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5                      12                       28218                 31568</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6                      12                       28320                 31680</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   subgroup_population age_group_population          data_as_of</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1              138390               791131 2021-12-12 06:00:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2              138390               791131 2021-12-12 06:00:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3              138390               791131 2021-12-12 06:00:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4              138390               791131 2021-12-12 06:00:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5              138390               791131 2021-12-12 06:00:04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6              138390               791131 2021-12-12 06:00:04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1               33938               835137 2021-12-15 06:00:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2               33938               835137 2021-12-15 06:00:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3               33938               835137 2021-12-15 06:00:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4               33938               835137 2021-12-15 06:00:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5               33938               835137 2021-12-15 06:00:11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6               33938               835137 2021-12-15 06:00:11</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>        data_loaded_at</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 2021-12-12 08:15:09</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 2021-12-12 08:15:09</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 2021-12-12 08:15:09</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 2021-12-12 08:15:09</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5 2021-12-12 08:15:09</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 2021-12-12 08:15:09</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 2021-12-15 08:15:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 2021-12-15 08:15:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 2021-12-15 08:15:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 2021-12-15 08:15:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 2021-12-15 08:15:07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 2021-12-15 08:15:07</span>
 </code></pre></div>
     </div>
   </div>
