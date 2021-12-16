@@ -171,7 +171,6 @@ data_refresh <- function(){
                   last_updated = lubridate::ymd_hms(data_loaded_at,
                                                     tz = "America/Los_Angeles")) %>%
     dplyr::select(-data_loaded_at, - data_as_of)
-  head(covid19sf_population)
 
 
   population_csv <- read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_population.csv", stringsAsFactors = FALSE) %>%
