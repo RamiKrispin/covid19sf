@@ -18,8 +18,6 @@ The covid19sf package provides a daily summary of the covid19 cases in
 San Francisco. The package includes the following datasets:
 
 -   `covid19sf_age` - Cases summarized by age group
--   `covid19sf_demo` - Cases summarized by date, transmission and case
-    disposition
 -   `covid19sf_gender` - Confirmed cases summarized by gender
 -   `covid19sf_geo` - Confirmed cases and deaths summarized by geography
 -   `covid19sf_homeless` - Confirmed cases by homelessness
@@ -36,6 +34,10 @@ San Francisco. The package includes the following datasets:
     given to San Franciscans by demographics groups (age and race)
 -   `covid19sf_vaccine_geo` - COVID-19 vaccines given to San Franciscans
     by geography
+-   `covid19sf_population` - COVID-19 cases by population
+    characteristics over time
+-   `covid19sf_demo` \[**deprecated**\] - Cases summarized by date,
+    transmission and case disposition
 
 **Data soucre:** San Francisco, Department of Public Health - Population
 Health Division through the San Francisco [Opne Data protal
@@ -188,7 +190,7 @@ plot(df[, c("perc_complated", "geometry")],
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
 More examples available on this
-[vignette](https://ramikrispin.github.io/covid19sf/articles/geo.html)
+[vignette](https://ramikrispin.github.io/covid19sf/articles/geo.html).
 
 ### Tests results distribution
 
@@ -238,43 +240,51 @@ plotly::plot_ly(x = ~ specimen_collection_date,
 
 ### Cases distribution by race ethnicity
 
-The covid19sf_demp dataset provides a daily summary of the covid19
+The covid19sf_population dataset provides a daily summary of the COVID19
 positive cases by race and ethnicity:
 
 ``` r
-data(covid19sf_demo)
+data(covid19sf_population)
 
-head(covid19sf_demo)
-#>   specimen_collection_date race_ethnicity new_confirmed_cases
-#> 1               2020-03-13          Asian                   3
-#> 2               2020-03-14          Asian                   2
-#> 3               2020-03-15          Asian                   2
-#> 4               2020-03-16          Asian                   8
-#> 5               2020-03-17          Asian                   4
-#> 6               2020-03-18          Asian                   0
-#>   cumulative_confirmed_cases        last_updated
-#> 1                          7 2021-11-01 16:00:03
-#> 2                          9 2021-11-01 16:00:03
-#> 3                         11 2021-11-01 16:00:03
-#> 4                         19 2021-11-01 16:00:03
-#> 5                         23 2021-11-01 16:00:03
-#> 6                         23 2021-11-01 16:00:03
+head(covid19sf_population)
+#>   specimen_collection_date characteristic_type characteristic_group
+#> 1               2020-03-03           Age Group                  0-4
+#> 2               2020-03-03           Age Group                 5-11
+#> 3               2020-03-03           Age Group                12-17
+#> 4               2020-03-03           Age Group                18-20
+#> 5               2020-03-03           Age Group                21-24
+#> 6               2020-03-03           Age Group                25-29
+#>   characteristic_group_sort_order new_cases cumulative_cases
+#> 1                               1        NA               NA
+#> 2                               2        NA               NA
+#> 3                               3        NA               NA
+#> 4                               4        NA               NA
+#> 5                               5        NA               NA
+#> 6                               6        NA               NA
+#>   population_estimate        last_updated
+#> 1               39353 2021-12-16 07:00:11
+#> 2               44153 2021-12-16 07:00:15
+#> 3               34664 2021-12-16 07:00:11
+#> 4               20407 2021-12-16 07:00:11
+#> 5               39944 2021-12-16 07:00:14
+#> 6              100792 2021-12-16 07:00:42
 ```
 
 Below is a plot of the cumulative positive cases by race and ethnicity:
 
 ``` r
-covid19sf_demo %>%
+covid19sf_population %>% 
+  filter(characteristic_type == "Race/Ethnicity") %>%
   dplyr::arrange(specimen_collection_date) %>%
-plotly::plot_ly(x = ~ specimen_collection_date, 
-                y = ~ cumulative_confirmed_cases, 
-                # name = 'Cases', 
-                type = 'scatter', 
-                mode = 'none', 
-                color = ~race_ethnicity,
-                stackgroup = 'one') %>%
+  plotly::plot_ly(x = ~ specimen_collection_date, 
+                  y = ~ cumulative_cases, 
+                  # name = 'Cases', 
+                  type = 'scatter', 
+                  mode = 'none', 
+                  color = ~characteristic_group,
+                  stackgroup = 'one') %>%
   layout(title = "Total Cases Dist. by Race and Ethnicity",
-          legend = list(x = 0.1, y = 0.9),
+         legend = list(x = 0.05, y = 0.9),
          yaxis = list(title = "Number of Cases", tickformat = ".0f"),
          xaxis = list(title = "Source: San Francisco Department of Public Health"))
 ```
