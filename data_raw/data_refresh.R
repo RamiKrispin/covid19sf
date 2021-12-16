@@ -129,35 +129,35 @@ data_refresh <- function(){
 
   # covid19sf_demo ----
 
-  cat(paste0("\033[4;", 36, "m","covid19sf_demo dataset","\033[0m","\n"))
-  cat("Checking for updates...\n")
-
-  covid19sf_demo <- read.csv("https://data.sfgov.org/resource/vqqm-nsqg.csv?$limit=5000", stringsAsFactors = FALSE) %>%
-    dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
-                                                                        tz = "America/Los_Angeles")),
-                  last_updated = lubridate::ymd_hms(last_updated_at,
-                                                    tz = "America/Los_Angeles")) %>%
-    dplyr::select(-last_updated_at)
-
-
-  demo_csv <- read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_demo.csv", stringsAsFactors = FALSE) %>%
-    dplyr::mutate(specimen_collection_date = as.Date(specimen_collection_date,
-                                                     tz = "America/Los_Angeles"),
-                  last_updated = lubridate::ymd_hms(last_updated,
-                                                    tz = "America/Los_Angeles"))
-
-
-
-
-  if(max(covid19sf_demo$specimen_collection_date) > max(demo_csv$specimen_collection_date) ||
-     nrow(covid19sf_demo) > nrow(demo_csv)){
-    cat(paste0("\033[0;", 42, "m","Updates are available, saving the changes","\033[0m","\n"))
-
-    usethis::use_data(covid19sf_demo, overwrite = TRUE)
-    write.csv(covid19sf_demo, "csv/covid19sf_demo.csv", row.names = FALSE)
-  } else{
-    cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
-  }
+  # cat(paste0("\033[4;", 36, "m","covid19sf_demo dataset","\033[0m","\n"))
+  # cat("Checking for updates...\n")
+  #
+  # covid19sf_demo <- read.csv("https://data.sfgov.org/resource/vqqm-nsqg.csv?$limit=5000", stringsAsFactors = FALSE) %>%
+  #   dplyr::mutate(specimen_collection_date = as.Date(lubridate::ymd_hms(specimen_collection_date,
+  #                                                                       tz = "America/Los_Angeles")),
+  #                 last_updated = lubridate::ymd_hms(last_updated_at,
+  #                                                   tz = "America/Los_Angeles")) %>%
+  #   dplyr::select(-last_updated_at)
+  #
+  #
+  # demo_csv <- read.csv("https://raw.githubusercontent.com/RamiKrispin/covid19sf/master/csv/covid19sf_demo.csv", stringsAsFactors = FALSE) %>%
+  #   dplyr::mutate(specimen_collection_date = as.Date(specimen_collection_date,
+  #                                                    tz = "America/Los_Angeles"),
+  #                 last_updated = lubridate::ymd_hms(last_updated,
+  #                                                   tz = "America/Los_Angeles"))
+  #
+  #
+  #
+  #
+  # if(max(covid19sf_demo$specimen_collection_date) > max(demo_csv$specimen_collection_date) ||
+  #    nrow(covid19sf_demo) > nrow(demo_csv)){
+  #   cat(paste0("\033[0;", 42, "m","Updates are available, saving the changes","\033[0m","\n"))
+  #
+  #   usethis::use_data(covid19sf_demo, overwrite = TRUE)
+  #   write.csv(covid19sf_demo, "csv/covid19sf_demo.csv", row.names = FALSE)
+  # } else{
+  #   cat(paste0("\033[0;", 41, "m","No updates are available","\033[0m","\n"))
+  # }
 
   # covid19sf_population ----
 
