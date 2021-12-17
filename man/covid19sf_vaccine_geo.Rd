@@ -46,10 +46,6 @@ library(dplyr)
 
 df <- covid19sf_vaccine_geo \%>\% filter(area_type == "Analysis Neighborhood")
 
-# Ploting SF vaccine counts using base plot function
-plot(df[, c("count_series_completed", "geometry")],
-     main = "San Francisco - Fully Vaccinated Population")
-
 plot(df[, c("percent_pop_series_completed", "geometry")],
      main = "San Francisco - Percentage of Fully Vaccinated Population")
 }

@@ -5,7 +5,7 @@
 \alias{covid19sf_vaccine_demo_ts}
 \title{COVID-19 Vaccine Doses Given to San Franciscans by Demographics Over Time}
 \format{
-An object class data.frame with 21 variables
+An object class data.frame with 19 variables
 \describe{
   \item{date_administered}{Date vaccination administered}
   \item{overall_segment}{Segment (universe) of analysis.
@@ -28,8 +28,6 @@ An object class data.frame with 21 variables
   \item{cumulative_recipients}{Cumulative total individuals vaccinated (with any dose) according to CA's records}
   \item{subgroup_population}{American Community Survey population estimates for given demographic_subgroup}
   \item{age_group_population}{American Community Survey population estimates for overall age_group}
-  \item{data_as_of}{Timestamp for last update date in source system}
-  \item{data_loaded_at}{Timestamp when the record (row) was most recently updated here in the Open Data Portal}
   }
 }
 \source{

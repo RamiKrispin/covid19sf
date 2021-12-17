@@ -5,7 +5,7 @@
 \alias{covid19sf_population}
 \title{COVID-19 Cases by Population Characteristics Over Time}
 \format{
-An object class data.frame with 8 variables
+An object class data.frame with 7 variables
 \describe{
   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
   \item{characteristic_type}{Overall topic area for a given population characteristic. These are subgroups or demographic cross-sections, like age}
@@ -14,7 +14,6 @@ An object class data.frame with 8 variables
   \item{new_cases}{Cases are counted as confirmed on the date of specimen collection after a positive lab test result}
   \item{cumulative_cases}{Cumulative Cases}
   \item{population_estimate}{Population estimate for a given characteristic type and characteristic group}
-  \item{last_updated}{Timestamp when data entered the socrata system}
   }
 }
 \source{

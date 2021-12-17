@@ -1,41 +1,3 @@
-#' San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition
-#'
-#' @description  This dataset represents the COVID-19 positive confirmed cases and deaths by day and transmission type.
-#' The transmission data are based on information reported from case interviews, laboratories, and providers.
-#' This data may not be immediately available for recently reported cases and
-#' data will change to reflect as information becomes available. More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Date-Transmission-and/tvq9-ec9w}{here}
-#'
-#' @format An object class data.frame with 5 variables
-#' \describe{
-#'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
-#'   \item{case_disposition}{The case disposition c("Confirmed", "Death)}
-#'   \item{transmission_category}{The case transmission category c("Community", "From Contact", "Unknown")}
-#'   \item{case_count}{Daily cases count}
-#'   \item{last_updated}{The table last update time in POSIX format}
-#'   }
-#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
-#' @keywords datasets summary COVID19
-#' @details The dataset contains the daily summary of covid19 cases in San Francisco by transmission
-#' and case disposition
-#' @examples
-#' data(covid19sf_summary)
-#'
-#' head(covid19sf_summary)
-#'
-#' # Case disposition summary
-#' table(covid19sf_summary$case_disposition)
-#'
-#' # Transmission category
-#' table(covid19sf_summary$transmission_category)
-#'
-#' # Summary of case disposition and transmission category
-#' table(covid19sf_summary$case_disposition,
-#'       covid19sf_summary$transmission_category)
-#'
-"covid19sf_summary"
-
-
-
 #' San Francisco COVID-19 Hospitalizations
 #'
 #' @description  Count of COVID+ patients admitted to the hospital.
@@ -74,7 +36,7 @@
 #' Testing for the novel coronavirus is available through commercial, clinical,
 #' and hospital laboratories, as well as the SFDPH Public Health Laboratory. More information about the data available \href{https://data.sfgov.org/COVID-19/Covid-19-Tests/nfpa-mg4g}{here}
 #'
-#' @format An object class data.frame with 7 variables
+#' @format An object class data.frame with 6 variables
 #' \describe{
 #'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
 #'   \item{tests}{Daily tests count}
@@ -82,7 +44,6 @@
 #'   \item{pct}{Percentage of positive cases}
 #'   \item{neg}{Number of negative cases}
 #'   \item{indeterminate}{Number of indeterminate cases}
-#'   \item{last_updated}{The table last update time in POSIX format}
 #'   }
 #' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
 #' @keywords datasets summary COVID19 tests
@@ -94,61 +55,6 @@
 
 "covid19sf_tests"
 
-#' San Francisco COVID-19 Cases Summarized by Date, Transmission and Case Disposition
-#'
-#' @description  This dataset represents the COVID-19 positive confirmed cases by
-#' race and ethnicity. Demographic data are based on information
-#' reported from case interviews, laboratories, and providers.
-#' This data may not be immediately available for recently reported cases and data will
-#' change to reflect as information becomes available.
-#' Cumulative counts of 5 or fewer are excluded from the dataset.
-#' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Race-and-Ethnicity/vqqm-nsqg}{here}
-#'
-#' @format An object class data.frame with 5 variables
-#' \describe{
-#'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
-#'   \item{race_ethnicity}{The cases race/ethnicity}
-#'   \item{new_confirmed_cases}{Daily new confirmed cases}
-#'   \item{cumulative_confirmed_cases}{Cumulative confirmed cases}
-#'   \item{last_updated}{The table last update time in POSIX format}
-#'   }
-#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
-#' @keywords datasets summary COVID19 race ethnicity demographic
-#' @details The dataset contains the daily summary of covid19 cases in San Francisco by race/ethnicity group
-#' @examples
-#' data(covid19sf_demo)
-#'
-#' head(covid19sf_demo)
-#'
-"covid19sf_demo"
-
-#' San Francisco COVID-19 Cases Summarized by Age Group
-#'
-#' @description  This dataset represents the COVID-19 positive confirmed cases by age group.
-#' Demographic and transmission data are based on information reported from case interviews,
-#' laboratories, and providers.
-#' This data may not be immediately available for recently reported cases and
-#' data will change to reflect as information becomes available.
-#' Cumulative counts of 5 or fewer are excluded from the dataset.
-#' More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Age-Group/sunc-2t3k}{here}
-#'
-#' @format An object class data.frame with 5 variables
-#' \describe{
-#'   \item{specimen_collection_date}{date which case was recorded in YYYY-MM-DD format.}
-#'   \item{age_group}{case age group c("under 18", "18-30", "31-40", "41-50", "51-60", "71-80")}
-#'   \item{new_confirmed_cases}{Daily new confirmed cases}
-#'   \item{cumulative_confirmed_cases}{Cumulative numbero of confirmed cases}
-#'   \item{last_updated}{The table last update time in POSIX format}
-#'   }
-#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
-#' @keywords datasets summary COVID19 age
-#' @details The dataset contains the daily summary of covid19 cases in San Francisco by age group
-#' @examples
-#' data(covid19sf_age)
-#'
-#' head(covid19sf_age)
-
-"covid19sf_age"
 
 #' San Francisco COVID-19 Alternative Housing Sites
 #'
@@ -261,10 +167,6 @@
 #'
 #' df <- covid19sf_vaccine_geo %>% filter(area_type == "Analysis Neighborhood")
 #'
-#' # Ploting SF vaccine counts using base plot function
-#' plot(df[, c("count_series_completed", "geometry")],
-#'      main = "San Francisco - Fully Vaccinated Population")
-#'
 #' plot(df[, c("percent_pop_series_completed", "geometry")],
 #'      main = "San Francisco - Percentage of Fully Vaccinated Population")
 "covid19sf_vaccine_geo"
@@ -298,61 +200,6 @@
 #' head(covid19sf_hospital)
 
 "covid19sf_hospital"
-
-#' San Francisco COVID-19 Cases Summarized by Gender
-#'
-#' @description  This dataset represents the COVID-19 positive confirmed cases by gender.
-#' Demographic and transmission data are based on information reported from case interviews,
-#' laboratories, and providers. This data may not be immediately available for recently reported
-#' cases and data will change to reflect as information becomes available.
-#' Cumulative counts of 5 or fewer are excluded from the dataset.
-#'  More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Gender/nhy6-gqam}{here}
-#'
-#' @format An object class data.frame with 5 variables
-#' \describe{
-#'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
-#'   \item{gender}{The cases gender c( "Female", "Male", "Trans Female", "Unknown")}
-#'   \item{new_confirmed_cases}{Total cases confirmed cases per date and gender category}
-#'   \item{cumulative_confirmed_cases}{Cumulative confirmed cases by category }
-#'   \item{last_updated}{The table last update time in POSIX format}
-#'   }
-#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
-#' @keywords datasets summary COVID19 gender
-#' @details The dataset contains the daily summary of covid19 cases in San Francisco by gender
-#' @examples
-#' data(covid19sf_gender)
-#'
-#' head(covid19sf_gender)
-#
-"covid19sf_gender"
-
-#' San Francisco COVID-19 Cases Summarized by Homelessness Status
-#'
-#' @description  This dataset represents the COVID-19 positive confirmed cases by homelessness.
-#'  Demographic and transmission data are based on information reported from case
-#'  interviews, laboratories, and providers.
-#'  This data may not be immediately available for recently reported cases
-#'  and data will change to reflect as information becomes available.
-#'  Cumulative counts of 5 or fewer are excluded from the dataset.
-#'  More information about the data available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-Summarized-by-Homelessness-Status/b45x-2crv}{here}
-#'
-#' @format An object class data.frame with 5 variables
-#' \describe{
-#'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
-#'   \item{homelessness_status}{The homelessness status, a signle category variable c("Homeless")}
-#'   \item{new_confirmed_cases}{Total cases confirmed cases per date}
-#'   \item{cumulative_confirmed_cases}{Cumulative confirmed cases}
-#'   \item{last_updated}{The table last update time in POSIX format}
-#'   }
-#' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
-#' @keywords datasets summary COVID19 homeless
-#' @details The dataset contains the daily summary of covid19 cases in San Francisco by homelessness status
-#' @examples
-#' data(covid19sf_homeless)
-#'
-#' head(covid19sf_homeless)
-#
-"covid19sf_homeless"
 
 #' San Francisco COVID-19 Testing Locations
 #'
@@ -442,7 +289,7 @@
 #' (2) second doses administered as part of a two-dose vaccination, and
 #' (3) single-dose vaccines administered. \href{https://data.sfgov.org/COVID-19/COVID-19-Vaccine-Doses-Given-to-San-Franciscans-by/xjh5-h442}{here}
 #'
-#' @format An object class data.frame with 21 variables
+#' @format An object class data.frame with 19 variables
 #' \describe{
 #'   \item{date_administered}{Date vaccination administered}
 #'   \item{overall_segment}{Segment (universe) of analysis.
@@ -465,8 +312,6 @@
 #'   \item{cumulative_recipients}{Cumulative total individuals vaccinated (with any dose) according to CA's records}
 #'   \item{subgroup_population}{American Community Survey population estimates for given demographic_subgroup}
 #'   \item{age_group_population}{American Community Survey population estimates for overall age_group}
-#'   \item{data_as_of}{Timestamp for last update date in source system}
-#'   \item{data_loaded_at}{Timestamp when the record (row) was most recently updated here in the Open Data Portal}
 #'   }
 #' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
 #' @keywords datasets time series COVID19 vaccine
@@ -488,7 +333,7 @@
 #' five days, meaning the most recent specimen collection date included is 5 days prior to today.
 #' Tests take time to process and report, so more recent data is less reliable.  More details available \href{https://data.sfgov.org/COVID-19/COVID-19-Cases-by-Population-Characteristics-Over-/j7i3-u9ke}{here}
 
-#' @format An object class data.frame with 8 variables
+#' @format An object class data.frame with 7 variables
 #' \describe{
 #'   \item{specimen_collection_date}{Date which case was recorded in YYYY-MM-DD format.}
 #'   \item{characteristic_type}{Overall topic area for a given population characteristic. These are subgroups or demographic cross-sections, like age}
@@ -497,7 +342,6 @@
 #'   \item{new_cases}{Cases are counted as confirmed on the date of specimen collection after a positive lab test result}
 #'   \item{cumulative_cases}{Cumulative Cases}
 #'   \item{population_estimate}{Population estimate for a given characteristic type and characteristic group}
-#'   \item{last_updated}{Timestamp when data entered the socrata system}
 #'   }
 #' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
 #' @keywords datasets summary COVID19 vaccine demographic

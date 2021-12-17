@@ -20,21 +20,24 @@ library(covid19sf)
 
 The covid19sf package provides a daily summary of the covid19 cases in San Francisco. The package includes the following datasets:
 
-* `covid19sf_age` -  Cases summarized by age group
-* `covid19sf_gender` -  Confirmed cases summarized by gender
+
 * `covid19sf_geo` -  Confirmed cases and deaths summarized by geography
-* `covid19sf_homeless` -  Confirmed cases by homelessness
 * `covid19sf_hospital` -  Hospital capacity data
 * `covid19sf_hospitalizations` -  Hospitalizations data
 * `covid19sf_housing` -  Alternative housing sites
-* `covid19sf_summary` -  Cases summarized by date, transmission and case disposition
 * `covid19sf_test_loc` -  Testing locations
 * `covid19sf_tests` -  Daily number of tests
 * `covid19sf_vaccine_demo` -  Summary of vaccine doses given to San Franciscans by demographics groups (age and race)
 * `covid19sf_vaccine_demo_ts` -  Time series view of vaccine doses given to San Franciscans by demographics groups (age and race)
 * `covid19sf_vaccine_geo` - COVID-19 vaccines given to San Franciscans by geography
 * `covid19sf_population` - COVID-19 cases by population characteristics over time
+
+The following dataset were deprecated and replaced by the `covid19sf_population` dataset:
 * `covid19sf_demo` [**deprecated**] -  Cases summarized by date, transmission and case disposition
+* `covid19sf_homeless` [**deprecated**] -  Confirmed cases by homelessness
+* `covid19sf_age` [**deprecated**] -  Cases summarized by age group
+* `covid19sf_gender`[**deprecated**] -  Confirmed cases summarized by gender
+* `covid19sf_summary` [**deprecated**] -  Cases summarized by date, transmission and case disposition
 
 **Data soucre:** San Francisco, Department of Public Health - Population Health Division through the San Francisco [Opne Data protal website](https://datasf.org/opendata/)
 
