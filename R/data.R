@@ -111,19 +111,6 @@
 #'
 #' library(sf)
 #' # Ploting SF Covid19 counts using base plot function
-#' # Plotting by zip code
-#' plot(covid19sf_geo[which(covid19sf_geo$area_type == "ZCTA"),
-#'                    c("count", "geometry")],
-#'       main = "Covid19 Cases by ZIP Code")
-#' # Plotting by neighborhood
-#' plot(covid19sf_geo[which(covid19sf_geo$area_type ==
-#'                          "Analysis Neighborhood"),
-#'                    c("count", "geometry")],
-#'      main = "Covid19 Cases by Neighborhood")
-#' #Plotting by census tract
-#' plot(covid19sf_geo[which(covid19sf_geo$area_type == "Census Tract"),
-#'                    c("count", "geometry")],
-#'      main = "Covid19 Cases by Census Tract")
 #' plot(covid19sf_geo[which(covid19sf_geo$area_type == "Census Tract"),
 #'                    c("rate", "geometry")],
 #'      main = "Covid19 Cases Rate per 10,000 by Census Tract")
@@ -229,11 +216,6 @@
 #' @source San Francisco, Department of Public Health - Population Health Division through San Francisco Opne Data protal \href{https://datasf.org/opendata/}{website}.
 #' @keywords datasets summary COVID19 testing medical
 #' @details The dataset contains the San Francisco testing location information
-#' @examples
-#' data(covid19sf_test_loc)
-#'
-#' head(covid19sf_test_loc)
-#'
 
 "covid19sf_test_loc"
 
