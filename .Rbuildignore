@@ -11,5 +11,6 @@
 ^vignettes/demo.Rmd$
 ^vignettes/hospital.Rmd$
 ^vignettes/vaccine_data.Rmd$
+^vignettes/data_refresh.Rmd$
 ^CRAN-RELEASE$
 ^CRAN-SUBMISSION$
