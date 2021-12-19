@@ -39,11 +39,12 @@ The covid19sf package provides a daily summary of the covid19 cases in San Franc
 * `covid19sf_population` - COVID-19 cases by population characteristics over time
 
 The following dataset were deprecated and replaced by the `covid19sf_population` dataset:
-* `covid19sf_demo` [**deprecated**] -  Cases summarized by date, transmission and case disposition
-* `covid19sf_homeless` [**deprecated**] -  Confirmed cases by homelessness
-* `covid19sf_age` [**deprecated**] -  Cases summarized by age group
-* `covid19sf_gender`[**deprecated**] -  Confirmed cases summarized by gender
-* `covid19sf_summary` [**deprecated**] -  Cases summarized by date, transmission and case disposition
+
+* `covid19sf_demo`- Cases summarized by date, transmission and case disposition
+* `covid19sf_homeless` -  Confirmed cases by homelessness
+* `covid19sf_age` -  Cases summarized by age group
+* `covid19sf_gender` -  Confirmed cases summarized by gender
+* `covid19sf_summary` -  Cases summarized by date, transmission and case disposition
 
 **Data soucre:** San Francisco, Department of Public Health - Population Health Division through the San Francisco [Opne Data protal website](https://datasf.org/opendata/)
 
@@ -65,15 +66,54 @@ library(covid19sf)
 ```
 
 
-### Cases distribution by age
+### Cases distribution by demographic
 
-The covid19sf_age provides a daily summary of the cumulative positive cases by age group:
+The `covid19sf_population` provides a daily summary of new and cumulative positive cases by the following demograpich groups:
+
+* Age group
+* Comorbidities
+* Gender
+* Homelessness
+* Race/Ethnicity
+* Sexual Orientation
+* Single Room Occupancy Tenancy
+* Skilled Nursing Facility Occupancy
+* Transmission Type
+
+
 
 ```{r}
-data(covid19sf_age)
+data(covid19sf_population)
 
-head(covid19sf_age)
+head(covid19sf_population)
 ```
+
+#### Cases distribution by age
+
+To get cases view by age group we will use the `characteristic_type` variable to filter the data:
+
+
+```{r}
+library(dplyr)
+
+df_age <- covid19sf_population %>%
+  filter(characteristic_type == "Age Group")
+
+head(df_age)
+```
+
+Ordering the age groups before plotting the cases distribution:
+
+```{r}
+age_order <- df_age %>% 
+  select(characteristic_group, characteristic_group_sort_order) %>%
+  distinct() %>%
+  arrange(characteristic_group_sort_order)
+  
+
+df_age$characteristic_group <- factor(df_age$characteristic_group, levels = age_order$characteristic_group)
+```
+
 
 
 The following box-plot shows the distribution of the positive cases by age group:
@@ -81,51 +121,35 @@ The following box-plot shows the distribution of the positive cases by age group
 ```r
 library(plotly)
 
-covid19sf_age$age_group <- factor(covid19sf_age$age_group, 
-                                  levels = c("0-4",  "5-10", 
-                                             "11-13", "14-17",
-                                             "18-20", "21-24",
-                                             "25-29",
-                                             "30-39", "40-49",
-                                             "50-59", "60-69",
-                                             "70-79", "80+"))
-
-plot_ly(covid19sf_age, 
-        color = ~ age_group, 
-        y = ~ new_confirmed_cases, 
+plot_ly(df_age, 
+        color = ~ characteristic_group, 
+        y = ~ new_cases, 
         boxpoints = "all", 
         jitter = 0.3,
         pointpos = -1.8,
         type = "box" ) %>%
-layout(title = "Distribution of Daily New Covid Cases in San Francisco by Age Group",
+layout(title = "Distribution of Daily New COVID-19 Cases in San Francisco by Age Group",
        yaxis = list(title = "Number of Cases"),
        xaxis = list(title = "Source: San Francisco Department of Public Health"),
-       legend = list(x = 0.9, y = 0.9))
+       legend = list(x = 0.9, y = 0.9),
+       margin = list(t = 60, b = 60, l = 60, r = 60))
 ```
 
 ```{r include=FALSE}
 library(plotly)
 
-covid19sf_age$age_group <- factor(covid19sf_age$age_group, 
-                                  levels = c("0-4",  "5-10", 
-                                             "11-13", "14-17",
-                                             "18-20", "21-24",
-                                             "25-29",
-                                             "30-39", "40-49",
-                                             "50-59", "60-69",
-                                             "70-79", "80+"))
-
-p1 <- plot_ly(covid19sf_age, 
-        color = ~ age_group, 
-        y = ~ new_confirmed_cases, 
+p1 <- plot_ly(df_age, 
+        color = ~ characteristic_group, 
+        y = ~ new_cases, 
         boxpoints = "all", 
         jitter = 0.3,
         pointpos = -1.8,
         type = "box" ) %>%
-layout(title = "Distribution of Daily New Covid Cases in San Francisco by Age Group",
+layout(title = "Distribution of Daily New COVID-19 Cases in San Francisco by Age Group",
        yaxis = list(title = "Number of Cases"),
        xaxis = list(title = "Source: San Francisco Department of Public Health"),
-       legend = list(x = 0.9, y = 0.9))
+       legend = list(x = 0.9, y = 0.9),
+       margin = list(t = 60, b = 60, l = 60, r = 60))
 
 orca(p1, "man/figures/age_dist1.svg", width = 8 * 96, height = 5 * 96)
 ```
@@ -134,24 +158,25 @@ orca(p1, "man/figures/age_dist1.svg", width = 8 * 96, height = 5 * 96)
 <img src="man/figures/age_dist1.svg" width="100%" />
 
 
-Here is the overall distribution of cases by age group as of `r max(covid19sf_age$specimen_collection_date)`:
+Here is the overall distribution of cases by age group as of `r max(df_age$specimen_collection_date)`:
 
 
 ``` r
-library(dplyr)
-library(plotly)
-covid19sf_age %>% 
+df_age %>% 
   filter(specimen_collection_date == max(specimen_collection_date)) %>%
-  plot_ly(values = ~ cumulative_confirmed_cases, 
-          labels = ~ age_group, 
+  plot_ly(values = ~ cumulative_cases, 
+          labels = ~ characteristic_group, 
           type = "pie",
           textposition = 'inside',
           textinfo = 'label+percent',
           insidetextfont = list(color = '#FFFFFF'),
           hoverinfo = 'text',
-          text = ~paste("Age Group:", age_group, "<br>",
-                        "Total:", cumulative_confirmed_cases)) %>%
-   layout(title = "Total Cases Distribution by Age Group")
+          text = ~paste(" Age Group:", characteristic_group, "<br>",
+                        "Total:", cumulative_cases, "<br>",
+                        "Population Estimation:", population_estimate, 
+                        paste("(",round(100* cumulative_cases/population_estimate, 1) ,"%)", sep = ""))) %>%
+   layout(title = ~ paste("Total Cases Dist. by Age Group as of", max(specimen_collection_date)),
+       margin = list(t = 60, b = 20, l = 30, r = 60))
 ```
 
 
@@ -159,18 +184,21 @@ covid19sf_age %>%
 ```{r include=FALSE}
 library(dplyr)
 library(plotly)
-p <- covid19sf_age %>% 
+p <- df_age %>% 
   filter(specimen_collection_date == max(specimen_collection_date)) %>%
-  plot_ly(values = ~ cumulative_confirmed_cases, 
-          labels = ~ age_group, 
+  plot_ly(values = ~ cumulative_cases, 
+          labels = ~ characteristic_group, 
           type = "pie",
           textposition = 'inside',
           textinfo = 'label+percent',
           insidetextfont = list(color = '#FFFFFF'),
           hoverinfo = 'text',
-          text = ~paste("Age Group:", age_group, "<br>",
-                        "Total:", cumulative_confirmed_cases)) %>%
-  layout(title = "Total Cases Distribution by Age Group")
+          text = ~paste(" Age Group:", characteristic_group, "<br>",
+                        "Total:", cumulative_cases, "<br>",
+                        "Population Estimation:", population_estimate, 
+                        paste("(",round(100* cumulative_cases/population_estimate, 1) ,"%)", sep = ""))) %>%
+   layout(title = ~ paste("Total Cases Dist. by Age Group as of", max(specimen_collection_date)),
+       margin = list(t = 60, b = 20, l = 30, r = 60))
 
 orca(p, "man/figures/age_dist2.svg", width = 5 * 96, height = 5 * 96)
 ```

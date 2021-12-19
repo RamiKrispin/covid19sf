@@ -53,7 +53,7 @@
       <a href="articles/data_refresh.html">Covid19 SF Data Refresh</a>
     </li>
     <li>
-      <a href="articles/demo.html">San Francisco Covid19 Demographic Analysis</a>
+      <a href="articles/demo.html">San Francisco COVID-19 Demographic Analysis</a>
     </li>
     <li>
       <a href="articles/geo.html">Geospatial Visualization of the Covid19 Cases</a>
@@ -100,21 +100,13 @@
 <p>The covid19sf package provides a daily summary of the covid19 cases in San Francisco. The package includes the following datasets:</p>
 <ul>
 <li>
-<code>covid19sf_age</code> - Cases summarized by age group</li>
-<li>
-<code>covid19sf_gender</code> - Confirmed cases summarized by gender</li>
-<li>
 <code>covid19sf_geo</code> - Confirmed cases and deaths summarized by geography</li>
-<li>
-<code>covid19sf_homeless</code> - Confirmed cases by homelessness</li>
 <li>
 <code>covid19sf_hospital</code> - Hospital capacity data</li>
 <li>
 <code>covid19sf_hospitalizations</code> - Hospitalizations data</li>
 <li>
 <code>covid19sf_housing</code> - Alternative housing sites</li>
-<li>
-<code>covid19sf_summary</code> - Cases summarized by date, transmission and case disposition</li>
 <li>
 <code>covid19sf_test_loc</code> - Testing locations</li>
 <li>
@@ -127,8 +119,19 @@
 <code>covid19sf_vaccine_geo</code> - COVID-19 vaccines given to San Franciscans by geography</li>
 <li>
 <code>covid19sf_population</code> - COVID-19 cases by population characteristics over time</li>
+</ul>
+<p>The following dataset were deprecated and replaced by the <code>covid19sf_population</code> dataset:</p>
+<ul>
 <li>
-<code>covid19sf_demo</code> [<strong>deprecated</strong>] - Cases summarized by date, transmission and case disposition</li>
+<code>covid19sf_demo</code>- Cases summarized by date, transmission and case disposition</li>
+<li>
+<code>covid19sf_homeless</code> - Confirmed cases by homelessness</li>
+<li>
+<code>covid19sf_age</code> - Cases summarized by age group</li>
+<li>
+<code>covid19sf_gender</code> - Confirmed cases summarized by gender</li>
+<li>
+<code>covid19sf_summary</code> - Cases summarized by date, transmission and case disposition</li>
 </ul>
 <p><strong>Data soucre:</strong> San Francisco, Department of Public Health - Population Health Division through the San Francisco <a href="https://datasf.org/opendata/" class="external-link">Opne Data protal website</a></p>
 <p><a href="https://ramikrispin.github.io/covid19sf/" class="external-link"><img src="reference/figures/sf_map.png" align="right"></a></p>
@@ -146,69 +149,130 @@
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/RamiKrispin/covid19sf" class="external-link">covid19sf</a></span><span class="op">)</span></code></pre></div>
 <div class="section level3">
-<h3 id="cases-distribution-by-age">Cases distribution by age<a class="anchor" aria-label="anchor" href="#cases-distribution-by-age"></a>
+<h3 id="cases-distribution-by-demographic">Cases distribution by demographic<a class="anchor" aria-label="anchor" href="#cases-distribution-by-demographic"></a>
 </h3>
-<p>The covid19sf_age provides a daily summary of the cumulative positive cases by age group:</p>
+<p>The <code>covid19sf_population</code> provides a daily summary of new and cumulative positive cases by the following demograpich groups:</p>
+<ul>
+<li>Age group</li>
+<li>Comorbidities</li>
+<li>Gender</li>
+<li>Homelessness</li>
+<li>Race/Ethnicity</li>
+<li>Sexual Orientation</li>
+<li>Single Room Occupancy Tenancy</li>
+<li>Skilled Nursing Facility Occupancy</li>
+<li>Transmission Type</li>
+</ul>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">covid19sf_age</span><span class="op">)</span>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">covid19sf_population</span><span class="op">)</span>
 
-<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">covid19sf_age</span><span class="op">)</span>
-<span class="co">#&gt;   specimen_collection_date age_group new_confirmed_cases</span>
-<span class="co">#&gt; 1               2020-03-13     25-29                   3</span>
-<span class="co">#&gt; 2               2020-03-14     25-29                   2</span>
-<span class="co">#&gt; 3               2020-03-15     25-29                   1</span>
-<span class="co">#&gt; 4               2020-03-16     25-29                   1</span>
-<span class="co">#&gt; 5               2020-03-17     25-29                   0</span>
-<span class="co">#&gt; 6               2020-03-18     25-29                   3</span>
-<span class="co">#&gt;   cumulative_confirmed_cases        last_updated</span>
-<span class="co">#&gt; 1                          7 2021-11-01 16:00:03</span>
-<span class="co">#&gt; 2                          9 2021-11-01 16:00:03</span>
-<span class="co">#&gt; 3                         10 2021-11-01 16:00:03</span>
-<span class="co">#&gt; 4                         11 2021-11-01 16:00:03</span>
-<span class="co">#&gt; 5                         11 2021-11-01 16:00:03</span>
-<span class="co">#&gt; 6                         14 2021-11-01 16:00:03</span></code></pre></div>
-<p>The following box-plot shows the distribution of the positive cases by age group:</p>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">covid19sf_population</span><span class="op">)</span>
+<span class="co">#&gt;   specimen_collection_date characteristic_type characteristic_group</span>
+<span class="co">#&gt; 1               2020-03-03           Age Group                  0-4</span>
+<span class="co">#&gt; 2               2020-03-03           Age Group                 5-11</span>
+<span class="co">#&gt; 3               2020-03-03           Age Group                12-17</span>
+<span class="co">#&gt; 4               2020-03-03           Age Group                18-20</span>
+<span class="co">#&gt; 5               2020-03-03           Age Group                21-24</span>
+<span class="co">#&gt; 6               2020-03-03           Age Group                25-29</span>
+<span class="co">#&gt;   characteristic_group_sort_order new_cases cumulative_cases</span>
+<span class="co">#&gt; 1                               1        NA               NA</span>
+<span class="co">#&gt; 2                               2        NA               NA</span>
+<span class="co">#&gt; 3                               3        NA               NA</span>
+<span class="co">#&gt; 4                               4        NA               NA</span>
+<span class="co">#&gt; 5                               5        NA               NA</span>
+<span class="co">#&gt; 6                               6        NA               NA</span>
+<span class="co">#&gt;   population_estimate</span>
+<span class="co">#&gt; 1               39353</span>
+<span class="co">#&gt; 2               44153</span>
+<span class="co">#&gt; 3               34664</span>
+<span class="co">#&gt; 4               20407</span>
+<span class="co">#&gt; 5               39944</span>
+<span class="co">#&gt; 6              100792</span></code></pre></div>
+<div class="section level4">
+<h4 id="cases-distribution-by-age">Cases distribution by age<a class="anchor" aria-label="anchor" href="#cases-distribution-by-age"></a>
+</h4>
+<p>To get cases view by age group we will use the <code>characteristic_type</code> variable to filter the data:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; Attaching package: 'dplyr'</span>
+<span class="co">#&gt; The following objects are masked from 'package:stats':</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt;     filter, lag</span>
+<span class="co">#&gt; The following objects are masked from 'package:base':</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt;     intersect, setdiff, setequal, union</span>
+
+<span class="va">df_age</span> <span class="op">&lt;-</span> <span class="va">covid19sf_population</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">characteristic_type</span> <span class="op">==</span> <span class="st">"Age Group"</span><span class="op">)</span>
+
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">df_age</span><span class="op">)</span>
+<span class="co">#&gt;   specimen_collection_date characteristic_type characteristic_group</span>
+<span class="co">#&gt; 1               2020-03-03           Age Group                  0-4</span>
+<span class="co">#&gt; 2               2020-03-03           Age Group                 5-11</span>
+<span class="co">#&gt; 3               2020-03-03           Age Group                12-17</span>
+<span class="co">#&gt; 4               2020-03-03           Age Group                18-20</span>
+<span class="co">#&gt; 5               2020-03-03           Age Group                21-24</span>
+<span class="co">#&gt; 6               2020-03-03           Age Group                25-29</span>
+<span class="co">#&gt;   characteristic_group_sort_order new_cases cumulative_cases</span>
+<span class="co">#&gt; 1                               1        NA               NA</span>
+<span class="co">#&gt; 2                               2        NA               NA</span>
+<span class="co">#&gt; 3                               3        NA               NA</span>
+<span class="co">#&gt; 4                               4        NA               NA</span>
+<span class="co">#&gt; 5                               5        NA               NA</span>
+<span class="co">#&gt; 6                               6        NA               NA</span>
+<span class="co">#&gt;   population_estimate</span>
+<span class="co">#&gt; 1               39353</span>
+<span class="co">#&gt; 2               44153</span>
+<span class="co">#&gt; 3               34664</span>
+<span class="co">#&gt; 4               20407</span>
+<span class="co">#&gt; 5               39944</span>
+<span class="co">#&gt; 6              100792</span></code></pre></div>
+<p>Ordering the age groups before plotting the cases distribution:</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">age_order</span> <span class="op">&lt;-</span> <span class="va">df_age</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">characteristic_group</span>, <span class="va">characteristic_group_sort_order</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/distinct.html" class="external-link">distinct</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="va">characteristic_group_sort_order</span><span class="op">)</span>
+  
+
+<span class="va">df_age</span><span class="op">$</span><span class="va">characteristic_group</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">df_age</span><span class="op">$</span><span class="va">characteristic_group</span>, levels <span class="op">=</span> <span class="va">age_order</span><span class="op">$</span><span class="va">characteristic_group</span><span class="op">)</span></code></pre></div>
+<p>The following box-plot shows the distribution of the positive cases by age group:</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://plotly-r.com" class="external-link">plotly</a></span><span class="op">)</span>
 
-<span class="va">covid19sf_age</span><span class="op">$</span><span class="va">age_group</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">covid19sf_age</span><span class="op">$</span><span class="va">age_group</span>, 
-                                  levels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"0-4"</span>,  <span class="st">"5-10"</span>, 
-                                             <span class="st">"11-13"</span>, <span class="st">"14-17"</span>,
-                                             <span class="st">"18-20"</span>, <span class="st">"21-24"</span>,
-                                             <span class="st">"25-29"</span>,
-                                             <span class="st">"30-39"</span>, <span class="st">"40-49"</span>,
-                                             <span class="st">"50-59"</span>, <span class="st">"60-69"</span>,
-                                             <span class="st">"70-79"</span>, <span class="st">"80+"</span><span class="op">)</span><span class="op">)</span>
-
-<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html" class="external-link">plot_ly</a></span><span class="op">(</span><span class="va">covid19sf_age</span>, 
-        color <span class="op">=</span> <span class="op">~</span> <span class="va">age_group</span>, 
-        y <span class="op">=</span> <span class="op">~</span> <span class="va">new_confirmed_cases</span>, 
+<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html" class="external-link">plot_ly</a></span><span class="op">(</span><span class="va">df_age</span>, 
+        color <span class="op">=</span> <span class="op">~</span> <span class="va">characteristic_group</span>, 
+        y <span class="op">=</span> <span class="op">~</span> <span class="va">new_cases</span>, 
         boxpoints <span class="op">=</span> <span class="st">"all"</span>, 
         jitter <span class="op">=</span> <span class="fl">0.3</span>,
         pointpos <span class="op">=</span> <span class="op">-</span><span class="fl">1.8</span>,
         type <span class="op">=</span> <span class="st">"box"</span> <span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
-<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html" class="external-link">layout</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Distribution of Daily New Covid Cases in San Francisco by Age Group"</span>,
+<span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html" class="external-link">layout</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Distribution of Daily New COVID-19 Cases in San Francisco by Age Group"</span>,
        yaxis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Number of Cases"</span><span class="op">)</span>,
        xaxis <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Source: San Francisco Department of Public Health"</span><span class="op">)</span>,
-       legend <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0.9</span>, y <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+       legend <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">0.9</span>, y <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span>,
+       margin <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>t <span class="op">=</span> <span class="fl">60</span>, b <span class="op">=</span> <span class="fl">60</span>, l <span class="op">=</span> <span class="fl">60</span>, r <span class="op">=</span> <span class="fl">60</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/age_dist1.svg" width="100%"></p>
-<p>Here is the overall distribution of cases by age group as of 2021-10-28:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://plotly-r.com" class="external-link">plotly</a></span><span class="op">)</span>
-<span class="va">covid19sf_age</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
+<p>Here is the overall distribution of cases by age group as of 2021-12-11:</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">df_age</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">specimen_collection_date</span> <span class="op">==</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">specimen_collection_date</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
-  <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html" class="external-link">plot_ly</a></span><span class="op">(</span>values <span class="op">=</span> <span class="op">~</span> <span class="va">cumulative_confirmed_cases</span>, 
-          labels <span class="op">=</span> <span class="op">~</span> <span class="va">age_group</span>, 
+  <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html" class="external-link">plot_ly</a></span><span class="op">(</span>values <span class="op">=</span> <span class="op">~</span> <span class="va">cumulative_cases</span>, 
+          labels <span class="op">=</span> <span class="op">~</span> <span class="va">characteristic_group</span>, 
           type <span class="op">=</span> <span class="st">"pie"</span>,
           textposition <span class="op">=</span> <span class="st">'inside'</span>,
           textinfo <span class="op">=</span> <span class="st">'label+percent'</span>,
           insidetextfont <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">'#FFFFFF'</span><span class="op">)</span>,
           hoverinfo <span class="op">=</span> <span class="st">'text'</span>,
-          text <span class="op">=</span> <span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Age Group:"</span>, <span class="va">age_group</span>, <span class="st">"&lt;br&gt;"</span>,
-                        <span class="st">"Total:"</span>, <span class="va">cumulative_confirmed_cases</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
-   <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html" class="external-link">layout</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Total Cases Distribution by Age Group"</span><span class="op">)</span></code></pre></div>
+          text <span class="op">=</span> <span class="op">~</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">" Age Group:"</span>, <span class="va">characteristic_group</span>, <span class="st">"&lt;br&gt;"</span>,
+                        <span class="st">"Total:"</span>, <span class="va">cumulative_cases</span>, <span class="st">"&lt;br&gt;"</span>,
+                        <span class="st">"Population Estimation:"</span>, <span class="va">population_estimate</span>, 
+                        <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"("</span>,<span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fl">100</span><span class="op">*</span> <span class="va">cumulative_cases</span><span class="op">/</span><span class="va">population_estimate</span>, <span class="fl">1</span><span class="op">)</span> ,<span class="st">"%)"</span>, sep <span class="op">=</span> <span class="st">""</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+   <span class="fu"><a href="https://rdrr.io/pkg/plotly/man/layout.html" class="external-link">layout</a></span><span class="op">(</span>title <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Total Cases Dist. by Age Group as of"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">max</a></span><span class="op">(</span><span class="va">specimen_collection_date</span><span class="op">)</span><span class="op">)</span>,
+       margin <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>t <span class="op">=</span> <span class="fl">60</span>, b <span class="op">=</span> <span class="fl">20</span>, l <span class="op">=</span> <span class="fl">30</span>, r <span class="op">=</span> <span class="fl">60</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/age_dist2.svg" width="70%"></p>
+</div>
 </div>
 <div class="section level3">
 <h3 id="geospatial-visualiztion">Geospatial visualiztion<a class="anchor" aria-label="anchor" href="#geospatial-visualiztion"></a>
@@ -223,7 +287,7 @@
 <code>covid19sf_test_loc</code> - Testing locations</li>
 </ul>
 <p>Those three datasets are <code>sf</code> objects, ready to use. For example, plotting the COVID19 vaccination data by geography:</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span>
 <span class="co">#&gt; Linking to GEOS 3.8.1, GDAL 3.2.1, PROJ 7.2.1</span>
 
@@ -231,17 +295,17 @@
 
 <span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">covid19sf_vaccine_geo</span><span class="op">)</span>
 <span class="co">#&gt; Classes 'sf' and 'data.frame':   40 obs. of  9 variables:</span>
-<span class="co">#&gt;  $ id                          : chr  "Castro/Upper Market" "Nob Hill" "Oceanview/Merced/Ingleside" "Outer Richmond" ...</span>
+<span class="co">#&gt;  $ id                          : chr  "Bernal Heights" "Financial District/South Beach" "Glen Park" "Haight Ashbury" ...</span>
 <span class="co">#&gt;  $ area_type                   : chr  "Analysis Neighborhood" "Analysis Neighborhood" "Analysis Neighborhood" "Analysis Neighborhood" ...</span>
-<span class="co">#&gt;  $ count_vaccinated_by_dph     : num  1399 1795 4949 2692 17446 ...</span>
-<span class="co">#&gt;  $ count_vaccinated            : num  18867 20246 23474 37192 37526 ...</span>
-<span class="co">#&gt;  $ count_series_completed      : num  17459 18373 22067 34939 34765 ...</span>
-<span class="co">#&gt;  $ acs_population              : num  22502 26445 27530 45921 37917 ...</span>
-<span class="co">#&gt;  $ percent_pop_series_completed: num  0.776 0.695 0.802 0.761 0.917 ...</span>
-<span class="co">#&gt;  $ last_updated                : POSIXct, format: "2021-12-13 12:45:07" "2021-12-13 12:45:09" ...</span>
+<span class="co">#&gt;  $ count_vaccinated_by_dph     : num  5106 1841 573 823 2401 ...</span>
+<span class="co">#&gt;  $ count_vaccinated            : num  21109 22782 7257 14360 16351 ...</span>
+<span class="co">#&gt;  $ count_series_completed      : num  19781 20215 6804 13279 14930 ...</span>
+<span class="co">#&gt;  $ acs_population              : num  25167 21537 8651 19275 19711 ...</span>
+<span class="co">#&gt;  $ percent_pop_series_completed: num  0.786 0.939 0.786 0.689 0.757 ...</span>
+<span class="co">#&gt;  $ last_updated                : POSIXct, format: "2021-12-15 04:45:07" "2021-12-15 04:45:09" ...</span>
 <span class="co">#&gt;  $ geometry                    :sfc_MULTIPOLYGON of length 40; first list element: List of 1</span>
 <span class="co">#&gt;   ..$ :List of 1</span>
-<span class="co">#&gt;   .. ..$ : num [1:183, 1:2] -122 -122 -122 -122 -122 ...</span>
+<span class="co">#&gt;   .. ..$ : num [1:195, 1:2] -122 -122 -122 -122 -122 ...</span>
 <span class="co">#&gt;   ..- attr(*, "class")= chr [1:3] "XY" "MULTIPOLYGON" "sfg"</span>
 <span class="co">#&gt;  - attr(*, "sf_column")= chr "geometry"</span>
 <span class="co">#&gt;  - attr(*, "agr")= Factor w/ 3 levels "constant","aggregate",..: NA NA NA NA NA NA NA NA</span>
@@ -250,18 +314,18 @@
 <span class="va">df</span> <span class="op">&lt;-</span> <span class="va">covid19sf_vaccine_geo</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">area_type</span> <span class="op">==</span> <span class="st">"Analysis Neighborhood"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
   <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>perc_complated <span class="op">=</span> <span class="va">percent_pop_series_completed</span> <span class="op">*</span> <span class="fl">100</span><span class="op">)</span></code></pre></div>
 <p>We will plot the object Using the <strong>sf</strong> package:</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://r-spatial.github.io/sf/reference/plot.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">df</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"perc_complated"</span>, <span class="st">"geometry"</span><span class="op">)</span><span class="op">]</span>,
      main <span class="op">=</span> <span class="st">"San Francisco - Percentage of Fully Vaccinated Population by Geo"</span>,
      key.pos <span class="op">=</span> <span class="fl">1</span>, axes <span class="op">=</span> <span class="cn">TRUE</span>, key.width <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/graphics/layout.html" class="external-link">lcm</a></span><span class="op">(</span><span class="fl">1.2</span><span class="op">)</span>, key.length <span class="op">=</span> <span class="fl">1.0</span><span class="op">)</span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-6-1.png" width="100%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-8-1.png" width="100%"></p>
 <p>More examples available on this <a href="https://ramikrispin.github.io/covid19sf/articles/geo.html" class="external-link">vignette</a>.</p>
 </div>
 <div class="section level3">
 <h3 id="tests-results-distribution">Tests results distribution<a class="anchor" aria-label="anchor" href="#tests-results-distribution"></a>
 </h3>
 <p>The covid19sf_tests provides a daily summary of the daily number of tests and their results (positive, negative, and indeterminate):</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">covid19sf_tests</span><span class="op">)</span>
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">covid19sf_tests</span><span class="op">)</span>
@@ -271,16 +335,9 @@
 <span class="co">#&gt; 3               2020-03-04    12   0 0.00000000  12             0</span>
 <span class="co">#&gt; 4               2020-03-06    21   1 0.04761905  20             0</span>
 <span class="co">#&gt; 5               2020-03-07    23   7 0.30434783  16             0</span>
-<span class="co">#&gt; 6               2020-03-08    12   3 0.25000000   9             0</span>
-<span class="co">#&gt;            data_loaded_at        last_updated</span>
-<span class="co">#&gt; 1 2021-12-12T09:00:08.013 2021-12-11 16:35:02</span>
-<span class="co">#&gt; 2 2021-12-12T09:00:10.082 2021-12-11 16:35:02</span>
-<span class="co">#&gt; 3 2021-12-12T09:00:10.087 2021-12-11 16:35:02</span>
-<span class="co">#&gt; 4 2021-12-12T09:00:10.090 2021-12-11 16:35:02</span>
-<span class="co">#&gt; 5 2021-12-12T09:00:10.093 2021-12-11 16:35:02</span>
-<span class="co">#&gt; 6 2021-12-12T09:00:10.095 2021-12-11 16:35:02</span></code></pre></div>
+<span class="co">#&gt; 6               2020-03-08    12   3 0.25000000   9             0</span></code></pre></div>
 <p>The plot below shows the daily distribution of the results of the tests:</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">covid19sf_tests</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
 <span class="fu">plotly</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/plotly/man/plot_ly.html" class="external-link">plot_ly</a></span><span class="op">(</span>x <span class="op">=</span> <span class="op">~</span> <span class="va">specimen_collection_date</span>,
                 y <span class="op">=</span> <span class="op">~</span> <span class="va">pos</span>,
@@ -301,7 +358,7 @@
 <h3 id="cases-distribution-by-race-ethnicity">Cases distribution by race ethnicity<a class="anchor" aria-label="anchor" href="#cases-distribution-by-race-ethnicity"></a>
 </h3>
 <p>The covid19sf_population dataset provides a daily summary of the COVID19 positive cases by race and ethnicity:</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">covid19sf_population</span><span class="op">)</span>
 
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">covid19sf_population</span><span class="op">)</span>
@@ -319,15 +376,15 @@
 <span class="co">#&gt; 4                               4        NA               NA</span>
 <span class="co">#&gt; 5                               5        NA               NA</span>
 <span class="co">#&gt; 6                               6        NA               NA</span>
-<span class="co">#&gt;   population_estimate        last_updated</span>
-<span class="co">#&gt; 1               39353 2021-12-16 07:00:11</span>
-<span class="co">#&gt; 2               44153 2021-12-16 07:00:15</span>
-<span class="co">#&gt; 3               34664 2021-12-16 07:00:11</span>
-<span class="co">#&gt; 4               20407 2021-12-16 07:00:11</span>
-<span class="co">#&gt; 5               39944 2021-12-16 07:00:14</span>
-<span class="co">#&gt; 6              100792 2021-12-16 07:00:42</span></code></pre></div>
+<span class="co">#&gt;   population_estimate</span>
+<span class="co">#&gt; 1               39353</span>
+<span class="co">#&gt; 2               44153</span>
+<span class="co">#&gt; 3               34664</span>
+<span class="co">#&gt; 4               20407</span>
+<span class="co">#&gt; 5               39944</span>
+<span class="co">#&gt; 6              100792</span></code></pre></div>
 <p>Below is a plot of the cumulative positive cases by race and ethnicity:</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">covid19sf_population</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">characteristic_type</span> <span class="op">==</span> <span class="st">"Race/Ethnicity"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
   <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="va">specimen_collection_date</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
