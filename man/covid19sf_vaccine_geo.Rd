@@ -9,11 +9,11 @@ An object class sf and data.frame with 8 variables.
 \describe{
   \item{id}{area id}
   \item{area_type}{Area type, c("Analysis Neighborhood", "Summary")}
-  \item{count_vaccinated_by_dph}{Count of residents in the given geographic region who have received at least one dose administered by DPH}
-  \item{count_vaccinated}{Count of residents in the given geographic region who have received at least one dose regardless of who administered the vaccine}
-  \item{count_series_completed}{Count of residents in the given geographic region who have completed a vaccine series}
+  \item{count_vaccinated_by_dph}{Count of residents in the given geographic region who has received at least one dose administered by DPH}
+  \item{count_vaccinated}{Count of residents in the given geographic region who has received at least one dose regardless of who administered the vaccine}
+  \item{count_series_completed}{Count of residents in the given geographic region who has completed a vaccine series}
   \item{acs_population}{2019 5-year American Community Survey population estimate for the given geographic region (all ages)}
-  \item{percent_pop_series_completed}{The total count of population that have complated a vaccine series by population estimate (acs_population)}
+  \item{percent_pop_series_completed}{The total count of population that has completed a vaccine series by population estimate (acs_population)}
   \item{last_updated}{Last update of the data in POSIXc format)}
   \item{geometry}{The area polygon data)}
   }

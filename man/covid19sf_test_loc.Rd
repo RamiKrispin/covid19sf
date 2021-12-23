@@ -39,12 +39,6 @@ A list of testing locations including address and coordinates for mapping.
 \details{
 The dataset contains the San Francisco testing location information
 }
-\examples{
-data(covid19sf_test_loc)
-
-head(covid19sf_test_loc)
-
-}
 \keyword{COVID19}
 \keyword{datasets}
 \keyword{medical}
